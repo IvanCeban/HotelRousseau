@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    <section class="wrapper">
             <!-- page start-->
               <div class="row">
                   <div class="col-lg-12">
@@ -17,8 +18,8 @@
                       <!--breadcrumbs end -->
                   </div>
               </div>
-
               <!-- page end-->
+    </section>
 @endsection
 
 

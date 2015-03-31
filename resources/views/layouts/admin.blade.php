@@ -42,8 +42,8 @@
               <!--logo end-->
               <div class="horizontal-menu navbar-collapse collapse ">
                   <ul class="nav navbar-nav">
-                      <li><a href="{{url('admin')}}">Dashboard</a></li>
-                      <li class="active"><a href="{{url('admin/rooms')}}">Rooms</a></li>
+                      <li class="@if(Request::url() === url('admin')) active @endif"><a href="{{url('admin')}}">Dashboard</a></li>
+                      <li class="@if(Request::url() === url('admin/roomsapp')) active @endif"><a href="{{url('admin/roomsapp')}}">Rooms</a></li>
                       <li><a href="{{url('admin/rooms')}}">Reservations</a></li>
                       <li><a href="{{url('admin/rooms')}}">Vouchers</a></li>
                       <li><a href="{{url('admin/rooms')}}">Special offers</a></li>
@@ -95,9 +95,9 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
+
               @yield('content')
-          </section>
+
       </section>
       <!--main content end-->
       <!--footer start-->
