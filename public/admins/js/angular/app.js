@@ -12,7 +12,10 @@ app.controller('roomController', function($scope, $http) {
         $scope.loading = true;
         $http.get('/admin/rooms').
             success(function(data, status, headers, config) {
-                $scope.rooms = data;
+                $scope.rooms = data['rooms'];
+                //console.log(data['roomTypes']);
+                $scope.roomTypes = data['roomTypes'];
+                $scope.roomSelected = $scope.roomTypes[0];
                 $scope.loading = false;
 
             });

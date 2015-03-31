@@ -6,9 +6,7 @@
     <section class="wrapper" ng-app="roomApp" ng-controller="roomController">
         <h1>Rooms</h1>
         <section class="panel">
-            <header class="panel-heading">
-                Add new room
-            </header>
+            <header class="panel-heading">Add new room</header>
             <div class="panel-body">
                 <form class="form-inline" role="form">
                     <div class="form-group">
@@ -18,10 +16,14 @@
                     <div class="form-group">
                         <input type="text" ng-model="room.description" class="form-control" placeholder="Enter description">
                     </div>
+                    <div class="form-group">
+                        <select class="form-control" ng-model="roomSelected"
+                                ng-options="opt as opt.title for opt in roomTypes">
+                        </select>
+                    </div>
                     <button class="btn btn-success" ng-click="addRoom()">Add</button>
                     <i ng-show="loading" class="fa fa-spinner fa-spin"></i>
                 </form>
-
             </div>
         </section>
         <hr>

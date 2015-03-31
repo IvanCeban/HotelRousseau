@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Room;
+use App\RoomType;
 use Request;
 
 class RoomsController extends Controller {
@@ -23,8 +24,7 @@ class RoomsController extends Controller {
 	 */
 	public function index()
 	{
-		$rooms = Room::all();
-		return $rooms;
+		return ['rooms'=>Room::all(), 'roomTypes'=>RoomType::all()];
 	}
 
 	/**
