@@ -25,7 +25,7 @@
 
     <!--AngularJS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-    <script src="{{ asset('/admins/js/app.js') }}"></script>
+    <script src="{{ asset('/admins/js/angular/app.js') }}"></script>
   </head>
 
 <body class="full-width">

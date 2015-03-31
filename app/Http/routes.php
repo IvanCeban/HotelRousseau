@@ -20,4 +20,5 @@ Route::controllers([
 ]);
 
 Route::get('admin', 'Admin\AdminController@index');
+Route::get('admin/roomsapp','RoomsAppController@index');
 Route::resource('admin/rooms', 'Admin\RoomsController@index');
