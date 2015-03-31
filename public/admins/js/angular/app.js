@@ -16,13 +16,14 @@ app.controller('roomController', function($scope, $http) {
                 $scope.loading = false;
 
             });
-    }
+    };
 
     $scope.addRoom = function() {
         $scope.loading = true;
 
         $http.post('/admin/rooms', {
             title: $scope.room.title,
+            description: $scope.room.description,
             reserved: $scope.room.reserved
         }).success(function(data, status, headers, config) {
             $scope.rooms.push(data);
@@ -42,7 +43,7 @@ app.controller('roomController', function($scope, $http) {
             room = data;
             $scope.loading = false;
 
-        });;
+        });
     };
 
     $scope.deleteRoom = function(index) {
@@ -55,7 +56,7 @@ app.controller('roomController', function($scope, $http) {
                 $scope.rooms.splice(index, 1);
                 $scope.loading = false;
 
-            });;
+            });
     };
 
 
