@@ -22,10 +22,6 @@
       <script src="{{ asset('/admins/js/html5shiv.js') }}"></script>
       <script src="{{ asset('/admins/js/respond.min.js') }}"></script>
     <![endif]-->
-
-    <!--AngularJS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-    <script src="{{ asset('/admins/js/angular/app.js') }}"></script>
   </head>
 
 <body class="full-width">
@@ -125,7 +121,10 @@
     <!--common script for all pages-->
     <script src="{{ asset('/admins/js/common-scripts.js') }}"></script>
 
-
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    s
+    @yield('scripts')
 
 </body>
 </html>

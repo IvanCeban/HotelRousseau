@@ -2,6 +2,9 @@
 @section('title')
     Rooms
 @endsection
+@section('scripts')
+    <script src="{{ asset('/admins/js/angular/room-app.js') }}"></script>
+@endsection
 @section('content')
     <section class="wrapper" ng-app="roomApp" ng-controller="roomController">
         <h1>Rooms</h1>
