@@ -38,7 +38,7 @@
               </button>
 
               <!--logo start-->
-              <a href="{{url('admin')}}" class="logo" >Hotel Rousseau <span>Admin</span></a>
+              <a href="{{url('admin')}}" class="logo" >HR <span>Admin</span></a>
               <!--logo end-->
               <div class="horizontal-menu navbar-collapse collapse ">
                   <ul class="nav navbar-nav">
