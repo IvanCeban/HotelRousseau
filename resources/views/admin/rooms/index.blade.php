@@ -48,7 +48,7 @@
                         <td>
                             <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                             <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-danger btn-xs" ng-click="deleteRoom($index)"><i class="fa fa-trash-o "></i></button>
+                            <button class="btn btn-danger btn-xs" ng-really-message="Are you sure?" ng-really-click="deleteRoom($index)"><i class="fa fa-trash-o "></i></button>
                         </td>
                     </tr>
                     </tbody>

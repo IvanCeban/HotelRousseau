@@ -23,7 +23,7 @@
                 <table class="table table-striped table-advance table-hover">
                     <thead>
                     <tr>
-                        <th><i class="fa fa-bullhorn"></i>Type</th>
+                        <th><i class="fa fa-bullhorn"></i> Type</th>
                         <th width="200"><i class="fa fa-pencil"></i> Edit</th>
                         <th></th>
                     </tr>
@@ -34,7 +34,7 @@
                         <td><input type="text" ng-model="roomType.title" class="form-control"></td>
                         <td>
                             <button class="btn btn-success btn-xs" ng-click="updateRoomType(roomType)"><i class="fa fa-check"></i></button>
-                            <button class="btn btn-danger btn-xs" ng-click="deleteRoomType($index)"><i class="fa fa-trash-o "></i></button>
+                            <button class="btn btn-danger btn-xs" ng-really-message="Are you sure?" ng-really-click="deleteRoomType($index)"><i class="fa fa-trash-o "></i></button>
                         </td>
                     </tr>
                     </tbody>

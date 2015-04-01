@@ -1,9 +1,9 @@
-var app = angular.module('roomApp', [], function($interpolateProvider) {
+var roomApp = angular.module('roomApp', [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
 
-app.controller('roomController', function($scope, $http) {
+roomApp.controller('roomController', function($scope, $http) {
 
     $scope.rooms = [];
     $scope.loading = false;
@@ -67,11 +67,11 @@ app.controller('roomController', function($scope, $http) {
 
 });
 
-var rTApp = angular.module('roomTypeApp', [], function($interpolateProvider) {
+var roomTypeApp = angular.module('roomTypeApp', [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
-rTApp.controller('roomTypeController', function($scope, $http) {
+roomTypeApp.controller('roomTypeController', function($scope, $http) {
 
     $scope.roomTypes = [];
     $scope.loading = false;
@@ -127,3 +127,39 @@ rTApp.controller('roomTypeController', function($scope, $http) {
     $scope.init();
 
 });
+
+/**
+ * A generic confirmation for risky actions.
+ * Usage: Add attributes: ng-really-message="Are you sure"? ng-really-click="takeAction()" function
+ */
+angular.module('roomTypeApp').directive('ngReallyClick', [function() {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            element.bind('click', function() {
+                var message = attrs.ngReallyMessage;
+                if (message && confirm(message)) {
+                    scope.$apply(attrs.ngReallyClick);
+                }
+            });
+        }
+    }
+}]);
+
+/**
+ * A generic confirmation for risky actions.
+ * Usage: Add attributes: ng-really-message="Are you sure"? ng-really-click="takeAction()" function
+ */
+angular.module('roomApp').directive('ngReallyClick', [function() {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            element.bind('click', function() {
+                var message = attrs.ngReallyMessage;
+                if (message && confirm(message)) {
+                    scope.$apply(attrs.ngReallyClick);
+                }
+            });
+        }
+    }
+}]);
