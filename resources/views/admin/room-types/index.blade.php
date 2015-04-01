@@ -24,14 +24,14 @@
                     <thead>
                     <tr>
                         <th><i class="fa fa-bullhorn"></i> Room type</th>
-                        <th><i class="fa fa-pencil"></i> Edit</th>
+                        <th width="200"><i class="fa fa-pencil"></i> Edit</th>
                         <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr ng-repeat='roomType in roomTypes'>
                         <td><a href="#"><% roomType.title %></a></td>
-                        <td><input type="text" ng-model="roomType.title"></td>
+                        <td><input type="text" ng-model="roomType.title" class="form-control"></td>
                         <td>
                             <button class="btn btn-success btn-xs" ng-click="updateRoomType(roomType)"><i class="fa fa-check"></i></button>
                             <button class="btn btn-danger btn-xs" ng-click="deleteRoomType($index)"><i class="fa fa-trash-o "></i></button>
