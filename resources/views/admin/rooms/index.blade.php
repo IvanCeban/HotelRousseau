@@ -3,6 +3,7 @@
     Rooms
 @endsection
 @section('scripts')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="{{ asset('/admins/js/angular/room-app.js') }}"></script>
 @endsection
 @section('content')
@@ -31,7 +32,7 @@
         </section>
         <hr>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <table class="table table-striped table-advance table-hover">
                     <thead>
                     <tr>
@@ -47,15 +48,31 @@
                         <td><a href="#"><% room.title %></a></td>
                         <td class="hidden-phone"><% room.description %></td>
                         <td> - </td>
-                        <td><input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateRoom(room)"></td>
+                        <td><input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)"></td>
                         <td>
-                            <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                            <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                            <button ng-click="setEditedRoom(room);startEditing()" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
                             <button class="btn btn-danger btn-xs" ng-really-message="Are you sure?" ng-really-click="deleteRoom($index)"><i class="fa fa-trash-o "></i></button>
                         </td>
                     </tr>
                     </tbody>
                 </table>
+            </div>
+            <div ng-if="shouldShowEditing()" class="col-md-6">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Editing <% editedRoom.title %>
+                    </header>
+                    <div class="panel-body">
+                        <form role="form" ng-submit="updateRoom(editedRoom)">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" ng-model="editedRoom.title" class="form-control" id="title">
+                            </div>
+                            <button type="submit" class="btn btn-info">Submit</button>
+                            <button class="btn btn-default" ng-click="cancelEditing()">Cancel</button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
