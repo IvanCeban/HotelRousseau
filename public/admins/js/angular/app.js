@@ -99,16 +99,14 @@ rTApp.controller('roomTypeController', function($scope, $http) {
     };
 
     //to do
-    $scope.updateRoom = function(room) {
+    $scope.updateRoomType = function(roomType) {
         $scope.loading = true;
 
-        $http.put('/admin/rooms/' + room.id, {
-            title: room.title,
-            reserved: room.reserved
+        $http.put('/admin/roomtypes/' + roomType.id, {
+            title: roomType.title
         }).success(function(data, status, headers, config) {
-            room = data;
+            roomType = data;
             $scope.loading = false;
-
         });
     };
 
