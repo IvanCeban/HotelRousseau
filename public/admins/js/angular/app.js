@@ -66,3 +66,66 @@ app.controller('roomController', function($scope, $http) {
     $scope.init();
 
 });
+
+var rTApp = angular.module('roomTypeApp', [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('<%');
+    $interpolateProvider.endSymbol('%>');
+});
+rTApp.controller('roomTypeController', function($scope, $http) {
+
+    $scope.roomTypes = [];
+    $scope.loading = false;
+
+    $scope.init = function() {
+        $scope.loading = true;
+        $http.get('/admin/roomtypes').
+            success(function(data, status, headers, config) {
+                $scope.roomTypes = data;
+                $scope.loading = false;
+            });
+    };
+
+    $scope.addRoomType = function() {
+        $scope.loading = true;
+
+        $http.post('/admin/roomtypes', {
+            title: $scope.roomType.title
+        }).success(function(data, status, headers, config) {
+            $scope.roomTypes.push(data);
+            $scope.roomType = '';
+            $scope.loading = false;
+
+        });
+    };
+
+    //to do
+    $scope.updateRoom = function(room) {
+        $scope.loading = true;
+
+        $http.put('/admin/rooms/' + room.id, {
+            title: room.title,
+            reserved: room.reserved
+        }).success(function(data, status, headers, config) {
+            room = data;
+            $scope.loading = false;
+
+        });
+    };
+
+    $scope.deleteRoomType = function(index) {
+        $scope.loading = true;
+
+        var roomType = $scope.roomTypes[index];
+
+        $http.delete('/admin/roomtypes/' + roomType.id)
+            .success(function() {
+                $scope.roomTypes.splice(index, 1);
+                $scope.loading = false;
+
+            });
+    };
+
+
+    $scope.init();
+
+});

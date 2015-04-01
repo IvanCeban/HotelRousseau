@@ -21,5 +21,8 @@ Route::controllers([
 
 Route::get('admin', 'Admin\AdminController@index');
 
-Route::get('admin/roomsapp','Admin\RoomsAppController@index');
+Route::get('admin/roomsapp','Admin\AdminController@rooms');
 Route::resource('admin/rooms', 'Admin\RoomsController');
+
+Route::get('admin/roomtypesapp','Admin\AdminController@roomTypes');
+Route::resource('admin/roomtypes', 'Admin\RoomTypesController');

@@ -25,4 +25,24 @@ class AdminController extends Controller {
         return view('admin.index');
     }
 
+    /**
+     * Show rooms angular entry point
+     *
+     * @return Response
+     */
+    public function rooms()
+    {
+        return view('admin.rooms.index');
+    }
+
+    /**
+     * Show rooms angular entry point
+     *
+     * @return Response
+     */
+    public function roomTypes()
+    {
+        return view('admin.room-types.index');
+    }
+
 }
