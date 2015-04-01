@@ -23,7 +23,7 @@
                 <table class="table table-striped table-advance table-hover">
                     <thead>
                     <tr>
-                        <th><i class="fa fa-bullhorn"></i> Room type</th>
+                        <th><i class="fa fa-bullhorn"></i>Type</th>
                         <th width="200"><i class="fa fa-pencil"></i> Edit</th>
                         <th></th>
                     </tr>
