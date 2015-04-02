@@ -75,6 +75,11 @@
                 </section>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            </div>
+        </div>
 
         <div class="row">
             <script type="text/ng-template" id="myModalContent.html">

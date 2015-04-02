@@ -85,9 +85,6 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.init();
 
-
-    $scope.items = ['item1', 'item2', 'item3'];
-
     $scope.open = function (index, size) {
 
         var modalInstance = $modal.open({
@@ -107,6 +104,21 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             $log.info('Modal dismissed at: ' + new Date());
         });
     };
+
+    $scope.totalItems = 64;
+    $scope.currentPage = 4;
+
+    $scope.setPage = function (pageNo) {
+        $scope.currentPage = pageNo;
+    };
+
+    $scope.pageChanged = function() {
+        $log.log('Page changed to: ' + $scope.currentPage);
+    };
+
+    $scope.maxSize = 5;
+    $scope.bigTotalItems = 175;
+    $scope.bigCurrentPage = 1;
 });
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
