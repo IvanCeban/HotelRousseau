@@ -51,7 +51,7 @@
                         <td><input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)"></td>
                         <td>
                             <button ng-click="setEditedRoom(room);startEditing()" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-danger btn-xs" ng-really-message="Are you sure?" ng-really-click="deleteRoom($index)"><i class="fa fa-trash-o "></i></button>
+                            <button class="btn btn-danger btn-xs" ng-click="open($index)"><i class="fa fa-trash-o "></i></button>
                         </td>
                     </tr>
                     </tbody>
@@ -74,6 +74,21 @@
                     </div>
                 </section>
             </div>
+        </div>
+
+        <div class="row">
+            <script type="text/ng-template" id="myModalContent.html">
+                <div class="modal-header">
+                    <h3 class="modal-title">Warning!</h3>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to remove this room?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()">OK</button>
+                    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                </div>
+            </script>
         </div>
     </section>
 @endsection

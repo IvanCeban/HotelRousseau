@@ -1,9 +1,9 @@
-var roomApp = angular.module('roomApp', [], function($interpolateProvider) {
+var roomApp = angular.module('roomApp', ['ui.bootstrap'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
 
-roomApp.controller('roomController', function($scope, $http) {
+roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.rooms = [];
     $scope.loading = false;
@@ -85,22 +85,40 @@ roomApp.controller('roomController', function($scope, $http) {
 
     $scope.init();
 
+
+    $scope.items = ['item1', 'item2', 'item3'];
+
+    $scope.open = function (index, size) {
+
+        var modalInstance = $modal.open({
+            templateUrl: 'myModalContent.html',
+            controller: 'ModalInstanceCtrl',
+            size: size,
+            resolve: {
+                index: function(){
+                    return index
+                }
+            }
+        });
+
+        modalInstance.result.then(function (index) {
+            $scope.deleteRoom(index);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
 });
 
-/**
- * A generic confirmation for risky actions.
- * Usage: Add attributes: ng-really-message="Are you sure"? ng-really-click="takeAction()" function
- */
-angular.module('roomApp').directive('ngReallyClick', [function() {
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            element.bind('click', function() {
-                var message = attrs.ngReallyMessage;
-                if (message && confirm(message)) {
-                    scope.$apply(attrs.ngReallyClick);
-                }
-            });
-        }
-    }
-}]);
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+
+roomApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, index) {
+
+    $scope.ok = function () {
+        $modalInstance.close(index);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+});
