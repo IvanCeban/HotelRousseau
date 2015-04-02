@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Room;
+use Faker\Factory as Faker;
 
 class RoomsTableSeeder extends Seeder {
 
@@ -12,12 +13,13 @@ class RoomsTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
+		$faker = Faker::create();
 		Room::truncate();
 		// add 1st row
 		for($i=0;$i<200;$i++){
 			Room::create( [
-				'title' => 'RoomTitle',
-				'description' => 'Description',
+				'title' => $faker->word,
+				'description' => $faker->sentence,
 				/*'room_type_id' => 1,
 				'hotel_id' => 1*/
 			]);
