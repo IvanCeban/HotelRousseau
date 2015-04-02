@@ -28,7 +28,11 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         $http.get('/admin/rooms').
             success(function(data, status, headers, config) {
                 $scope.rooms = data['rooms'];
-                //console.log(data['roomTypes']);
+
+                $scope.totalItems = $scope.rooms.length;
+                $scope.itemsPerPage = 10
+                $scope.currentPage = 1;
+                $scope.maxSize = 5;
                 $scope.roomTypes = data['roomTypes'];
                 $scope.roomSelected = $scope.roomTypes[0];
                 $scope.loading = false;
@@ -42,7 +46,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             description: $scope.room.description,
             reserved: $scope.room.reserved
         }).success(function(data, status, headers, config) {
-            $scope.rooms.push(data);
+            $scope.filteredRooms.push(data);
             $scope.room = '';
             $scope.loading = false;
         });
@@ -50,13 +54,13 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.updateRoom = function(room){
         $scope.loading = true;
-        var index = _.findIndex($scope.rooms, function(r){
+        var index = _.findIndex($scope.filteredRooms, function(r){
             return r.id == room.id;
         });
         $http.put('/admin/rooms/' + room.id, {
             title: room.title
         }).success(function(data, status, headers, config) {
-            $scope.rooms[index] = room;
+            $scope.filteredRooms[index] = room;
             $scope.editedRoom = null;
             $scope.isEditing = false;
             $scope.loading = false;
@@ -75,15 +79,24 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.deleteRoom = function(index) {
         $scope.loading = true;
-        var room = $scope.rooms[index];
+        var room = $scope.filteredRooms[index];
         $http.delete('/admin/rooms/' + room.id)
             .success(function() {
-                $scope.rooms.splice(index, 1);
+                $scope.filteredRooms.splice(index, 1);
                 $scope.loading = false;
             });
     };
 
-    $scope.init();
+    $scope.pageCount = function () {
+        return Math.ceil($scope.rooms.length / $scope.itemsPerPage);
+    };
+
+    $scope.$watch('currentPage + itemsPerPage', function() {
+        var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
+            end = begin + $scope.itemsPerPage;
+
+        $scope.filteredRooms = $scope.rooms.slice(begin, end);
+    });
 
     $scope.open = function (index, size) {
 
@@ -105,20 +118,8 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         });
     };
 
-    $scope.totalItems = 64;
-    $scope.currentPage = 4;
+    $scope.init();
 
-    $scope.setPage = function (pageNo) {
-        $scope.currentPage = pageNo;
-    };
-
-    $scope.pageChanged = function() {
-        $log.log('Page changed to: ' + $scope.currentPage);
-    };
-
-    $scope.maxSize = 5;
-    $scope.bigTotalItems = 175;
-    $scope.bigCurrentPage = 1;
 });
 
 // Please note that $modalInstance represents a modal window (instance) dependency.

@@ -44,7 +44,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat='room in rooms'>
+                    <tr ng-repeat='room in filteredRooms'>
                         <td><a href="#"><% room.title %></a></td>
                         <td class="hidden-phone"><% room.description %></td>
                         <td> - </td>
@@ -77,7 +77,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+                <pagination boundary-links="true" total-items="totalItems" max-size="maxSize" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>
             </div>
         </div>
 
