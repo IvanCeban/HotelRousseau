@@ -12,7 +12,7 @@ class UserTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		User::truncate();
+		//User::truncate();
 
 		// add 1st row
 		User::create( [

@@ -6,9 +6,19 @@ var roomApp = angular.module('roomApp', ['ui.bootstrap'], function($interpolateP
 roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.rooms = [];
+    $scope.room = {};
     $scope.loading = false;
     $scope.isEditing = false;
     $scope.editedRoom = null;
+    $scope.alerts = [];
+
+    $scope.addAlert = function(type, msg) {
+        $scope.alerts.push({type: type, msg: msg});
+    };
+
+    $scope.closeAlert = function(index) {
+        $scope.alerts.splice(index, 1);
+    };
 
     $scope.setEditedRoom = function setEditedRoom(room){
         $scope.editedRoom = angular.copy(room);
@@ -28,28 +38,37 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         $http.get('/admin/rooms').
             success(function(data, status, headers, config) {
                 $scope.rooms = data['rooms'];
-
                 $scope.totalItems = $scope.rooms.length;
                 $scope.itemsPerPage = 10
                 $scope.currentPage = 1;
                 $scope.maxSize = 5;
                 $scope.roomTypes = data['roomTypes'];
-                $scope.roomSelected = $scope.roomTypes[0];
+                $scope.indexedRoomTypes = data['indexedRoomTypes'];
+                $scope.roomTypeSelected = {title:'Select room Type'};
                 $scope.loading = false;
             });
     };
 
+    $scope.setRoomTypeSelected = function(roomTypeSelected){
+        $scope.roomTypeSelected = roomTypeSelected;
+    };
+
     $scope.addRoom = function() {
-        $scope.loading = true;
-        $http.post('/admin/rooms', {
-            title: $scope.room.title,
-            description: $scope.room.description,
-            reserved: $scope.room.reserved
-        }).success(function(data, status, headers, config) {
-            $scope.filteredRooms.push(data);
-            $scope.room = '';
-            $scope.loading = false;
-        });
+        if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.roomTypeSelected.id)){
+            $scope.addAlert('danger', 'Please complete all fields!!!');
+        }else{
+            $scope.loading = true;
+            $http.post('/admin/rooms', {
+                title: $scope.room.title,
+                description: $scope.room.description,
+                room_types_id: $scope.roomTypeSelected.id
+            }).success(function(data, status, headers, config) {
+                $scope.filteredRooms.unshift(data);
+                $scope.room = '';
+                $scope.loading = false;
+                $scope.addAlert('success', 'Room saved successfully');
+            });
+        }
     };
 
     $scope.updateRoom = function(room){

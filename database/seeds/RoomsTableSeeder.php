@@ -14,14 +14,14 @@ class RoomsTableSeeder extends Seeder {
 	public function run()
 	{
 		$faker = Faker::create();
-		Room::truncate();
+		//Room::truncate();
 		// add 1st row
 		for($i=0;$i<200;$i++){
 			Room::create( [
 				'title' => $faker->word,
 				'description' => $faker->sentence,
-				/*'room_type_id' => 1,
-				'hotel_id' => 1*/
+				'room_types_id' => rand(1,4)
+				/*'hotels_id' => 1*/
 			]);
 		}
 	}

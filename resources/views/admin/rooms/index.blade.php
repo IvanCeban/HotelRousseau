@@ -9,6 +9,7 @@
 @section('content')
     <section class="wrapper" ng-app="roomApp" ng-controller="roomController">
         <h1>Rooms</h1>
+        <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)"><%alert.msg%></alert>
         <section class="panel">
             <header class="panel-heading">Add new room</header>
             <div class="panel-body">
@@ -21,9 +22,14 @@
                         <input type="text" ng-model="room.description" class="form-control" placeholder="Enter description">
                     </div>
                     <div class="form-group">
-                        <select class="form-control" ng-model="roomSelected"
-                                ng-options="opt as opt.title for opt in roomTypes">
-                        </select>
+                        <div class="btn-group" dropdown is-open="status.isopen">
+                            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                                <% roomTypeSelected.title %> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li ng-repeat="roomType in roomTypes"><a ng-click="setRoomTypeSelected(roomType)"><% roomType.title %></a></li>
+                            </ul>
+                        </div>
                     </div>
                     <button class="btn btn-success" ng-click="addRoom()">Add</button>
                     <i ng-show="loading" class="fa fa-spinner fa-spin"></i>
@@ -47,7 +53,7 @@
                     <tr ng-repeat='room in filteredRooms'>
                         <td><a href="#"><% room.title %></a></td>
                         <td class="hidden-phone"><% room.description %></td>
-                        <td> - </td>
+                        <td> <% indexedRoomTypes[room.room_types_id] %> </td>
                         <td><input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)"></td>
                         <td>
                             <button ng-click="setEditedRoom(room);startEditing()" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>

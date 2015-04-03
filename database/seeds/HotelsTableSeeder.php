@@ -12,7 +12,7 @@ class HotelsTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		Hotel::truncate();
+		//Hotel::truncate();
 
 		// add 1st row
 		Hotel::create( [

@@ -24,7 +24,7 @@ class RoomsController extends Controller {
 	 */
 	public function index()
 	{
-		return ['rooms'=>Room::all(), 'roomTypes'=>RoomType::all()];
+		return ['rooms'=>Room::orderBy('id','desc')->get(), 'roomTypes'=>RoomType::all(), 'indexedRoomTypes'=>RoomType::lists('title', 'id')];
 	}
 
 	/**

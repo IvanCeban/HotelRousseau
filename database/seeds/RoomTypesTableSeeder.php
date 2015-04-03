@@ -12,7 +12,7 @@ class RoomTypesTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		RoomType::truncate();
+		//RoomType::truncate();
 
 		// add 1st row
 		RoomType::create( [
