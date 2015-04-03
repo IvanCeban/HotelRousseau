@@ -15,7 +15,6 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
     $scope.addAlert = function(type, msg) {
         $scope.alerts.push({type: type, msg: msg});
     };
-
     $scope.closeAlert = function(index) {
         $scope.alerts.splice(index, 1);
     };
@@ -39,7 +38,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             success(function(data, status, headers, config) {
                 $scope.rooms = data['rooms'];
                 $scope.totalItems = $scope.rooms.length;
-                $scope.itemsPerPage = 10
+                $scope.itemsPerPage = 10;
                 $scope.currentPage = 1;
                 $scope.maxSize = 5;
                 $scope.roomTypes = data['roomTypes'];
