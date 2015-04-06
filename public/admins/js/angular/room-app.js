@@ -38,7 +38,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             success(function(data, status, headers, config) {
                 $scope.rooms = data['rooms'];
                 $scope.totalItems = $scope.rooms.length;
-                $scope.itemsPerPage = 10;
+                $scope.itemsPerPage = 30;
                 $scope.currentPage = 1;
                 $scope.maxSize = 5;
                 $scope.roomTypes = data['roomTypes'];
