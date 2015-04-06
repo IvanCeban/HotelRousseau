@@ -91,6 +91,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             $scope.filteredRooms[index] = room;
             $scope.editedRoom = null;
             $scope.loading = false;
+            $scope.addAlert('success', 'Room updated successfully');
         });
     };
 
@@ -101,6 +102,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         }).success(function(data, status, headers, config) {
             room = data;
             $scope.loading = false;
+            $scope.addAlert('success', 'Reserved status set successfully');
         });
     };
 

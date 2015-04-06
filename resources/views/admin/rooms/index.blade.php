@@ -15,13 +15,6 @@
             <div class="panel-body">
                 <form class="form-inline" role="form">
                     <div class="form-group">
-                        <label class="sr-only" for="exampleInputEmail2">Title</label>
-                        <input type="text" ng-model="room.title" class="form-control" id="exampleInputEmail2" placeholder="Enter title">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" ng-model="room.description" class="form-control" placeholder="Enter description">
-                    </div>
-                    <div class="form-group">
                         <div class="btn-group" dropdown is-open="status.isopen">
                             <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
                                 <% roomTypeSelected.title %> <span class="caret"></span>
@@ -31,42 +24,55 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail2">Title</label>
+                        <input type="text" ng-model="room.title" class="form-control" id="exampleInputEmail2" placeholder="Enter title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" ng-model="room.description" class="form-control" placeholder="Enter description">
+                    </div>
                     <button class="btn btn-success" ng-click="addRoom()">Add</button>
                     <i ng-show="loading" class="fa fa-spinner fa-spin"></i>
                 </form>
             </div>
         </section>
         <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <table class="table table-striped table-advance table-hover">
-                    <thead>
-                    <tr>
-                        <th><i class="fa fa-bullhorn"></i> Room title</th>
-                        <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
-                        <th><i class="fa fa-bookmark"></i> Room type</th>
-                        <th><i class=" fa fa-edit"></i> Reserved</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr ng-repeat='room in filteredRooms'>
-                        <td><a href="#"><% room.title %></a></td>
-                        <td class="hidden-phone"><% room.description %></td>
-                        <td> <% indexedRoomTypes[room.room_types_id] %> </td>
-                        <td><input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)"></td>
-                        <td>
-                            <button ng-click="setEditedRoom(room);edit(room);" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-danger btn-xs" ng-click="confirmDelete($index)"><i class="fa fa-trash-o "></i></button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+
         <div class="row">
             <div class="col-md-12">
-                <pagination boundary-links="true" total-items="totalItems" max-size="maxSize" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                <div class="text-center">
+                    <pagination boundary-links="true" total-items="totalItems" max-size="maxSize" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6" ng-repeat="room in filteredRooms">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h3><% room.title %> <span class="badge bg-success"><% indexedRoomTypes[room.room_types_id] %></span></h3>
+                                <p><% room.description %></p>
+                                <span class="label label-primary">Reserved</span> : <input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="pull-right">
+                                    <button ng-click="setEditedRoom(room);edit(room);" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</button>
+                                    <button class="btn btn-danger" ng-click="confirmDelete($index)"><i class="fa fa-trash-o "></i> Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <pagination boundary-links="true" total-items="totalItems" max-size="maxSize" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                </div>
             </div>
         </div>
 
