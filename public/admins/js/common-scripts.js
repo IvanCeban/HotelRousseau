@@ -1,3 +1,7 @@
+$("html").mouseover(function() {
+    $("html").getNiceScroll().resize();
+});
+
 /*---LEFT BAR ACCORDION----*/
 $(function() {
     $('#nav-accordion').dcAccordion({
