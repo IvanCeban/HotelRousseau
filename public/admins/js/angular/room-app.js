@@ -63,6 +63,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
                 room_types_id: $scope.roomTypeSelected.id
             }).success(function(data, status, headers, config) {
                 $scope.filteredRooms.unshift(data);
+                $scope.rooms.unshift(data);
                 $scope.room = '';
                 $scope.loading = false;
                 $scope.addAlert('success', 'Room saved successfully');
@@ -112,7 +113,6 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
     $scope.$watch('currentPage + itemsPerPage', function() {
         var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
             end = begin + $scope.itemsPerPage;
-
         $scope.filteredRooms = $scope.rooms.slice(begin, end);
     });
 
