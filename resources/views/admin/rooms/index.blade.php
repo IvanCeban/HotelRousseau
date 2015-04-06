@@ -8,7 +8,6 @@
 @endsection
 @section('content')
     <section class="wrapper" ng-app="roomApp" ng-controller="roomController">
-        <h1>Rooms</h1>
         <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)"><%alert.msg%></alert>
         <div class="row">
             <div class="col-md-6">
@@ -17,7 +16,7 @@
                     <div class="panel-body">
                         <form role="form">
                             <div class="form-group">
-                                <div class="btn-group" dropdown is-open="status.isopen">
+                                <div class="btn-group" dropdown>
                                     <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
                                         <% roomTypeSelected.title %> <span class="caret"></span>
                                     </button>
@@ -27,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" ng-model="room.title" class="form-control" id="exampleInputEmail2" placeholder="Enter title">
+                                <input type="text" ng-model="room.title" class="form-control" id="title" placeholder="Enter title">
                             </div>
                             <div class="form-group">
                                 <textarea ng-model="room.description" rows="3" class="form-control" placeholder="Enter description" id="description"></textarea>
@@ -39,6 +38,7 @@
                 </section>
             </div>
         </div>
+        <h1>Rooms</h1>
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
