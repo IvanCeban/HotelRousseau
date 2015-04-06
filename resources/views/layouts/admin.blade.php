@@ -116,6 +116,10 @@
     <script class="include" type="text/javascript" src="{{ asset('/admins/js/jquery.dcjqaccordion.2.7.js') }}"></script>
     <script src="{{ asset('/admins/js/jquery.scrollTo.min.js') }}"></script>
     <script src="{{ asset('/admins/js/jquery.nicescroll.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('/admins/js/jquery.sparkline.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('/admins/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js') }}"></script>
+    <script src="{{ asset('/admins/js/owl.carousel.js') }}" ></script>
+    <script src="{{ asset('/admins/js/jquery.customSelect.min.js') }}" ></script>
     <script src="{{ asset('/admins/js/respond.min.js') }}" ></script>
 
     <!--common script for all pages-->
