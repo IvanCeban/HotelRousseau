@@ -47,9 +47,7 @@ class RoomsController extends Controller {
 	public function update($id)
 	{
 		$room = Room::find($id);
-		$room->title = Request::input('title');
-		$room->save();
-
+		$room->update(Request::all());
 		return $room;
 	}
 

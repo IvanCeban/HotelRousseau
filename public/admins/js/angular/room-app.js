@@ -8,28 +8,15 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
     $scope.rooms = [];
     $scope.room = {};
     $scope.loading = false;
-    $scope.isEditing = false;
     $scope.editedRoom = null;
     $scope.alerts = [];
 
     $scope.addAlert = function(type, msg) {
+        $scope.alerts = [];
         $scope.alerts.push({type: type, msg: msg});
     };
     $scope.closeAlert = function(index) {
         $scope.alerts.splice(index, 1);
-    };
-
-    $scope.setEditedRoom = function setEditedRoom(room){
-        $scope.editedRoom = angular.copy(room);
-    };
-    $scope.startEditing = function startEditing() {
-        $scope.isEditing = true;
-    };
-    $scope.cancelEditing = function cancelEditing() {
-        $scope.isEditing = false;
-    };
-    $scope.shouldShowEditing = function shouldShowEditing() {
-        return $scope.isEditing;
     };
 
     $scope.init = function() {
@@ -71,17 +58,38 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         }
     };
 
+    $scope.edit = function (room, size) {
+        //console.log($scope.editedRoom);
+        $scope.editedRoom = angular.copy(room);
+        var modalInstance = $modal.open({
+            templateUrl: 'edit.html',
+            controller: 'EditModalInstanceCtrl',
+            size: size,
+            resolve: {
+                editedRoom: function(){
+                    return $scope.editedRoom;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (room) {
+            $scope.updateRoom(room);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
     $scope.updateRoom = function(room){
         $scope.loading = true;
         var index = _.findIndex($scope.filteredRooms, function(r){
             return r.id == room.id;
         });
         $http.put('/admin/rooms/' + room.id, {
-            title: room.title
+            title: room.title,
+            description: room.description
         }).success(function(data, status, headers, config) {
             $scope.filteredRooms[index] = room;
             $scope.editedRoom = null;
-            $scope.isEditing = false;
             $scope.loading = false;
         });
     };
@@ -106,21 +114,11 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             });
     };
 
-    $scope.pageCount = function () {
-        return Math.ceil($scope.rooms.length / $scope.itemsPerPage);
-    };
-
-    $scope.$watch('currentPage + itemsPerPage', function() {
-        var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
-            end = begin + $scope.itemsPerPage;
-        $scope.filteredRooms = $scope.rooms.slice(begin, end);
-    });
-
-    $scope.open = function (index, size) {
+    $scope.confirmDelete = function (index, size) {
 
         var modalInstance = $modal.open({
-            templateUrl: 'myModalContent.html',
-            controller: 'ModalInstanceCtrl',
+            templateUrl: 'confirmDelete.html',
+            controller: 'ConfirmDeleteModalInstanceCtrl',
             size: size,
             resolve: {
                 index: function(){
@@ -136,6 +134,16 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         });
     };
 
+    $scope.pageCount = function () {
+        return Math.ceil($scope.rooms.length / $scope.itemsPerPage);
+    };
+
+    $scope.$watch('currentPage + itemsPerPage', function() {
+        var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
+            end = begin + $scope.itemsPerPage;
+        $scope.filteredRooms = $scope.rooms.slice(begin, end);
+    });
+
     $scope.init();
 
 });
@@ -143,10 +151,22 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-roomApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, index) {
+roomApp.controller('ConfirmDeleteModalInstanceCtrl', function ($scope, $modalInstance, index) {
 
     $scope.ok = function () {
         $modalInstance.close(index);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+});
+
+roomApp.controller('EditModalInstanceCtrl', function ($scope, $modalInstance, editedRoom) {
+
+    $scope.editedRoom = editedRoom;
+    $scope.ok = function () {
+        $modalInstance.close(editedRoom);
     };
 
     $scope.cancel = function () {
