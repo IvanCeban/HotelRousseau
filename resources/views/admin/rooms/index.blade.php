@@ -67,6 +67,16 @@
                 <div class="modal-body">
                     <form role="form">
                         <div class="form-group">
+                            <div class="btn-group" dropdown>
+                                <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                                    <% roomTypeSelected %> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ng-repeat="roomType in roomTypes"><a ng-click="setRoomTypeSelected(roomType)"><% roomType.title %></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="title">Title</label>
                             <input type="text" ng-model="editedRoom.title" class="form-control" id="title">
                         </div>
