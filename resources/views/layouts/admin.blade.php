@@ -13,6 +13,8 @@
     <!--external css-->
     <link href="{{ asset('/admins/assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
 
+    @yield('styles')
+
     <!-- Custom styles for this template -->
     <link href="{{ asset('/admins/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('/admins/css/style-responsive.css') }}" rel="stylesheet" />

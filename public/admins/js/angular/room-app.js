@@ -135,6 +135,27 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         });
     };
 
+    $scope.photos = function (room, size) {
+        $scope.editedRoom = angular.copy(room);
+        var modalInstance = $modal.open({
+            templateUrl: 'photos.html',
+            controller: 'PhotosModalInstanceCtrl',
+            size: size,
+            resolve: {
+                editedRoom: function(){
+                    return $scope.editedRoom;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (room) {
+            //$scope.updateRoom(room);
+            console.log(room);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
     $scope.deleteRoom = function(index) {
         $scope.loading = true;
         var room = $scope.filteredRooms[index];
@@ -224,6 +245,19 @@ roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, roo
 
     $scope.ok = function () {
         $modalInstance.close(room);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+});
+
+roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $modalInstance, editedRoom) {
+
+    $scope.editedRoom = editedRoom;
+
+    $scope.ok = function () {
+        $modalInstance.close(editedRoom);
     };
 
     $scope.cancel = function () {
