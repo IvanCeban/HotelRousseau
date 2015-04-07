@@ -36,7 +36,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-8">
-                                <h3><% room.title %> <span class="badge bg-success"><% indexedRoomTypes[room.room_types_id] %></span></h3>
+                                <h3><% room.title %> <span class="badge bg-success"><% indexedRoomTypes[room.room_type_id] %></span></h3>
                                 <p><% room.description %></p>
                                 <span class="label label-primary">Reserved</span> : <input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)">
                             </div>

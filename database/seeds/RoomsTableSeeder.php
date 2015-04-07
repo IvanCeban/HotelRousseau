@@ -20,7 +20,7 @@ class RoomsTableSeeder extends Seeder {
 			Room::create( [
 				'title' => $faker->word,
 				'description' => $faker->sentence,
-				'room_types_id' => rand(1,4)
+				'room_type_id' => rand(1,4)
 				/*'hotels_id' => 1*/
 			]);
 		}

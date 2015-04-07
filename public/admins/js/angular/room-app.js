@@ -62,14 +62,14 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
 
     $scope.storeRoom = function(room) {
         $scope.room = room;
-        if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.room.room_types_id)){
+        if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.room.room_type_id)){
             $scope.addAlert('danger', 'Please complete all fields!!!');
         }else{
             $scope.loading = true;
             $http.post('/admin/rooms', {
                 title: $scope.room.title,
                 description: $scope.room.description,
-                room_types_id: $scope.room.room_types_id
+                room_type_id: $scope.room.room_type_id
             }).success(function(data, status, headers, config) {
                 $scope.filteredRooms.unshift(data);
                 $scope.rooms.unshift(data);
@@ -115,7 +115,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
         $http.put('/admin/rooms/' + room.id, {
             title: room.title,
             description: room.description,
-            room_types_id: room.room_types_id
+            room_type_id: room.room_type_id
         }).success(function(data, status, headers, config) {
             $scope.filteredRooms[index] = room;
             $scope.editedRoom = null;
@@ -218,9 +218,9 @@ roomApp.controller('EditModalInstanceCtrl', function ($scope, $modalInstance, ed
 
     $scope.editedRoom = editedRoom;
     $scope.roomTypes = roomTypes;
-    $scope.roomTypeSelected = indexedRoomTypes[editedRoom.room_types_id];
+    $scope.roomTypeSelected = indexedRoomTypes[editedRoom.room_type_id];
     $scope.setRoomTypeSelected = function(roomTypeSelected){
-        $scope.editedRoom.room_types_id = roomTypeSelected.id;
+        $scope.editedRoom.room_type_id = roomTypeSelected.id;
         $scope.roomTypeSelected = roomTypeSelected.title;
     };
     $scope.ok = function () {
@@ -239,7 +239,7 @@ roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, roo
     $scope.roomTypes = roomTypes;
 
     $scope.setRoomTypeSelected = function(roomTypeSelected){
-        $scope.room.room_types_id = roomTypeSelected.id;
+        $scope.room.room_type_id = roomTypeSelected.id;
         $scope.roomTypeSelected = roomTypeSelected;
     };
 

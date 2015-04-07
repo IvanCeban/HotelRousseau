@@ -12,9 +12,11 @@ class CreateRoomPhotosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('room_photos', function(Blueprint $table)
+		Schema::create('room_photos', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('room_id')->unsigned();
+			$table->foreign('room_id')->references('id')->on('rooms');
 			$table->string('path');
 			$table->timestamps();
 		});
@@ -27,10 +29,7 @@ class CreateRoomPhotosTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('room_photos', function(Blueprint $table)
-		{
-			//
-		});
+		Schema::drop('room_photos');
 	}
 
 }
