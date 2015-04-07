@@ -35,19 +35,41 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             });
     };
 
-    $scope.setRoomTypeSelected = function(roomTypeSelected){
-        $scope.roomTypeSelected = roomTypeSelected;
+    $scope.add = function (size) {
+        var modalInstance = $modal.open({
+            templateUrl: 'add.html',
+            controller: 'AddModalInstanceCtrl',
+            size: size,
+            resolve: {
+                room: function(){
+                    return $scope.room;
+                },
+                roomTypeSelected: function(){
+                    return $scope.roomTypeSelected;
+                },
+                roomTypes: function(){
+                    return $scope.roomTypes;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (room) {
+            $scope.addRoom(room);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
     };
 
-    $scope.addRoom = function() {
-        if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.roomTypeSelected.id)){
+    $scope.addRoom = function(room) {
+        $scope.room = room;
+        if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.room.room_types_id)){
             $scope.addAlert('danger', 'Please complete all fields!!!');
         }else{
             $scope.loading = true;
             $http.post('/admin/rooms', {
                 title: $scope.room.title,
                 description: $scope.room.description,
-                room_types_id: $scope.roomTypeSelected.id
+                room_types_id: $scope.room.room_types_id
             }).success(function(data, status, headers, config) {
                 $scope.filteredRooms.unshift(data);
                 $scope.rooms.unshift(data);
@@ -169,6 +191,25 @@ roomApp.controller('EditModalInstanceCtrl', function ($scope, $modalInstance, ed
     $scope.editedRoom = editedRoom;
     $scope.ok = function () {
         $modalInstance.close(editedRoom);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+});
+
+roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, room, roomTypeSelected, roomTypes) {
+
+    $scope.room = room;
+    $scope.roomTypeSelected = roomTypeSelected;
+    $scope.roomTypes = roomTypes;
+
+    $scope.setRoomTypeSelected = function(roomTypeSelected){
+        $scope.room.room_types_id = roomTypeSelected.id;
+    };
+
+    $scope.ok = function () {
+        $modalInstance.close(room);
     };
 
     $scope.cancel = function () {
