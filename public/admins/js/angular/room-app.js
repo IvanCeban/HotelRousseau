@@ -1,10 +1,9 @@
-var roomApp = angular.module('roomApp', ['ui.bootstrap'], function($interpolateProvider) {
+var roomApp = angular.module('roomApp', ['ui.bootstrap', 'angularFileUpload'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
 
-roomApp.controller('roomController', function($scope, $http, $modal, $log) {
-
+roomApp.controller('roomController', function($scope, $http, $modal, $log, $upload) {
     $scope.rooms = [];
     $scope.room = {};
     $scope.loading = false;
@@ -144,6 +143,9 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log) {
             resolve: {
                 editedRoom: function(){
                     return $scope.editedRoom;
+                },
+                upload: function(){
+                    return $upload;
                 }
             }
         });
@@ -252,7 +254,29 @@ roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, roo
     };
 });
 
-roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $modalInstance, editedRoom) {
+roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $modalInstance, editedRoom, $upload) {
+
+    $scope.$watch('files', function () {
+        $scope.upload($scope.files);
+    });
+
+    $scope.upload = function (files) {
+        if (files && files.length) {
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                $upload.upload({
+                    url: '/admin/room/photos',
+                    fields: {'username': $scope.username},
+                    file: file
+                }).progress(function (evt) {
+                    var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                    console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
+                }).success(function (data, status, headers, config) {
+                    console.log('file ' + config.file.name + 'uploaded. Response: ' + data);
+                });
+            }
+        }
+    };
 
     $scope.editedRoom = editedRoom;
 

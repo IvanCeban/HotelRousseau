@@ -7,6 +7,8 @@
     <script src="{{ asset('/admins/js/modernizr.custom.js') }}"></script>
     <script src="{{ asset('/admins/js/toucheffects.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="{{ asset('/admins/js/angular/ng-file-upload-bower-3.2.4/angular-file-upload-shim.js') }}"></script>
+    <script src="{{ asset('/admins/js/angular/ng-file-upload-bower-3.2.4/angular-file-upload.js') }}"></script>
     <script src="{{ asset('/admins/js/angular/room-app.js') }}"></script>
     <script type="text/javascript">
         $(function() {
@@ -143,6 +145,16 @@
                         <header class="panel-heading">
                             Photos Gallery
                         </header>
+                        <div style="border: 1px solid red;">
+                            watching model:
+                            <div class="button" ng-file-select ng-model="files">Upload using model $watch</div>
+                            <div class="button" ng-file-select ng-file-change="upload($files)">Upload on file change</div>
+                            Drop File:
+                            <div ng-file-drop ng-model="files" class="drop-box"
+                                 drag-over-class="dragover" ng-multiple="true" allow-dir="true"
+                                 accept=".jpg,.png,.pdf">Drop Images or PDFs files here</div>
+                            <div ng-no-file-drop>File Drag/Drop is not supported for this browser</div>
+                        </div>
                         <div class="panel-body">
                             <ul class="grid cs-style-3">
                                 <li>

@@ -18,6 +18,8 @@ class CreateRoomPhotosTable extends Migration {
 			$table->integer('room_id')->unsigned();
 			$table->foreign('room_id')->references('id')->on('rooms');
 			$table->string('path');
+			$table->string('mime');
+			$table->string('original_filename');
 			$table->timestamps();
 		});
 	}

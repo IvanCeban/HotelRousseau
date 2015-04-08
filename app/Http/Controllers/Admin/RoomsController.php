@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\Controller;
 use App\Room;
+use App\RoomPhoto;
 use App\RoomType;
 use Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class RoomsController extends Controller {
 
@@ -60,6 +63,24 @@ class RoomsController extends Controller {
 	public function destroy($id)
 	{
 		Room::destroy($id);
+	}
+
+	/**
+	 * Save uploaded photos
+	 *
+	 * @return Response
+	 */
+	public function photos(){
+		$file = Request::file('file');
+		$extension = $file->getClientOriginalExtension();
+		Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+		$entry = new RoomPhoto();
+		$entry->room_id = 1;
+		$entry->mime = $file->getClientMimeType();
+		$entry->original_filename = $file->getClientOriginalName();
+		$entry->path = $file->getFilename().'.'.$extension;
+		$entry->save();
+		return $entry;
 	}
 
 }
