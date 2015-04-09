@@ -154,7 +154,7 @@
                             <ul class="grid cs-style-3">
                                 <li ng-repeat="file in newFiles">
                                     <figure>
-                                        <img src="/<% file.path %>">
+                                        <img ng-src="/<% file.path %>">
                                         <figcaption>
                                             <h3>Mindblowing</h3>
                                             <span>lorem ipsume </span>
@@ -164,7 +164,7 @@
                                 </li>
                                 <li ng-repeat="existentFile in existentFiles">
                                     <figure>
-                                        <img src="/<% existentFile.path %>" alt="img04">
+                                        <img ng-src="/<% existentFile.path %>" alt="img04">
                                         <figcaption>
                                             <h3>Mindblowing</h3>
                                             <span>lorem ipsume </span>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" ng-click="ok()">Save</button>
-                    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                    {{--<button class="btn btn-warning" ng-click="cancel()">Cancel</button>--}}
                 </div>
             </script>
         </div>
