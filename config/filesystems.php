@@ -45,7 +45,7 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => public_path().'/rooms',
+			'root'   => public_path(),
 		],
 
 		's3' => [

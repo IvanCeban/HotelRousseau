@@ -22,6 +22,7 @@ Route::controllers([
 Route::get('admin', 'Admin\AdminController@index');
 
 Route::get('admin/roomsapp','Admin\AdminController@rooms');
+Route::get('admin/room/photos/{id}', 'Admin\RoomsController@getPhotos');
 Route::post('admin/room/photos', 'Admin\RoomsController@photos');
 Route::resource('admin/rooms', 'Admin\RoomsController');
 

@@ -254,7 +254,24 @@ roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, roo
     };
 });
 
-roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $modalInstance, editedRoom, $upload) {
+roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $http, $modalInstance, editedRoom, $upload) {
+
+    $scope.editedRoom = editedRoom;
+
+    $http.get('/admin/room/photos/'+$scope.editedRoom.id).
+        success(function(data, status, headers, config) {
+            $scope.existentFiles = data;
+        });
+
+    $scope.newFiles = [];
+
+    $scope.ok = function () {
+        $modalInstance.close(editedRoom);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
 
     $scope.$watch('files', function () {
         $scope.upload($scope.files);
@@ -266,25 +283,18 @@ roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $modalInstance, 
                 var file = files[i];
                 $upload.upload({
                     url: '/admin/room/photos',
-                    fields: {'username': $scope.username},
+                    fields: {'roomId': $scope.editedRoom.id},
                     file: file
                 }).progress(function (evt) {
                     var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
                     console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
                 }).success(function (data, status, headers, config) {
-                    console.log('file ' + config.file.name + 'uploaded. Response: ' + data);
+                    file.path = data.path;
+                    $scope.newFiles.push(file);
+                    console.log(file);
+                    //console.log('file ' + config.file.name + ' uploaded. Response: ' + data);
                 });
             }
         }
-    };
-
-    $scope.editedRoom = editedRoom;
-
-    $scope.ok = function () {
-        $modalInstance.close(editedRoom);
-    };
-
-    $scope.cancel = function () {
-        $modalInstance.dismiss('cancel');
     };
 });

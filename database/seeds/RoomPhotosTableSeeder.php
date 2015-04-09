@@ -12,12 +12,12 @@ class RoomPhotosTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		for($i=0; $i<800; $i++){
+		/*for($i=0; $i<800; $i++){
 			RoomPhoto::create([
 				'room_id' => DB::table('rooms')->orderBy(DB::raw('RAND()'))->first()->id,
 				'path'=> '/admins/img/gallery/'.rand(1,5).'.jpg'
 			]);
-		}
+		}*/
 	}
 
 }

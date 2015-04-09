@@ -66,6 +66,16 @@ class RoomsController extends Controller {
 	}
 
 	/**
+	 * Get all photos of a given room
+	 *
+	 * @param int $id
+	 * @return Response
+	 */
+	public function getPhotos($id){
+		return Room::find($id)->photos;
+	}
+
+	/**
 	 * Save uploaded photos
 	 *
 	 * @return Response
@@ -73,12 +83,13 @@ class RoomsController extends Controller {
 	public function photos(){
 		$file = Request::file('file');
 		$extension = $file->getClientOriginalExtension();
-		Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+		$filePath = 'rooms/'.Request::get('roomId').'/';
+		Storage::disk('local')->put($filePath.$file->getFilename().'.'.$extension,  File::get($file));
 		$entry = new RoomPhoto();
-		$entry->room_id = 1;
+		$entry->room_id = Request::get('roomId');
 		$entry->mime = $file->getClientMimeType();
 		$entry->original_filename = $file->getClientOriginalName();
-		$entry->path = $file->getFilename().'.'.$extension;
+		$entry->path = $filePath.$file->getFilename().'.'.$extension;
 		$entry->save();
 		return $entry;
 	}

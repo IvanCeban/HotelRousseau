@@ -145,21 +145,16 @@
                         <header class="panel-heading">
                             Photos Gallery
                         </header>
-                        <div style="border: 1px solid red;">
-                            watching model:
-                            <div class="button" ng-file-select ng-model="files">Upload using model $watch</div>
-                            <div class="button" ng-file-select ng-file-change="upload($files)">Upload on file change</div>
-                            Drop File:
-                            <div ng-file-drop ng-model="files" class="drop-box"
-                                 drag-over-class="dragover" ng-multiple="true" allow-dir="true"
-                                 accept=".jpg,.png,.pdf">Drop Images or PDFs files here</div>
-                            <div ng-no-file-drop>File Drag/Drop is not supported for this browser</div>
-                        </div>
                         <div class="panel-body">
+                            <button ng-multiple="true" ng-file-select ng-model="files" class="btn btn-primary">Add new photo</button>
+                            {{--<div ng-show="allFiles.lenght" ng-repeat="file in allFiles">
+                                <img src="/rooms/<% file.path %>">
+                            </div>--}}
+
                             <ul class="grid cs-style-3">
-                                <li>
+                                <li ng-repeat="file in newFiles">
                                     <figure>
-                                        <img src="/admins/img/gallery/4.jpg" alt="img04">
+                                        <img src="/<% file.path %>">
                                         <figcaption>
                                             <h3>Mindblowing</h3>
                                             <span>lorem ipsume </span>
@@ -167,52 +162,12 @@
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li>
+                                <li ng-repeat="file in existentFiles">
                                     <figure>
-                                        <img src="/admins/img/gallery/1.jpg" alt="img01">
+                                        <img src="/<% file.path %>" alt="img04">
                                         <figcaption>
-                                            <h3>Clean & Fresh</h3>
-                                            <span>dolor ament</span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/1.jpg">Take a look</a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/admins/img/gallery/2.jpg" alt="img02">
-                                        <figcaption>
-                                            <h3>Flat Concept</h3>
-                                            <span>tawseef tasi</span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/2.jpg">Take a look</a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/admins/img/gallery/5.jpg" alt="img05">
-                                        <figcaption>
-                                            <h3>Modern</h3>
-                                            <span>dkmosa inc</span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/5.jpg">Take a look</a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/admins/img/gallery/6.jpg" alt="img06">
-                                        <figcaption>
-                                            <h3>Cheers</h3>
-                                            <span>sumon ahmed</span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/6.jpg">Take a look</a>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/admins/img/gallery/4.jpg" alt="img04">
-                                        <figcaption>
-                                            <h3>Freshness</h3>
-                                            <span>rerum facilis </span>
+                                            <h3>Mindblowing</h3>
+                                            <span>lorem ipsume </span>
                                             <a class="fancybox" rel="group" href="/admins/img/gallery/4.jpg">Take a look</a>
                                         </figcaption>
                                     </figure>
