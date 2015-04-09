@@ -286,12 +286,11 @@ roomApp.controller('PhotosModalInstanceCtrl', function ($scope, $http, $modalIns
                     fields: {'roomId': $scope.editedRoom.id},
                     file: file
                 }).progress(function (evt) {
-                    var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-                    console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
+                    //var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                    //console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
                 }).success(function (data, status, headers, config) {
-                    file.path = data.path;
-                    $scope.newFiles.push(file);
-                    console.log(file);
+                    $scope.newFiles.push(data);
+                    //console.log($scope.newFiles);
                     //console.log('file ' + config.file.name + ' uploaded. Response: ' + data);
                 });
             }

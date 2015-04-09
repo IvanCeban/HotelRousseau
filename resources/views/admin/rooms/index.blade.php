@@ -146,7 +146,7 @@
                             Photos Gallery
                         </header>
                         <div class="panel-body">
-                            <button ng-multiple="true" ng-file-select ng-model="files" class="btn btn-primary">Add new photo</button>
+                            <button ng-multiple="true" ng-file-select ng-model="files" class="btn btn-primary">Add new photos</button>
                             {{--<div ng-show="allFiles.lenght" ng-repeat="file in allFiles">
                                 <img src="/rooms/<% file.path %>">
                             </div>--}}
@@ -158,17 +158,17 @@
                                         <figcaption>
                                             <h3>Mindblowing</h3>
                                             <span>lorem ipsume </span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/4.jpg">Take a look</a>
+                                            <a class="fancybox" rel="group" href="#">Take a look</a>
                                         </figcaption>
                                     </figure>
                                 </li>
-                                <li ng-repeat="file in existentFiles">
+                                <li ng-repeat="existentFile in existentFiles">
                                     <figure>
-                                        <img src="/<% file.path %>" alt="img04">
+                                        <img src="/<% existentFile.path %>" alt="img04">
                                         <figcaption>
                                             <h3>Mindblowing</h3>
                                             <span>lorem ipsume </span>
-                                            <a class="fancybox" rel="group" href="/admins/img/gallery/4.jpg">Take a look</a>
+                                            <a class="fancybox" rel="group" href="#">Take a look</a>
                                         </figcaption>
                                     </figure>
                                 </li>
