@@ -202,9 +202,6 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log, $uplo
 
 });
 
-// Please note that $modalInstance represents a modal window (instance) dependency.
-// It is not the same as the $modal service used above.
-
 roomApp.controller('ConfirmDeleteModalInstanceCtrl', function ($scope, $modalInstance, index) {
 
     $scope.ok = function () {
