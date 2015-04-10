@@ -6,6 +6,9 @@
     <script src="{{ asset('/admins/assets/fancybox/source/jquery.fancybox.js') }}"></script>
     <script src="{{ asset('/admins/js/modernizr.custom.js') }}"></script>
     <script src="{{ asset('/admins/js/toucheffects.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/admins/js/jquery.pulsate.min.js') }}"></script>
+    <script src="{{ asset('/admins/js/gritter.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('/admins/js/pulstate.js') }}" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="{{ asset('/admins/js/angular/ng-file-upload-bower-3.2.4/angular-file-upload-shim.js') }}"></script>
     <script src="{{ asset('/admins/js/angular/ng-file-upload-bower-3.2.4/angular-file-upload.js') }}"></script>
@@ -19,6 +22,7 @@
 @section('styles')
     <link href="{{ asset('/admins/assets/fancybox/source/jquery.fancybox.css') }}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/admins/css/gallery.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/admins/assets/gritter/css/jquery.gritter.css') }}" />
 @endsection
 @section('content')
     <section class="wrapper" ng-app="roomApp" ng-controller="roomController">
