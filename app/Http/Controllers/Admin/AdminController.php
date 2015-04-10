@@ -45,4 +45,14 @@ class AdminController extends Controller {
         return view('admin.room-types.index');
     }
 
+    /**
+     * Show profile angular entry point
+     *
+     * @return Response
+     */
+    public function profile()
+    {
+        return view('admin.profile.index');
+    }
+
 }
