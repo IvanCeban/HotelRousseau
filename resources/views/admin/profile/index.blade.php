@@ -61,15 +61,15 @@
                             </div>
                             <div class="form-group">
                                 <label>Old password</label>
-                                <input type="password" class="form-control" placeholder="Enter old password">
+                                <input type="password" class="form-control" ng-model="user.oldPassword" placeholder="Enter old password">
                             </div>
                             <div class="form-group">
                                 <label>New password</label>
-                                <input type="password" class="form-control" placeholder="Enter new password">
+                                <input type="password" class="form-control" ng-model="user.newPassword" placeholder="Enter new password">
                             </div>
                             <div class="form-group">
                                 <label>Retype new password</label>
-                                <input type="password" class="form-control" placeholder="Retype new password">
+                                <input type="password" class="form-control" ng-model="user.confirmPassword" placeholder="Retype new password">
                             </div>
                             <button ng-click="updateProfile()" class="btn btn-info">Update</button>
                         </form>

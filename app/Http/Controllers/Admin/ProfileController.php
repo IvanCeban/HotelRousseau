@@ -53,17 +53,6 @@ class ProfileController extends Controller {
 		return $user;
 	}
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		Room::destroy($id);
-	}
-
 
 	/**
 	 * Save uploaded photos
