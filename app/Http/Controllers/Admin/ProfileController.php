@@ -1,14 +1,13 @@
 <?php namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Room;
-use App\RoomPhoto;
-use App\RoomType;
 use Request;
+use App\User;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Auth;
 
-class RoomsController extends Controller {
+class ProfileController extends Controller {
 
     /**
      * Create a new controller instance.
@@ -27,7 +26,7 @@ class RoomsController extends Controller {
 	 */
 	public function index()
 	{
-		return ['rooms'=>Room::orderBy('id','desc')->get(), 'roomTypes'=>RoomType::all(), 'indexedRoomTypes'=>RoomType::lists('title', 'id')];
+		return ['user'=> Auth::user()];
 	}
 
 	/**
@@ -49,9 +48,9 @@ class RoomsController extends Controller {
 	 */
 	public function update($id)
 	{
-		$room = Room::find($id);
-		$room->update(Request::all());
-		return $room;
+		$user = User::find($id);
+		$user->update(Request::all());
+		return $user;
 	}
 
 	/**
@@ -65,31 +64,19 @@ class RoomsController extends Controller {
 		Room::destroy($id);
 	}
 
-	/**
-	 * Get all photos of a given room
-	 *
-	 * @param int $id
-	 * @return Response
-	 */
-	public function getPhotos($id){
-		return Room::find($id)->photos;
-	}
 
 	/**
 	 * Save uploaded photos
 	 *
 	 * @return Response
 	 */
-	public function uploadPhotos(){
+	public function uploadPhoto(){
 		$file = Request::file('file');
 		$extension = $file->getClientOriginalExtension();
-		$filePath = 'rooms/'.Request::get('roomId').'/';
+		$filePath = 'profiles/'.Request::get('userId').'/';
 		Storage::disk('local')->put($filePath.$file->getFilename().'.'.$extension,  File::get($file));
-		$entry = new RoomPhoto();
-		$entry->room_id = Request::get('roomId');
-		$entry->mime = $file->getClientMimeType();
-		$entry->original_filename = $file->getClientOriginalName();
-		$entry->path = $filePath.$file->getFilename().'.'.$extension;
+		$entry = User::find(Request::get('userId'));
+		$entry->photo = $filePath.$file->getFilename().'.'.$extension;
 		$entry->save();
 		return $entry;
 	}

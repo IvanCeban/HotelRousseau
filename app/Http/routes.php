@@ -22,10 +22,12 @@ Route::controllers([
 Route::get('admin', 'Admin\AdminController@index');
 
 Route::get('admin/profileapp', 'Admin\AdminController@profile');
+Route::post('admin/profile/photo', 'Admin\ProfileController@uploadPhoto');
+Route::resource('admin/profile', 'Admin\ProfileController');
 
 Route::get('admin/roomsapp','Admin\AdminController@rooms');
 Route::get('admin/room/photos/{id}', 'Admin\RoomsController@getPhotos');
-Route::post('admin/room/photos', 'Admin\RoomsController@photos');
+Route::post('admin/room/photos', 'Admin\RoomsController@uploadPhotos');
 Route::resource('admin/rooms', 'Admin\RoomsController');
 
 Route::get('admin/roomtypesapp','Admin\AdminController@roomTypes');

@@ -151,10 +151,6 @@
                         </header>
                         <div class="panel-body">
                             <button ng-multiple="true" ng-file-select ng-model="files" class="btn btn-primary">Add new photos</button>
-                            {{--<div ng-show="allFiles.lenght" ng-repeat="file in allFiles">
-                                <img src="/rooms/<% file.path %>">
-                            </div>--}}
-
                             <ul class="grid cs-style-3">
                                 <li ng-repeat="file in newFiles">
                                     <figure>

@@ -8,19 +8,22 @@
 @section('content')
     <section class="wrapper" ng-app="roomTypeApp" ng-controller="roomTypeController">
         <h1>Room types</h1>
-        <section class="panel">
-            <header class="panel-heading">Add new room type</header>
-            <div class="panel-body">
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <input type="text" ng-model="roomType.title" class="form-control" placeholder="Enter title">
+        <div class="row">
+            <div class="col-md-3">
+                <section class="panel">
+                    <header class="panel-heading">Add new room type</header>
+                    <div class="panel-body">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input type="text" ng-model="roomType.title" class="form-control" placeholder="Enter title">
+                            </div>
+                            <button class="btn btn-success" ng-click="addRoomType()">Add</button>
+                            <i ng-show="loading" class="fa fa-spinner fa-spin"></i>
+                        </form>
                     </div>
-                    <button class="btn btn-success" ng-click="addRoomType()">Add</button>
-                    <i ng-show="loading" class="fa fa-spinner fa-spin"></i>
-                </form>
+                </section>
             </div>
-        </section>
-        <hr>
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <table class="table table-striped table-advance table-hover">
