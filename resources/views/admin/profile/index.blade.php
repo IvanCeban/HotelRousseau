@@ -35,7 +35,7 @@
                         </div>
                     </header>
                     <div class="panel-body">
-                        <img ng-src="/<% user.photo %>" width="150">
+                        <img ng-src="/<% user.photo != '' && user.photo || 'admins/img/no-photo-available-hi.png' %>" width="150">
                         <button ng-file-select ng-model="files" class="btn btn-primary"><i class="fa fa-upload"></i></button>
                         <h4>Name: <strong><% user.name %></strong></h4>
                         <h4>Email: <strong><% user.email %></strong></h4>

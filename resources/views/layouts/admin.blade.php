@@ -69,7 +69,7 @@
                       <!-- user login dropdown start-->
                       <li class="dropdown">
                           <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                              <img alt="" height="29" src="/{{ Auth::user()->photo }}">
+                              <img height="29" alt="" src="/{{ !empty(Auth::user()->photo) ? Auth::user()->photo : 'admins/img/no-photo-available-hi.png' }}">
                               <span class="username">{{ Auth::user()->name }}</span>
                               <b class="caret"></b>
                           </a>

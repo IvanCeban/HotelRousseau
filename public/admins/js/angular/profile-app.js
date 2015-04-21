@@ -67,6 +67,7 @@ profileApp.controller('profileController', function($scope, $http, $modal, $log,
                     //console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
                 }).success(function (data, status, headers, config) {
                     $scope.user = data;
+                    $scope.addAlert('success', 'Profile image uploaded successfully');
                     //$scope.newFiles.push(data);
                     //console.log($scope.newFiles);
                     //console.log('file ' + config.file.name + ' uploaded. Response: ' + data);
