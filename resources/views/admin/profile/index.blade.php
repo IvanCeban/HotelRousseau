@@ -24,7 +24,7 @@
 @endsection
 @section('content')
     <section class="wrapper" ng-app="profileApp" ng-controller="profileController">
-        <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)"><%alert.msg%></alert>
+        <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)" style="white-space: pre;"><%alert.msg%></alert>
         <div class="row">
             <div class="col-md-3">
                 <section ng-show="shouldShowViewing()" class="panel">
@@ -65,11 +65,11 @@
                             </div>
                             <div class="form-group">
                                 <label>New password</label>
-                                <input type="password" class="form-control" ng-model="user.newPassword" placeholder="Enter new password">
+                                <input type="password" class="form-control" ng-model="user.password" placeholder="Enter new password">
                             </div>
                             <div class="form-group">
                                 <label>Retype new password</label>
-                                <input type="password" class="form-control" ng-model="user.confirmPassword" placeholder="Retype new password">
+                                <input type="password" class="form-control" ng-model="user.password_confirmation" placeholder="Retype new password">
                             </div>
                             <button ng-click="updateProfile()" class="btn btn-info">Update</button>
                         </form>

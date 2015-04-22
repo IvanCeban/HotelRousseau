@@ -3,9 +3,11 @@
 use App\Http\Controllers\Controller;
 use Request;
 use App\User;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Auth;
+use Storage;
+use File;
+use Auth;
+use Hash;
+use Validator;
 
 class ProfileController extends Controller {
 
@@ -48,9 +50,24 @@ class ProfileController extends Controller {
 	 */
 	public function update($id)
 	{
-		$user = User::find($id);
+        $user = User::find($id);
+        if (Request::get('oldPassword') != '' && !Hash::check(Request::get('oldPassword'), $user->password))
+        {
+            return ['status'=> 'error', 'messages'=>['oldPassword' => ['Old password not correct']]];
+        }
+        $validator = Validator::make(Request::all(),
+            [
+                'name' => 'required|max:255',
+                'email' => 'required|email|max:255|unique:users,email,'.$id,
+                'password' => 'confirmed|min:6',
+            ]
+        );
+        if ($validator->fails())
+        {
+            return ['status'=> 'error', 'messages'=>$validator->messages()];;
+        }
 		$user->update(Request::all());
-		return $user;
+		return ['status'=> 'success', 'user'=>$user];
 	}
 
 

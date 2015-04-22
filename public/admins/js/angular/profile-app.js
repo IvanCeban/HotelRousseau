@@ -44,9 +44,19 @@ profileApp.controller('profileController', function($scope, $http, $modal, $log,
     $scope.updateProfile = function(){
         $http.put('/admin/profile/'+$scope.user.id, $scope.user).
             success(function(data, status, headers, config){
-                //console.log(data);
-                $scope.addAlert('success', 'Profile updated successfully');
-                $scope.startViewing();
+                if(data['status'] == 'error'){
+                    var messages = '';
+                    angular.forEach(data['messages'], function(value, key) {
+                        angular.forEach(value, function(v, k) {
+                            messages += v + '\n';
+                        });
+                    });
+                    $scope.addAlert('danger', messages);
+                }else if(data['status'] == 'success'){
+                    $scope.addAlert('success', 'Profile updated successfully');
+                    $scope.startViewing();
+                }
+
             });
     };
 
