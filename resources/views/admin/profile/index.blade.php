@@ -24,7 +24,7 @@
 @endsection
 @section('content')
     <section class="wrapper" ng-app="profileApp" ng-controller="profileController">
-        <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)" style="white-space: pre;"><%alert.msg%></alert>
+        <alert ng-repeat="alert in alerts" type="<%alert.type%>" close="closeAlert($index)"><div style="white-space: pre;"><%alert.msg%></div></alert>
         <div class="row">
             <div class="col-md-3">
                 <section ng-show="shouldShowViewing()" class="panel">
