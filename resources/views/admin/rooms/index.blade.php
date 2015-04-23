@@ -115,68 +115,75 @@
                 </div>
                 <div class="modal-body">
                     <form role="form">
-                        <div class="form-group">
-                            <div class="btn-group" dropdown>
-                                <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-                                    <% roomTypeSelected.title %> <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li ng-repeat="roomType in roomTypes"><a ng-click="setRoomTypeSelected(roomType)"><% roomType.title %></a></li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="btn-group" dropdown>
+                                        <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                                            <% roomTypeSelected.title %> <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li ng-repeat="roomType in roomTypes"><a ng-click="setRoomTypeSelected(roomType)"><% roomType.title %></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" ng-model="room.title" class="form-control" id="title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea rows="5" ng-model="room.description" class="form-control" id="description"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rooms_count">Rooms count</label>
+                                    <input type="text" ng-model="room.rooms_count" class="form-control" id="rooms_count">
+                                </div>
+                                <div class="form-group">
+                                    <label for="number_of_people">Number of people</label>
+                                    <input type="text" ng-model="room.number_of_people" class="form-control" id="number_of_people">
+                                </div>
+                                <div class="form-group">
+                                    <label for="surface">Surface</label>
+                                    <input type="text" ng-model="room.surface" class="form-control" id="surface">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="price_construction">Price construction</label>
+                                    <input type="text" ng-model="room.price_construction" class="form-control" id="price_construction">
+                                </div>
+                                <div class="form-group">
+                                    <label for="price_production">Price production</label>
+                                    <input type="text" ng-model="room.price_production" class="form-control" id="price_production">
+                                </div>
+                                <div class="form-group">
+                                    <label for="price_cost">Price cost</label>
+                                    <input type="text" ng-model="room.price_cost" class="form-control" id="price_cost">
+                                </div>
+                                <div class="form-group">
+                                    <label for="price_rack">Price rack</label>
+                                    <input type="text" ng-model="room.price_rack" class="form-control" id="price_rack">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bed_kids">Bed kids</label>
+                                    <input type="text" ng-model="room.bed_kids" class="form-control" id="bed_kids">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bed_camp">Bed camp</label>
+                                    <input type="text" ng-model="room.bed_camp" class="form-control" id="bed_camp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bed_additional">Bed additional</label>
+                                    <input type="text" ng-model="room.bed_additional" class="form-control" id="bed_additional">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bed_total_additional">Bed total additional</label>
+                                    <input type="text" ng-model="room.bed_total_additional" class="form-control" id="bed_total_additional">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="text" ng-model="room.title" class="form-control" id="title">
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Description</label>
-                            <textarea rows="5" ng-model="room.description" class="form-control" id="description"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="rooms_count">Rooms count</label>
-                            <input type="text" ng-model="room.rooms_count" class="form-control" id="rooms_count">
-                        </div>
-                        <div class="form-group">
-                            <label for="price_construction">Price construction</label>
-                            <input type="text" ng-model="room.price_construction" class="form-control" id="price_construction">
-                        </div>
-                        <div class="form-group">
-                            <label for="price_production">Price production</label>
-                            <input type="text" ng-model="room.price_production" class="form-control" id="price_production">
-                        </div>
-                        <div class="form-group">
-                            <label for="price_cost">Price cost</label>
-                            <input type="text" ng-model="room.price_cost" class="form-control" id="price_cost">
-                        </div>
-                        <div class="form-group">
-                            <label for="price_rack">Price rack</label>
-                            <input type="text" ng-model="room.price_rack" class="form-control" id="price_rack">
-                        </div>
-                        <div class="form-group">
-                            <label for="number_of_people">Number of people</label>
-                            <input type="text" ng-model="room.number_of_people" class="form-control" id="number_of_people">
-                        </div>
-                        <div class="form-group">
-                            <label for="surface">Surface</label>
-                            <input type="text" ng-model="room.surface" class="form-control" id="surface">
-                        </div>
-                        <div class="form-group">
-                            <label for="bed_kids">Bed kids</label>
-                            <input type="text" ng-model="room.bed_kids" class="form-control" id="bed_kids">
-                        </div>
-                        <div class="form-group">
-                            <label for="bed_camp">Bed camp</label>
-                            <input type="text" ng-model="room.bed_camp" class="form-control" id="bed_camp">
-                        </div>
-                        <div class="form-group">
-                            <label for="bed_additional">Bed additional</label>
-                            <input type="text" ng-model="room.bed_additional" class="form-control" id="bed_additional">
-                        </div>
-                        <div class="form-group">
-                            <label for="bed_total_additional">Bed total additional</label>
-                            <input type="text" ng-model="room.bed_total_additional" class="form-control" id="bed_total_additional">
-                        </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">

@@ -65,11 +65,7 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log, $uplo
             $scope.addAlert('danger', 'Please complete all fields!!!');
         }else{
             $scope.loading = true;
-            $http.post('/admin/rooms', {
-                title: $scope.room.title,
-                description: $scope.room.description,
-                room_type_id: $scope.room.room_type_id
-            }).success(function(data, status, headers, config) {
+            $http.post('/admin/rooms', $scope.room).success(function(data, status, headers, config) {
                 $scope.filteredRooms.unshift(data);
                 $scope.rooms.unshift(data);
                 $scope.room = '';
