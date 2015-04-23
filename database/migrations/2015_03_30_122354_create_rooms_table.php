@@ -20,9 +20,19 @@ class CreateRoomsTable extends Migration {
 			/*$table->integer('hotels_id')->unsigned();
 			$table->foreign('hotels_id')->references('id')->on('hotels');*/
 			$table->string('title');
-			$table->decimal('price', 10, 2);
 			$table->text('description');
 			$table->boolean('reserved');
+            $table->integer('rooms_count');
+            $table->decimal('price_construction', 10, 2);
+            $table->decimal('price_production', 10, 2);
+            $table->decimal('price_cost', 10, 2);
+            $table->decimal('price_rack', 10, 2);
+            $table->integer('number_of_people');
+            $table->integer('surface');
+            $table->integer('bed_kids');
+            $table->integer('bed_camp');
+            $table->integer('bed_additional');
+            $table->integer('bed_total_additional');
 			$table->timestamps();
 		});
 	}
