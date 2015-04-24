@@ -75,8 +75,30 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log, $uplo
         }
     };
 
+    $scope.view = function (room, size) {
+        $scope.editedRoom = angular.copy(room);
+        var modalInstance = $modal.open({
+            templateUrl: 'view.html',
+            controller: 'ViewModalInstanceCtrl',
+            size: size,
+            resolve: {
+                editedRoom: function(){
+                    return $scope.editedRoom;
+                },
+                indexedRoomTypes: function(){
+                    return $scope.indexedRoomTypes;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (room) {
+            //$scope.updateRoom(room);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
     $scope.edit = function (room, size) {
-        //console.log($scope.editedRoom);
         $scope.editedRoom = angular.copy(room);
         var modalInstance = $modal.open({
             templateUrl: 'edit.html',
@@ -206,6 +228,14 @@ roomApp.controller('ConfirmDeleteModalInstanceCtrl', function ($scope, $modalIns
 
     $scope.cancel = function () {
         $modalInstance.dismiss('cancel');
+    };
+});
+
+roomApp.controller('ViewModalInstanceCtrl', function ($scope, $modalInstance, editedRoom,indexedRoomTypes) {
+    $scope.editedRoom = editedRoom;
+    $scope.roomTypeSelected = indexedRoomTypes[editedRoom.room_type_id];
+    $scope.ok = function () {
+        $modalInstance.close(editedRoom);
     };
 });
 

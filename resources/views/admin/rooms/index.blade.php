@@ -41,13 +41,14 @@
                 <div class="panel">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-7">
                                 <h3><% room.title %> <span class="badge bg-success"><% indexedRoomTypes[room.room_type_id] %></span></h3>
                                 <p><% room.description %></p>
                                 <span class="label label-primary">Reserved</span> : <input type="checkbox" ng-true-value="1" ng-false-value="'0'" ng-model="room.reserved" ng-change="updateReservedRoom(room)">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="pull-right">
+                                    <button class="btn btn-primary btn-sm" ng-click="view(room);"><i class="fa fa-eye"></i> View</button>
                                     <button class="btn btn-primary btn-sm" ng-click="edit(room);"><i class="fa fa-pencil"></i> Edit</button>
                                     <button class="btn btn-info btn-sm" ng-click="photos(room, 'lg')"><i class="fa fa-picture-o "></i> Manage photos</button>
                                     <button class="btn btn-danger btn-sm" ng-click="confirmDelete($index)"><i class="fa fa-trash-o "></i> Delete</button>
@@ -76,6 +77,30 @@
                 <div class="modal-footer">
                     <button class="btn btn-primary" ng-click="ok()">OK</button>
                     <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                </div>
+            </script>
+            <script type="text/ng-template" id="view.html">
+                <div class="modal-header">
+                    <h3 class="modal-title">View <% editedRoom.title %></h3>
+                </div>
+                <div class="modal-body">
+                    <span class="badge bg-success"><% roomTypeSelected %></span><br>
+                    <h4>Title <span class="label label-default"><% editedRoom.title %></span></h4>
+                    <p>Description: <% editedRoom.description %></p>
+                    <h4>Rooms count <span class="label label-default"><% editedRoom.rooms_count %></span></h4>
+                    <h4>Number of people <span class="label label-default"><% editedRoom.number_of_people %></span></h4>
+                    <h4>Surface <span class="label label-default"><% editedRoom.surface %></span></h4>
+                    <h4>Price construction <span class="label label-default"><% editedRoom.price_construction %></span></h4>
+                    <h4>Price production <span class="label label-default"><% editedRoom.price_production %></span></h4>
+                    <h4>Price cost <span class="label label-default"><% editedRoom.price_cost %></span></h4>
+                    <h4>Price rack <span class="label label-default"><% editedRoom.price_rack %></span></h4>
+                    <h4>Bed kids <span class="label label-default"><% editedRoom.bed_kids %></span></h4>
+                    <h4>Bed camp <span class="label label-default"><% editedRoom.bed_camp %></span></h4>
+                    <h4>Bed additional <span class="label label-default"><% editedRoom.bed_additional %></span></h4>
+                    <h4>Bed total additional <span class="label label-default"><% editedRoom.bed_total_additional %></span></h4>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()">OK</button>
                 </div>
             </script>
             <script type="text/ng-template" id="edit.html">
