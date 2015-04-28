@@ -40,7 +40,17 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
+				<div class="title">Hotel Rousseau</div>
+				<div class="title">{{Lang::get('content.welcome')}}</div>
+                <ul class="language_bar_chooser">
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <li>
+                            <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                                {{{ $properties['native'] }}}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
 				<div class="quote">{{ Inspiring::quote() }}</div>
 				<a href="{{url('admin')}}">ADMIN</a>
 			</div>
