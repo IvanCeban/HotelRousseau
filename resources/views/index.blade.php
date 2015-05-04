@@ -54,6 +54,21 @@
 				<div class="quote">{{ Inspiring::quote() }}</div>
 				<a href="{{url('admin')}}">ADMIN</a>
 			</div>
+
+            <div class="date-picker input-daterange">
+                <input class="form-control" name="date_except">
+
+                <input class="form-control" name="date_except_interval" >
+            </div>
 		</div>
+    <script>
+        $('.date-picker').datepicker({
+            format: 'dd.mm.yyyy',
+            todayHighlight: true,
+            orientation: "left",
+            autoclose: true,
+            startDate: new Date()
+        });
+    </script>
 	</body>
 </html>
