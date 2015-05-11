@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-xs-6">
                     <div class="logo">
-                        <a href="index.php"><img src="img/logo.jpg"></a>
+                        <a href="/"><img src="img/logo.jpg"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 languages">
@@ -48,11 +48,11 @@
                 <div class="col-xs-12 header_menu">
                     <ul>
                         <li class="active"><a href="#">Hotel</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="rooms.php">Chambres / Appartement</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="restaurant.php">Restaurant / Bar</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="#">Offres / Packages</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="#">Centre bien-etre / Lousiris</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="contact.php">Contact</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                         <li>
                             <div class="news_block_icon">
                                 <img src="/img/news_block_icon.png">

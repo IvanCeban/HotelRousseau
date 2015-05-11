@@ -21,4 +21,19 @@ class PagesController extends Controller {
     {
         return view('index');
     }
+
+    public function rooms()
+    {
+        return view('rooms');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function restaurant()
+    {
+        return view('restaurant');
+    }
 }
