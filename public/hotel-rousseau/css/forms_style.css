@@ -1,0 +1,28 @@
+input, button, select, textarea {
+    border: none;
+    background: #fbfbfb;
+    height: 34px;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    font-family: open_sans!important;
+    color: #4d4d4d;
+    padding-left: 15px;
+}
+textarea {
+    padding-top: 10px;
+    height: 70px;
+}
+/*input, select, textarea {*/
+    /*-webkit-transition: all 0.30s ease-in-out;*/
+    /*-moz-transition: all 0.30s ease-in-out;*/
+    /*-ms-transition: all 0.30s ease-in-out;*/
+    /*-o-transition: all 0.30s ease-in-out;*/
+    /*outline: none;*/
+/*}*/
+.form_placeholder {
+    font-size: 12px!important;
+    color: #999999;
+    font-family: open_sans;
+    margin: 18px 0 5px;
+}

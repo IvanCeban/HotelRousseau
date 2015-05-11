@@ -1,0 +1,204 @@
+
+#googlemaps {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+.main_section {
+    padding-bottom: 40px;
+}
+.right_sidebar img {
+    float: left;
+}
+.right_sidebar h3 {
+    margin: 0;
+    padding: 0 0 0 50px;
+}
+.address {
+    margin-top: 50px;
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: 14px;
+}
+.contact_info {
+    display: table;
+    border-top: 2px solid #efc581;
+    padding-top: 14px;
+    margin-top: 22px;
+}
+.contact_info li {
+    float: left;
+    line-height: 1.5;
+}
+.contact_info li:first-child {
+    margin-right: 64px;
+}
+.contact_form {
+    width: 80%;
+}
+.contact_form h4 {
+    font-size: 24px;
+    color: #efc581;
+    margin-top: 70px;
+}
+.contact_form button {
+    margin-top: 18px;
+    margin-bottom: 58px;
+    background: #a68858;
+    color: #ffffff;
+    border-right: 2px outset #9d817f;
+    border-bottom: 2px outset #9d817f ;
+}
+
+.share {
+    height: 60px;
+    background-color: rgba(48, 41, 37, 0.6);
+    margin: 0 -45px 0 -70px;
+    padding: 15px 45px 15px 70px;
+}
+.share h4 {
+    float: left;
+    font-size: 24px;
+    color: #efc581;
+}
+.social_networks_list {
+    display: table;
+    padding: 5px 0 5px 33px;
+}
+.social_networks_list li {
+    float: left;
+    margin: 0 8px;
+}
+.social_networks_list li:first-child {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#contactform {*/
+    /*position: relative;*/
+    /*z-index: 1; *//* The z-index should be higher than Google Maps */
+    /*width: 300px;*/
+    /*margin: 60px auto 0;*/
+    /*padding: 10px;*/
+    /*background: black;*/
+    /*height: 800px;*/
+    /*opacity: .45; *//* Set the opacity for a slightly transparent Google Form */
+    /*color: white;*/
+/*}*/
+
+/*.contact_info {*/
+    /*background: #ffffff;*/
+    /*position: relative;*/
+    /*padding-bottom: 40px;*/
+/*}*/
+/*.contact_form_block {*/
+    /*background: #ffffff;*/
+    /*padding: 18px;*/
+    /*margin: 25px 0;*/
+    /*max-width: 512px;*/
+    /*width: 100%;*/
+    /*float: right;*/
+/*}*/
+/*.contact_form_container {*/
+    /*background: #ffffff url("/img/right_sidebar_bg.png");*/
+    /*border: 4px solid #453634;*/
+    /*padding: 25px 42px;*/
+/*}*/
+/*.contact_form_container>img{*/
+    /*margin: 8px  auto 5px;*/
+    /*display: block;*/
+/*}*/
+/*.contact_form_container h3{*/
+    /*text-align: center;*/
+    /*color: #453634;*/
+    /*font-size: 27px;*/
+/*}*/
+/*.selectboxit-container {*/
+    /*max-width: 100%;*/
+/*}*/
+/*.contact_info {*/
+    /*padding: 36px 74px 76px;*/
+/*}*/
+/*.contact_info .main_container{*/
+    /*border: 1px solid #f2f2f2;*/
+    /*padding: 30px;*/
+/*}*/
+/*.contact_info h3{*/
+    /*color: #8256a0;*/
+    /*font-size: 30px;*/
+    /*text-align: center;*/
+/*}*/
+/*.follow_us ul {*/
+    /*display: table;*/
+    /*margin: 27px auto 0;*/
+/*}*/
+/*.follow_us li {*/
+    /*float: left;*/
+    /*padding: 0 12px;*/
+/*}*/
+/*.follow_us li:first-child {*/
+    /*border-right: 1px solid #006d8b;*/
+/*}*/
+/*.follow_us a {*/
+    /*font-family: open_sans;*/
+    /*font-size: 13px;*/
+    /*text-transform: uppercase;*/
+    /*color: #707070;*/
+/*}*/
+/*.find_us p {*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*font-family: open_sans;*/
+    /*font-size: 13px;*/
+    /*color: #707070;*/
+    /*margin: 32px 0 18px;*/
+/*}*/
+/*.find_us span {*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*font-family: open_sans;*/
+    /*font-size: 13px;*/
+    /*color: #8256a0;*/
+    /*margin-top: 30px;*/
+/*}*/
+/*.phone_numbers_container li{*/
+    /*width: 50%;*/
+    /*float: left;*/
+    /*padding: 0 15px;*/
+/*}*/
+/*.phone_numbers_container li:first-child {*/
+    /*border-right: 1px solid #c4a0f0;*/
+    /*text-align: right;*/
+/*}*/
+/*.social_networks_list {*/
+    /*display: table;*/
+    /*margin: 25px auto 0;*/
+/*}*/
+/*.social_networks_list li{*/
+    /*float: left;*/
+/*}*/
