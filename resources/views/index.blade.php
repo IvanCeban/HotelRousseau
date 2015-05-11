@@ -1,7 +1,9 @@
 <html>
 	<head>
 		<title>Laravel</title>
-		
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
 		<style>
@@ -55,20 +57,17 @@
 				<a href="{{url('admin')}}">ADMIN</a>
 			</div>
 
-            <div class="date-picker input-daterange">
-                <input class="form-control" name="date_except">
-
-                <input class="form-control" name="date_except_interval" >
-            </div>
+            <input type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
 		</div>
-    <script>
-        $('.date-picker').datepicker({
-            format: 'dd.mm.yyyy',
-            todayHighlight: true,
-            orientation: "left",
-            autoclose: true,
-            startDate: new Date()
-        });
-    </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/js/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/bootstrap-daterangepicker/moment.min.js"></script>
+        <script src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('input[name="daterange"]').daterangepicker();
+            });
+        </script>
 	</body>
 </html>
