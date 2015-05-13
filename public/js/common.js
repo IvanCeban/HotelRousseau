@@ -22,9 +22,7 @@ jQuery(document).ready(function($){
     //    //$(".right_sidebar").slideToggle("slow");
     //    $('.right_sidebar').animate({width: 'toggle'});
     //});
-
     $(".show_hide_sidebar_btn").on('click', function() {
-
         // Set the effect type
         var effect = 'slide';
 
@@ -32,10 +30,12 @@ jQuery(document).ready(function($){
         var options = { direction: "right" };
 
         // Set the duration (default: 400 milliseconds)
-        var duration = 500;
+        var duration = 1000;
 
         $('.right_sidebar_container').toggle(effect, options, duration);
         //$('.right_sidebar').toggle(effect, options, duration);
+
+        $('.sidebar_parent').toggleClass('sidebar_hidden');
     });
     //$("#open").click(function(){
     //    $(".right_sidebar").show( "slide", {direction: "right" }, 500 );

@@ -77,7 +77,7 @@ body {
     display: table;
     float: right;
     border: 1px solid #eaeaea;
-    margin: 32px 0 0;
+    margin: 55px 0 0;
     background: #ffffff;
 }
 .header .languages ul li{
@@ -114,13 +114,14 @@ body {
     list-style: none;
     text-transform: uppercase;
     margin: 0 5px;
-    padding: 20px 5px 14px;
+    padding: 24px 5px 20px;
 }
 .header .header_menu li:last-child {
     padding: 0;
+    width: 267px;
 }
 .header .header_menu ul .news_block_icon {
-    padding: 11px 10px 8px;
+    padding: 19px 10px 8px;
     background: #fbfbfb;
     border-right: 1px solid #f3f3f3;
     border-left: 1px solid #f3f3f3;
@@ -130,7 +131,7 @@ body {
     margin: 0;
 }
 .header .header_menu ul .news_block {
-    padding: 10px 10px 6px;
+    padding: 17px 10px 11px;
     float: right;
 }
 .header .header_menu ul .news_block p{
@@ -144,7 +145,7 @@ body {
 }
 .header .header_menu li a {
     color: #3e312a;
-    padding: 20px 0 12px;
+    padding: 20px 0 16px;
 }
 .header .header_menu li a:hover {
     color: #38bad4;
@@ -177,21 +178,43 @@ body {
 }
 .right_sidebar_container {
     padding: 0;
-    max-width: 582px;
+    /*width: 500px;*/
     float: right;
+    /*width: 100%;*/
+
+    /*transition: width 1s linear;*/
+    /*-webkit-transition: width 1s linear; *//* Safari and Chrome */
+    /*-moz-transition: width 1s linear; *//* Firefox 4 */
+    /*-o-transition: width 1s linear; *//* Opera */
+
+}
+.sidebar_hidden .right_sidebar_container {
+    /*width: 0;*/
+
+    /*-webkit-transition: width 1.5s;*/
+    /*-moz-transition: width 1.5s;*/
+    /*-ms-transition: width 1.5s;*/
+    /*-o-transition: width 1.5s;*/
+    /*transition: width 1.5s;*/
 }
 .right_sidebar {
-    background-color: rgba(48, 41, 37, 0.6);
+    background-color: rgba(48, 41, 37, 0.8);
     /*margin-right: -15px;*/
     padding: 190px 45px 0px 70px;
     display: table;
     float: right;
     position: relative;
 }
+.sidebar_parent {
+    display: table;
+    float: right;
+    margin-right: -15px;
+    position: relative;
+}
 .show_hide_sidebar_btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    left: -43px;
     height: 43px;
     width: 43px;
     background: rgba(201, 165, 112, 0.8) url("../img/sidebar_hide_show_arrow.png");
@@ -199,22 +222,44 @@ body {
     cursor: pointer;
     z-index: 2;
 }
+.sidebar_hidden .show_hide_sidebar_btn{
+    -moz-transform: rotate(180deg); /* Mozilla */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari */
+    -o-transform: rotate(180deg); /* Opera */
+    transform: rotate(180deg);
+
+
+    /*-ms-transform: translate(50px,100px); *//* IE 9 */
+    /*-webkit-transform: translate(50px,100px); *//* Safari */
+    /*transform: translate(50px,100px); *//* Standard syntax */
+    /*-moz-transition: all .2s ease-in-out;*/
+    /*-ms-transition: all .2s ease-in-out;*/
+    /*-webkit-transition: all .2s ease-in-out;*/
+    /*-o-transition: all .2s ease-in-out;*/
+    /*transition: all .2s ease-in-out;*/
+}
+
+.right_sidebar img {
+    float: left;
+}
 .right_sidebar h3 {
     color: #ffffff;
     font-size: 27px;
-    padding-bottom: 25px;
-    margin-top: 40px;
+    padding: 0 0 25px 50px;
+}
+.right_sidebar h4 {
+    font-size: 24px;
+    color: #efc581;
+    padding: 70px 0 10px;
 }
 .right_sidebar p,
 .right_sidebar ul li,
 .right_sidebar span{
-    color: #c1b6ab;
+    color: #E7D0AA;
     font-family: open_sans;
     font-size: 16px
 }
-
-
-
 
 .footer {
     /*position: fixed;*/

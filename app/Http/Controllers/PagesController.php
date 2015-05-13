@@ -22,18 +22,33 @@ class PagesController extends Controller {
         return view('index');
     }
 
+    public function hotel()
+    {
+        return view('hotel');
+    }
+
     public function rooms()
     {
         return view('rooms');
     }
 
-    public function contact()
-    {
-        return view('contact');
-    }
-
     public function restaurant()
     {
         return view('restaurant');
+    }
+
+    public function offers()
+    {
+        return view('offers');
+    }
+
+    public function wellness_center()
+    {
+        return view('wellness_center');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }

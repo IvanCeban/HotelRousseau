@@ -11,13 +11,7 @@
 .main_section {
     padding-bottom: 40px;
 }
-.right_sidebar img {
-    float: left;
-}
-.right_sidebar h3 {
-    margin: 0;
-    padding: 0 0 0 50px;
-}
+
 .address {
     margin-top: 50px;
     text-transform: uppercase;
@@ -38,18 +32,13 @@
     margin-right: 64px;
 }
 .contact_info li a {
-    color: #c1b6ab;
+    color: #E7D0AA;
     text-decoration: none;
     font-family: open_sans;
     font-size: 16px;
 }
 .contact_form {
     width: 80%;
-}
-.contact_form h4 {
-    font-size: 24px;
-    color: #efc581;
-    margin-top: 70px;
 }
 .contact_form button {
     margin-top: 18px;
@@ -70,6 +59,7 @@
     float: left;
     font-size: 24px;
     color: #efc581;
+    padding: 0;
 }
 .social_networks_list {
     display: table;

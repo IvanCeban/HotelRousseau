@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/forms_style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/wellness_center.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,9 +45,9 @@
                         <li><a href="/">Accueil</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hotel</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
-                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
+                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                         <li>
                             {{--<div class="news_block_icon">--}}

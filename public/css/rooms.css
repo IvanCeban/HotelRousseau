@@ -25,6 +25,8 @@ body {
 /*.rooms_main_section .main_container div{*/
     /*height: 100%;*/
 /*}*/
+
+
 .right_sidebar span{
     font-size: 15px
 }
@@ -78,22 +80,8 @@ body {
 .book_the_room_button:hover {
     background: #38bad4;
 }
-.room_photos_list {
-    margin: 0 -5px;
-    display: table;
-}
-.room_photos_list li{
-    float: left;
-    margin: 5px;
-    width: 45%;
-}
-.room_photos_list li img{
-    width: 100%;
-    border: 3px solid #ffeabe;
-    cursor: pointer;
-}
 .rooms_types_buttons {
-    padding-top: 316px;
+    padding-top: 225px;
     padding-left: 49px;
     display: table;
 }
@@ -101,7 +89,7 @@ body {
     /*background-color: rgba(75, 61, 54, 0.9);*/
     color: #d4c0a4;
     text-align: center;
-    margin: 0 10px 27px;
+    margin: 0 10px 20px;
     width: 188px;
     float: left;
 }
@@ -165,10 +153,11 @@ body {
     margin: 0;
 }
 .slides li img {
-    width: 30%!important;
+    width: 32%!important;
     float: left;
     border: 3px solid #ffe7c0;
-    margin-left: 23px;
+    margin-left: 9px;
+    cursor: pointer;
 }
 .slides li img:first-child {
     margin-left: 0;
@@ -188,7 +177,7 @@ body {
     background: url("/img/rooms/rooms_gallery_arrow_next.png") no-repeat right;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
-    right: -30px;
+    right: -29px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
     left: -30px;

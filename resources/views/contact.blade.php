@@ -32,33 +32,34 @@
             <div class="row">
                 <div class="col-xs-6">
                     <div class="logo">
-                        <a href="/resources/views/index.blade.php"><img src="/img/logo.jpg"></a>
+                        <a href="/"><img src="/img/logo.jpg"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 languages">
-                    <ul>
-                        <li class="active"><a href="#">FR</a></li>
-                        <li><a href="#">EN</a></li>
-                    </ul>
+                    {{--<ul>--}}
+                        {{--<li class="active"><a href="#">FR</a></li>--}}
+                        {{--<li><a href="#">EN</a></li>--}}
+                    {{--</ul>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 header_menu">
                     <ul>
-                        <li class="active"><a href="#">Hotel</a></li>
+                        <li><a href="/">Accueil</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hotel</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="#">Offres / Packages</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="#">Centre bien-etre / Lousiris</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
+                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                         <li>
-                            <div class="news_block_icon">
-                                <img src="/img/news_block_icon.png">
-                            </div>
-                            <div class="news_block">
-                                <p>depeches-vous</p>
-                                <span>Il nous reste plus que 5 chambres</span>
-                            </div>
+                            {{--<div class="news_block_icon">--}}
+                                {{--<img src="/img/news_block_icon.png">--}}
+                            {{--</div>--}}
+                            {{--<div class="news_block">--}}
+                                {{--<p>depeches-vous</p>--}}
+                                {{--<span>Il nous reste plus que 5 chambres</span>--}}
+                            {{--</div>--}}
                         </li>
                     </ul>
                 </div>
@@ -69,148 +70,70 @@
 
     <div id="googlemaps"></div>
 
-    <!-- contact form START-->
-    <!--    <section id="contactform">-->
-    <!--        <div class="main_container">-->
-    <!--            <div class="row">-->
-    <!--                <div class="col-xs-push-8 col-xs-4">-->
-    <!--                    <div class="contact_form_block">-->
-    <!--                        <div class="contact_form_container">-->
-    <!--                            <img src="/img/contact/contact_right_sidebar_icon.png">-->
-    <!--                            <h3>Contact</h3>-->
-    <!--                            <div class="contact_form">-->
-    <!--                                <p class="form_placeholder">Name and Surname*</p>-->
-    <!--                                <input type="text" name="name">-->
-    <!--                                <p class="form_placeholder">Company name (companies and institutions)</p>-->
-    <!--                                <input type="text" name="name">-->
-    <!--                                <p class="form_placeholder">E-mail*</p>-->
-    <!--                                <input type="email" name="name">-->
-    <!--                                <p class="form_placeholder">Phone*</p>-->
-    <!--                                <input type="tel" name="name">-->
-    <!--                                <p class="form_placeholder">Topic</p>-->
-    <!--                                <select name="topic">-->
-    <!--                                    <option>-</option>-->
-    <!--                                    <option>topic 1</option>-->
-    <!--                                    <option>topic 2</option>-->
-    <!--                                    <option>topic 3</option>-->
-    <!--                                    <option>topic 4</option>-->
-    <!--                                    <option>topic 5</option>-->
-    <!--                                </select>-->
-    <!--                                <p class="form_placeholder">Content</p>-->
-    <!--                                <textarea name="name"></textarea>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
-    <!-- contact form END-->
-
-    <!--contact info START-->
-    <!--    <section class="contact_info">-->
-    <!--        <div class="main_container">-->
-    <!--            <div class="row">-->
-    <!--                <div class="col-xs-4 follow_us">-->
-    <!--                    <h3>Suivez Nous</h3>-->
-    <!--                    <ul>-->
-    <!--                        <li><a href="#">INSTARGAM</a></li>-->
-    <!--                        <li><a href="#">FACEBOOK</a></li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--                <div class="col-xs-4 find_us">-->
-    <!--                    <h3>Trouve Nous</h3>-->
-    <!--                    <p>Hôtel Rousseau Genève <br>-->
-    <!--                        Rue Rousseau, 13 <br>-->
-    <!--                        ch-1201 Genève-->
-    <!--                    </p>-->
-    <!--                    <ul class="phone_numbers_container">-->
-    <!--                        <li>-->
-    <!--                            <span>Tél. +41 (0)22 732 50 30</span><br>-->
-    <!--                            <span>Fax. +41 (0)22 732 50 30</span>-->
-    <!--                        </li>-->
-    <!--                        <li>-->
-    <!--                            <span>Tél. +41 (0)22 732 50 30</span><br>-->
-    <!--                            <span>Fax. +41 (0)22 732 50 30</span>-->
-    <!--                        </li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--                <div class="col-xs-4">-->
-    <!--                    <h3>Share</h3>-->
-    <!--                    <ul class="social_networks_list">-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/facebook.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/twitter.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/youtube.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/gmail.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/picasa.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/oo.png"></a></li>-->
-    <!--                        <li><a href="#"><img src="/img/contact/social_networks/owl.png"></a></li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
-    <!--contact info END-->
-
     <!--main content START-->
     <section class="main_section">
         <div class="main_container">
             <div class="row">
                 <div class="col-xs-1">
-                    <div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>
+                    {{--<div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>--}}
                 </div>
-                <div class="col-xs-push-7 col-xs-4 right_sidebar_container">
-                    <div class="right_sidebar">
-                        <img src="/img/contact/contact_right_sidebar_icon.png">
-                        <h3>Contact</h3>
-                        <p class="address">Hôtel Rousseau Genève <br>
-                            Rue Rousseau, 13 <br>
-                            ch-1201 Genève
-                        </p>
-                        <ul class="contact_info">
-                            <li>
-                                <span>Tél. +41 (0)22 732 50 30</span><br>
-                                <span>Fax. +41 (0)22 732 50 32</span>
-                            </li>
-                            <li>
-                                <span>info@hotelrousseau.ch</span><br>
-                                <a href="http://hotelrousseau.ch">www.hotelrousseau.ch</a>
-                            </li>
-                        </ul>
-                        <div class="contact_form">
-                            <h4>Contact form</h4>
-                            <p class="form_placeholder">Name and Surname*</p>
-                            <input type="text" name="name">
-                            <p class="form_placeholder">Company name (companies and institutions)</p>
-                            <input type="text" name="name">
-                            <p class="form_placeholder">E-mail*</p>
-                            <input type="email" name="name">
-                            <p class="form_placeholder">Phone*</p>
-                            <input type="tel" name="name">
-                            <p class="form_placeholder">Topic</p>
-                            <select name="topic">
-                                <option>-</option>
-                                <option>topic 1</option>
-                                <option>topic 2</option>
-                                <option>topic 3</option>
-                                <option>topic 4</option>
-                                <option>topic 5</option>
-                            </select>
-                            <p class="form_placeholder">Content</p>
-                            <textarea name="name"></textarea>
-                            <button type="button" class="book_the_room">Réservez dès maintenant</button>
-                        </div>
-                        <div class="share">
-                            <h4>Share</h4>
-                            <ul class="social_networks_list">
-                                <li><a href="#"><img src="/img/contact/social_networks/light/facebook.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/twitter.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/youtube.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/gmail.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/picasa.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/oo.png"></a></li>
-                                <li><a href="#"><img src="/img/contact/social_networks/light/owl.png"></a></li>
-                            </ul>
+                <div class="col-xs-push-7 col-xs-4">
+                    <div class="sidebar_parent">
+                        <div class="show_hide_sidebar_btn"></div>
+                        <div class="right_sidebar_container">
+                            <div class="right_sidebar">
+                                <img src="/img/contact/contact_right_sidebar_icon.png">
+                                <h3>Contact</h3>
+                                <p class="address">Hôtel Rousseau Genève <br>
+                                    Rue Rousseau, 13 <br>
+                                    ch - 1201 Genève
+                                </p>
+                                <ul class="contact_info">
+                                    <li>
+                                        <span>Tél. +41 22 732 50 30</span><br>
+                                        <span>Fax. +41 22 732 50 32</span>
+                                    </li>
+                                    <li>
+                                        <span>info@hotelrousseau.ch</span><br>
+                                        <a href="http://hotelrousseau.ch">www.hotelrousseau.ch</a>
+                                    </li>
+                                </ul>
+                                <div class="contact_form">
+                                    <h4>Formulaire de contact</h4>
+                                    <p class="form_placeholder">Prénom & Nom*</p>
+                                    <input type="text" name="name">
+                                    <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
+                                    <input type="text" name="name">
+                                    <p class="form_placeholder">E-mail*</p>
+                                    <input type="email" name="name">
+                                    <p class="form_placeholder">Téléphone*</p>
+                                    <input type="tel" name="name">
+                                    <p class="form_placeholder">Sujet*</p>
+                                    <select name="topic">
+                                        <option>-</option>
+                                        <option>topic 1</option>
+                                        <option>topic 2</option>
+                                        <option>topic 3</option>
+                                        <option>topic 4</option>
+                                        <option>topic 5</option>
+                                    </select>
+                                    <p class="form_placeholder">Message*</p>
+                                    <textarea name="name"></textarea>
+                                    <button type="button" class="book_the_room">Réservez dès maintenant</button>
+                                </div>
+                                <div class="share">
+                                    <h4>Share</h4>
+                                    <ul class="social_networks_list">
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/facebook.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/twitter.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/youtube.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/gmail.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/picasa.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/oo.png"></a></li>
+                                        <li><a href="#"><img src="/img/contact/social_networks/light/owl.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,9 +148,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <ul>
-                        <li class="copyright">&copy;2015 Hotel Rousseau</li>
-                        <li><a href="#"><img src="/img/header_and_footer_links_seperator.png"> Plan du site</a></li>
-                        <li><a href="#"><img src="/img/header_and_footer_links_seperator.png"> Mentions legales</a></li>
+                        <li class="copyright">&copy; 2015 Hotel Rousseau</li>
+                        {{--<li><a href="#"><img src="/img/header_and_footer_links_seperator.png"> Plan du site</a></li>--}}
+                        {{--<li><a href="#"><img src="/img/header_and_footer_links_seperator.png"> Mentions legales</a></li>--}}
                     </ul>
                 </div>
             </div>
