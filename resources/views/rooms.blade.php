@@ -8,11 +8,12 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/forms_style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/libraries/flexSlider/css/flexslider.css">
+    <link rel="stylesheet" href="/css/forms_style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/common_styles.css">
+    <link rel="stylesheet" href="/css/rooms.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +30,7 @@
             <div class="row">
                 <div class="col-xs-6">
                     <div class="logo">
-                        <a href="index.php"><img src="img/logo.jpg"></a>
+                        <a href="index.php"><img src="/img/logo.jpg"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 languages">
@@ -68,49 +69,116 @@
     <section class="rooms_main_section">
         <div class="main_container">
             <div class="row">
-                <div class="col-xs-4 rooms_types_buttons">
-                    <div class="row">
-                        <div class="col-xs-5">
+                <div class="col-xs-7">
+                    <div class="rooms_types_buttons">
+                        <div class="room_type">
                             <a href="#">
-                                <div class="room_type">
-                                    <h5>Chambre <br> Simple</h5>
-                                    <span>De</span>
-                                    <span class="room_price">66 EUR</span>
+                                <div class="room_price_block">
+                                    <span class="room_price">CHF 235.-</span>
+                                </div>
+                                <div class="room_type_name">
+                                    <h5>Single classic</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-5">
+                        <div class="room_type">
                             <a href="#">
-                                <div class="room_type">
-                                    <h5>Chambre <br> Double</h5>
-                                    <span>De</span>
-                                    <span class="room_price">72 EUR</span>
+                                <div class="room_price_block">
+                                    <span class="room_price">CHF 265.-</span>
+                                </div>
+                                <div class="room_type_name">
+                                    <h5>Double classic</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="room_type">
+                            <a href="#">
+                                <div class="room_price_block">
+                                    <span class="room_price">CHF 295.-</span>
+                                </div>
+                                <div class="room_type_name">
+                                    <h5>Double Supérieur</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="room_type">
+                            <a href="#">
+                                <div class="room_price_block">
+                                    <span class="room_price">CHF 325.-</span>
+                                </div>
+                                <div class="room_type_name">
+                                    <h5>Triple</h5>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <a href="#">
-                                <div class="room_type">
-                                    <h5>Chambre <br> Triple</h5>
-                                    <span>De</span>
-                                    <span class="room_price">94 EUR</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-5">
-                            <a href="#">
-                                <div class="room_type">
-                                    <h5>Chambres <br> Communicantes</h5>
-                                    <span>De</span>
-                                    <span class="room_price"> EUR</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+
+                    {{--<div class="row">--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambre <br> Simple</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price">66 EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambre <br> Double</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price">72 EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambre <br> Simple</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price">66 EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambre <br> Double</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price">72 EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambre <br> Triple</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price">94 EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-xs-5">--}}
+                            {{--<a href="#">--}}
+                                {{--<div class="room_type">--}}
+                                    {{--<h5>Chambres <br> Communicantes</h5>--}}
+                                    {{--<span>De</span>--}}
+                                    {{--<span class="room_price"> EUR</span>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
-                <div class="col-xs-push-4 col-xs-4">
+                <div class="col-xs-1">
+                    <div class="show_hide_sidebar_btn"></div>
+                </div>
+                <div class="col-xs-4 right_sidebar_container">
                     <div class="right_sidebar">
                         <h3>Chambres / Appartement</h3>
                         <p>Nouvelles Chambres et appartement équipés de:</p>
@@ -128,14 +196,32 @@
 
                         <h3>Single</h3>
                         <span>1 lit simple - 1 personne </span>
-                        <ul class="room_photos_list">
-                            <li><img photo_number="1" src="/img/rooms/gallery/1.jpg"> </li>
-                            <li><img photo_number="2" src="/img/rooms/gallery/2.jpg"> </li>
-                            <li><img photo_number="3" src="/img/rooms/gallery/3.jpg"> </li>
-                            <li><img photo_number="4" src="/img/rooms/gallery/4.jpg"> </li>
-                        </ul>
-                        <div class="sidebar_purple_line"></div>
-                        <button type="button" class="book_the_room_button">Réserves dès maintenant</button>
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img photo_number="1" src="/img/rooms/gallery/1.jpg">
+                                    <img photo_number="2" src="/img/rooms/gallery/2.jpg">
+                                    <img photo_number="3" src="/img/rooms/gallery/3.jpg">
+                                </li>
+                                <li>
+                                    <img photo_number="2" src="/img/rooms/gallery/2.jpg">
+                                    <img photo_number="3" src="/img/rooms/gallery/3.jpg">
+                                    <img photo_number="4" src="/img/rooms/gallery/4.jpg">
+                                </li>
+                                <li>
+                                    <img photo_number="3" src="/img/rooms/gallery/3.jpg">
+                                    <img photo_number="4" src="/img/rooms/gallery/4.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                        {{--<ul class="room_photos_list">--}}
+                            {{--<li><img photo_number="1" src="/img/rooms/gallery/1.jpg"> </li>--}}
+                            {{--<li><img photo_number="2" src="/img/rooms/gallery/2.jpg"> </li>--}}
+                            {{--<li><img photo_number="3" src="/img/rooms/gallery/3.jpg"> </li>--}}
+                            {{--<li><img photo_number="4" src="/img/rooms/gallery/4.jpg"> </li>--}}
+                        {{--</ul>--}}
+                        {{--<div class="sidebar_purple_line"></div>--}}
+                        {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                     </div>
                 </div>
             </div>
@@ -161,10 +247,11 @@
 
 </div>
 
-<script src="libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/rooms.js"></script>
+<script src="/libraries/jquery/jquery-1.11.1.min.js"></script>
+<script src="/libraries/jquery/jquery-ui-1.11.2.min.js"></script>
+<script src="/libraries/flexSlider/js/flexslider.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/rooms.js"></script>
 
 </body>
 </html>

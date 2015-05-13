@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
-
+    $(window).load(function() {
+        $('.flexslider').flexslider();
+    });
     $('.room_photos_list li img').on('click', function () {
         var number = $(this).attr('photo_number');
         //alert(number);

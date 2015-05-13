@@ -37,6 +37,12 @@
 .contact_info li:first-child {
     margin-right: 64px;
 }
+.contact_info li a {
+    color: #c1b6ab;
+    text-decoration: none;
+    font-family: open_sans;
+    font-size: 16px;
+}
 .contact_form {
     width: 80%;
 }
@@ -202,3 +208,8 @@
 /*.social_networks_list li{*/
     /*float: left;*/
 /*}*/
+
+
+.ui-effects-wrapper {
+    padding: 0!important;
+}

@@ -1,0 +1,11 @@
+/*@media(max-width:768px) {*/
+    /**/
+/*}*/
+@media(max-width:1700px) {
+    .header_menu ul li a{
+        font-size: 13px;
+    }
+    .header .header_menu li a {
+        padding: 20px 0 13px;
+    }
+}

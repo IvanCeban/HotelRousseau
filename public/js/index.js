@@ -6,9 +6,9 @@ jQuery(document).ready(function($){
     });
 
     $('.search_block_header img').on('click', function(){
-        $('.middle .search_block').toggleClass('open');
+        $('.middle .search_block').toggleClass('closed');
 
-        if($('.middle .search_block').hasClass('open')){
+        if($('.middle .search_block').hasClass('closed')){
             $('.offers_and_news').css({"position":"absolute"});
         }
         else {

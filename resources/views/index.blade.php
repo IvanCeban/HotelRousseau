@@ -14,14 +14,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/forms_style.css">
     <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="//use.typekit.net/azj4qhr.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
@@ -74,7 +73,7 @@
         <div class="main_container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="search_block">
+                    <div class="search_block closed">
                         <div class="search_block_header">
                             <h1>Reservation en ligne</h1>
                             <img src="/img/homepage/search_block_arrow.png">

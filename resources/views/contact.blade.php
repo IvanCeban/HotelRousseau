@@ -8,14 +8,14 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="libraries/selectBoxIt/css/selectBoxIt.css">
+    <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/libraries/selectBoxIt/css/selectBoxIt.css">
     <!--    <link rel="stylesheet" href="libraries/flexSlider/css/flexslider.css">-->
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/forms_style.css">
-    <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/forms_style.css">
+    <link rel="stylesheet" href="/css/common_styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/media_queries.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-xs-6">
                     <div class="logo">
-                        <a href="index.php"><img src="img/logo.jpg"></a>
+                        <a href="/resources/views/index.blade.php"><img src="/img/logo.jpg"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 languages">
@@ -156,7 +156,10 @@
     <section class="main_section">
         <div class="main_container">
             <div class="row">
-                <div class="col-xs-push-8 col-xs-4">
+                <div class="col-xs-1">
+                    <div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>
+                </div>
+                <div class="col-xs-push-7 col-xs-4 right_sidebar_container">
                     <div class="right_sidebar">
                         <img src="/img/contact/contact_right_sidebar_icon.png">
                         <h3>Contact</h3>
@@ -167,11 +170,11 @@
                         <ul class="contact_info">
                             <li>
                                 <span>Tél. +41 (0)22 732 50 30</span><br>
-                                <span>Fax. +41 (0)22 732 50 30</span>
+                                <span>Fax. +41 (0)22 732 50 32</span>
                             </li>
                             <li>
                                 <span>info@hotelrousseau.ch</span><br>
-                                <span>www.hotelrousseau.ch</span>
+                                <a href="http://hotelrousseau.ch">www.hotelrousseau.ch</a>
                             </li>
                         </ul>
                         <div class="contact_form">
@@ -234,13 +237,13 @@
 
 </div>
 
-<script src="libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="libraries/selectBoxIt/js/selectBoxIt.js"></script>
-<script src="js/common.js"></script>
+<script src="/libraries/jquery/jquery-1.11.1.min.js"></script>
+<script src="/libraries/jquery/jquery-ui-1.11.2.min.js"></script>
+<script src="/libraries/selectBoxIt/js/selectBoxIt.js"></script>
+<script src="/js/common.js"></script>
 <!-- Include the Google Maps API library - required for embedding maps -->
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-<script src="js/contact.js"></script>
+<script src="/js/contact.js"></script>
 </body>
 </html>
