@@ -74,12 +74,12 @@
                                     <div class="show_hide_sidebar_btn"></div>
                                     <div class="right_sidebar_container">
                                         <div class="right_sidebar">
-                                            <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
+                                            <img class="page_icon" src="/img/offers/offers_right_sidebar_icon.png">
                                             <h3>Services</h3>
                                             <p>
                                                 Hôtel, les services
                                             </p>
-                                            <ul class="our_specials">
+                                            <ul class="hotel_services">
                                                 <li><img src="/img/offers/offers_icons/soundproofed.png"><span> - chambres insonorisées </span></li>
                                                 <li><img src="/img/offers/offers_icons/non_smoking.png"><span> - hôtel non-fumeur</span></li>
                                                 <li><img src="/img/offers/offers_icons/wine_bar.png"><span> - Restaurant  Wine-bar </span></li>
@@ -93,8 +93,13 @@
                                                 <li><img src="/img/offers/offers_icons/kitchen.png"><span> - Kitchenette</span></li>
                                             </ul>
                                             <p>
-                                                « Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.
+                                                Hôtel, les services
                                             </p>
+                                            <ul class="hotel_services additional">
+                                                <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette 3 verres (3x1dl) dégustation de bières artisanales les Brasseurs Genève, </span></li>
+                                                <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette 3 verres (3x1dl) dégustation de vins (blanc ou rosé ou rouge),</span></li>
+                                                <li><img src="/img/offers/offers_icons/common_checked.png"><span> 20 mets à Frs 20.-  servis sur palettes :<br> 5 Flammekueches (tartes flambées) moitié-moitié au  </span></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

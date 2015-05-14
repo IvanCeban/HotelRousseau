@@ -9,15 +9,14 @@ body {
 .right_sidebar {
     padding-bottom: 600px;
 }
-
+.our_specials {
+     margin: 42px 0;
+}
 .our_specials li {
     margin: 0 0 12px;
 }
 .our_specials li:last-child {
     margin: 0;
-}
-.our_specials {
-     margin: 42px 0;
 }
 .our_specials li img {
     float: none;
