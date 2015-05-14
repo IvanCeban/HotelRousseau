@@ -184,7 +184,7 @@
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
                             <div class="right_sidebar">
-                                <img src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Chambres / Appartement</h3>
                                 <p>Nouvelles Chambres et appartement équipés de:</p>
                                 <ul class="rooms_options_list">

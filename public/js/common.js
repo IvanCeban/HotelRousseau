@@ -33,11 +33,7 @@ jQuery(document).ready(function($){
         var duration = 1000;
 
         $('.right_sidebar_container').toggle(effect, options, duration);
-        //$('.right_sidebar').toggle(effect, options, duration);
 
         $('.sidebar_parent').toggleClass('sidebar_hidden');
     });
-    //$("#open").click(function(){
-    //    $(".right_sidebar").show( "slide", {direction: "right" }, 500 );
-    //});
 });

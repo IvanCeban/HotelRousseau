@@ -2,8 +2,6 @@ body {
     background: url(../img/hotel/hotel_bg.jpg) no-repeat center center fixed;
 }
 .right_sidebar p {
-    font-family: 16px open_sans;
-    color: #cbc4be;
     line-height: 1.5;
     padding-bottom: 600px;
 }

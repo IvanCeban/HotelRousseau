@@ -82,7 +82,7 @@
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
                             <div class="right_sidebar">
-                                <img src="/img/contact/contact_right_sidebar_icon.png">
+                                <img class="page_icon" src="/img/contact/contact_right_sidebar_icon.png">
                                 <h3>Contact</h3>
                                 <p class="address">Hôtel Rousseau Genève <br>
                                     Rue Rousseau, 13 <br>
@@ -119,7 +119,7 @@
                                     </select>
                                     <p class="form_placeholder">Message*</p>
                                     <textarea name="name"></textarea>
-                                    <button type="button" class="book_the_room">Réservez dès maintenant</button>
+                                    <button type="button" class="book_the_room">Envoyer le message</button>
                                 </div>
                                 <div class="share">
                                     <h4>Share</h4>

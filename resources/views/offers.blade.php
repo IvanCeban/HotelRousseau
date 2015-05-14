@@ -66,29 +66,42 @@
     <!--header END-->
 
     <!--main content START-->
-        {{--<section class="main_section">--}}
-            {{--<div class="main_container">--}}
-                {{--<div class="row">--}}
-                    {{--<div class="col-xs-1">--}}
-                        {{--<div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-xs-push-7 col-xs-4">--}}
-                        {{--<div class="sidebar_parent">--}}
-                            {{--<div class="show_hide_sidebar_btn"></div>--}}
-                            {{--<div class="right_sidebar_container">--}}
-                                {{--<div class="right_sidebar">--}}
-                                    {{--<img src="/img/restaurant/restaurant_right_sidebar_icon.png">--}}
-                                    {{--<h3>Restaurant / Bar</h3>--}}
-                                    {{--<p>Idéalement situé à deux pas du lac et de la gare centrale, ce nouvel hôtel 3*** vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>--}}
-                                       {{--<br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement tout à une clientèle d’affaires que de loisir. <br>--}}
-                                    {{--</p>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</section>--}}
+        <section class="main_section">
+                    <div class="main_container">
+                        <div class="row">
+                            <div class="col-xs-push-8 col-xs-4">
+                                <div class="sidebar_parent">
+                                    <div class="show_hide_sidebar_btn"></div>
+                                    <div class="right_sidebar_container">
+                                        <div class="right_sidebar">
+                                            <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
+                                            <h3>Services</h3>
+                                            <p>
+                                                Hôtel, les services
+                                            </p>
+                                            <ul class="our_specials">
+                                                <li><img src="/img/offers/offers_icons/soundproofed.png"><span> - chambres insonorisées </span></li>
+                                                <li><img src="/img/offers/offers_icons/non_smoking.png"><span> - hôtel non-fumeur</span></li>
+                                                <li><img src="/img/offers/offers_icons/wine_bar.png"><span> - Restaurant  Wine-bar </span></li>
+                                                <li><img src="/img/offers/offers_icons/breakfast.png"><span> - Petit déjeuner (6.30 – 10.00)</span></li>
+                                                <li><img src="/img/offers/offers_icons/nespresso_machine.png"><span> - Machine Nespresso en chambre</span></li>
+                                                <li><img src="/img/offers/offers_icons/safe.png"><span> - WiFi gratuit dans tout l'hôtel</span></li>
+                                                <li><img src="/img/offers/offers_icons/desk.png"><span> - Bureau</span></li>
+                                                <li><img src="/img/offers/offers_icons/hair_dryer.png"><span> - SdB, séche-cheveux</span></li>
+                                                <li><img src="/img/offers/offers_icons/pressing.png"><span> - Service pressing (payant)</span></li>
+                                                <li><img src="/img/offers/offers_icons/washing_machine.png"><span> - Local machine à laver/sécher, fer et planche à repasser </span></li>
+                                                <li><img src="/img/offers/offers_icons/kitchen.png"><span> - Kitchenette</span></li>
+                                            </ul>
+                                            <p>
+                                                « Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
     <!--main content END-->
 
     <!--footer START-->

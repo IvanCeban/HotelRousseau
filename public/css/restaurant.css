@@ -1,5 +1,28 @@
 body {
     /*background: url(/img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;*/
-    background: url(../img/page_in_construction_bg.jpg) no-repeat center center fixed;
+    background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;
 }
 
+.right_sidebar p {
+    line-height: 1.5;
+}
+.right_sidebar {
+    padding-bottom: 600px;
+}
+
+.our_specials li {
+    margin: 0 0 12px;
+}
+.our_specials li:last-child {
+    margin: 0;
+}
+.our_specials {
+     margin: 42px 0;
+}
+.our_specials li img {
+    float: none;
+    margin-right: 10px;
+}
+.our_specials li span {
+    vertical-align: super;
+}

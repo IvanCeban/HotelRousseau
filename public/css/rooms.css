@@ -94,28 +94,28 @@ body {
     float: left;
 }
 .room_price_block:hover {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: grayscale(0%);
-    /*filter: url(grayscale.svg); *//* Firefox 4+ */
-    filter: none; /* IE 6-9 */;
+    background: url("../img/rooms/room_type_bg.png") no-repeat;
+    /*-webkit-filter: grayscale(0%);*/
+    /*-moz-filter: grayscale(0%);*/
+    /*-ms-filter: grayscale(0%);*/
+    /*-o-filter: grayscale(0%);*/
+    /*filter: grayscale(0%);*//*/*/
+    /*filter: none; *//**//* IE 6-9 *//**//*;*/
 }
 .room_price_block {
     border: 1px  solid rgba(255, 255, 255, 0.31);
     border-bottom: none;
     height: 150px;
     position: relative;
-    background: url("../img/rooms/room_type_bg.png") no-repeat;
+    background: url("../img/rooms/room_type_bg2.png") no-repeat;
 
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: url(grayscale.svg); /* Firefox 4+ */
-    filter: gray; /* IE 6-9 */;
+    /*-webkit-filter: grayscale(100%);*/
+    /*-moz-filter: grayscale(100%);*/
+    /*-ms-filter: grayscale(100%);*/
+    /*-o-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
+    /*filter: url(grayscale.svg); *//* Firefox 4+ */
+    /*filter: gray; *//* IE 6-9 *//*;*/
 }
 .room_price {
     background: rgba(0, 0, 0, 0.7);
@@ -150,8 +150,13 @@ body {
     /*font-size: 19px;*/
 /*}*/
 /*flex slider adjustment START*/
+
+.right_sidebar p {
+    color: #E7D0AA;
+}
 .right_sidebar .slides {
     margin: 0;
+    padding: 0;
 }
 .slides li img {
     width: 32%!important;
@@ -165,6 +170,8 @@ body {
 }
 .flexslider {
     margin: 21px 0 110px;
+    height: auto;
+    width: 492px;
 }
 .flex-direction-nav a {
     height: 68px;

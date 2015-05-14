@@ -11,7 +11,9 @@
 .main_section {
     padding-bottom: 40px;
 }
-
+.right_sidebar p {
+    color: #E7D0AA;
+}
 .address {
     margin-top: 50px;
     text-transform: uppercase;
@@ -43,10 +45,16 @@
 .contact_form button {
     margin-top: 18px;
     margin-bottom: 58px;
-    background: #a68858;
+    height: 47px;
+    /*background: #8f65b0;*/
     color: #ffffff;
-    border-right: 2px outset #9d817f;
-    border-bottom: 2px outset #9d817f ;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(#a37bc8, #8257a0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a37bc8, #8257a0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a37bc8, #8257a0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a37bc8, #8257a0); /* Standard syntax */
+    /*border-right: 2px outset #9d817f;*/
+    /*border-bottom: 2px outset #9d817f ;*/
 }
 
 .share {
