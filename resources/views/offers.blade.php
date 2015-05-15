@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/common_styles.css">
     <link rel="stylesheet" href="css/offers.css">
+    <link rel="stylesheet" href="scss/test.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
