@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Request;
+
 class PagesController extends Controller {
 
     /**
@@ -49,6 +51,11 @@ class PagesController extends Controller {
 
     public function contact()
     {
+        if (Request::isMethod('post'))
+        {
+            $input = Request::all();
+            dd($input);
+        }
         return view('contact');
     }
 }
