@@ -1,5 +1,5 @@
 body {
-    background: url(../img/rooms/rooms_bg.jpg) no-repeat center center fixed;
+    background: url(../img/rooms/gallery/011.jpg) no-repeat center center fixed;
 }
 
 .rooms_main_section {
@@ -102,6 +102,9 @@ body {
     /*filter: grayscale(0%);*//*/*/
     /*filter: none; *//**//* IE 6-9 *//**//*;*/
 }
+.active .room_price_block {
+    background: url("../img/rooms/room_type_bg.png") no-repeat;
+}
 .room_price_block {
     border: 1px  solid rgba(255, 255, 255, 0.31);
     border-bottom: none;
@@ -191,3 +194,12 @@ body {
     left: -30px;
 }
 /*flexslider adjustment END*/
+
+/*switch room tipes information on right sidebar START*/
+    #double_classic_right_sidebar,
+    #double_superior_right_sidebar,
+    #triple_right_sidebar,
+    #apartment_right_sidebar {
+        display: none;
+    }
+/*switch room tipes information on right sidebar END*/

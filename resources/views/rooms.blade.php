@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-xs-8">
                     <div class="rooms_types_buttons">
-                        <div class="room_type">
+                        <div class="room_type active" id="single_classic">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 235.-</span>
@@ -83,7 +83,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="room_type">
+                        <div class="room_type" id="double_classic">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 265.-</span>
@@ -94,7 +94,7 @@
                             </a>
                         </div>
                         <br>
-                        <div class="room_type">
+                        <div class="room_type" id="double_superior">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 295.-</span>
@@ -104,7 +104,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="room_type">
+                        <div class="room_type" id="triple">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 325.-</span>
@@ -115,7 +115,7 @@
                             </a>
                         </div>
                         <br>
-                        <div class="room_type">
+                        <div class="room_type" id="apartment">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 590.-</span>
@@ -126,67 +126,6 @@
                             </a>
                         </div>
                     </div>
-
-                    {{--<div class="row">--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambre <br> Simple</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price">66 EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambre <br> Double</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price">72 EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambre <br> Simple</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price">66 EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambre <br> Double</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price">72 EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambre <br> Triple</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price">94 EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-xs-5">--}}
-                            {{--<a href="#">--}}
-                                {{--<div class="room_type">--}}
-                                    {{--<h5>Chambres <br> Communicantes</h5>--}}
-                                    {{--<span>De</span>--}}
-                                    {{--<span class="room_price"> EUR</span>--}}
-                                {{--</div>--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
                 </div>
                 {{--<div class="col-xs-1">--}}
                     {{--<div class="show_hide_sidebar_btn"></div>--}}
@@ -195,19 +134,20 @@
                     <div class="sidebar_parent">
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
-                            <div class="right_sidebar">
+                            <div class="right_sidebar" id="sigle_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
-                                <p>Nouvelles Chambres et appartement équipés de:</p>
+                                <h3>Chambres / Appartement blabla</h3>
+                                <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
-                                    <li>- télévision à écran plat</li>
-                                    <li>- Wi-Fi gratuit,</li>
-                                    <li>- machine à café Nespresso</li>
-                                    <li>- bureau</li>
-                                    <li>- minibar</li>
-                                    <li>- coffre-fort</li>
-                                    <li>- salle de bain</li>
-                                    <li>- sèche cheveux</li>
+                                    <li>- Télévision à écran plat</li>
+                                    <li>- Wi-Fi accès gratuit,</li>
+                                    <li>- Machine à café Nespresso</li>
+                                    <li>- Bureau</li>
+                                    <li>- Minibar</li>
+                                    <li>- Coffre-fort</li>
+                                    <li>- Salle de douche</li>
+                                    <li>- Sèche cheveux</li>
+                                    <li>- De 17 à 20 m2</li>
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
@@ -216,27 +156,134 @@
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="1" src="/img/rooms/gallery/1.jpg">
-                                            <img photo_number="2" src="/img/rooms/gallery/2.jpg">
-                                            <img photo_number="3" src="/img/rooms/gallery/3.jpg">
-                                        </li>
-                                        <li>
-                                            <img photo_number="2" src="/img/rooms/gallery/2.jpg">
-                                            <img photo_number="3" src="/img/rooms/gallery/3.jpg">
-                                            <img photo_number="4" src="/img/rooms/gallery/4.jpg">
-                                        </li>
-                                        <li>
-                                            <img photo_number="3" src="/img/rooms/gallery/3.jpg">
-                                            <img photo_number="4" src="/img/rooms/gallery/4.jpg">
+                                            <img photo_number="011" src="/img/rooms/gallery/011.jpg">
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<ul class="room_photos_list">--}}
-                                    {{--<li><img photo_number="1" src="/img/rooms/gallery/1.jpg"> </li>--}}
-                                    {{--<li><img photo_number="2" src="/img/rooms/gallery/2.jpg"> </li>--}}
-                                    {{--<li><img photo_number="3" src="/img/rooms/gallery/3.jpg"> </li>--}}
-                                    {{--<li><img photo_number="4" src="/img/rooms/gallery/4.jpg"> </li>--}}
-                                {{--</ul>--}}
+                                {{--<div class="sidebar_purple_line"></div>--}}
+                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
+                            </div>
+
+                            <div class="right_sidebar" id="double_classic_right_sidebar">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <h3>Chambres / Appartement</h3>
+                                <p>Chambre équipée de :</p>
+                                <ul class="rooms_options_list">
+                                    <li>- Télévision à écran plat</li>
+                                    <li>- Wi-Fi accès gratuit,</li>
+                                    <li>- Machine à café Nespresso</li>
+                                    <li>- Bureau</li>
+                                    <li>- Minibar</li>
+                                    <li>- Coffre-fort</li>
+                                    <li>- Salle de douche</li>
+                                    <li>- Sèche cheveux</li>
+                                    <li>- De 17 à 20 m<sup>2</sup></li>
+                                </ul>
+                                <p>Confort et espace pour allier travail et détente.</p>
+
+                                <h4>Single</h4>
+                                <span>1 lit simple - 1 personne </span>
+                                <div class="flexslider">
+                                    <ul class="slides room_photos_list">
+                                        <li>
+                                            <img photo_number="011" src="/img/rooms/gallery/011.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{--<div class="sidebar_purple_line"></div>--}}
+                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
+                            </div>
+
+                            <div class="right_sidebar" id="double_superior_right_sidebar">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <h3>Chambres / Appartement</h3>
+                                <p>Chambre équipée de :</p>
+                                <ul class="rooms_options_list">
+                                    <li>- Télévision à écran plat</li>
+                                    <li>- Wi-Fi accès gratuit,</li>
+                                    <li>- Machine à café Nespresso</li>
+                                    <li>- Bureau</li>
+                                    <li>- Minibar</li>
+                                    <li>- Coffre-fort</li>
+                                    <li>- Salle de douche</li>
+                                    <li>- Sèche cheveux</li>
+                                    <li>- 25 m<sup>2</sup> avec son coin salon</li>
+                                </ul>
+                                <p>Confort et espace pour allier travail et détente.</p>
+
+                                <h4>Single</h4>
+                                <span>1 lit simple - 1 personne </span>
+                                <div class="flexslider">
+                                    <ul class="slides room_photos_list">
+                                        <li>
+                                            <img photo_number="002" src="/img/rooms/gallery/002.jpg">
+                                            <img photo_number="008" src="/img/rooms/gallery/008.jpg">
+                                            <img photo_number="023" src="/img/rooms/gallery/023.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{--<div class="sidebar_purple_line"></div>--}}
+                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
+                            </div>
+
+                            <div class="right_sidebar" id="triple_right_sidebar">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <h3>Chambres / Appartement</h3>
+                                <p>Chambre équipée de :</p>
+                                <ul class="rooms_options_list">
+                                    <li>- Télévision à écran plat</li>
+                                    <li>- Wi-Fi accès gratuit,</li>
+                                    <li>- Machine à café Nespresso</li>
+                                    <li>- Bureau</li>
+                                    <li>- Minibar</li>
+                                    <li>- Coffre-fort</li>
+                                    <li>- Salle de douche</li>
+                                    <li>- Sèche cheveux</li>
+                                    <li>- 25 à 30 m<sup>2</sup>, vraie couchante</li>
+                                </ul>
+                                <p>Confort et espace pour allier travail et détente.</p>
+
+                                <h4>Single</h4>
+                                <span>1 lit simple - 1 personne </span>
+                                <div class="flexslider">
+                                    <ul class="slides room_photos_list">
+                                        <li>
+                                            <img photo_number="024" src="/img/rooms/gallery/024.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{--<div class="sidebar_purple_line"></div>--}}
+                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
+                            </div>
+
+                            <div class="right_sidebar" id="apartment_right_sidebar">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <h3>Chambres / Appartement</h3>
+                                <p>Chambre équipée de :</p>
+                                <ul class="rooms_options_list">
+                                    <li>- Télévision à écran plat</li>
+                                    <li>- Wi-Fi accès gratuit,</li>
+                                    <li>- Machine à café Nespresso</li>
+                                    <li>- Bureau</li>
+                                    <li>- Minibar</li>
+                                    <li>- Coffre-fort</li>
+                                    <li>- Salle de douche</li>
+                                    <li>- Sèche cheveux</li>
+                                    <li>- Entrée de 8m<sup>2</sup></li>
+                                    <li>- Cuisine équipée de 8m<sup>2</sup></li>
+                                </ul>
+                                <p>Confort et espace pour allier travail et détente.</p>
+
+                                <h4>Single</h4>
+                                <span>1 lit simple - 1 personne </span>
+                                <div class="flexslider">
+                                    <ul class="slides room_photos_list">
+                                        <li>
+                                            <img photo_number="006" src="/img/rooms/gallery/006.jpg">
+                                            <img photo_number="015" src="/img/rooms/gallery/015.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
                                 {{--<div class="sidebar_purple_line"></div>--}}
                                 {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
