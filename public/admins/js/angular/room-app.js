@@ -48,6 +48,9 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log, $uplo
                 },
                 roomTypes: function(){
                     return $scope.roomTypes;
+                },
+                indexedRoomTypes: function(){
+                    return $scope.indexedRoomTypes;
                 }
             }
         });
@@ -62,7 +65,8 @@ roomApp.controller('roomController', function($scope, $http, $modal, $log, $uplo
     $scope.storeRoom = function(room) {
         $scope.room = room;
         if(angular.isUndefined($scope.room.title) || angular.isUndefined($scope.room.description) || angular.isUndefined($scope.room.room_type_id)){
-            $scope.addAlert('danger', 'Please complete all fields!!!');
+            //$scope.addAlert('danger', 'Please complete all fields!!!');
+            $scope.add();
         }else{
             $scope.loading = true;
             $http.post('/admin/rooms', $scope.room).success(function(data, status, headers, config) {
@@ -257,10 +261,13 @@ roomApp.controller('EditModalInstanceCtrl', function ($scope, $modalInstance, ed
     };
 });
 
-roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, room, roomTypeSelected, roomTypes) {
+roomApp.controller('AddModalInstanceCtrl', function ($scope, $modalInstance, room, roomTypeSelected, roomTypes,indexedRoomTypes) {
 
-    $scope.room = room;
     $scope.roomTypeSelected = roomTypeSelected;
+    $scope.room = room;
+    if(room.room_type_id > 0){
+        $scope.roomTypeSelected.title = indexedRoomTypes[room.room_type_id];
+    }
     $scope.roomTypes = roomTypes;
 
     $scope.setRoomTypeSelected = function(roomTypeSelected){

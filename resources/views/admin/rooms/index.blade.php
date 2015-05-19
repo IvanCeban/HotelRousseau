@@ -139,7 +139,7 @@
                     <h3 class="modal-title">Adding new room</h3>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
+                    <form role="form" name="addForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -154,11 +154,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <input type="text" ng-model="room.title" class="form-control" id="title">
+                                    <input type="text" ng-model="room.title" name="title" id="title" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="description">Description</label>
-                                    <textarea rows="5" ng-model="room.description" class="form-control" id="description"></textarea>
+                                    <textarea rows="5" ng-model="room.description" id="description" class="form-control" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="rooms_count">Rooms count</label>
