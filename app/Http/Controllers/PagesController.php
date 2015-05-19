@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
 use Request;
+use Mail;
 
 class PagesController extends Controller {
 
@@ -54,7 +56,12 @@ class PagesController extends Controller {
         if (Request::isMethod('post'))
         {
             $input = Request::all();
-            dd($input);
+
+            Mail::send('emails.contact', ['input' => $input], function($message  )
+            {
+                $message->to(Input::get('topic'), 'Hotel Rousseau')->subject('New Contact Form');
+            });
+
         }
         return view('contact');
     }
