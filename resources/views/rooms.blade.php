@@ -114,6 +114,17 @@
                                 </div>
                             </a>
                         </div>
+                        <br>
+                        <div class="room_type">
+                            <a href="#">
+                                <div class="room_price_block">
+                                    <span class="room_price">CHF 590.-</span>
+                                </div>
+                                <div class="room_type_name">
+                                    <h5>Appartement</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     {{--<div class="row">--}}
