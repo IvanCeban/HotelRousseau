@@ -7,7 +7,8 @@ input, button, select, textarea {
     outline: none;
     font-family: open_sans!important;
     color: #4d4d4d;
-    padding-left: 15px;
+    padding-left: 20px;
+    font-size: 15px;
 }
 textarea {
     padding-top: 10px;
@@ -25,4 +26,11 @@ textarea {
     color: #999999;
     font-family: open_sans;
     margin: 18px 0 5px;
+}
+.selectboxit span {
+    padding: 8px 0;
+    color: #4d4d4d!important;
+    font-family: open_sans!important;
+    font-size: 15px!important;
+    /*font-family: 12px open_sans_bold;*/
 }

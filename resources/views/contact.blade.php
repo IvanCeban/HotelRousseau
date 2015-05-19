@@ -98,7 +98,7 @@
                                         <a href="http://hotelrousseau.ch">www.hotelrousseau.ch</a>
                                     </li>
                                 </ul>
-                                <div class="contact_form">
+                                <form class="contact_form" action="{{url('contact')}}">
                                     <h4>Formulaire de contact</h4>
                                     <p class="form_placeholder">Prénom & Nom*</p>
                                     <input type="text" name="name">
@@ -110,17 +110,19 @@
                                     <input type="tel" name="name">
                                     <p class="form_placeholder">Sujet*</p>
                                     <select name="topic">
-                                        <option>-</option>
-                                        <option>topic 1</option>
-                                        <option>topic 2</option>
-                                        <option>topic 3</option>
-                                        <option>topic 4</option>
-                                        <option>topic 5</option>
+                                        {{--<option>-</option>--}}
+                                        <option>Informations divers</option>
+                                        <option>Reservation</option>
+                                        <option>Demande de prix</option>
+                                        <option>Demande de contrat</option>
+                                        <option>Suggestion ou recommandation</option>
+                                        <option>Facturation</option>
+                                        <option>Reclamation</option>
                                     </select>
                                     <p class="form_placeholder">Message*</p>
                                     <textarea name="name"></textarea>
                                     <button type="button" class="book_the_room">Envoyer le message</button>
-                                </div>
+                                </form>
                                 <div class="share">
                                     <h4>Share</h4>
                                     <ul class="social_networks_list">
