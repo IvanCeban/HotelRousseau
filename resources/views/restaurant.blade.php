@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/common_styles.css">
     <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,6 +67,27 @@
     <!--header END-->
 
     <!--main content START-->
+        {{--<section class="main_section">--}}
+            {{--<div class="main_container">--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-xs-12">--}}
+                        {{--<div class="page-wrap">--}}
+                          {{--<header>--}}
+                            {{--<a href="#main-navigation">Menu</a>--}}
+                            {{--<h1>Title</h1>--}}
+                          {{--</header>--}}
+
+                          {{--<!-- content -->--}}
+                        {{--</div>--}}
+                        {{--<nav id="main-navigation" class="navigation">--}}
+                           {{--<a href="#">Nav Links</a>--}}
+                           {{--<!-- more -->--}}
+                        {{--</nav>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</section>--}}
+
         <section class="main_section">
             <div class="main_container">
                 <div class="row">
@@ -73,6 +95,7 @@
                         <div class="sidebar_parent">
                             <div class="show_hide_sidebar_btn"></div>
                             <div class="right_sidebar_container">
+                                <div class="show_hide_sidebar_btn"></div>
                                 <div class="right_sidebar">
                                     <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
                                     <h3>Restaurant / Bar</h3>

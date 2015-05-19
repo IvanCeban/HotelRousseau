@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
         var options = { direction: "right" };
 
         // Set the duration (default: 400 milliseconds)
-        var duration = 1000;
+        var duration = 500;
 
         $('.right_sidebar_container').toggle(effect, options, duration);
 

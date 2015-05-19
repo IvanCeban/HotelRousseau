@@ -25,3 +25,31 @@ body {
 .our_specials li span {
     vertical-align: super;
 }
+
+
+.navigation {
+
+    /* Collapsed */
+    width: 0;
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.page-wrap {
+    width: 100%;
+    float: right;
+}
+
+.navigation {
+    transition: width 0.3s ease;
+}
+#main-navigation:target {
+    width: 20%;
+}
+#main-navigation:target + .page-wrap {
+    width: 80%;
+}

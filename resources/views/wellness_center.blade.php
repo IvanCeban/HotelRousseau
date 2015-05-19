@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/common_styles.css">
     <link rel="stylesheet" href="css/wellness_center.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
