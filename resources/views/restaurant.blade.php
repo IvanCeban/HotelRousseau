@@ -100,15 +100,19 @@
                                     <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
                                     <h3>Restaurant / Bar</h3>
                                     <p>
-                                        Un nouveau concept « Les 3 palettes 20/20 »,<br>
-                                        ambiance feutrée et conviviale, atmosphère détendue, design contemporain, notre restaurant Wine-bar propose des compositions idéalement conçues pour faire vite et très bien.<br>
-                                        Nos spécialités :
+                                        Savourez notre nouveau concept « Les 3 palettes 20/20 ».<br>
+                                        Dans une ambiance feutrée, conviviale, et une atmosphère détendue, notre restaurant Wine-bar au design contemporain vous propose des compositions idéalement conçues pour faire vite et très bien.
                                     </p>
                                     <ul class="our_specials">
                                         <li><img src="/img/restaurant/food_icons/hamburger.png"><span> - hamburger</span></li>
                                         <li><img src="/img/restaurant/food_icons/pizza.png"><span> - flammekueche</span></li>
                                         <li><img src="/img/restaurant/food_icons/salad.png"><span> - salade chaud-froid</span></li>
                                         <li><img src="/img/restaurant/food_icons/tartar.png"><span> - tartare</span></li>
+                                    </ul>
+                                    <ul class="hotel_services additional">
+                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette de 3 verres (3x1dl) pour la dégustation de bières artisanales les Brasseurs Genève. </span></li>
+                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette de 3 verres (3x1dl) pour la dégustation de vins (blancs, rosés ou rouges).</span></li>
+                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> 20 mets à Frs 20.- servis sur palettes : 5 Flammekueches (tartes flambées) moitié-moitié. </span></li>
                                     </ul>
                                     <p>
                                         « Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.

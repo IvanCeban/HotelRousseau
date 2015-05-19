@@ -136,7 +136,7 @@
                         <div class="right_sidebar_container">
                             <div class="right_sidebar" id="single_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
+                                <h3>Chambre Classic Single</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -151,8 +151,8 @@
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
-                                <h4>Single</h4>
-                                <span>1 lit simple - 1 personne </span>
+                                {{--<h4>Single</h4>--}}
+                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
@@ -166,7 +166,7 @@
 
                             <div class="right_sidebar" id="double_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
+                                <h3>Chambre Classic Double</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -181,8 +181,8 @@
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
-                                <h4>Single</h4>
-                                <span>1 lit simple - 1 personne </span>
+                                {{--<h4>Single</h4>--}}
+                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
@@ -196,7 +196,7 @@
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
+                                <h3>Chambre Classic Supérieure</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -211,8 +211,8 @@
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
-                                <h4>Single</h4>
-                                <span>1 lit simple - 1 personne </span>
+                                {{--<h4>Single</h4>--}}
+                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
@@ -228,7 +228,7 @@
 
                             <div class="right_sidebar" id="triple_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
+                                <h3>Chambre Triple</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -243,8 +243,8 @@
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
-                                <h4>Single</h4>
-                                <span>1 lit simple - 1 personne </span>
+                                {{--<h4>Single</h4>--}}
+                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
@@ -258,7 +258,7 @@
 
                             <div class="right_sidebar" id="apartment_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement</h3>
+                                <h3>Appartement</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -274,8 +274,8 @@
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
-                                <h4>Single</h4>
-                                <span>1 lit simple - 1 personne </span>
+                                {{--<h4>Single</h4>--}}
+                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>

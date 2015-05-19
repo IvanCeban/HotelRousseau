@@ -7,7 +7,7 @@ body {
     line-height: 1.5;
 }
 .right_sidebar {
-    padding-bottom: 600px;
+    padding-bottom: 400px;
 }
 .our_specials {
      margin: 42px 0;
@@ -52,4 +52,42 @@ body {
 }
 #main-navigation:target + .page-wrap {
     width: 80%;
+}
+
+/*.hotel_services.additional {*/
+    /*margin: 20px 0 30px;*/
+/*}*/
+/*.hotel_services.additional li {*/
+    /*padding-left: 30px;*/
+/*}*/
+/*.hotel_services.additional li img{*/
+    /*margin-left: -30px;*/
+/*}*/
+
+.hotel_services {
+    margin: 42px 0;
+}
+.hotel_services li {
+    margin: 0 0 12px;
+    padding-left: 45px;
+    height: 31px;
+    position: relative;
+    display: table;
+}
+.hotel_services li:last-child {
+    margin: 0;
+}
+.hotel_services li img {
+    float: none;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+}
+.hotel_services li span{
+    display: table-cell;
+    vertical-align: middle;
+    color: #cbc4be;
+}
+.hotel_services.additional li span{
+    line-height: 1.5;
 }

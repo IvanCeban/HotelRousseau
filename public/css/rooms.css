@@ -209,4 +209,7 @@ body {
     .right_sidebar {
         display: none;
     }
+.right_sidebar {
+    padding: 190px 60px 100px 60px;
+}
 /*switch room tipes information on right sidebar END*/
