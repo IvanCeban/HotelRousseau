@@ -66,6 +66,12 @@ body {
 .rooms_options_list li:nth-child(8){
     background-position: 0 -277px;
 }
+.rooms_options_list li:nth-child(9){
+    background-position: 0 -321px;
+}
+.rooms_options_list li:nth-child(10){
+    background-position: 0 -364px;
+}
 .sidebar_purple_line {
     border: 1px solid #8256a1;
 }
@@ -196,10 +202,11 @@ body {
 /*flexslider adjustment END*/
 
 /*switch room tipes information on right sidebar START*/
-    #double_classic_right_sidebar,
-    #double_superior_right_sidebar,
-    #triple_right_sidebar,
-    #apartment_right_sidebar {
+
+    #single_classic_right_sidebar {
+        display: block;
+    }
+    .right_sidebar {
         display: none;
     }
 /*switch room tipes information on right sidebar END*/

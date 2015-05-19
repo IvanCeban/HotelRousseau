@@ -134,9 +134,9 @@
                     <div class="sidebar_parent">
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
-                            <div class="right_sidebar" id="sigle_classic_right_sidebar">
+                            <div class="right_sidebar" id="single_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambres / Appartement blabla</h3>
+                                <h3>Chambres / Appartement</h3>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
@@ -147,7 +147,7 @@
                                     <li>- Coffre-fort</li>
                                     <li>- Salle de douche</li>
                                     <li>- Sèche cheveux</li>
-                                    <li>- De 17 à 20 m2</li>
+                                    <li>- De 17 à 20 m<sup>2</sup></li>
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 
