@@ -103,29 +103,31 @@
                                     <h4>Formulaire de contact</h4>
                                     @if(isset($status) && $status == 'success')
                                         <p style="color:greenyellow">Contact form submitted successfully</p>
+                                    @else
+                                        <p class="form_placeholder">Prénom & Nom*</p>
+                                        <input type="text" name="name">
+                                        <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
+                                        <input type="text" name="societe">
+                                        <p class="form_placeholder">E-mail*</p>
+                                        <input type="email" name="email">
+                                        <p class="form_placeholder">Téléphone*</p>
+                                        <input type="tel" name="telephone">
+                                        <p class="form_placeholder">Sujet*</p>
+                                        <select name="topic">
+                                            {{--<option>-</option>--}}
+                                            <option value="info@hotelrousseau.ch">Informations divers</option>
+                                            <option value="resa@hotelrousseau.ch">Reservation</option>
+                                            <option value="resa@hotelrousseau.ch">Demande de prix</option>
+                                            <option value="gm@hotelrousseau.ch">Demande de contrat</option>
+                                            <option value="gm@hotelrousseau.ch">Suggestion ou recommandation</option>
+                                            <option value="gm@hotelrousseau.ch">Facturation</option>
+                                            <option value="gm@hotelrousseau.ch">Reclamation</option>
+                                        </select>
+                                        <p class="form_placeholder">Message*</p>
+                                        <textarea name="message"></textarea>
+                                        <button type="submit" class="book_the_room">Envoyer le message</button>
                                     @endif
-                                    <p class="form_placeholder">Prénom & Nom*</p>
-                                    <input type="text" name="name">
-                                    <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
-                                    <input type="text" name="societe">
-                                    <p class="form_placeholder">E-mail*</p>
-                                    <input type="email" name="email">
-                                    <p class="form_placeholder">Téléphone*</p>
-                                    <input type="tel" name="telephone">
-                                    <p class="form_placeholder">Sujet*</p>
-                                    <select name="topic">
-                                        {{--<option>-</option>--}}
-                                        <option value="info@hotelrousseau.ch">Informations divers</option>
-                                        <option value="resa@hotelrousseau.ch">Reservation</option>
-                                        <option value="resa@hotelrousseau.ch">Demande de prix</option>
-                                        <option value="gm@hotelrousseau.ch">Demande de contrat</option>
-                                        <option value="gm@hotelrousseau.ch">Suggestion ou recommandation</option>
-                                        <option value="gm@hotelrousseau.ch">Facturation</option>
-                                        <option value="gm@hotelrousseau.ch">Reclamation</option>
-                                    </select>
-                                    <p class="form_placeholder">Message*</p>
-                                    <textarea name="message"></textarea>
-                                    <button type="submit" class="book_the_room">Envoyer le message</button>
+
                                 </form>
                                 <div class="share">
                                     <h4>Share</h4>
