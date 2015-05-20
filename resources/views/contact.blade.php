@@ -101,6 +101,11 @@
                                 <form name="contactForm" ng-app="contactApp"  ng-controller="contactCtrl" novalidate class="contact_form" method="post" action="{{url('contact')}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <h4>Formulaire de contact</h4>
+                                    @if($errors->any())
+                                        @foreach ($errors->all() as $error)
+                                            <p style="color: red;">{{$error}}</p>
+                                        @endforeach
+                                    @endif
                                     @if(isset($status) && $status == 'success')
                                         <p style="color:greenyellow">Contact form submitted successfully</p>
                                     @else

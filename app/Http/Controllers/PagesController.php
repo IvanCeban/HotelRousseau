@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Input;
 use Request;
 use Mail;
+use Validator;
 
 class PagesController extends Controller {
 
@@ -56,6 +57,18 @@ class PagesController extends Controller {
         if (Request::isMethod('post'))
         {
             $input = Request::all();
+
+            $validator = Validator::make($input,
+                ['name' => 'required',
+                 'email' => 'required|email',
+                 'topic' => 'required',
+                 'message' => 'required']
+            );
+
+            if ($validator->fails())
+            {
+                return view('contact')->withErrors($validator->errors());
+            }
 
             Mail::send('emails.contact', ['input' => $input], function($message  )
             {
