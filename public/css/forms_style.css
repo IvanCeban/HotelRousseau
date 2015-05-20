@@ -13,6 +13,7 @@ input, button, select, textarea {
 textarea {
     padding-top: 10px;
     height: 70px;
+    resize: none;
 }
 /*input, select, textarea {*/
     /*-webkit-transition: all 0.30s ease-in-out;*/

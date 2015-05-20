@@ -138,14 +138,14 @@
                                             <div class="contact_form_input">
                                                 <input type="email" name="email">
                                             </div>
-                                            <span class="error_message">Please provide the required name</span>
+                                            <span class="error_message">Please provide the required email</span>
                                         </div>
                                         <p class="form_placeholder">Téléphone*</p>
                                         <div class="contact_form_input_container success">
                                             <div class="contact_form_input">
                                                 <input type="tel" name="telephone">
                                             </div>
-                                            <span class="error_message">Please provide the required name</span>
+                                            <span class="error_message">Please provide the required telephone</span>
                                         </div>
                                         <p class="form_placeholder">Sujet*</p>
                                         <div class="contact_form_input_container success">
@@ -161,10 +161,15 @@
                                                     <option value="gm@hotelrousseau.ch">Reclamation</option>
                                                 </select>
                                             </div>
-                                            <span class="error_message">Please provide the required name</span>
+                                            <span class="error_message">Please provide the required subject</span>
                                         </div>
                                         <p class="form_placeholder">Message*</p>
-                                        <textarea name="message"></textarea>
+                                        <div class="contact_form_input_container success">
+                                            <div class="contact_form_input">
+                                                <textarea name="message"></textarea>
+                                            </div>
+                                            <span class="error_message">Please provide the required message</span>
+                                        </div>
                                         <button type="submit" class="book_the_room">Envoyer le message</button>
                                     @endif
 

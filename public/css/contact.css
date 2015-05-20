@@ -83,6 +83,10 @@
     padding: 1px 32px 1px 1px;
     background: #ffc4cc url("/img/contact/error.png") no-repeat right;
 }
+.success textarea,
+.error textarea {
+    margin-bottom: -3px;
+}
 .contact_form_input_container .error_message {
     display: none;
 }
