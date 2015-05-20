@@ -101,6 +101,9 @@
                                 <form class="contact_form" method="post" action="{{url('contact')}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <h4>Formulaire de contact</h4>
+                                    @if(isset($status) && $status == 'success')
+                                        <p style="color:greenyellow">Contact form submitted successfully</p>
+                                    @endif
                                     <p class="form_placeholder">Prénom & Nom*</p>
                                     <input type="text" name="name">
                                     <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>

@@ -61,7 +61,7 @@ class PagesController extends Controller {
             {
                 $message->to(Input::get('topic'), 'Hotel Rousseau')->subject('New Contact Form');
             });
-
+            return view('contact')->with('status', 'success');
         }
         return view('contact');
     }
