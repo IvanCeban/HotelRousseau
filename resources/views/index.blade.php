@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="css/media_queries.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker-bs3.css" />
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -80,7 +82,13 @@
                             <img src="/img/homepage/search_block_arrow.png">
                         </div>
                         <div class="search_block_line"></div>
-                        <form>
+                        <form name="registrationForm" ng-app="registrationApp" ng-controller="registrationCtrl" novalidate method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="daterange1" value="05/23/2015 - 05/31/2015" />
+                                    <input type="text" name="daterange2" value="05/23/2015 - 05/31/2015" />
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-xs-6 date_of_coming">
                                     <p>Date de debut</p>
@@ -293,7 +301,22 @@
 <script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
 <script src="libraries/selectBoxIt/js/selectBoxIt.js"></script>
 <script src="libraries/flexSlider/js/flexslider.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
+
+
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="/js/angular/registration.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $('input[name="daterange1"]').daterangepicker();
+        $('input[name="daterange2"]').daterangepicker();
+    });
+</script>
 </body>
 </html>
