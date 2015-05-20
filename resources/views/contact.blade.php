@@ -100,34 +100,69 @@
                                 </ul>
                                 <form name="contactForm" ng-app="contactApp"  ng-controller="contactCtrl" novalidate class="contact_form" method="post" action="{{url('contact')}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                    <h4>Formulaire de contact</h4>
+
                                     @if($errors->any())
                                         @foreach ($errors->all() as $error)
                                             <p style="color: red;">{{$error}}</p>
                                         @endforeach
                                     @endif
                                     @if(isset($status) && $status == 'success')
-                                        <p style="color:greenyellow">Contact form submitted successfully</p>
+
+                                        <div class="message_sent_success_container">
+                                            <div class="message_sent_success">
+                                                {{--<img src="/img/contact/email_sent.png">--}}
+                                                <p> Your message has been sent!</p>
+                                                <span>We will get back to you as soon as we can</span>
+                                            </div>
+                                        </div>
                                     @else
+
+                                        <h4>Formulaire de contact</h4>
                                         <p class="form_placeholder">Prénom & Nom*</p>
-                                        <input type="text" name="name">
+                                        <div class="contact_form_input_container error">
+                                            <div class="contact_form_input">
+                                                <input type="text" name="name">
+                                            </div>
+                                            <span class="error_message">Please provide the required name</span>
+                                        </div>
+
                                         <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
-                                        <input type="text" name="societe">
+                                        <div class="contact_form_input_container success">
+                                            <div class="contact_form_input">
+                                                <input type="text" name="societe">
+                                            </div>
+                                            <span class="error_message">Please provide the required name</span>
+                                        </div>
                                         <p class="form_placeholder">E-mail*</p>
-                                        <input type="email" name="email">
+                                        <div class="contact_form_input_container success">
+                                            <div class="contact_form_input">
+                                                <input type="email" name="email">
+                                            </div>
+                                            <span class="error_message">Please provide the required name</span>
+                                        </div>
                                         <p class="form_placeholder">Téléphone*</p>
-                                        <input type="tel" name="telephone">
+                                        <div class="contact_form_input_container success">
+                                            <div class="contact_form_input">
+                                                <input type="tel" name="telephone">
+                                            </div>
+                                            <span class="error_message">Please provide the required name</span>
+                                        </div>
                                         <p class="form_placeholder">Sujet*</p>
-                                        <select name="topic">
-                                            {{--<option>-</option>--}}
-                                            <option value="info@hotelrousseau.ch">Informations divers</option>
-                                            <option value="resa@hotelrousseau.ch">Reservation</option>
-                                            <option value="resa@hotelrousseau.ch">Demande de prix</option>
-                                            <option value="gm@hotelrousseau.ch">Demande de contrat</option>
-                                            <option value="gm@hotelrousseau.ch">Suggestion ou recommandation</option>
-                                            <option value="gm@hotelrousseau.ch">Facturation</option>
-                                            <option value="gm@hotelrousseau.ch">Reclamation</option>
-                                        </select>
+                                        <div class="contact_form_input_container success">
+                                            <div class="contact_form_input">
+                                                <select name="topic">
+                                                    <option>-</option>
+                                                    <option value="info@hotelrousseau.ch">Informations divers</option>
+                                                    <option value="resa@hotelrousseau.ch">Reservation</option>
+                                                    <option value="resa@hotelrousseau.ch">Demande de prix</option>
+                                                    <option value="gm@hotelrousseau.ch">Demande de contrat</option>
+                                                    <option value="gm@hotelrousseau.ch">Suggestion ou recommandation</option>
+                                                    <option value="gm@hotelrousseau.ch">Facturation</option>
+                                                    <option value="gm@hotelrousseau.ch">Reclamation</option>
+                                                </select>
+                                            </div>
+                                            <span class="error_message">Please provide the required name</span>
+                                        </div>
                                         <p class="form_placeholder">Message*</p>
                                         <textarea name="message"></textarea>
                                         <button type="submit" class="book_the_room">Envoyer le message</button>
