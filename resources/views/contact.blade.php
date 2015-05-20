@@ -98,7 +98,7 @@
                                         <a href="http://hotelrousseau.ch">www.hotelrousseau.ch</a>
                                     </li>
                                 </ul>
-                                <form class="contact_form" method="post" action="{{url('contact')}}">
+                                <form name="contactForm" ng-app="contactApp"  ng-controller="contactCtrl" novalidate class="contact_form" method="post" action="{{url('contact')}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <h4>Formulaire de contact</h4>
                                     @if(isset($status) && $status == 'success')
@@ -176,5 +176,7 @@
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script src="/js/contact.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="/js/angular/contact.js"></script>
 </body>
 </html>
