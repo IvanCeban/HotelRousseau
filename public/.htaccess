@@ -4,8 +4,6 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^hotelrousseau.ch$
-    RewriteRule (.*) http://www.hotelrousseau.ch/$1 [R=301,L]
 
 
     # Redirect Trailing Slashes...
@@ -15,4 +13,7 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    RewriteCond %{HTTP_HOST} ^hotelrousseau.ch$
+    RewriteRule (.*) http://www.hotelrousseau.ch/$1 [R=301,L]
 </IfModule>
