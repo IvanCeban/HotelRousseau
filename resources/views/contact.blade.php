@@ -119,36 +119,36 @@
 
                                         <h4>Formulaire de contact</h4>
                                         <p class="form_placeholder">Prénom & Nom*</p>
-                                        <div class="contact_form_input_container error">
+                                        <div class="contact_form_input_container {{--error--}}">
                                             <div class="contact_form_input">
                                                 <input type="text" name="name">
                                             </div>
-                                            <span class="error_message">Please provide the required name</span>
+                                            {{--<span class="error_message">Please provide the required name</span>--}}
                                         </div>
 
                                         <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
-                                        <div class="contact_form_input_container success">
+                                        <div class="contact_form_input_container {{--success--}}">
                                             <div class="contact_form_input">
                                                 <input type="text" name="societe">
                                             </div>
                                             <span class="error_message">Please provide the required name</span>
                                         </div>
                                         <p class="form_placeholder">E-mail*</p>
-                                        <div class="contact_form_input_container success">
+                                        <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <input type="email" name="email">
                                             </div>
                                             <span class="error_message">Please provide the required email</span>
                                         </div>
                                         <p class="form_placeholder">Téléphone*</p>
-                                        <div class="contact_form_input_container success">
+                                        <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <input type="tel" name="telephone">
                                             </div>
                                             <span class="error_message">Please provide the required telephone</span>
                                         </div>
                                         <p class="form_placeholder">Sujet*</p>
-                                        <div class="contact_form_input_container success">
+                                        <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <select name="topic">
                                                     <option>-</option>
@@ -161,10 +161,10 @@
                                                     <option value="gm@hotelrousseau.ch">Reclamation</option>
                                                 </select>
                                             </div>
-                                            <span class="error_message">Please provide the required subject</span>
+                                            {{--<span class="error_message">Please provide the required subject</span>--}}
                                         </div>
                                         <p class="form_placeholder">Message*</p>
-                                        <div class="contact_form_input_container success">
+                                        <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <textarea name="message"></textarea>
                                             </div>
