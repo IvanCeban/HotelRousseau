@@ -111,47 +111,55 @@
                                         <div class="message_sent_success_container">
                                             <div class="message_sent_success">
                                                 {{--<img src="/img/contact/email_sent.png">--}}
-                                                <p> Your message has been sent!</p>
-                                                <span>We will get back to you as soon as we can</span>
+                                                <p> Votre message a bien été envoyé !</p>
+                                                {{--<span>We will get back to you as soon as we can</span>--}}
                                             </div>
                                         </div>
                                     @else
 
                                         <h4>Formulaire de contact</h4>
-                                        <p class="form_placeholder">Prénom & Nom*</p>
-                                        <div class="contact_form_input_container {{--error--}}">
+
+                                        <p class="form_placeholder">Prénom & Nom</p>
+                                        <div class="contact_form_input_container" ng-class="contactForm.name.$error.required ? 'error' : 'success'">
                                             <div class="contact_form_input">
-                                                <input type="text" name="name">
+                                                <input type="text" name="name" ng-model="name" required>
                                             </div>
-                                            {{--<span class="error_message">Please provide the required name</span>--}}
+                                            <span ng-show="contactForm.name.$dirty && contactForm.name.$invalid">
+                                                <span class="error_message" ng-show="contactForm.name.$error.required">Ce champ est obligatoire</span>
+                                            </span>
                                         </div>
 
+
                                         <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
-                                        <div class="contact_form_input_container {{--success--}}">
+                                        <div class="contact_form_input_container">
                                             <div class="contact_form_input">
                                                 <input type="text" name="societe">
                                             </div>
-                                            <span class="error_message">Please provide the required name</span>
                                         </div>
-                                        <p class="form_placeholder">E-mail*</p>
-                                        <div class="contact_form_input_container ">
+
+
+                                        <p class="form_placeholder">E-mail</p>
+                                        <div class="contact_form_input_container" ng-class="contactForm.email.$error.required || contactForm.email.$error.email ? 'error' : 'success'">
                                             <div class="contact_form_input">
-                                                <input type="email" name="email">
+                                                <input type="email" name="email" ng-model="email" required>
                                             </div>
-                                            <span class="error_message">Please provide the required email</span>
+                                            <span ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+                                                <span class="error_message" ng-show="contactForm.email.$error.required">Ce champ est obligatoire</span>
+                                                <span class="error_message" ng-show="contactForm.email.$error.email">Cette adresse email n’est pas valide</span>
+                                            </span>
                                         </div>
-                                        <p class="form_placeholder">Téléphone*</p>
+
+                                        <p class="form_placeholder">Téléphone</p>
                                         <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <input type="tel" name="telephone">
                                             </div>
-                                            <span class="error_message">Please provide the required telephone</span>
                                         </div>
-                                        <p class="form_placeholder">Sujet*</p>
+
+                                        <p class="form_placeholder">Sujet</p>
                                         <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
                                                 <select name="topic">
-                                                    <option>-</option>
                                                     <option value="info@hotelrousseau.ch">Informations divers</option>
                                                     <option value="resa@hotelrousseau.ch">Reservation</option>
                                                     <option value="resa@hotelrousseau.ch">Demande de prix</option>
@@ -161,16 +169,18 @@
                                                     <option value="gm@hotelrousseau.ch">Reclamation</option>
                                                 </select>
                                             </div>
-                                            {{--<span class="error_message">Please provide the required subject</span>--}}
                                         </div>
-                                        <p class="form_placeholder">Message*</p>
-                                        <div class="contact_form_input_container ">
+
+                                        <p class="form_placeholder">Message</p>
+                                        <div class="contact_form_input_container"  ng-class="contactForm.message.$error.required ? 'error' : 'success'">
                                             <div class="contact_form_input">
-                                                <textarea name="message"></textarea>
+                                                <textarea name="message"  ng-model="message" required></textarea>
                                             </div>
-                                            <span class="error_message">Please provide the required message</span>
+                                            <span ng-show="contactForm.message.$dirty && contactForm.message.$invalid">
+                                                <span class="error_message" ng-show="contactForm.message.$error.required">Ce champ est obligatoire</span>
+                                            </span>
                                         </div>
-                                        <button type="submit" class="book_the_room">Envoyer le message</button>
+                                        <button type="submit" class="book_the_room" ng-disabled="contactForm.$invalid">Envoyer le message</button>
                                     @endif
 
                                 </form>
