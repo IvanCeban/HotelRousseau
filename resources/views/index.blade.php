@@ -1,34 +1,29 @@
-<!doctype html>
+@extends('layouts.main')
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <title>HR Home</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="libraries/selectBoxIt/css/selectBoxIt.css">
-    <link rel="stylesheet" href="libraries/flexSlider/css/flexslider.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/forms_style.css">
-    <link rel="stylesheet" href="css/common_styles.css">
+@section('styles')
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="css/media_queries.css">
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker-bs3.css" />
+@stop
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+@section('scripts')
 
-</head>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="/js/angular/registration.js"></script>
 
-<body>
+    <script type="text/javascript">
+        $(function() {
+            $('input[name="daterange1"]').daterangepicker();
+            $('input[name="daterange2"]').daterangepicker();
+        });
+    </script>
+@stop
 
-<div class="main_wrapper">
 
+@section('content')
     <!--header START-->
     <section class="header">
         <div class="main_container">
@@ -293,30 +288,4 @@
         </div>
     </section>
     <!--footer END-->
-
-</div>
-
-<!--Scripts start-->
-<script src="libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="libraries/selectBoxIt/js/selectBoxIt.js"></script>
-<script src="libraries/flexSlider/js/flexslider.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
-
-<!-- Include Date Range Picker -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
-
-
-<script src="js/common.js"></script>
-<script src="js/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="/js/angular/registration.js"></script>
-
-<script type="text/javascript">
-    $(function() {
-        $('input[name="daterange1"]').daterangepicker();
-        $('input[name="daterange2"]').daterangepicker();
-    });
-</script>
-</body>
-</html>
+@stop
