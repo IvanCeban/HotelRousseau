@@ -46,7 +46,7 @@
                     <ul>
                         <li><a href="/">Accueil</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hotel</a></li>
-                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
+                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('rooms_introduction')}}">Chambres / Appartement</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
@@ -239,7 +239,7 @@
                                     <li>- Coffre-fort</li>
                                     <li>- Salle de douche</li>
                                     <li>- Sèche cheveux</li>
-                                    <li>- 25 à 30 m<sup>2</sup>, vraie couchante</li>
+                                    <li>- 25 à 30 m<sup>2</sup>, vraie couchage</li>
                                 </ul>
                                 <p>Confort et espace pour allier travail et détente.</p>
 

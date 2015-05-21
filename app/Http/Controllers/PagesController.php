@@ -37,6 +37,11 @@ class PagesController extends Controller {
         return view('rooms');
     }
 
+    public function rooms_introduction()
+    {
+        return view('rooms_introduction');
+    }
+
     public function restaurant()
     {
         return view('restaurant');

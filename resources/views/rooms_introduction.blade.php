@@ -4,16 +4,18 @@
 <head>
     <meta charset="utf-8">
 
-    <title>HR Restaurant</title>
+    <title>HR Rooms preview</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/forms_style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/wellness_center.css">
-    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/libraries/selectBoxIt/css/selectBoxIt.css">
+    <!--    <link rel="stylesheet" href="libraries/flexSlider/css/flexslider.css">-->
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/forms_style.css">
+    <link rel="stylesheet" href="/css/common_styles.css">
+    <link rel="stylesheet" href="/css/hotel.css">
+    <link rel="stylesheet" href="/css/media_queries.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,7 +32,7 @@
             <div class="row">
                 <div class="col-xs-6">
                     <div class="logo">
-                        <a href="index.php"><img src="img/logo.jpg"></a>
+                        <a href="/resources/views/index.blade.php"><img src="/img/logo.jpg"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 languages">
@@ -45,10 +47,10 @@
                     <ul>
                         <li><a href="/">Accueil</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hotel</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('rooms_introduction')}}">Chambres / Appartement</a></li>
+                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('rooms_introduction')}}">Chambres / Appartement</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
-                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
+                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                         <li>
                             {{--<div class="news_block_icon">--}}
@@ -66,30 +68,31 @@
     </section>
     <!--header END-->
 
+
     <!--main content START-->
-        {{--<section class="main_section">--}}
-            {{--<div class="main_container">--}}
-                {{--<div class="row">--}}
-                    {{--<div class="col-xs-1">--}}
+        <section class="main_section">
+            <div class="main_container">
+                <div class="row">
+                    <div class="col-xs-1">
                         {{--<div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-xs-push-7 col-xs-4">--}}
-                        {{--<div class="sidebar_parent">--}}
-                            {{--<div class="show_hide_sidebar_btn"></div>--}}
-                            {{--<div class="right_sidebar_container">--}}
-                                {{--<div class="right_sidebar">--}}
-                                    {{--<img src="/img/restaurant/restaurant_right_sidebar_icon.png">--}}
-                                    {{--<h3>Restaurant / Bar</h3>--}}
-                                    {{--<p>Idéalement situé à deux pas du lac et de la gare centrale, ce nouvel hôtel 3*** vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>--}}
-                                       {{--<br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement tout à une clientèle d’affaires que de loisir. <br>--}}
-                                    {{--</p>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</section>--}}
+                    </div>
+                    <div class="col-xs-push-7 col-xs-4">
+                        <div class="sidebar_parent">
+                            <div class="show_hide_sidebar_btn"></div>
+                            <div class="right_sidebar_container">
+                                <div class="right_sidebar">
+                                    <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
+                                    <h3>Hôtel Rousseau Rooms</h3>
+                                    <p>Idéalement situé à deux pas du lac et de la gare centrale, ce nouvel hôtel 3*** vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>
+                                       <br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement tout à une clientèle d’affaires que de loisir. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!--main content END-->
 
     <!--footer START-->
@@ -110,9 +113,11 @@
 
 </div>
 
-<script src="libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="js/common.js"></script>
+<script src="/libraries/jquery/jquery-1.11.1.min.js"></script>
+<script src="/libraries/jquery/jquery-ui-1.11.2.min.js"></script>
+{{--<script src="/libraries/selectBoxIt/js/selectBoxIt.js"></script>--}}
+<script src="/js/common.js"></script>
 
+{{--<script src="/js/contact.js"></script>--}}
 </body>
 </html>
