@@ -72,7 +72,7 @@ class PagesController extends Controller {
 
             Mail::send('emails.contact', ['input' => $input], function($message  )
             {
-                $message->to(Input::get('topic'), 'Hotel Rousseau')->subject('New Contact Form');
+                $message->to(/*Input::get('topic')*/'cojocaru.vadim@gmail.com', 'Hotel Rousseau')->subject('New Contact Form');
             });
             return view('contact')->with('status', 'success');
         }
