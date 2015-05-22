@@ -1,3 +1,8 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /home/clients/3cee3589ec42d5f4165654a21e2e2888/web/hotels_test/public/.htpasswd
+Require valid-user
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
