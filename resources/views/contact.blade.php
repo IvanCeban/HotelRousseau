@@ -90,8 +90,8 @@
                                 </p>
                                 <ul class="contact_info">
                                     <li>
-                                        <span>Tél. +41 22 732 50 30</span><br>
-                                        <span>Fax. +41 22 732 50 32</span>
+                                        <span>Tél. +41 22 732 50 60</span>
+                                        <br><span>Fax. +41 22 732 50 32</span>
                                     </li>
                                     <li>
                                         <span>info@hotelrousseau.ch</span><br>

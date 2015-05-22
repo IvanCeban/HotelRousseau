@@ -259,6 +259,7 @@
                             <div class="right_sidebar" id="apartment_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Appartement</h3>
+                                <p>Appartement composé de 2 chambres pouvant accueillir  1 à 5 personnes. 1 entrée principale de 8m" deservant les chambres et une cuisine entièrement équipée de 8m.</p>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>

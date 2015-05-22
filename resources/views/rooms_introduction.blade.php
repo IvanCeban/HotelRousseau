@@ -82,9 +82,12 @@
                             <div class="right_sidebar_container">
                                 <div class="right_sidebar">
                                     <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
-                                    <h3>Hôtel Rousseau Rooms</h3>
-                                    <p>Idéalement situé à deux pas du lac et de la gare centrale, ce nouvel hôtel 3*** vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>
-                                       <br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement tout à une clientèle d’affaires que de loisir. <br>
+                                    <h3>Chambres / Appartement</h3>
+                                    <p>Chambres entièrement rénovées, meubles robustes et sobres, plate-forme lumineuse en guise de plafonnier, tête de lit avec led,
+                                    veilleuses, liseuses, un jeux de lumière qui vous procure une grande luminosité mais aussi qui vous permet de tamiser à désir afin
+                                    d’apporter la touche qui conviendra à l’ambiance que vous souhaité, enfin les couleurs douces et  reposantes  du plancher,
+                                    des meubles rideaux et jetée de lit font de nos chambres un espace chaleureux et cosy ou il fait bon allier le travail et la détente.<br>
+                                       <br>Installez-vous et sentez-vous chez vous.<br>
                                     </p>
                                 </div>
                             </div>

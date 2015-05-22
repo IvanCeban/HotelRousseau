@@ -100,8 +100,9 @@
                                     <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
                                     <h3>Restaurant / Bar</h3>
                                     <p>
-                                        Savourez notre nouveau concept « Les 3 palettes 20/20 ».<br>
-                                        Dans une ambiance feutrée, conviviale, et une atmosphère détendue, notre restaurant Wine-bar au design contemporain vous propose des compositions idéalement conçues pour faire vite et très bien.
+                                        Découvrez notre nouveau concept "Les 3 palettes 20/20".<br><br>
+                                        Dans une ambiance feutrée, conviviale et une atmosphère détendue savourez, dans notre restaurant Wine-bar au
+                                        design contemporain, des compositions idéalement conçues pour faire vite et très bien.
                                     </p>
                                     <ul class="our_specials">
                                         <li><img src="/img/restaurant/food_icons/hamburger.png"><span> - hamburger</span></li>

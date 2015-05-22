@@ -83,9 +83,13 @@
                                 <div class="right_sidebar">
                                     <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
                                     <h3>Hôtel Rousseau Genève</h3>
-                                    <p>Idéalement situé à deux pas du lac et de la gare centrale, ce nouvel hôtel 3*** vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>
-                                       <br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement tout à une clientèle d’affaires que de loisir. <br>
+                                    <p>Un nouvel hôtel 3*** idéalement situé à deux pas du lac et de la gare centrale, qui vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>
+                                       <br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement à une clientèle d’affaires que de loisir.<br>
+                                       <br>Bienvenue.
                                     </p>
+
+
+
                                 </div>
                             </div>
                         </div>
