@@ -16,8 +16,7 @@
 
     <script type="text/javascript">
         $(function() {
-            $('input[name="daterange1"]').daterangepicker();
-            $('input[name="daterange2"]').daterangepicker();
+            $('input[name="daterange"]').daterangepicker();
         });
     </script>
 @stop
@@ -80,8 +79,7 @@
                         <form name="registrationForm" ng-app="registrationApp" ng-controller="registrationCtrl" novalidate method="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <input type="text" name="daterange1" value="05/23/2015 - 05/31/2015" />
-                                    <input type="text" name="daterange2" value="05/23/2015 - 05/31/2015" />
+                                    <input type="text" name="daterange" value="05/23/2015 - 05/31/2015" />
                                 </div>
                             </div>
                             <div class="row">
