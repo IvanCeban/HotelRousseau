@@ -1,5 +1,5 @@
 body {
-    background: url(../img/rooms/gallery/011.jpg) no-repeat center center fixed;
+    background: url(../img/rooms/gallery/rooms_introduction_bg.jpg) no-repeat center center fixed;
 }
 
 .rooms_main_section {
@@ -203,13 +203,17 @@ body {
 
 /*switch room tipes information on right sidebar START*/
 
-    #single_classic_right_sidebar {
+    #rooms_introduction_right_sidebar {
         display: block;
+    }
+    #rooms_introduction_right_sidebar p {
+        line-height: 1.5;
+        padding-bottom: 600px;
     }
     .right_sidebar {
         display: none;
     }
-.right_sidebar {
-    padding: 190px 60px 100px 60px;
-}
+    .right_sidebar {
+        padding: 190px 60px 100px 60px;
+    }
 /*switch room tipes information on right sidebar END*/

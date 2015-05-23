@@ -17,8 +17,7 @@ jQuery(document).ready(function($){
         $('.room_photos_list').height('107px');
         $('.room_photos_list li').width('50%');
 
-
-        if(active_element_id == 'sigle_classic'){
+        if(active_element_id == 'single_classic'){
             $('body').css({'background': 'url(/img/rooms/gallery/011.jpg) no-repeat center center fixed'});
         }
         else if (active_element_id == 'double_classic'){

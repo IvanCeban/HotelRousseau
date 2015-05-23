@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-xs-8">
                     <div class="rooms_types_buttons">
-                        <div class="room_type active" id="single_classic">
+                        <div class="room_type" id="single_classic">
                             <a href="#">
                                 <div class="room_price_block">
                                     <span class="room_price">CHF 235.-</span>
@@ -134,6 +134,17 @@
                     <div class="sidebar_parent">
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
+                            <div class="right_sidebar" id="rooms_introduction_right_sidebar">
+                                <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
+                                <h3>Chambres / Appartement</h3>
+                                <p>Chambres entièrement rénovées, meubles robustes et sobres, plate-forme lumineuse en guise de plafonnier, tête de lit avec led,
+                                veilleuses, liseuses, un jeux de lumière qui vous procure une grande luminosité mais aussi qui vous permet de tamiser à désir afin
+                                d’apporter la touche qui conviendra à l’ambiance que vous souhaité, enfin les couleurs douces et  reposantes  du plancher,
+                                des meubles rideaux et jetée de lit font de nos chambres un espace chaleureux et cosy ou il fait bon allier le travail et la détente.<br>
+                                   <br>Installez-vous et sentez-vous chez vous.<br>
+                                </p>
+                            </div>
+
                             <div class="right_sidebar" id="single_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Chambre Classic Single</h3>
@@ -259,7 +270,7 @@
                             <div class="right_sidebar" id="apartment_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Appartement</h3>
-                                <p>Appartement composé de 2 chambres pouvant accueillir  1 à 5 personnes. 1 entrée principale de 8m" deservant les chambres et une cuisine entièrement équipée de 8m.</p>
+                                <p>Appartement composé de 2 chambres pouvant accueillir  1 à 5 personnes. 1 entrée principale de 8m<sup>2</sup> deservant les chambres et une cuisine entièrement équipée de 8m<sup>2</sup></p>
                                 <p>Chambre équipée de :</p>
                                 <ul class="rooms_options_list">
                                     <li>- Télévision à écran plat</li>
