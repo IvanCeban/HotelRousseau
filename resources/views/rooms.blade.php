@@ -135,7 +135,7 @@
                         <div class="show_hide_sidebar_btn"></div>
                         <div class="right_sidebar_container">
                             <div class="right_sidebar" id="rooms_introduction_right_sidebar">
-                                <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
+                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Chambres / Appartement</h3>
                                 <p>Chambres entièrement rénovées, meubles robustes et sobres, plate-forme lumineuse en guise de plafonnier, tête de lit avec led,
                                 veilleuses, liseuses, un jeux de lumière qui vous procure une grande luminosité mais aussi qui vous permet de tamiser à désir afin
