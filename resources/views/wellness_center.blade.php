@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Hôtel Rousseau Genève - Restaurant</title>
+    <title>Hôtel Rousseau Genève - Centre bien-etre / Lousiris</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 

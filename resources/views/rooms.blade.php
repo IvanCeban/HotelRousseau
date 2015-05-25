@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Hôtel Rousseau Genève - Chambres</title>
+    <title>Hôtel Rousseau Genève - Chambres / Appartement</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
