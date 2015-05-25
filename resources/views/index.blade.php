@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    Accueil
+@stop
+
 @section('styles')
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker-bs3.css" />

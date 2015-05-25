@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>HR Home</title>
+    <title>Hôtel Rousseau Genève - @yield('title')</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
