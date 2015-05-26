@@ -17,6 +17,7 @@
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="/js/angular/registration.js"></script>
+    <script src="/js/angular/ng-repeat-while.js"></script>
 
     <script type="text/javascript">
         $(function() {
@@ -147,23 +148,32 @@
                                 <div class="col-xs-6 num_of_adults">
                                     <p>Adultes</p>
                                     <select name="adultes">
-                                        <option>0</option>
                                         <option>1</option>
-                                        <option>2</option>
+                                        <option selected>2</option>
                                         <option>3</option>
                                         <option>4</option>
                                         <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-6 num_of_kids">
                                     <p>Enfants</p>
-                                    <select name="kids">
-                                        <option>0</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select name="kids" ng-model="kidss" ng-change="update(kidss)">
+                                        <option value="0">0</option>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
                                     </select>
                                 </div>
                             </div>
@@ -171,22 +181,33 @@
                             <div class="row">
                                 <div class="col-xs-12 age_of_kids">
                                     <p>Age des enfants a la fin du sejur</p>
-                                    <select name="age1">
+                                    <select ng-repeat="i in getNumber(kids) track by $index" name="age<%$index+1%>">
+                                        <option label="1">1</option>
+                                        <option label="2">2</option>
+                                        <option label="3">3</option>
+                                        <option label="4">4</option>
+                                        <option label="5">5</option>
+                                        <option label="5">6</option>
+                                        <option label="5">7</option>
+                                        <option label="5">8</option>
+                                        <option label="5">9</option>
+                                        <option label="5">10</option>
+                                        <option label="5">11</option>
+                                        <option label="5">12</option>
+                                        <option label="5">13</option>
+                                        <option label="5">14</option>
+                                        <option label="5">15</option>
+                                        <option label="5">16</option>
+                                        <option label="5">17</option>
+                                    </select>
+                                    {{--<select name="age2">
                                         <option label="0">0</option>
                                         <option label="1">1</option>
                                         <option label="2">2</option>
                                         <option label="3">3</option>
                                         <option label="4">4</option>
                                         <option label="5">5</option>
-                                    </select>
-                                    <select name="age2">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>
+                                    </select>--}}
                                     <select name="age3">
                                         <option label="0">0</option>
                                         <option label="1">1</option>
