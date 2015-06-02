@@ -17,7 +17,6 @@
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="/js/angular/registration.js"></script>
-    <script src="/js/angular/ng-repeat-while.js"></script>
 
     <script type="text/javascript">
         $(function() {
@@ -162,7 +161,7 @@
                                 </div>
                                 <div class="col-xs-6 num_of_kids">
                                     <p>Enfants</p>
-                                    <select name="kids" ng-model="kidss" ng-change="update(kidss)">
+                                    <select name="kids" ng-model="kids" ng-change="update(kids)">
                                         <option value="0">0</option>
                                         <option value="1" selected>1</option>
                                         <option value="2">2</option>
@@ -181,7 +180,7 @@
                             <div class="row">
                                 <div class="col-xs-12 age_of_kids">
                                     <p>Age des enfants a la fin du sejur</p>
-                                    <select ng-repeat="i in getNumber(kids) track by $index" name="age<%$index+1%>">
+                                    {{--<select ng-repeat="i in getNumber(kids) track by $index" name="age<%$index+1%>">
                                         <option label="1">1</option>
                                         <option label="2">2</option>
                                         <option label="3">3</option>
@@ -199,7 +198,7 @@
                                         <option label="5">15</option>
                                         <option label="5">16</option>
                                         <option label="5">17</option>
-                                    </select>
+                                    </select>--}}
                                     {{--<select name="age2">
                                         <option label="0">0</option>
                                         <option label="1">1</option>

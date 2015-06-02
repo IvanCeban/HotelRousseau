@@ -12,7 +12,6 @@ registrationApp.controller('registrationCtrl', function($scope) {
     }
 
     $scope.update = function(kids){
-
         $scope.kids = kids;
     }
 
