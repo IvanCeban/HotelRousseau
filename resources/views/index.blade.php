@@ -161,7 +161,7 @@
                                 </div>
                                 <div class="col-xs-6 num_of_kids">
                                     <p>Enfants</p>
-                                    <select name="kids" ng-model="kids" ng-change="update(kids)">
+                                    <select name="kids" id="kids" {{--ng-model="kids" ng-change="update(kids)"--}}>
                                         <option value="0">0</option>
                                         <option value="1" selected>1</option>
                                         <option value="2">2</option>
@@ -180,6 +180,25 @@
                             <div class="row">
                                 <div class="col-xs-12 age_of_kids">
                                     <p>Age des enfants a la fin du sejur</p>
+                                    <select class="ages" name="age0">
+                                        <option label="1">1</option>
+                                        <option label="2">2</option>
+                                        <option label="3">3</option>
+                                        <option label="4">4</option>
+                                        <option label="5">5</option>
+                                        <option label="5">6</option>
+                                        <option label="5">7</option>
+                                        <option label="5">8</option>
+                                        <option label="5">9</option>
+                                        <option label="5">10</option>
+                                        <option label="5">11</option>
+                                        <option label="5">12</option>
+                                        <option label="5">13</option>
+                                        <option label="5">14</option>
+                                        <option label="5">15</option>
+                                        <option label="5">16</option>
+                                        <option label="5">17</option>
+                                    </select>
                                     {{--<select ng-repeat="i in getNumber(kids) track by $index" name="age<%$index+1%>">
                                         <option label="1">1</option>
                                         <option label="2">2</option>
@@ -207,7 +226,7 @@
                                         <option label="4">4</option>
                                         <option label="5">5</option>
                                     </select>--}}
-                                    <select name="age3">
+                                    {{--<select name="age3">
                                         <option label="0">0</option>
                                         <option label="1">1</option>
                                         <option label="2">2</option>
@@ -222,7 +241,7 @@
                                         <option label="3">3</option>
                                         <option label="4">4</option>
                                         <option label="5">5</option>
-                                    </select>
+                                    </select>--}}
                                 </div>
                             </div>
                             <div class="row">
