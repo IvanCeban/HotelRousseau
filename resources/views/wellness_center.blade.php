@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Hôtel Rousseau Genève - Centre bien-etre / Lousiris</title>
+    <title>Hôtel Rousseau Genève - Centre bien-etre / Loisirs</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
@@ -48,7 +48,7 @@
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
-                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Lousiris</a></li>
+                        <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                         <li>
                             {{--<div class="news_block_icon">--}}
