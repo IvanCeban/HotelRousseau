@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
 
-
     <title>Hôtel Rousseau Genève - Hotel</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
