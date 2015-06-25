@@ -1,31 +1,23 @@
-<!doctype html>
+@extends('layouts.main')
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+@section('title')
+    Contact
+@stop
 
-    <title>Hôtel Rousseau Genève - Contact</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/libraries/selectBoxIt/css/selectBoxIt.css">
-    <!--    <link rel="stylesheet" href="libraries/flexSlider/css/flexslider.css">-->
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/forms_style.css">
-    <link rel="stylesheet" href="/css/common_styles.css">
+@section('styles')
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/media_queries.css">
+@stop
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+@section('scripts')
+    <!-- Include the Google Maps API library - required for embedding maps -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-<body>
+    <script src="/js/contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="/js/angular/contact.js"></script>
+@stop
 
-<div class="main_wrapper">
-
+@section('content')
     <!--header START-->
     <section class="header">
         <div class="main_container">
@@ -220,18 +212,4 @@
         </div>
     </section>
     <!--footer END-->
-
-</div>
-
-<script src="/libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="/libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="/libraries/selectBoxIt/js/selectBoxIt.js"></script>
-<script src="/js/common.js"></script>
-<!-- Include the Google Maps API library - required for embedding maps -->
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-<script src="/js/contact.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="/js/angular/contact.js"></script>
-</body>
-</html>
+@stop

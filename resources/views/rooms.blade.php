@@ -1,30 +1,19 @@
-<!doctype html>
+@extends('layouts.main')
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+@section('title')
+    Chambres / Appartement
+@stop
 
-    <title>Hôtel Rousseau Genève - Chambres / Appartement</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/libraries/flexSlider/css/flexslider.css">
-    <link rel="stylesheet" href="/css/forms_style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/common_styles.css">
+@section('styles')
     <link rel="stylesheet" href="/css/rooms.css">
-    <link rel="stylesheet" href="css/media_queries.css">
+@stop
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+@section('scripts')
 
-<body>
+    <script src="js/rooms.js"></script>
+@stop
 
-<div class="main_wrapper">
-
+@section('content')
     <!--header START-->
     <section class="header">
         <div class="main_container">
@@ -323,14 +312,4 @@
         </div>
     </section>
     <!--footer END-->
-
-</div>
-
-<script src="/libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="/libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="/libraries/flexSlider/js/flexslider.js"></script>
-<script src="/js/common.js"></script>
-<script src="/js/rooms.js"></script>
-
-</body>
-</html>
+@stop

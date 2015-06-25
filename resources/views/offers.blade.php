@@ -1,30 +1,18 @@
-<!doctype html>
+@extends('layouts.main')
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+@section('title')
+    Offres / Packages
+@stop
 
-    <title>Hôtel Rousseau Genève - Offres / Packages</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+@section('styles')
+    <link rel="stylesheet" href="/css/offers.css">
+@stop
 
-    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/forms_style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/common_styles.css">
-    <link rel="stylesheet" href="css/offers.css">
-    <link rel="stylesheet" href="css/media_queries.css">
-    {{--<link rel="stylesheet" href="scss/test.css">--}}
+@section('scripts')
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+@stop
 
-<body>
-
-<div class="main_wrapper">
-
+@section('content')
     <!--header START-->
     <section class="header">
         <div class="main_container">
@@ -126,12 +114,4 @@
         </div>
     </section>
     <!--footer END-->
-
-</div>
-
-<script src="libraries/jquery/jquery-1.11.1.min.js"></script>
-<script src="libraries/jquery/jquery-ui-1.11.2.min.js"></script>
-<script src="js/common.js"></script>
-
-</body>
-</html>
+@stop
