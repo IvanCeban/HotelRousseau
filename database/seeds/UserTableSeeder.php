@@ -27,6 +27,13 @@ class UserTableSeeder extends Seeder {
 			'email' => 'p.pitton@voodoo-studio.ch' ,
 			'password' => bcrypt('asdfgh') ,
 		] );
+
+		// add 3nd row
+		User::create( [
+			'name' => 'Saad' ,
+			'email' => 'saad@hotelrousseau.ch' ,
+			'password' => bcrypt('zaqwsx') ,
+		] );
 	}
 
 }
