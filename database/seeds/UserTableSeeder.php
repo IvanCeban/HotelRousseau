@@ -32,7 +32,7 @@ class UserTableSeeder extends Seeder {
 		User::create( [
 			'name' => 'Saad' ,
 			'email' => 'saad@hotelrousseau.ch' ,
-			'password' => bcrypt('asdfgh') ,
+			'password' => bcrypt('zaqwsx') ,
 		] );
 	}
 
