@@ -5,7 +5,7 @@ input, button, select, textarea {
     width: 100%;
     max-width: 100%;
     outline: none;
-    font-family: open_sans!important;
+    font-family: open_sans_regular!important;
     color: #4d4d4d;
     padding-left: 20px;
     font-size: 15px;
@@ -25,13 +25,13 @@ textarea {
 .form_placeholder {
     font-size: 12px!important;
     color: #999999;
-    font-family: open_sans;
+    font-family: open_sans_regular;
     margin: 18px 0 5px;
 }
 .selectboxit span {
     padding: 8px 0;
     color: #4d4d4d!important;
-    font-family: open_sans!important;
+    font-family: open_sans_regular!important;
     font-size: 15px!important;
     /*font-family: 12px open_sans_bold;*/
 }

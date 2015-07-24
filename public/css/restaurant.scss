@@ -1,50 +1,58 @@
 body {
   /*background: url(/img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;*/
-  background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed; }
+  background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;
+}
 
 .right_sidebar p {
-  line-height: 1.5; }
-
+  line-height: 1.5;
+}
 .right_sidebar {
-  padding-bottom: 400px; }
-
+  padding-bottom: 400px;
+}
 .our_specials {
-  margin: 42px 0; }
-
+  margin: 42px 0;
+}
 .our_specials li {
-  margin: 0 0 12px; }
-
+  margin: 0 0 12px;
+}
 .our_specials li:last-child {
-  margin: 0; }
-
+  margin: 0;
+}
 .our_specials li img {
   float: none;
-  margin-right: 10px; }
-
+  margin-right: 10px;
+}
 .our_specials li span {
-  vertical-align: super; }
+  vertical-align: super;
+}
+
 
 .navigation {
+
   /* Collapsed */
   width: 0;
+
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%; }
+  height: 100%;
+}
 
 .page-wrap {
   width: 100%;
-  float: right; }
+  float: right;
+}
 
 .navigation {
-  transition: width 0.3s ease; }
-
+  transition: width 0.3s ease;
+}
 #main-navigation:target {
-  width: 20%; }
-
+  width: 20%;
+}
 #main-navigation:target + .page-wrap {
-  width: 80%; }
+  width: 80%;
+}
 
 /*.hotel_services.additional {*/
 /*margin: 20px 0 30px;*/
@@ -55,31 +63,31 @@ body {
 /*.hotel_services.additional li img{*/
 /*margin-left: -30px;*/
 /*}*/
-.hotel_services {
-  margin: 42px 0; }
 
+.hotel_services {
+  margin: 42px 0;
+}
 .hotel_services li {
   margin: 0 0 12px;
   padding-left: 45px;
   height: 31px;
   position: relative;
-  display: table; }
-
+  display: table;
+}
 .hotel_services li:last-child {
-  margin: 0; }
-
+  margin: 0;
+}
 .hotel_services li img {
   float: none;
   margin-right: 10px;
   position: absolute;
-  left: 0; }
-
-.hotel_services li span {
+  left: 0;
+}
+.hotel_services li span{
   display: table-cell;
   vertical-align: middle;
-  color: #cbc4be; }
-
-.hotel_services.additional li span {
-  line-height: 1.5; }
-
-/*# sourceMappingURL=restaurant.css.map */
+  color: #cbc4be;
+}
+.hotel_services.additional li span{
+  line-height: 1.5;
+}

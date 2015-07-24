@@ -1,39 +1,38 @@
 body {
   background: url(../img/page_in_construction_bg.jpg) no-repeat center center fixed;
-  /*background: url(../img/offers/offers_bg.jpg) no-repeat center center fixed;*/ }
-
+  /*background: url(../img/offers/offers_bg.jpg) no-repeat center center fixed;*/
+}
 .page_icon {
   padding-top: 6px;
-  padding-right: 13px; }
-
+  padding-right: 13px;
+}
 .right_sidebar {
-  padding-bottom: 60px; }
-
+  padding-bottom: 60px;
+}
 .hotel_services {
-  margin: 42px 0; }
-
+  margin: 42px 0;
+}
 .hotel_services li {
   margin: 0 0 12px;
   padding-left: 45px;
   height: 31px;
   position: relative;
-  display: table; }
-
+  display: table;
+}
 .hotel_services li:last-child {
-  margin: 0; }
-
+  margin: 0;
+}
 .hotel_services li img {
   float: none;
   margin-right: 10px;
   position: absolute;
-  left: 0; }
-
-.hotel_services li span {
+  left: 0;
+}
+.hotel_services li span{
   display: table-cell;
   vertical-align: middle;
-  color: #cbc4be; }
-
-.hotel_services.additional li span {
-  line-height: 1.5; }
-
-/*# sourceMappingURL=offers.css.map */
+  color: #cbc4be;
+}
+.hotel_services.additional li span{
+  line-height: 1.5;
+}

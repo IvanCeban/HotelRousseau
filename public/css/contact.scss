@@ -1,46 +1,47 @@
+
 #googlemaps {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
-  z-index: 0;
-  /* Set z-index to 0 as it will be on a layer below the contact form */ }
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
 
 .main_section {
-  padding-bottom: 40px; }
-
+  padding-bottom: 40px;
+}
 .right_sidebar p {
-  color: #E7D0AA; }
-
+  color: #E7D0AA;
+}
 .address {
   margin-top: 50px;
   text-transform: uppercase;
   line-height: 2;
-  font-size: 14px; }
-
+  font-size: 14px;
+}
 .contact_info {
   display: table;
   border-top: 2px solid #efc581;
   padding-top: 14px;
-  margin-top: 22px; }
-
+  margin-top: 22px;
+}
 .contact_info li {
   float: left;
-  line-height: 1.5; }
-
+  line-height: 1.5;
+}
 .contact_info li:first-child {
-  margin-right: 64px; }
-
+  margin-right: 64px;
+}
 .contact_info li a {
   color: #E7D0AA;
   text-decoration: none;
   font-family: open_sans_regular;
-  font-size: 16px; }
-
+  font-size: 16px;
+}
 .contact_form {
-  /*width: 80%;*/ }
-
+  /*width: 80%;*/
+}
 .contact_form button {
   margin-top: 18px;
   margin-bottom: 58px;
@@ -48,83 +49,79 @@
   /*background: #8f65b0;*/
   color: #ffffff;
   border-radius: 2px;
-  background: -webkit-linear-gradient(#a37bc8, #8257a0);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#a37bc8, #8257a0);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#a37bc8, #8257a0);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#a37bc8, #8257a0);
-  /* Standard syntax */
+  background: -webkit-linear-gradient(#a37bc8, #8257a0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a37bc8, #8257a0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a37bc8, #8257a0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a37bc8, #8257a0); /* Standard syntax */
   /*border-right: 2px outset #9d817f;*/
-  /*border-bottom: 2px outset #9d817f ;*/ }
-
+  /*border-bottom: 2px outset #9d817f ;*/
+}
 .message_sent_success_container {
   /*background-color: rgba(48, 41, 37, 0.6);*/
   margin: 125px -60px 100px -60px;
   text-align: center;
   padding: 45PX 0;
-  background: rgba(48, 41, 37, 0.6) url("/img/contact/email_sent_bg.png") no-repeat right; }
-
+  background: rgba(48, 41, 37, 0.6) url("/img/contact/email_sent_bg.png") no-repeat right;
+}
 .message_sent_success p {
   font-size: 24px;
   display: table;
   color: #efc581;
   background: url("/img/contact/email_sent.png") no-repeat left;
   margin: 0 auto 5px;
-  padding-left: 50px; }
-
+  padding-left: 50px;
+}
 .message_sent_success span {
   font: 14px open_sans_regular;
-  color: #cbc4be; }
-
-.success .contact_form_input {
+  color: #cbc4be;
+}
+.success .contact_form_input{
   padding: 1px 32px 1px 1px;
-  background: #c3f1b6 url("/img/contact/success.png") no-repeat right; }
-
+  background: #c3f1b6 url("/img/contact/success.png") no-repeat right;
+}
 .error .contact_form_input {
   padding: 1px 32px 1px 1px;
-  background: #ffc4cc url("/img/contact/error.png") no-repeat right; }
-
+  background: #ffc4cc url("/img/contact/error.png") no-repeat right;
+}
 .success textarea,
 .error textarea {
-  margin-bottom: -3px; }
-
+  margin-bottom: -3px;
+}
 .contact_form_input_container .error_message {
-  display: none; }
-
+  display: none;
+}
 .error .error_message {
   display: block;
   color: #ffc4cc;
   float: right;
   font: 11px open_sans_regular;
-  padding-top: 3px; }
-
+  padding-top: 3px;
+}
 .share {
   display: none;
   height: 60px;
   background-color: rgba(48, 41, 37, 0.6);
   margin: 0 -60px 0 -60px;
-  padding: 15px 45px 15px 70px; }
-
+  padding: 15px 45px 15px 70px;
+}
 .share h4 {
   float: left;
   font-size: 24px;
   color: #efc581;
-  padding: 0; }
-
+  padding: 0;
+}
 .social_networks_list {
   display: table;
-  padding: 5px 0 5px 33px; }
-
+  padding: 5px 0 5px 33px;
+}
 .social_networks_list li {
   float: left;
-  margin: 0 8px; }
-
+  margin: 0 8px;
+}
 .social_networks_list li:first-child {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .ui-effects-wrapper {
-  padding: 0 !important; }
-
-/*# sourceMappingURL=contact.css.map */
+  padding: 0!important;
+}

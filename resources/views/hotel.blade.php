@@ -5,7 +5,7 @@
 @stop
 
 @section('styles')
-    <link rel="stylesheet" href="/css/rooms.css">
+    <link rel="stylesheet" href="/css/hotel.css">
 @stop
 
 @section('scripts')
@@ -17,19 +17,6 @@
     <!--header START-->
     <section class="header">
         <div class="main_container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="logo">
-                        <a href="/"><img src="/img/logo.jpg"></a>
-                    </div>
-                </div>
-                <div class="col-xs-6 languages">
-                    {{--<ul>--}}
-                        {{--<li class="active"><a href="#">FR</a></li>--}}
-                        {{--<li><a href="#">EN</a></li>--}}
-                    {{--</ul>--}}
-                </div>
-            </div>
             <div class="row">
                 <div class="col-xs-12 header_menu">
                     <ul>
@@ -52,6 +39,20 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="logo">
+                        <a href="/"><img src="/img/hotel/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 languages">
+                    {{--<ul>--}}
+                        {{--<li class="active"><a href="#">FR</a></li>--}}
+                        {{--<li><a href="#">EN</a></li>--}}
+                    {{--</ul>--}}
+                </div>
+            </div>
         </div>
     </section>
     <!--header END-->
@@ -61,25 +62,134 @@
         <section class="main_section">
             <div class="main_container">
                 <div class="row">
-                    <div class="col-xs-1">
-                        {{--<div id="close" style="height: 50px; width: 50px; background: brown; margin-top: 500px"></div>--}}
-                    </div>
-                    <div class="col-xs-push-7 col-xs-4">
-                        <div class="sidebar_parent">
-                            <div class="show_hide_sidebar_btn"></div>
-                            <div class="right_sidebar_container">
-                                <div class="right_sidebar">
-                                    <img class="page_icon" src="/img/hotel/hotel_right_sidebar_icon.png">
-                                    <h3>Hôtel Rousseau Genève</h3>
-                                    <p>Un nouvel hôtel 3*** idéalement situé à deux pas du lac et de la gare centrale, qui vous offre un accès immédiat à la Vieille-Ville, au shopping, aux activités culturelles comme à la place financière.<br>
-                                       <br>Ce chaleureux établissement de gestion familiale saura vous séduire par son accueil personnalisé et discret, son personnel prévenant et conviendra parfaitement à une clientèle d’affaires que de loisir.<br>
-                                       <br>Bienvenue.
-                                    </p>
-
-
-
+                    <div class="col-md-8">
+                        <div class="hotel_main_content">
+                            <h3>Hôtel Rousseau Genève</h3>
+                            <div class="address">
+                                <img src="/img/hotel/pin_address.png">
+                                <p>Rue Rousseau, 13 - CH-1201 Genève</p>
+                            </div>
+                            <a href="#">Plus d'information</a>
+                            <div class="hotel_main_content_nav">
+                                <ul>
+                                    <li class="active">Chambres</li>
+                                    <li>Offres</li>
+                                    <li>Réserver</li>
+                                </ul>
+                            </div>
+                            <p class="number_of_available_rooms">2 types de chambres disponibles</p>
+                            <div class="hotel_main_content_block">
+                                <div class="hotel_short_info">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="hotel_item_gallery">
+                                                <img src="/img/hotel/photo_example.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="hotel_short_info_right">
+                                                <h4>Single Classic</h4>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/tv.png">
+                                                            <p>Télévision à écran plat</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/desk.png">
+                                                            <p>Bureau</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/bathroom.png">
+                                                            <p>Salle de douche</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/wi-fi.png">
+                                                            <p>Wi-Fi acces gratuit</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/bar.png">
+                                                            <p>Minibar</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/hair_dryer.png">
+                                                            <p>Sèche cheveux</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/cofee_machine.png">
+                                                            <p>Machine à café Nespresso</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/safe.png">
+                                                            <p>Coffe-fort</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="room_option">
+                                                            <img src="/img/rooms/rooms_options_icons_brown/surface.png">
+                                                            <p>De 17 à 20 m2</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="description">
+                                                Un nouveau concept. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                                                dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                                                Quisque rutrum. Aenean imperdiet. Cras dapibus. Vivamus elementum semper nisi.
+                                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hotel_right_sidebar">
+                            <h3>Votre choix</h3>
+                            <p>Du lundi 20 juillet 2015</p>
+                            <p>au mardi 28 juillet 2015 (8 nuits)</p>
+                            <p>5 adultes, 4 enfants, 3 bebes</p>
+                            <button type="submit" ng-disabled="contactForm.$invalid" disabled="disabled">Modifier</button>
+                            <div class="hotel_right_sidebar_ifoblock">
+                                <h4>Single classic</h4>
+                                <p>2 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
+                                <p>1 lit supplémentaire <span class="price"><span class="currency">chf</span> 80.-</span></p>
+                            </div>
+                            <div class="hotel_right_sidebar_ifoblock">
+                                <h4>Single double</h4>
+                                <p>1 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
+                            </div>
+                            <div class="hotel_right_sidebar_ifoblock">
+                                <h4>Offre 1</h4>
+                                <p>Quantité: 2 <span class="price"><span class="currency">chf</span> 199.-</span></p>
+                            </div>
+                            <div class="hotel_right_sidebar_ifoblock total">
+                                <h4>Total <span class="price"><span class="currency">chf</span> 199.-</span></h4>
+                                <a href="#">Conditions générales de vente</a>
+                            </div>
+                            <p>Adultes 5/5</p>
+                            <p>Enfants 3/4</p>
+                            <p>Bébés 1/3</p>
+                            <div class="next_step">
+                                <p>Passer aux offres (etapes 2/3)</p>
+                            </div>
+                            <p>Transaction sécurisée</p>
                         </div>
                     </div>
                 </div>
