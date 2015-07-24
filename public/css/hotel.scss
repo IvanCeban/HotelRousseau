@@ -104,15 +104,27 @@ $main_lightgray_color: #f3f3f3;
         color: $main_brown_color;
       }
       .hotel_main_content_block {
-        border: 1px solid $main_lightgray_color;
-        padding: 28px 24px;
+        a {
+          position: absolute;
+          top: 15px;
+          right: 24px;
+          font-size: 13px;
+        }
         .hotel_short_info {
+          border: 1px solid $main_lightgray_color;
+          padding: 28px 24px;
+          margin-top: 6px;
+          position: relative;
           .hotel_item_gallery {
             float: left;
           }
-          .hotel_short_info_right {
+          .hotel_item_short_info_right {
             h4 {
               margin-bottom: 24px;
+            }
+            p {
+              font: 14px open_sans_regular;
+              color: #585858;
             }
             .room_option {
               height: 31px;
@@ -123,11 +135,18 @@ $main_lightgray_color: #f3f3f3;
                 padding: 8px 0 0 55px;
               }
             }
-
-            p {
-              font: 14px open_sans_regular;
-              color: #585858;
+            .description {
+              margin-top: 33px;
             }
+          }
+        }
+      }
+      .hotel_item_conditions {
+        .condition {
+          height: 39px;
+          border-bottom: 2px solid $main_lightgray_color;
+          img {
+            float: left;
           }
         }
       }

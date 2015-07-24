@@ -69,22 +69,36 @@ body {
     .main_section .main_container .hotel_main_content p.number_of_available_rooms {
       font-size: 24px;
       color: #453634; }
-    .main_section .main_container .hotel_main_content .hotel_main_content_block {
+    .main_section .main_container .hotel_main_content .hotel_main_content_block a {
+      position: absolute;
+      top: 15px;
+      right: 24px;
+      font-size: 13px; }
+    .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info {
       border: 1px solid #f3f3f3;
-      padding: 28px 24px; }
+      padding: 28px 24px;
+      margin-top: 6px;
+      position: relative; }
       .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_gallery {
         float: left; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_short_info_right h4 {
+      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right h4 {
         margin-bottom: 24px; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_short_info_right .room_option {
-        height: 31px; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_short_info_right .room_option img {
-          float: left; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_short_info_right .room_option p {
-          padding: 8px 0 0 55px; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_short_info_right p {
+      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right p {
         font: 14px open_sans_regular;
         color: #585858; }
+      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right .room_option {
+        height: 31px; }
+        .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right .room_option img {
+          float: left; }
+        .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right .room_option p {
+          padding: 8px 0 0 55px; }
+      .main_section .main_container .hotel_main_content .hotel_main_content_block .hotel_short_info .hotel_item_short_info_right .description {
+        margin-top: 33px; }
+    .main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
+      height: 39px;
+      border-bottom: 2px solid #f3f3f3; }
+      .main_section .main_container .hotel_main_content .hotel_item_conditions .condition img {
+        float: left; }
   .main_section .main_container .hotel_right_sidebar {
     padding-right: 65px; }
     .main_section .main_container .hotel_right_sidebar h3 {

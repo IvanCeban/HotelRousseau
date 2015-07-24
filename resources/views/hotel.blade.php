@@ -9,7 +9,7 @@
 @stop
 
 @section('scripts')
-
+    <script src="js/hotel.js"></script>
 @stop
 
 
@@ -87,7 +87,7 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-9">
-                                            <div class="hotel_short_info_right">
+                                            <div class="hotel_item_short_info_right">
                                                 <h4>Single Classic</h4>
                                                 <div class="row">
                                                     <div class="col-xs-4">
@@ -146,12 +146,71 @@
                                                     </div>
                                                 </div>
                                                 <p class="description">
-                                                Un nouveau concept. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                                                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                                                dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-                                                Quisque rutrum. Aenean imperdiet. Cras dapibus. Vivamus elementum semper nisi.
-                                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                                    Un nouveau concept. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                                                    dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                                                    Quisque rutrum. Aenean imperdiet. Cras dapibus. Vivamus elementum semper nisi.
+                                                    Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
                                                 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#">Il nous reste plus que 3 chambres</a>
+                                </div>
+                                <div class="hotel_item_conditions">
+                                    <div class="condition">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <h5>Conditions</h5>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h5>Tarif par nuit</h5>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h5>Chambres (Prix pour 8 nuits)</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="condition">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <img src="/img/hotel/condition_icon_false.png">
+                                                    <p>Non-annulable, non remboursable</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p>chf 185.-</p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="topic">
+                                                    <option value="1">1 (chf 1 960.-)</option>
+                                                    <option value="2">2 (chf 2 960.-)</option>
+                                                    <option value="3">3 (chf 3 960.-)</option>
+                                                    <option value="4">4 (chf 4 960.-)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="condition">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <img src="/img/hotel/condition_icon_true.png">
+                                                    <p>Annulation gratuite avant le 27 juillet 2015</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p>chf 215.-</p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="topic">
+                                                    <option value="1">1 (chf 1 960.-)</option>
+                                                    <option value="2">2 (chf 2 960.-)</option>
+                                                    <option value="3">3 (chf 3 960.-)</option>
+                                                    <option value="4">4 (chf 4 960.-)</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
