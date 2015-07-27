@@ -7,6 +7,7 @@ $main_lightbrown_color: #a68858;
 $main_lightblue_color: #38bad4;
 $main_purple_color: #8256a0;
 $main_lightgray_color: #f3f3f3;
+$main_darkgray_color: #1d1d1d;
 
 .header{
   height: 53px;
@@ -37,9 +38,12 @@ $main_lightgray_color: #f3f3f3;
 }
 
 .main_section {
-  padding: 130px 30px 40px;
+  padding: 130px 30px 75px;
   .main_container {
     border: 1px solid $main_lightgray_color;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
     h3 {
       font: 27px pt_serif_regular;
       color: $main_brown_color;
@@ -55,8 +59,11 @@ $main_lightgray_color: #f3f3f3;
     a:hover {
       text-decoration: underline;
     }
+    select {
+      height: 31px;
+    }
     .hotel_main_content {
-      padding: 75px 67px 0 50px;
+      padding: 75px 67px 58px 50px;
       h3 {
         border-bottom: 2px solid $main_lightgray_color;
         padding-bottom: 4px;
@@ -115,7 +122,7 @@ $main_lightgray_color: #f3f3f3;
         .extra_border {
           border: 1px solid $main_lightgray_color;
           padding: 2px;
-          margin-top: 6px;
+          margin-top: 60px;
           .hotel_short_info{
             border: 1px solid $main_lightgray_color;
             padding: 28px 24px;
@@ -146,22 +153,66 @@ $main_lightgray_color: #f3f3f3;
             }
           }
         }
+        .extra_border:first-child {
+          margin-top: 6px;
+        }
       }
       .hotel_item_conditions {
         margin-top: 51px;
         .condition {
-          height: 39px;
+          padding: 4px 0;
           border-bottom: 2px solid $main_lightgray_color;
-          img {
-            float: left;
+          h5 {
+            font: 14px open_sans_bold;
+            color: $main_darkgray_color;
+          }
+          .condition_description {
+            padding: 7px 0;
+            img {
+              float: left;
+              margin-right: 18px;
+            }
+            p {
+              padding: 0;
+            }
+          }
+          p {
+            padding: 7px 0;
+          }
+        }
+        .condition_items {
+          margin-top: 28px;
+          .condition_item {
+            background: #fafafa;
+            margin-bottom: 4px;
+            padding: 20px 30px;
+            img {
+              float: left;
+              margin-right: 32px;
+            }
+            .condition_item_text {
+              h5 {
+                font: 14px open_sans_bold;
+                color: $main_darkgray_color;
+                margin-bottom: 10px;
+              }
+              p {
+                font: 13px open_sans_regular;
+                color: #453634;
+              }
+            }
           }
         }
       }
     }
     .hotel_right_sidebar {
       padding: 74px 65px 0 45px;
-      background: #fcfcfc;
+      background: #fbfbfb;
       border-left: 1px solid $main_lightgray_color;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
       h3 {
         margin-bottom: 40px;
       }

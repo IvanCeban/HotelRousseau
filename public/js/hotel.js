@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-    //$("select").selectBoxIt();
+    $("select").selectBoxIt();
 
     $('.hotel_main_content_nav ul li').on('click', function(){
         $('.hotel_main_content_nav ul li').removeClass('active');
