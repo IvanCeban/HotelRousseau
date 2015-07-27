@@ -6,11 +6,14 @@
 
 @section('styles')
     <link rel="stylesheet" href="/css/hotel.css">
+    <script src="libraries/slidesJS/example.css"></script>
 @stop
 
 @section('scripts')
     <script src="js/hotel.js"></script>
     {{--<script src="libraries/selectBoxIt/js/selectBoxIt.js"></script>--}}
+    {{--<script src="http://code.jquery.com/jquery-latest.min.js"></script>--}}
+    <script src="libraries/slidesJS/jquery.slides.min.js"></script>
 @stop
 
 
@@ -58,12 +61,19 @@
     </section>
     <!--header END-->
 
+{{--<div id="slides">--}}
+    {{--<img src="http://placehold.it/940x528">--}}
+    {{--<img src="http://placehold.it/940x528">--}}
+    {{--<img src="http://placehold.it/940x528">--}}
+    {{--<img src="http://placehold.it/940x528">--}}
+    {{--<img src="http://placehold.it/940x528">--}}
+  {{--</div>--}}
 
     <!--main content START-->
         <section class="main_section">
             <div class="main_container">
                 <div class="row">
-                    <div class="col-md-8 hotel_main_content">
+                    <div class="col-md-9 hotel_main_content">
                         {{--<div class="hotel_main_content">--}}
                             <h3>Hôtel Rousseau Genève</h3>
                             <div class="address">
@@ -100,7 +110,12 @@
                                         <div class="row">
                                             <div class="col-sm-3">
                                                 <div class="hotel_item_gallery">
-                                                    <img src="/img/hotel/photo_example.png">
+                                                    <div id="slides">
+                                                        <img src="/img/hotel/photo_example.png">
+                                                        <img src="/img/hotel/photo_example.png">
+                                                        <img src="/img/hotel/photo_example.png">
+                                                        <img src="/img/hotel/photo_example.png">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-9">
@@ -201,12 +216,14 @@
                                                 <p>chf 185.-</p>
                                             </div>
                                             <div class="col-sm-4">
-                                                <select name="topic">
-                                                    <option value="1">1 (chf 1 960.-)</option>
-                                                    <option value="2">2 (chf 2 960.-)</option>
-                                                    <option value="3">3 (chf 3 960.-)</option>
-                                                    <option value="4">4 (chf 4 960.-)</option>
-                                                </select>
+                                                <div class="selectbox_container">
+                                                    <select name="topic">
+                                                        <option value="1"><span class="select_box_text">1 (chf 1 960.-)</span></option>
+                                                        <option value="2"><span class="select_box_text">2 (chf 2 960.-)</span></option>
+                                                        <option value="3"><span class="select_box_text">3 (chf 3 960.-)</span></option>
+                                                        <option value="4"><span class="select_box_text">4 (chf 4 960.-)</span></option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -222,12 +239,14 @@
                                                 <p>chf 215.-</p>
                                             </div>
                                             <div class="col-sm-4">
-                                                <select name="topic">
-                                                    <option value="1">1 (chf 1 960.-)</option>
-                                                    <option value="2">2 (chf 2 960.-)</option>
-                                                    <option value="3">3 (chf 3 960.-)</option>
-                                                    <option value="4">4 (chf 4 960.-)</option>
-                                                </select>
+                                                <div class="selectbox_container">
+                                                    <select name="topic">
+                                                        <option value="1">1 (chf 1 960.-)</option>
+                                                        <option value="2">2 (chf 2 960.-)</option>
+                                                        <option value="3">3 (chf 3 960.-)</option>
+                                                        <option value="4">4 (chf 4 960.-)</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -243,12 +262,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <select name="topic">
-                                                        <option value="1">1 (chf 1 960.-)</option>
-                                                        <option value="2">2 (chf 2 960.-)</option>
-                                                        <option value="3">3 (chf 3 960.-)</option>
-                                                        <option value="4">4 (chf 4 960.-)</option>
-                                                    </select>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1">1 (chf 1 960.-)</option>
+                                                            <option value="2">2 (chf 2 960.-)</option>
+                                                            <option value="3">3 (chf 3 960.-)</option>
+                                                            <option value="4">4 (chf 4 960.-)</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,12 +284,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <select name="topic">
-                                                        <option value="1">1 (chf 1 960.-)</option>
-                                                        <option value="2">2 (chf 2 960.-)</option>
-                                                        <option value="3">3 (chf 3 960.-)</option>
-                                                        <option value="4">4 (chf 4 960.-)</option>
-                                                    </select>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1">1 (chf 1 960.-)</option>
+                                                            <option value="2">2 (chf 2 960.-)</option>
+                                                            <option value="3">3 (chf 3 960.-)</option>
+                                                            <option value="4">4 (chf 4 960.-)</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -283,12 +306,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <select name="topic">
-                                                        <option value="1">1 (chf 1 960.-)</option>
-                                                        <option value="2">2 (chf 2 960.-)</option>
-                                                        <option value="3">3 (chf 3 960.-)</option>
-                                                        <option value="4">4 (chf 4 960.-)</option>
-                                                    </select>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1">chf 1 960.-</option>
+                                                            <option value="2">chf 2 960.-</option>
+                                                            <option value="3">chf 3 960.-</option>
+                                                            <option value="4">chf 4 960.-</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -401,12 +426,14 @@
                                                 <p>chf 185.-</p>
                                             </div>
                                             <div class="col-sm-4">
-                                                <select name="topic">
-                                                    <option value="1">1 (chf 1 960.-)</option>
-                                                    <option value="2">2 (chf 2 960.-)</option>
-                                                    <option value="3">3 (chf 3 960.-)</option>
-                                                    <option value="4">4 (chf 4 960.-)</option>
-                                                </select>
+                                                <div class="selectbox_container">
+                                                    <select name="topic">
+                                                        <option value="1">1 (chf 1 960.-)</option>
+                                                        <option value="2">2 (chf 2 960.-)</option>
+                                                        <option value="3">3 (chf 3 960.-)</option>
+                                                        <option value="4">4 (chf 4 960.-)</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -422,12 +449,14 @@
                                                 <p>chf 215.-</p>
                                             </div>
                                             <div class="col-sm-4">
-                                                <select name="topic">
-                                                    <option value="1">1 (chf 1 960.-)</option>
-                                                    <option value="2">2 (chf 2 960.-)</option>
-                                                    <option value="3">3 (chf 3 960.-)</option>
-                                                    <option value="4">4 (chf 4 960.-)</option>
-                                                </select>
+                                                <div class="selectbox_container">
+                                                    <select name="topic">
+                                                        <option value="1">1 (chf 1 960.-)</option>
+                                                        <option value="2">2 (chf 2 960.-)</option>
+                                                        <option value="3">3 (chf 3 960.-)</option>
+                                                        <option value="4">4 (chf 4 960.-)</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -435,7 +464,7 @@
                             </div>
                         {{--</div>--}}
                     </div>
-                    <div class="col-md-4 hotel_right_sidebar">
+                    <div class="col-md-3 hotel_right_sidebar">
                         {{--<div class="hotel_right_sidebar">--}}
                             <h3>Votre choix</h3>
                             <p>Du lundi 20 juillet 2015</p>

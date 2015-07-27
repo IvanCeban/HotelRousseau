@@ -41,7 +41,7 @@ $main_darkgray_color: #1d1d1d;
   padding: 130px 30px 75px;
   .main_container {
     border: 1px solid $main_lightgray_color;
-    overflow: hidden;
+//    overflow: hidden;
     position: relative;
     width: 100%;
     h3 {
@@ -113,16 +113,17 @@ $main_darkgray_color: #1d1d1d;
         color: $main_brown_color;
       }
       .hotel_main_content_block {
-        a {
-          position: absolute;
-          top: 15px;
-          right: 24px;
-          font-size: 13px;
-        }
+
         .extra_border {
           border: 1px solid $main_lightgray_color;
           padding: 2px;
           margin-top: 60px;
+          a {
+            position: absolute;
+            top: 15px;
+            right: 24px;
+            font-size: 13px;
+          }
           .hotel_short_info{
             border: 1px solid $main_lightgray_color;
             padding: 28px 24px;
@@ -180,6 +181,11 @@ $main_darkgray_color: #1d1d1d;
             padding: 7px 0;
           }
         }
+        .condition .col-sm-4:last-child {
+          h5 {
+            float: right;
+          }
+        }
         .condition_items {
           margin-top: 28px;
           .condition_item {
@@ -200,6 +206,9 @@ $main_darkgray_color: #1d1d1d;
                 font: 13px open_sans_regular;
                 color: #453634;
               }
+            }
+            .selectbox_container {
+              padding: 15px 0;
             }
           }
         }
@@ -271,4 +280,50 @@ $main_darkgray_color: #1d1d1d;
       }
     }
   }
+  .main_container>.row>.col-md-9 {
+    width: 73%;
+  }
+  .main_container>.row>.col-md-3 {
+    width: 27%;
+  }
+}
+.selectbox_container {
+  width: 192px;
+  float: right;
+  .selectboxit {
+    background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;
+    border: 1px solid $main_lightgray_color;
+    height: 31px!important;
+    max-width: 192px;
+    span {
+      padding: 0;
+    }
+  }
+  .selectboxit-container {
+    display: block;
+    span {
+      line-height: 31px!important;
+      height: 31px!important;
+    }
+  }
+  .selectboxit-options {
+    li {
+      height: 30px;
+      a {
+        position: relative;
+        padding-top: 5px!important;
+        line-height: 31px!important;
+        height: 31px!important;
+        padding-left: 15px!important;
+        font: 14px open_sans_regular!important;
+      }
+      a:hover {
+        text-decoration: none!important;
+      }
+    }
+  }
+}
+
+#slides {
+  display:none;
 }

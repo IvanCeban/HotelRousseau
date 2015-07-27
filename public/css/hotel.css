@@ -23,7 +23,6 @@ body {
   padding: 130px 30px 75px; }
   .main_section .main_container {
     border: 1px solid #f3f3f3;
-    overflow: hidden;
     position: relative;
     width: 100%; }
     .main_section .main_container h3 {
@@ -77,15 +76,15 @@ body {
       .main_section .main_container .hotel_main_content p.number_of_available_rooms {
         font-size: 24px;
         color: #453634; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block a {
-        position: absolute;
-        top: 15px;
-        right: 24px;
-        font-size: 13px; }
       .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border {
         border: 1px solid #f3f3f3;
         padding: 2px;
         margin-top: 60px; }
+        .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border a {
+          position: absolute;
+          top: 15px;
+          right: 24px;
+          font-size: 13px; }
         .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info {
           border: 1px solid #f3f3f3;
           padding: 28px 24px;
@@ -124,6 +123,8 @@ body {
               padding: 0; }
           .main_section .main_container .hotel_main_content .hotel_item_conditions .condition p {
             padding: 7px 0; }
+        .main_section .main_container .hotel_main_content .hotel_item_conditions .condition .col-sm-4:last-child h5 {
+          float: right; }
         .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items {
           margin-top: 28px; }
           .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item {
@@ -140,6 +141,8 @@ body {
             .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .condition_item_text p {
               font: 13px open_sans_regular;
               color: #453634; }
+            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .selectbox_container {
+              padding: 15px 0; }
     .main_section .main_container .hotel_right_sidebar {
       padding: 74px 65px 0 45px;
       background: #fbfbfb;
@@ -191,5 +194,39 @@ body {
           font: 19px open_sans_regular;
           color: #ffffff;
           text-align: center; }
+  .main_section .main_container > .row > .col-md-9 {
+    width: 73%; }
+  .main_section .main_container > .row > .col-md-3 {
+    width: 27%; }
+
+.selectbox_container {
+  width: 192px;
+  float: right; }
+  .selectbox_container .selectboxit {
+    background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;
+    border: 1px solid #f3f3f3;
+    height: 31px !important;
+    max-width: 192px; }
+    .selectbox_container .selectboxit span {
+      padding: 0; }
+  .selectbox_container .selectboxit-container {
+    display: block; }
+    .selectbox_container .selectboxit-container span {
+      line-height: 31px !important;
+      height: 31px !important; }
+  .selectbox_container .selectboxit-options li {
+    height: 30px; }
+    .selectbox_container .selectboxit-options li a {
+      position: relative;
+      padding-top: 5px !important;
+      line-height: 31px !important;
+      height: 31px !important;
+      padding-left: 15px !important;
+      font: 14px open_sans_regular !important; }
+    .selectbox_container .selectboxit-options li a:hover {
+      text-decoration: none !important; }
+
+#slides {
+  display: none; }
 
 /*# sourceMappingURL=hotel.css.map */
