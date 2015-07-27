@@ -62,8 +62,8 @@
         <section class="main_section">
             <div class="main_container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="hotel_main_content">
+                    <div class="col-md-8 hotel_main_content">
+                        {{--<div class="hotel_main_content">--}}
                             <h3>Hôtel Rousseau Genève</h3>
                             <div class="address">
                                 <img src="/img/hotel/pin_address.png">
@@ -79,83 +79,85 @@
                             </div>
                             <p class="number_of_available_rooms">2 types de chambres disponibles</p>
                             <div class="hotel_main_content_block">
-                                <div class="hotel_short_info">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="hotel_item_gallery">
-                                                <img src="/img/hotel/photo_example.png">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <div class="hotel_item_short_info_right">
-                                                <h4>Single Classic</h4>
-                                                <div class="row">
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/tv.png">
-                                                            <p>Télévision à écran plat</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/desk.png">
-                                                            <p>Bureau</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/bathroom.png">
-                                                            <p>Salle de douche</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/wi-fi.png">
-                                                            <p>Wi-Fi acces gratuit</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/bar.png">
-                                                            <p>Minibar</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/hair_dryer.png">
-                                                            <p>Sèche cheveux</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/cofee_machine.png">
-                                                            <p>Machine à café Nespresso</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/safe.png">
-                                                            <p>Coffe-fort</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="room_option">
-                                                            <img src="/img/rooms/rooms_options_icons_brown/surface.png">
-                                                            <p>De 17 à 20 m2</p>
-                                                        </div>
-                                                    </div>
+                                <div class="extra_border">
+                                    <div class="hotel_short_info">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="hotel_item_gallery">
+                                                    <img src="/img/hotel/photo_example.png">
                                                 </div>
-                                                <p class="description">
-                                                    Un nouveau concept. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                                                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                                                    dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-                                                    Quisque rutrum. Aenean imperdiet. Cras dapibus. Vivamus elementum semper nisi.
-                                                    Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                                                </p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="hotel_item_short_info_right">
+                                                    <h4>Single Classic</h4>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/tv.png">
+                                                                <p>Télévision à écran plat</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/desk.png">
+                                                                <p>Bureau</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/bathroom.png">
+                                                                <p>Salle de douche</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/wi-fi.png">
+                                                                <p>Wi-Fi acces gratuit</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/bar.png">
+                                                                <p>Minibar</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/hair_dryer.png">
+                                                                <p>Sèche cheveux</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/cofee_machine.png">
+                                                                <p>Machine à café Nespresso</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/safe.png">
+                                                                <p>Coffe-fort</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="room_option">
+                                                                <img src="/img/rooms/rooms_options_icons_brown/surface.png">
+                                                                <p>De 17 à 20 m2</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="description">
+                                                        Un nouveau concept. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                                        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                                                        dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                                                        Quisque rutrum. Aenean imperdiet. Cras dapibus. Vivamus elementum semper nisi.
+                                                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <a href="#">Il nous reste plus que 3 chambres</a>
                                     </div>
-                                    <a href="#">Il nous reste plus que 3 chambres</a>
                                 </div>
                                 <div class="hotel_item_conditions">
                                     <div class="condition">
@@ -216,10 +218,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        {{--</div>--}}
                     </div>
-                    <div class="col-md-4">
-                        <div class="hotel_right_sidebar">
+                    <div class="col-md-4 hotel_right_sidebar">
+                        {{--<div class="hotel_right_sidebar">--}}
                             <h3>Votre choix</h3>
                             <p>Du lundi 20 juillet 2015</p>
                             <p>au mardi 28 juillet 2015 (8 nuits)</p>
@@ -249,7 +251,7 @@
                                 <p>Passer aux offres (etapes 2/3)</p>
                             </div>
                             <p>Transaction sécurisée</p>
-                        </div>
+                        {{--</div>--}}
                     </div>
                 </div>
             </div>
