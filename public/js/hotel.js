@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
     $("select").selectBoxIt();
     $(function(){
-        $("#slides").slidesjs({
+        $(".slides").slidesjs({
             width: 460,
             height: 400,
             pagination: {
