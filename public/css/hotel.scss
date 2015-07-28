@@ -128,8 +128,29 @@ $main_darkgray_color: #1d1d1d;
             border: 1px solid $main_lightgray_color;
             padding: 28px 24px;
             position: relative;
-            .hotel_item_gallery {
-              float: left;
+//            .hotel_item_gallery {
+//              float: left;
+//            }
+            .gallery_pics_amount {
+              height: 41px;
+              position: absolute;
+              bottom: 0;
+              background: #9369b4;
+              z-index: 9;
+            }
+            #slides {
+              .slidesjs-navigation {
+                bottom: -20px;
+                top: auto;
+              }
+              .slidesjs-previous {
+                left: 30px;
+                background: url("/img/hotel/gallery_previous.png") no-repeat;
+              }
+              .slidesjs-next {
+                right: 30px;
+                background: url("/img/hotel/gallery_next.png") no-repeat;
+              }
             }
             .hotel_item_short_info_right {
               h4 {

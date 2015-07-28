@@ -61,13 +61,7 @@
     </section>
     <!--header END-->
 
-{{--<div id="slides">--}}
-    {{--<img src="http://placehold.it/940x528">--}}
-    {{--<img src="http://placehold.it/940x528">--}}
-    {{--<img src="http://placehold.it/940x528">--}}
-    {{--<img src="http://placehold.it/940x528">--}}
-    {{--<img src="http://placehold.it/940x528">--}}
-  {{--</div>--}}
+
 
     <!--main content START-->
         <section class="main_section">
@@ -105,17 +99,19 @@
         {{--</select>--}}
     {{--</div>--}}
 {{--</div>--}}
+
                                 <div class="extra_border">
                                     <div class="hotel_short_info">
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <div class="hotel_item_gallery">
-                                                    <div id="slides">
-                                                        <img src="/img/hotel/photo_example.png">
-                                                        <img src="/img/hotel/photo_example.png">
-                                                        <img src="/img/hotel/photo_example.png">
-                                                        <img src="/img/hotel/photo_example.png">
-                                                    </div>
+                                                <div id="slides">
+                                                    <img src="/img/hotel/photo_example.png">
+                                                    <img src="/img/hotel/photo_example.png">
+                                                    <img src="/img/hotel/photo_example.png">
+                                                    <img src="/img/hotel/photo_example.png">
+                                                </div>
+                                                <div class="gallery_pics_amount">
+                                                    <span>12 photos</span>
                                                 </div>
                                             </div>
                                             <div class="col-sm-9">

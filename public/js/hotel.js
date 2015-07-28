@@ -2,8 +2,11 @@ jQuery(document).ready(function($){
     $("select").selectBoxIt();
     $(function(){
         $("#slides").slidesjs({
-            width: 500,
-            height: 350
+            width: 460,
+            height: 400,
+            pagination: {
+                active: false
+            }
         });
     });
 

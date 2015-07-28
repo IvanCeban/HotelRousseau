@@ -89,8 +89,21 @@ body {
           border: 1px solid #f3f3f3;
           padding: 28px 24px;
           position: relative; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery {
-            float: left; }
+          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .gallery_pics_amount {
+            height: 41px;
+            position: absolute;
+            bottom: 0;
+            background: #9369b4;
+            z-index: 9; }
+          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info #slides .slidesjs-navigation {
+            bottom: -20px;
+            top: auto; }
+          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info #slides .slidesjs-previous {
+            left: 30px;
+            background: url("/img/hotel/gallery_previous.png") no-repeat; }
+          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info #slides .slidesjs-next {
+            right: 30px;
+            background: url("/img/hotel/gallery_next.png") no-repeat; }
           .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right h4 {
             margin-bottom: 24px; }
           .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
