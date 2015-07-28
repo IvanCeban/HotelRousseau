@@ -77,13 +77,13 @@
                             <a class="add_info_link" href="#">Plus d'information</a>
                             <div class="hotel_main_content_nav">
                                 <ul>
-                                    <li class="active">Chambres</li>
-                                    <li>Offres</li>
-                                    <li>Réserver</li>
+                                    <li class="active" name="hotel_rooms">Chambres</li>
+                                    <li name="hotel_offers">Offres</li>
+                                    <li name="hotel_reservation">Réserver</li>
                                 </ul>
                             </div>
                             <div id="hotel_rooms">
-                                <p class="number_of_available_rooms">2 types de chambres disponibles</p>
+                                <p class="sub_nav_title">2 types de chambres disponibles</p>
 
                                 <div class="hotel_main_content_block">
                                     <div class="extra_border">
@@ -462,6 +462,116 @@
                                 </div>
                             </div>
                             <div id="hotel_offers">
+                                <p class="sub_nav_title">3 offres disponibles</p>
+                                <div class="hotel_main_content_block">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="/img/hotel/offer_img1.jpg">
+                                            <h4>Morbi et ullamcorper justo semper nam posuere sed</h4>
+                                            <div class="offer_date_separator"></div>
+                                            <p class="offer_date">Jusqu'au 15 juillet 2015</p>
+                                            <p class="offer_description">
+                                                Donec eu sapien lobortis, commodo velit sed, lacinia lacus.
+                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                                per inceptos himenaeos. Morbi et ullamcorper justo, sit amet ullamcorper dui.
+                                                Sed sed dapibus nisi.
+                                            </p>
+                                            <a href="#">Plus d'information</a>
+                                            <div class="offer_price">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <span class="currency">chf</span> 135. -
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p>Quantité</p>
+                                                        <div class="selectbox_container">
+                                                            <select name="topic">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <img src="/img/hotel/offer_img2.jpg">
+                                            <h4>Offre 2</h4>
+                                            <div class="offer_date_separator"></div>
+                                            <p class="offer_date">Jusqu'au 15 juillet 2015</p>
+                                            <p class="offer_description">
+                                                Donec eu sapien lobortis, commodo velit sed, lacinia lacus.
+                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                                per inceptos himenaeos. Morbi et ullamcorper justo, sit amet ullamcorper dui.
+                                                Sed sed dapibus nisi. Donec eu sapien lobortis, commodo velit sed, lacinia lacus.
+                                                Class aptent taciti sociosqu...
+                                            </p>
+                                            <a href="#">Plus d'information</a>
+                                            <div class="offer_price">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <span class="currency">chf</span> 135. -
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p>Quantité</p>
+                                                        <div class="selectbox_container">
+                                                            <select name="topic">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <img src="/img/hotel/offer_img3.jpg">
+                                            <h4>Justo semper nam posuere sed</h4>
+                                            <div class="offer_date_separator"></div>
+                                            <p class="offer_date">Jusqu'au 15 juillet 2015</p>
+                                            <p class="offer_description">
+                                                Donec eu sapien lobortis, commodo velit sed, lacinia lacus.
+                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                Morbi et ullamcorper justo, sit amet ullamcorper dui.
+                                                Sed sed dapibus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                                            </p>
+                                            <a href="#">Plus d'information</a>
+                                            <div class="offer_price">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <span class="currency">chf</span> 135. -
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p>Quantité</p>
+                                                        <div class="selectbox_container">
+                                                            <select name="topic">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back_btn">
+                                        <p>Revenir aux chambres</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="hotel_reservation">
 
                             </div>
                         {{--</div>--}}

@@ -71,7 +71,7 @@ body {
           width: 33.2%;
           text-align: center;
           background: #f8f8f8;
-          padding: 17px 0;
+          padding: 15px 0;
           text-transform: uppercase;
           cursor: pointer; }
         .main_section .main_container .hotel_main_content .hotel_main_content_nav ul li:nth-child(2) {
@@ -79,39 +79,39 @@ body {
         .main_section .main_container .hotel_main_content .hotel_main_content_nav ul li.active {
           background: #8256a0;
           color: #ffffff; }
-      .main_section .main_container .hotel_main_content p.number_of_available_rooms {
+      .main_section .main_container .hotel_main_content p.sub_nav_title {
         font-size: 24px;
         color: #453634; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border {
+      .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border {
         border: 1px solid #f3f3f3;
         padding: 2px;
         margin-top: 60px; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border a {
+        .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border a {
           position: absolute;
           top: 15px;
           right: 24px;
           font-size: 13px; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info {
+        .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info {
           border: 1px solid #f3f3f3;
           padding: 28px 24px;
           position: relative; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery {
+          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery {
             position: relative; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides {
               display: none; }
-              .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-navigation {
+              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-navigation {
                 bottom: 0;
                 top: auto;
                 z-index: 11;
                 height: 41px;
                 width: 41px; }
-              .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-previous {
+              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-previous {
                 left: 30px;
                 background: url("/img/hotel/gallery_previous.png") center no-repeat; }
-              .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-next {
+              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-next {
                 right: 30px;
                 background: url("/img/hotel/gallery_next.png") center no-repeat; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount {
               height: 41px;
               position: absolute;
               bottom: 0;
@@ -120,30 +120,72 @@ body {
               width: 100%;
               text-align: center;
               padding: 12px 0; }
-              .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount span {
+              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount span {
                 font: 13px open_sans_regular;
                 text-transform: uppercase;
                 color: #ffffff; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header {
+          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header {
             margin-bottom: 25px; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header h4 {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header h4 {
               float: left; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header img {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header img {
               margin: 3px 0 0 9px; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
+          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
             font: 14px open_sans_regular;
             color: #585858; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option {
+          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option {
             height: 31px;
             margin-bottom: 8px; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option img {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option img {
               float: left; }
-            .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option p {
+            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option p {
               padding: 8px 0 0 55px; }
-          .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .description {
+          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .description {
             margin-top: 33px; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_block .extra_border:first-child {
+      .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border:first-child {
         margin-top: 6px; }
+      .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block {
+        margin-top: 18px; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block img {
+          width: 100%; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date_separator {
+          height: 2px;
+          background-color: #efc581;
+          width: 48px;
+          margin-top: 15px; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date {
+          font: 12px open_sans_regular;
+          color: #efc581;
+          margin: 3px 0 35px; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_description {
+          font: 14px open_sans_regular;
+          color: #453634;
+          line-height: 25px;
+          margin-bottom: 10px; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price {
+          border-bottom: 3px solid #f3f3f3;
+          font: 30px pt_serif_regular;
+          color: #8256a0;
+          margin-top: 40px; }
+          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price p {
+            font: 14px open_sans_regular;
+            color: #453634;
+            float: left;
+            width: 50%;
+            text-align: right;
+            padding: 6px 12px 0 0; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .selectbox_container {
+          width: 50%;
+          float: right; }
+        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .back_btn {
+          background: #8256a0 url("/img/hotel/arrow_left_double.png") no-repeat;
+          float: right;
+          width: 380px;
+          height: 46px; }
+      .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row {
+        margin: 0 -21px; }
+      .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
+        padding: 0 21px; }
       .main_section .main_container .hotel_main_content .hotel_item_conditions {
         margin-top: 51px; }
         .main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
@@ -259,7 +301,6 @@ body {
       height: 31px !important; }
   .selectbox_container .selectboxit-options {
     border: 1px solid #eeeeee;
-    border-top: 0;
     background: #ffffff; }
     .selectbox_container .selectboxit-options li {
       height: 30px;
