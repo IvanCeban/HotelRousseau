@@ -102,7 +102,7 @@ $main_darkgray_color: #1d1d1d;
             color: $main_purple_color;
             float: left;
             height: 50px;
-            width: 33.2%;
+            width: 33.27%;
             text-align: center;
             background: #f8f8f8;
             padding: 15px 0;
@@ -251,10 +251,18 @@ $main_darkgray_color: #1d1d1d;
             float: right;
           }
           .back_btn {
-            background: $main_purple_color url("/img/hotel/arrow_left_double.png") no-repeat;
+            background: $main_purple_color url("/img/hotel/arrow_left_double.png") 14px 12px no-repeat;
             float: right;
             width: 380px;
             height: 46px;
+            padding: 10px 0;
+            margin-top: 15px;
+            cursor: pointer;
+            p {
+              text-align: center;
+              color: #ffffff;
+              font: 19px open_sans_regular;
+            }
           }
         }
       }
@@ -263,6 +271,25 @@ $main_darkgray_color: #1d1d1d;
       }
       #hotel_offers .hotel_main_content_block>.row>div {
         padding: 0 21px;
+      }
+      #hotel_reservation {
+        .hotel_main_content_block {
+          .extra_border {
+            border-top: 1px solid $main_lightgray_color;
+            padding-top: 1px;
+            .reservatioon_form_block {
+              padding: 30px;
+              border-left: 1px solid $main_lightgray_color;
+              border-top: 1px solid $main_lightgray_color;
+              .selectbox_container {
+                max-width: 100%;
+                .selectboxit {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
       .hotel_item_conditions {
         margin-top: 51px;
@@ -391,7 +418,8 @@ $main_darkgray_color: #1d1d1d;
   }
 }
 .selectbox_container {
-  width: 192px;
+  max-width: 192px;
+  width: 100%;
   float: right;
   .selectboxit {
     background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;

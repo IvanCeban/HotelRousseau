@@ -68,7 +68,7 @@ body {
           color: #8256a0;
           float: left;
           height: 50px;
-          width: 33.2%;
+          width: 33.27%;
           text-align: center;
           background: #f8f8f8;
           padding: 15px 0;
@@ -178,14 +178,32 @@ body {
           width: 50%;
           float: right; }
         .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .back_btn {
-          background: #8256a0 url("/img/hotel/arrow_left_double.png") no-repeat;
+          background: #8256a0 url("/img/hotel/arrow_left_double.png") 14px 12px no-repeat;
           float: right;
           width: 380px;
-          height: 46px; }
+          height: 46px;
+          padding: 10px 0;
+          margin-top: 15px;
+          cursor: pointer; }
+          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .back_btn p {
+            text-align: center;
+            color: #ffffff;
+            font: 19px open_sans_regular; }
       .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row {
         margin: 0 -21px; }
       .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
         padding: 0 21px; }
+      .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border {
+        border-top: 1px solid #f3f3f3;
+        padding-top: 1px; }
+        .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block {
+          padding: 30px;
+          border-left: 1px solid #f3f3f3;
+          border-top: 1px solid #f3f3f3; }
+          .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container {
+            max-width: 100%; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container .selectboxit {
+              max-width: 100%; }
       .main_section .main_container .hotel_main_content .hotel_item_conditions {
         margin-top: 51px; }
         .main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
@@ -278,7 +296,8 @@ body {
     width: 27%; }
 
 .selectbox_container {
-  width: 192px;
+  max-width: 192px;
+  width: 100%;
   float: right; }
   .selectbox_container .selectboxit {
     background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;

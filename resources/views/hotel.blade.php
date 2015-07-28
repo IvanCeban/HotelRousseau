@@ -572,7 +572,110 @@
                                 </div>
                             </div>
                             <div id="hotel_reservation">
-
+                                <p class="sub_nav_title">Informations personnelles</p>
+                                <div class="hotel_main_content_block">
+                                    <div class="extra_border">
+                                        <div class="reservatioon_form_block">
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <p class="reservation_form_item_placeholder">Titre*</p>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">Mr</span></option>
+                                                            <option value="2"><span class="select_box_text">Mrs</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <p class="reservation_form_item_placeholder">Prénom*</p>
+                                                    <input type="text" name="firstname">
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <p class="reservation_form_item_placeholder">Nom*</p>
+                                                    <input type="text" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">E-mail*</p>
+                                                    <input type="email" name="email">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">*</p>
+                                                    <input type="text" name="text">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">No de téléphone*</p>
+                                                    <input type="email" name="phone">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">Pays de résidence</p>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">Suisse</span></option>
+                                                            <option value="2"><span class="select_box_text">France</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sub_nav_title">Demandes spéciales (facultatif)</p>
+                                <div class="hotel_main_content_block">
+                                    <div class="extra_border">
+                                        <div class="reservatioon_form_block">
+                                            <h3>Chambre Single Classic - 1 occupant</h3>
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <p class="reservation_form_item_placeholder">Titre*</p>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">Mr</span></option>
+                                                            <option value="2"><span class="select_box_text">Mrs</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="reservation_form_item_placeholder">Prénom*</p>
+                                                    <input type="text" name="firstname">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="reservation_form_item_placeholder">Nom*</p>
+                                                    <input type="text" name="name">
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <p class="reservation_form_item_placeholder">Age*</p>
+                                                    <div class="selectbox_container">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">Mr</span></option>
+                                                            <option value="2"><span class="select_box_text">Mrs</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="add_visitor_btn">
+                                                <a href="#">Ajouter un occupant</a>
+                                            </div>
+                                            <h3>Chambre Single Classic - 1 occupant</h3>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">E-mail*</p>
+                                                    <input type="email" name="email">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <p class="reservation_form_item_placeholder">*</p>
+                                                    <input type="text" name="text">
+                                                </div>
+                                            </div>
+                                            <div class="add_visitor_btn">
+                                                <a href="#">Ajouter un occupant</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         {{--</div>--}}
                     </div>
