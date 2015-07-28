@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*",
-	  	"fzaninotto/faker": "1.4.*",
+		"laravel/framework": "5.1.*",
+	  	"fzaninotto/faker": "1.5.*",
         "mcamara/laravel-localization": "1.0.*"
 	},
 	"require-dev": {

@@ -123,7 +123,8 @@
                             <img src="/img/homepage/search_block_arrow.png">
                         </div>
                         <div class="search_block_line"></div>
-                        <form name="registrationForm" novalidate method="post">
+                        <form name="registrationForm" novalidate method="post" action="{{url('hotel')}}">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
