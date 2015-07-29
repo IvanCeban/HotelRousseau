@@ -193,17 +193,43 @@ body {
         margin: 0 -21px; }
       .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
         padding: 0 21px; }
-      .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border {
-        border-top: 1px solid #f3f3f3;
-        padding-top: 1px; }
-        .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block {
-          padding: 30px;
-          border-left: 1px solid #f3f3f3;
-          border-top: 1px solid #f3f3f3; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container {
-            max-width: 100%; }
-            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container .selectboxit {
+      .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block {
+        margin: 6px 0 17px; }
+        .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border {
+          border-top: 1px solid #aeaeae;
+          padding-top: 1px; }
+          .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block {
+            padding: 30px;
+            border-left: 1px solid #f3f3f3;
+            border-top: 1px solid #aeaeae; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block p {
+              font: 12px open_sans_regular;
+              color: #585858;
+              margin: 15px 0 5px; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container {
               max-width: 100%; }
+              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container .selectboxit {
+                max-width: 100%; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn {
+              margin: 13px 0 45px;
+              display: table;
+              color: #585858;
+              width: auto;
+              border: 0;
+              padding: 0 0 5px 31px;
+              background: url("/img/hotel/add_client_icon.png") left center no-repeat; }
+              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn img {
+                float: left;
+                margin-right: 7px; }
+              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn span {
+                font: 12px open_sans_regular;
+                color: #585858; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:hover span {
+              text-decoration: underline; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:last-child {
+              margin-bottom: 0; }
+            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block textarea {
+              min-height: 150px; }
       .main_section .main_container .hotel_main_content .hotel_item_conditions {
         margin-top: 51px; }
         .main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
@@ -334,6 +360,30 @@ body {
         font: 12px open_sans_regular !important; }
       .selectbox_container .selectboxit-options li a:hover {
         text-decoration: none !important; }
+
+input, button, select, textarea {
+  border: 1px solid #f3f3f3;
+  height: 31px;
+  background: none;
+  font-size: 12px; }
+
+::-webkit-input-placeholder {
+  font: 12px open_sans_regular;
+  color: #453634; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font: 12px open_sans_regular;
+  color: #453634; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font: 12px open_sans_regular;
+  color: #453634; }
+
+:-ms-input-placeholder {
+  font: 12px open_sans_regular;
+  color: #453634; }
 
 .currency {
   text-transform: uppercase; }

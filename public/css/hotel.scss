@@ -8,6 +8,7 @@ $main_orange_color: #efc581;
 $main_lightblue_color: #38bad4;
 $main_purple_color: #8256a0;
 $main_lightgray_color: #f3f3f3;
+$main_midgray_color: #585858;
 $main_darkgray_color: #1d1d1d;
 
 .header{
@@ -274,18 +275,50 @@ $main_darkgray_color: #1d1d1d;
       }
       #hotel_reservation {
         .hotel_main_content_block {
+          margin: 6px 0 17px;
           .extra_border {
-            border-top: 1px solid $main_lightgray_color;
+            border-top: 1px solid #aeaeae;
             padding-top: 1px;
             .reservatioon_form_block {
               padding: 30px;
               border-left: 1px solid $main_lightgray_color;
-              border-top: 1px solid $main_lightgray_color;
+              border-top: 1px solid #aeaeae;
+              p {
+                font: 12px open_sans_regular;
+                color: $main_midgray_color;
+                margin: 15px 0 5px;
+              }
               .selectbox_container {
                 max-width: 100%;
                 .selectboxit {
                   max-width: 100%;
                 }
+              }
+              .add_visitor_btn {
+                margin: 13px 0 45px;
+                display: table;
+                color: $main_midgray_color;
+                width: auto;
+                border: 0;
+                padding: 0 0 5px 31px;
+                background: url("/img/hotel/add_client_icon.png") left center no-repeat;
+                img {
+                  float: left;
+                  margin-right: 7px;
+                }
+                span {
+                  font: 12px open_sans_regular;
+                  color: $main_midgray_color;
+                }
+              }
+              .add_visitor_btn:hover span{
+                text-decoration: underline;
+              }
+              .add_visitor_btn:last-child {
+                margin-bottom: 0;
+              }
+              textarea {
+                min-height: 150px;
               }
             }
           }
@@ -467,6 +500,29 @@ $main_darkgray_color: #1d1d1d;
     }
   }
 }
+input, button, select, textarea {
+  border: 1px solid $main_lightgray_color;
+  height: 31px;
+  background: none;
+  font-size: 12px;
+}
+::-webkit-input-placeholder {
+  font: 12px open_sans_regular;
+  color: $main_brown_color;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font: 12px open_sans_regular;
+  color: $main_brown_color;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  font: 12px open_sans_regular;
+  color: $main_brown_color;
+}
+:-ms-input-placeholder {
+  font: 12px open_sans_regular;
+  color: $main_brown_color;
+}
+
 .currency {
   text-transform: uppercase ;
 }

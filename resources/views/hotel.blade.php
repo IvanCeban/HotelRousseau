@@ -588,31 +588,31 @@
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <p class="reservation_form_item_placeholder">Prénom*</p>
-                                                    <input type="text" name="firstname">
+                                                    <input type="text" name="firstname" placeholder="-">
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <p class="reservation_form_item_placeholder">Nom*</p>
-                                                    <input type="text" name="name">
+                                                    <input type="text" name="name" placeholder="-">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <p class="reservation_form_item_placeholder">E-mail*</p>
-                                                    <input type="email" name="email">
+                                                    <input type="email" name="email" placeholder="-">
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <p class="reservation_form_item_placeholder">*</p>
-                                                    <input type="text" name="text">
+                                                    <input type="text" name="text" placeholder="-">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <p class="reservation_form_item_placeholder">No de téléphone*</p>
-                                                    <input type="email" name="phone">
+                                                    <input type="email" name="phone" placeholder="-">
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <p class="reservation_form_item_placeholder">Pays de résidence</p>
-                                                    <div class="selectbox_container">
+                                                    <div class="selectbox_container" placeholder="-">
                                                         <select name="topic">
                                                             <option value="1"><span class="select_box_text">Suisse</span></option>
                                                             <option value="2"><span class="select_box_text">France</span></option>
@@ -623,11 +623,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="sub_nav_title">Demandes spéciales (facultatif)</p>
+                                <p class="sub_nav_title">Occupation par chambre</p>
                                 <div class="hotel_main_content_block">
                                     <div class="extra_border">
                                         <div class="reservatioon_form_block">
-                                            <h3>Chambre Single Classic - 1 occupant</h3>
+                                            <h4>Chambre Single Classic - 1 occupant</h4>
                                             <div class="row">
                                                 <div class="col-lg-2">
                                                     <p class="reservation_form_item_placeholder">Titre*</p>
@@ -640,14 +640,31 @@
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <p class="reservation_form_item_placeholder">Prénom*</p>
-                                                    <input type="text" name="firstname">
+                                                    <input type="text" name="firstname" placeholder="-">
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <p class="reservation_form_item_placeholder">Nom*</p>
-                                                    <input type="text" name="name">
+                                                    <input type="text" name="name" placeholder="-">
                                                 </div>
                                                 <div class="col-lg-2">
                                                     <p class="reservation_form_item_placeholder">Age*</p>
+                                                    <div class="selectbox_container" placeholder="-">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">1 an</span></option>
+                                                            <option value="2"><span class="select_box_text">2 ans</span></option>
+                                                            <option value="1"><span class="select_box_text">5 ans</span></option>
+                                                            <option value="2"><span class="select_box_text">10 ans</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="add_visitor_btn">
+                                                <span>Ajouter un occupant</span>
+                                            </button>
+                                            <h4>Chambre Single Classic - 1 occupant</h4>
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <p class="reservation_form_item_placeholder">Titre*</p>
                                                     <div class="selectbox_container">
                                                         <select name="topic">
                                                             <option value="1"><span class="select_box_text">Mr</span></option>
@@ -655,26 +672,50 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <div class="col-lg-4">
+                                                    <p class="reservation_form_item_placeholder">Prénom*</p>
+                                                    <input type="text" name="firstname" placeholder="-">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="reservation_form_item_placeholder">Nom*</p>
+                                                    <input type="text" name="name" placeholder="-">
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <p class="reservation_form_item_placeholder">Age*</p>
+                                                    <div class="selectbox_container" placeholder="-">
+                                                        <select name="topic">
+                                                            <option value="1"><span class="select_box_text">1 an</span></option>
+                                                            <option value="2"><span class="select_box_text">2 ans</span></option>
+                                                            <option value="1"><span class="select_box_text">5 ans</span></option>
+                                                            <option value="2"><span class="select_box_text">10 ans</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="add_visitor_btn">
-                                                <a href="#">Ajouter un occupant</a>
-                                            </div>
-                                            <h3>Chambre Single Classic - 1 occupant</h3>
+                                            <button type="button" class="add_visitor_btn">
+                                                <span>Ajouter un occupant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sub_nav_title">Demandes spéciales (facultatif)</p>
+                                <div class="hotel_main_content_block">
+                                    <div class="extra_border">
+                                        <div class="reservatioon_form_block">
                                             <div class="row">
-                                                <div class="col-lg-6">
-                                                    <p class="reservation_form_item_placeholder">E-mail*</p>
-                                                    <input type="email" name="email">
+                                                <div class="col-lg-12">
+                                                    <p class="reservation_form_item_placeholder">Vous pouvez décrire toute demande particulière. Les demandes spéciales ne peuvent être garanties, mais nous ferons tout notre possible pour les satisfaire.</p>
+                                                    <textarea type="textarea" name="firstname" placeholder="-"></textarea>
                                                 </div>
-                                                <div class="col-lg-6">
-                                                    <p class="reservation_form_item_placeholder">*</p>
-                                                    <input type="text" name="text">
-                                                </div>
-                                            </div>
-                                            <div class="add_visitor_btn">
-                                                <a href="#">Ajouter un occupant</a>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <p class="sub_nav_title">Conditions générales de vente</p>
+                                <div class="hotel_main_content_block">
+                                    <p>Depot de garantie: 11 875, 00 CHF (100% du montant total sans les extras sont debites a la reservation)<br>
+                                       Conditions dannulation:  Des la reseervation effectuee, 100% de la reseervation est facture.</p>
+
                                 </div>
                             </div>
                         {{--</div>--}}
