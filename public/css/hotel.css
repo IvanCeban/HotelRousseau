@@ -12,7 +12,8 @@ body {
       border-top: none;
       margin-right: 15px; }
       .header .main_container .header_menu ul li a {
-        font-size: 14.5px; }
+        font-size: 14.5px;
+        padding-bottom: 17px; }
       .header .main_container .header_menu ul li:last-child {
         display: none; }
   .header .main_container .logo {
@@ -107,10 +108,10 @@ body {
                 width: 41px; }
               .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-previous {
                 left: 30px;
-                background: url("/img/hotel/gallery_previous.png") center no-repeat; }
+                background: url("/img/hotel/arrow_left.png") center no-repeat; }
               .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-next {
                 right: 30px;
-                background: url("/img/hotel/gallery_next.png") center no-repeat; }
+                background: url("/img/hotel/arrow_right.png") center no-repeat; }
             .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount {
               height: 41px;
               position: absolute;
@@ -126,8 +127,6 @@ body {
                 color: #ffffff; }
           .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header {
             margin-bottom: 25px; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header h4 {
-              float: left; }
             .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header img {
               margin: 3px 0 0 9px; }
           .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
@@ -402,5 +401,15 @@ input, select, textarea {
 
 .clear_both {
   clear: both; }
+
+.single_room {
+  display: table;
+  padding-right: 33px;
+  background: url("/img/hotel/single_icon.png") right center no-repeat; }
+
+.double_room {
+  display: table;
+  padding-right: 57px;
+  background: url("/img/hotel/double_icon.png") right center no-repeat; }
 
 /*# sourceMappingURL=hotel.css.map */

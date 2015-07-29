@@ -105,10 +105,9 @@
                                                 <div class="col-sm-9">
                                                     <div class="hotel_item_short_info_right">
                                                         <div class="hotel_item_header">
-                                                            <h4>Single Classic</h4>
-                                                            <img src="/img/hotel/single_icon.png">
+                                                            <h4 class="single_room">Single Classic</h4>
                                                         </div>
-                                                        <div class="row clear_both">
+                                                        <div class="row">
                                                             <div class="col-xs-4">
                                                                 <div class="room_option">
                                                                     <img src="/img/rooms/rooms_options_icons_brown/tv.png">
@@ -326,8 +325,7 @@
                                                 <div class="col-sm-9">
                                                     <div class="hotel_item_short_info_right">
                                                         <div class="hotel_item_header">
-                                                            <h4>Double</h4>
-                                                            <img src="/img/hotel/double_icon.png">
+                                                            <h4 class="double_room">Double</h4>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-xs-4">
@@ -744,12 +742,12 @@
                                 <span>Modifier</span>
                             </button>
                             <div class="hotel_right_sidebar_ifoblock">
-                                <h4>Single classic</h4>
+                                <h4 class="single_room">Single classic</h4>
                                 <p>2 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
                                 <p>1 lit supplémentaire <span class="price"><span class="currency">chf</span> 80.-</span></p>
                             </div>
                             <div class="hotel_right_sidebar_ifoblock">
-                                <h4>Single double</h4>
+                                <h4 class="double_room">Single double</h4>
                                 <p>1 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
                             </div>
                             <div class="hotel_right_sidebar_ifoblock">

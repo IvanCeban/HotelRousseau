@@ -25,6 +25,7 @@ $main_darkgray_color: #1d1d1d;
         li {
           a {
             font-size: 14.5px;
+            padding-bottom: 17px;
           }
         }
         li:last-child {
@@ -152,11 +153,11 @@ $main_darkgray_color: #1d1d1d;
                   }
                   .slidesjs-previous {
                     left: 30px;
-                    background: url("/img/hotel/gallery_previous.png") center no-repeat;
+                    background: url("/img/hotel/arrow_left.png") center no-repeat;
                   }
                   .slidesjs-next {
                     right: 30px;
-                    background: url("/img/hotel/gallery_next.png") center no-repeat;
+                    background: url("/img/hotel/arrow_right.png") center no-repeat;
                   }
                 }
                 .gallery_pics_amount {
@@ -178,9 +179,6 @@ $main_darkgray_color: #1d1d1d;
               .hotel_item_short_info_right {
                 .hotel_item_header {
                   margin-bottom: 25px;
-                  h4 {
-                    float: left;
-                  }
                   img {
                     margin: 3px 0 0 9px;
                   }
@@ -546,4 +544,14 @@ input, select, textarea {
 }
 .clear_both {
   clear: both;
+}
+.single_room {
+  display: table;
+  padding-right: 33px;
+  background: url("/img/hotel/single_icon.png") right center no-repeat;
+}
+.double_room {
+  display: table;
+  padding-right: 57px;
+  background: url("/img/hotel/double_icon.png") right center no-repeat;
 }
