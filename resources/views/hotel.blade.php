@@ -712,9 +712,23 @@
                                     </div>
                                 </div>
                                 <p class="sub_nav_title">Conditions générales de vente</p>
-                                <div class="hotel_main_content_block">
+                                <div class="hotel_main_content_block general_conditions">
                                     <p>Depot de garantie: 11 875, 00 CHF (100% du montant total sans les extras sont debites a la reservation)<br>
                                        Conditions dannulation:  Des la reseervation effectuee, 100% de la reseervation est facture.</p>
+
+                                        <div>
+                                          <input id="conditions_checkbox" type="checkbox" name="field" value="conditions_checkbox">
+                                          <label for="conditions_checkbox"><span><span></span></span>J' ai lu <a href="">les Conditions générales</a> de vente et je confirme les comprendre et les accespter.</label>
+                                        </div>
+
+                                        <button type="button">
+                                            <span>Confirme ma reserbatin</span>
+                                        </button>
+                                        
+                                        <div class="security_info">
+                                            <img src="/img/hotel/lock.png">
+                                            <p>Vous allez être dirigé vers notre site sécurisé pour renseigner vos informations de poiement</p>
+                                        </div>
 
                                 </div>
                             </div>
@@ -726,7 +740,9 @@
                             <p>Du lundi 20 juillet 2015</p>
                             <p>au mardi 28 juillet 2015 (8 nuits)</p>
                             <p>5 adultes, 4 enfants, 3 bebes</p>
-                            <button type="submit" ng-disabled="contactForm.$invalid" disabled="disabled">Modifier</button>
+                            <button type="submit">
+                                <span>Modifier</span>
+                            </button>
                             <div class="hotel_right_sidebar_ifoblock">
                                 <h4>Single classic</h4>
                                 <p>2 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>

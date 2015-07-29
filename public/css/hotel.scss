@@ -211,6 +211,7 @@ $main_darkgray_color: #1d1d1d;
         }
       }
       #hotel_offers {
+        display: none;
         .hotel_main_content_block {
           margin-top: 18px;
           img {
@@ -274,6 +275,7 @@ $main_darkgray_color: #1d1d1d;
         padding: 0 21px;
       }
       #hotel_reservation {
+        display: none;
         .hotel_main_content_block {
           margin: 6px 0 17px;
           .extra_border {
@@ -320,6 +322,32 @@ $main_darkgray_color: #1d1d1d;
               textarea {
                 min-height: 150px;
               }
+            }
+          }
+        }
+        .general_conditions {
+          margin: 8px 0 0;
+          p {
+            font: 13px open_sans_regular;
+            color: $main_brown_color;
+          }
+          label {
+            margin-top: 20px;
+            span {
+              margin-right: 9px;
+            }
+            a {
+              font-size: 14px;
+              color: $main_purple_color;
+            }
+          }
+          button {
+            margin: 23px 0 6px;
+          }
+          .security_info {
+            img {
+              float: left;
+              margin-right: 8px;
             }
           }
         }
@@ -398,16 +426,7 @@ $main_darkgray_color: #1d1d1d;
       }
       button {
         margin: 28px 0 47px;
-        font: 19px open_sans_regular;
         width: 50%;
-        height: 46px;
-        color: #ffffff;
-        padding: 0;
-        border-radius: 2px;
-        background: -webkit-linear-gradient(#a37bc8, #8257a0);
-        background: -o-linear-gradient(#a37bc8, #8257a0);
-        background: -moz-linear-gradient(#a37bc8, #8257a0);
-        background: linear-gradient(#a37bc8, #8257a0);
       }
       .hotel_right_sidebar_ifoblock {
         border-bottom: 1px solid #ebebeb;
@@ -420,7 +439,6 @@ $main_darkgray_color: #1d1d1d;
           float: right;
           width: 147px;
         }
-
       }
       .hotel_right_sidebar_ifoblock.total {
         border-bottom: 2px solid #c4a0f0;
@@ -500,7 +518,7 @@ $main_darkgray_color: #1d1d1d;
     }
   }
 }
-input, button, select, textarea {
+input, select, textarea {
   border: 1px solid $main_lightgray_color;
   height: 31px;
   background: none;

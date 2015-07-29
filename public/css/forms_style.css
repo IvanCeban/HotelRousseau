@@ -1,4 +1,4 @@
-input, button, select, textarea {
+input, select, textarea {
     border: none;
     background: #fbfbfb;
     height: 34px;
@@ -14,6 +14,22 @@ textarea {
     padding-top: 10px;
     height: 70px;
     resize: none;
+}
+button {
+    width: auto;
+    border: none;
+    height: 47px;
+    border-radius: 2px;
+    padding: 0 43px;
+    background: -webkit-linear-gradient(#a37bc8, #8257a0);
+    background: -o-linear-gradient(#a37bc8, #8257a0);
+    background: -moz-linear-gradient(#a37bc8, #8257a0);
+    background: linear-gradient(#a37bc8, #8257a0);
+    outline: none;
+}
+button span {
+    color: #ffffff;
+    font: 19px open_sans_regular;
 }
 /*input, select, textarea {*/
     /*-webkit-transition: all 0.30s ease-in-out;*/
@@ -34,4 +50,29 @@ textarea {
     font-family: open_sans_regular!important;
     font-size: 15px!important;
     /*font-family: 12px open_sans_bold;*/
+}
+
+
+input[type=checkbox]:not(old) {
+    display: none;
+}
+input[type=checkbox]:not(old) + label {
+    display      : inline-block;
+    font: 14px open_sans_regular;
+    color: #453634;
+}
+input[type=checkbox]:not(old) + label a{
+    font: 14px open_sans_regular;
+    color: #453634;
+}
+input[type=checkbox]:not(old) + label > span {
+    display          : inline-block;
+    width            : 16px;
+    height           : 16px;
+    background-image :    url("/img/checkbox.png");
+    vertical-align   : bottom;
+    cursor: pointer;
+}
+input[type=checkbox]:not(old):checked + label > span{
+    background-position: 0 16px;
 }
