@@ -32,12 +32,22 @@
 }
 
 @font-face {
+    font-family: 'pt_serif_light';
+    src: url('/fonts/pt_serif/pt_serif_light/pt_serif_light.eot');
+    src: url('/fonts/pt_serif/pt_serif_light/pt_serif_light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pt_serif/pt_serif_light/pt_serif_light.woff') format('woff'),
+    url('/fonts/pt_serif/pt_serif_light/pt_serif_light.ttf') format('truetype'),
+    url('/fonts/pt_serif/pt_serif_light/pt_serif_light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'pt_serif_regular';
-    src: url('/fonts/pt_serif_regular/pt_serif_regular.eot');
-    src: url('/fonts/pt_serif_regular/pt_serif_regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/pt_serif_regular/pt_serif_regular.woff') format('woff'),
-    url('/fonts/pt_serif_regular/pt_serif_regular.ttf') format('truetype'),
-    url('/fonts/pt_serif_regular/pt_serif_regular.svg') format('svg');
+    src: url('/fonts/pt_serif/pt_serif_regular/pt_serif_regular.eot');
+    src: url('/fonts/pt_serif/pt_serif_regular/pt_serif_regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pt_serif/pt_serif_regular/pt_serif_regular.woff') format('woff'),
+    url('/fonts/pt_serif/pt_serif_regular/pt_serif_regular.ttf') format('truetype'),
+    url('/fonts/pt_serif/pt_serif_regular/pt_serif_regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }

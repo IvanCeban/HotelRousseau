@@ -69,7 +69,7 @@ body {
           color: #8256a0;
           float: left;
           height: 50px;
-          width: 33.27%;
+          width: 33.24%;
           text-align: center;
           background: #f8f8f8;
           padding: 15px 0;
@@ -178,18 +178,6 @@ body {
           .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .selectbox_container {
             width: 50%;
             float: right; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .back_btn {
-            background: #8256a0 url("/img/hotel/arrow_left_double.png") 14px 12px no-repeat;
-            float: right;
-            width: 380px;
-            height: 46px;
-            padding: 10px 0;
-            margin-top: 15px;
-            cursor: pointer; }
-            .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .back_btn p {
-              text-align: center;
-              color: #ffffff;
-              font: 19px open_sans_regular; }
       .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row {
         margin: 0 -21px; }
       .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
@@ -318,15 +306,14 @@ body {
         padding-bottom: 38px; }
         .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock.total h4 {
           margin-bottom: 15px; }
-      .main_section .main_container .hotel_right_sidebar .next_step {
-        height: 47px;
-        background: #8256a0;
-        padding: 4px 0;
-        margin: 25px -32px 10px 0; }
-        .main_section .main_container .hotel_right_sidebar .next_step p {
-          font: 19px open_sans_regular;
+      .main_section .main_container .hotel_right_sidebar .my_btn {
+        background: #8256a0 url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
+        margin: 25px -32px 10px 0;
+        padding: 10px 70px; }
+        .main_section .main_container .hotel_right_sidebar .my_btn p {
+          margin: 0;
           color: #ffffff;
-          text-align: center; }
+          font: 19px open_sans_regular; }
   .main_section .main_container > .row > .col-md-9 {
     width: 73%; }
   .main_section .main_container > .row > .col-md-3 {
@@ -411,5 +398,18 @@ input, select, textarea {
   display: table;
   padding-right: 57px;
   background: url("/img/hotel/double_icon.png") right center no-repeat; }
+
+.my_btn {
+  background: #8256a0 url("/img/hotel/arrow_left_double.png") left 14px center no-repeat;
+  float: right;
+  height: 46px;
+  display: table;
+  padding: 10px 80px;
+  margin-top: 15px;
+  cursor: pointer; }
+  .my_btn p {
+    text-align: center;
+    color: #ffffff;
+    font: 19px open_sans_regular; }
 
 /*# sourceMappingURL=hotel.css.map */

@@ -564,7 +564,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="back_btn">
+                                    <div class="my_btn">
                                         <p>Revenir aux chambres</p>
                                     </div>
                                 </div>
@@ -720,7 +720,7 @@
                                         </div>
 
                                         <button type="button">
-                                            <span>Confirme ma reserbatin</span>
+                                            <span>Confirme ma reservation</span>
                                         </button>
                                         
                                         <div class="security_info">
@@ -761,7 +761,7 @@
                             <p>Adultes 5/5</p>
                             <p>Enfants 3/4</p>
                             <p>Bébés 1/3</p>
-                            <div class="next_step">
+                            <div class="my_btn">
                                 <p>Passer aux offres (etapes 2/3)</p>
                             </div>
                             <p>Transaction sécurisée</p>

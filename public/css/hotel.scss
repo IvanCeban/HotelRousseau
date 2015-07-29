@@ -104,7 +104,7 @@ $main_darkgray_color: #1d1d1d;
             color: $main_purple_color;
             float: left;
             height: 50px;
-            width: 33.27%;
+            width: 33.24%;
             text-align: center;
             background: #f8f8f8;
             padding: 15px 0;
@@ -249,20 +249,6 @@ $main_darkgray_color: #1d1d1d;
           .selectbox_container {
             width: 50%;
             float: right;
-          }
-          .back_btn {
-            background: $main_purple_color url("/img/hotel/arrow_left_double.png") 14px 12px no-repeat;
-            float: right;
-            width: 380px;
-            height: 46px;
-            padding: 10px 0;
-            margin-top: 15px;
-            cursor: pointer;
-            p {
-              text-align: center;
-              color: #ffffff;
-              font: 19px open_sans_regular;
-            }
           }
         }
       }
@@ -445,16 +431,14 @@ $main_darkgray_color: #1d1d1d;
         }
         padding-bottom: 38px;
       }
-      .next_step {
-        height: 47px;
-        background: $main_purple_color;
-        padding: 4px 0;
+      .my_btn {
+        background: $main_purple_color url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
         margin: 25px -32px 10px 0;
-
+        padding: 10px 70px;
         p {
-          font: 19px open_sans_regular;
+          margin: 0;
           color: #ffffff;
-          text-align: center;
+          font: 19px open_sans_regular;
         }
       }
     }
@@ -554,4 +538,19 @@ input, select, textarea {
   display: table;
   padding-right: 57px;
   background: url("/img/hotel/double_icon.png") right center no-repeat;
+}
+
+.my_btn {
+  background: $main_purple_color url("/img/hotel/arrow_left_double.png") left 14px center no-repeat;
+  float: right;
+  height: 46px;
+  display: table;
+  padding: 10px 80px;
+  margin-top: 15px;
+  cursor: pointer;
+  p {
+    text-align: center;
+    color: #ffffff;
+    font: 19px open_sans_regular;
+  }
 }
