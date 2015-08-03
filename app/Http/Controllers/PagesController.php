@@ -1,9 +1,11 @@
 <?php namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Input;
+use Input;
 use Request;
 use Mail;
 use Validator;
+use Session;
+use App\Order;
 
 class PagesController extends Controller {
 
@@ -29,6 +31,20 @@ class PagesController extends Controller {
 
     public function hotel()
     {
+        if (Request::isMethod('post'))
+        {
+            $sessionId = Session::getId();
+            if(Order::where('session_id', $sessionId)->first() === null){
+                Order::create(['session_id' => $sessionId]);
+            }else{
+                $order = Order::where('session_id', $sessionId)->first();
+                $order->adults = Request::input('adults');
+                $order->kids = Request::input('kids');
+                $order->save();
+                //$order->update(Request::except(['_token', 'age0', 'promo_code'])); // safe
+            }
+
+        }
         return view('hotel');
     }
 

@@ -147,7 +147,7 @@
                             <div class="row">
                                 <div class="col-xs-6 num_of_adults">
                                     <p>Adultes</p>
-                                    <select name="adultes">
+                                    <select name="adults">
                                         <option>1</option>
                                         <option selected>2</option>
                                         <option>3</option>
