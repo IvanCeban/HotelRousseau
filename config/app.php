@@ -146,6 +146,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
         'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+		'McCool\LaravelAutoPresenter\AutoPresenterServiceProvider',
 
 	],
 
