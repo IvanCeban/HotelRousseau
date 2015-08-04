@@ -46,6 +46,16 @@ class AdminController extends Controller {
     }
 
     /**
+     * Show reservations angular entry point
+     *
+     * @return Response
+     */
+    public function reservations()
+    {
+        return view('admin.reservations.index');
+    }
+
+    /**
      * Show profile angular entry point
      *
      * @return Response

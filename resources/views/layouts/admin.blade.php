@@ -43,7 +43,7 @@
                       <li class="@if(Request::url() === url('admin')) active @endif"><a href="{{url('admin')}}">Dashboard</a></li>
                       <li class="@if(Request::url() === url('admin/roomsapp')) active @endif"><a href="{{url('admin/roomsapp')}}">Rooms</a></li>
                       <li class="@if(Request::url() === url('admin/roomtypesapp')) active @endif"><a href="{{url('admin/roomtypesapp')}}">Room Types</a></li>
-                      <li><a href="{{url('admin/rooms')}}">Reservations</a></li>
+                      <li class="@if(Request::url() === url('admin/reservationsapp')) active @endif"><a href="{{url('admin/reservationsapp')}}">Reservations</a></li>
                       <li><a href="{{url('admin/rooms')}}">Vouchers</a></li>
                       <li><a href="{{url('admin/rooms')}}">Special offers</a></li>
                       <li class="dropdown">

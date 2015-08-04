@@ -43,3 +43,7 @@ Route::resource('admin/rooms', 'Admin\RoomsController');
 
 Route::get('admin/roomtypesapp','Admin\AdminController@roomTypes');
 Route::resource('admin/roomtypes', 'Admin\RoomTypesController');
+
+
+Route::get('admin/reservationsapp','Admin\AdminController@reservations');
+Route::resource('admin/reservations', 'Admin\ReservationsController');
