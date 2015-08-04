@@ -35,14 +35,16 @@ class PagesController extends Controller {
         {
             $sessionId = Session::getId();
             if(Order::where('session_id', $sessionId)->first() === null){
-                Order::create(['session_id' => $sessionId]);
+                $order = Order::create(['session_id' => $sessionId]);
             }else{
                 $order = Order::where('session_id', $sessionId)->first();
-                $order->adults = Request::input('adults');
-                $order->kids = Request::input('kids');
-                $order->save();
-                //$order->update(Request::except(['_token', 'age0', 'promo_code'])); // safe
             }
+            $order->checkin_date = Request::input('checkin_date');
+            $order->checkout_date = Request::input('checkout_date');
+            $order->adults = Request::input('adults');
+            $order->kids = Request::input('kids');
+            $order->ages = serialize(Request::input('age'));
+            $order->save();
 
         }
         return view('hotel');

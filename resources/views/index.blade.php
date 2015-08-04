@@ -21,14 +21,17 @@
     <script type="text/javascript">
         $(function() {
 
-            $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+            $('#reportrange span').html(moment().format('MMMM D, YYYY') + ' - ' + moment().add(29, 'days').format('MMMM D, YYYY'));
+            $('#checkin_date').val(moment().format('YYYY-MM-DD'));
+            $('#checkout_date').val(moment().add(29, 'days').format('YYYY-MM-DD'));
+
 
             $('#reportrange').daterangepicker({
                 format: 'MM/DD/YYYY',
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment(),
+                startDate: moment(),
+                endDate: moment().add(29, 'days'),
                 minDate: '01/01/2012',
-                maxDate: '12/31/2015',
+                maxDate: '12/31/2016',
                 dateLimit: { days: 60 },
                 showDropdowns: true,
                 showWeekNumbers: true,
@@ -62,6 +65,8 @@
             }, function(start, end, label) {
                 console.log(start.toISOString(), end.toISOString(), label);
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                $('#checkin_date').val(start.format('YYYY-MM-DD'));
+                $('#checkout_date').val(end.format('YYYY-MM-DD'));
             });
 
         });
@@ -126,6 +131,8 @@
                         <form name="registrationForm" novalidate method="post" action="{{url('hotel')}}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="row">
+                                <input type="hidden" name="checkin_date" id="checkin_date" value="">
+                                <input type="hidden" name="checkout_date" id="checkout_date" value="">
                                 <div class="col-md-12">
                                     <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                                         <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
@@ -181,7 +188,7 @@
                             <div class="row">
                                 <div class="col-xs-12 age_of_kids">
                                     <p>Age des enfants a la fin du sejur</p>
-                                    <select class="ages" name="age0">
+                                    <select class="ages" name="age[0]">
                                         <option label="1">1</option>
                                         <option label="2">2</option>
                                         <option label="3">3</option>
