@@ -1,11 +1,13 @@
 <?php namespace App\Http\Controllers;
 
+use App\RoomType;
 use Input;
 use Request;
 use Mail;
 use Validator;
 use Session;
 use App\Order;
+use App\Room;
 
 class PagesController extends Controller {
 
@@ -31,23 +33,29 @@ class PagesController extends Controller {
 
     public function hotel()
     {
+        $sessionId = Session::getId();
+        if(Order::where('session_id', $sessionId)->first() === null){
+            $order = Order::create(['session_id' => $sessionId]);
+        }else{
+            $order = Order::where('session_id', $sessionId)->first();
+        }
+
         if (Request::isMethod('post'))
         {
-            $sessionId = Session::getId();
-            if(Order::where('session_id', $sessionId)->first() === null){
-                $order = Order::create(['session_id' => $sessionId]);
-            }else{
-                $order = Order::where('session_id', $sessionId)->first();
-            }
             $order->checkin_date = Request::input('checkin_date');
             $order->checkout_date = Request::input('checkout_date');
             $order->adults = Request::input('adults');
             $order->kids = Request::input('kids');
             $order->ages = serialize(Request::input('age'));
             $order->save();
-
+            //dd($order);
         }
-        return view('hotel');
+
+        $order = Order::where('session_id', $sessionId)->first();
+
+        $rooms = Room::all();
+        $roomTypes = RoomType::all();
+        return view('hotel', compact('rooms', 'roomTypes', 'order'));
     }
 
     public function rooms()

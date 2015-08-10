@@ -13,8 +13,13 @@ class OrderPresenter extends BasePresenter
 
     public function checkin_date()
     {
-        //return 'ss';
-        $checkin_date = $this->wrappedObject->checkin_date;
-        return Carbon::createFromFormat('Y-m-d H:i:s', $checkin_date)->toFormattedDateString();
+        $date = $this->wrappedObject->checkin_date;
+        return Carbon::createFromFormat('Y-m-d H:i:s', $date)->toFormattedDateString();
+    }
+
+    public function checkout_date()
+    {
+        $date = $this->wrappedObject->checkout_date;
+        return Carbon::createFromFormat('Y-m-d H:i:s', $date)->toFormattedDateString();
     }
 }
