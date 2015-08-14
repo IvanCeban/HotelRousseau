@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('lastname');
             $table->dateTime('checkin_date');
             $table->dateTime('checkout_date');
+            $table->smallInteger('nights');
             $table->smallInteger('adults');
             $table->smallInteger('kids');
             $table->smallInteger('infants');

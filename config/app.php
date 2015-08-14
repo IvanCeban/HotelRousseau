@@ -147,6 +147,7 @@ return [
 		'App\Providers\RouteServiceProvider',
         'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
 		'McCool\LaravelAutoPresenter\AutoPresenterServiceProvider',
+		'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
 
 	],
 
@@ -196,6 +197,7 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
         'LaravelLocalization'   => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
+        'Cart'                  => 'Gloudemans\Shoppingcart\Facades\Cart',
 
 	],
 

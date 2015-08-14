@@ -24,6 +24,7 @@
             $('#reportrange span').html(moment().format('MMMM D, YYYY') + ' - ' + moment().add(29, 'days').format('MMMM D, YYYY'));
             $('#checkin_date').val(moment().format('YYYY-MM-DD'));
             $('#checkout_date').val(moment().add(29, 'days').format('YYYY-MM-DD'));
+            $('#nights').val(29);
 
 
             $('#reportrange').daterangepicker({
@@ -67,6 +68,9 @@
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
                 $('#checkin_date').val(start.format('YYYY-MM-DD'));
                 $('#checkout_date').val(end.format('YYYY-MM-DD'));
+                var duration = moment.duration(end.diff(start));
+                var nights = Math.floor(duration.asDays());
+                $('#nights').val(nights);
             });
 
         });
@@ -133,6 +137,7 @@
                             <div class="row">
                                 <input type="hidden" name="checkin_date" id="checkin_date" value="">
                                 <input type="hidden" name="checkout_date" id="checkout_date" value="">
+                                <input type="hidden" name="nights" id="nights" value="">
                                 <div class="col-md-12">
                                     <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                                         <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>

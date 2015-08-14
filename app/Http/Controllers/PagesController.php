@@ -44,6 +44,7 @@ class PagesController extends Controller {
         {
             $order->checkin_date = Request::input('checkin_date');
             $order->checkout_date = Request::input('checkout_date');
+            $order->nights = Request::input('nights');
             $order->adults = Request::input('adults');
             $order->kids = Request::input('kids');
             $order->ages = serialize(Request::input('age'));
@@ -56,6 +57,29 @@ class PagesController extends Controller {
         $rooms = Room::all();
         $roomTypes = RoomType::all();
         return view('hotel', compact('rooms', 'roomTypes', 'order'));
+    }
+
+    public function hotelInit(){
+
+        $sessionId = Session::getId();
+        if(Order::where('session_id', $sessionId)->first() !== null){
+            $order = Order::where('session_id', $sessionId)->first();
+        }else{
+            $order = false;
+        }
+
+        $rooms = Room::orderBy('id','desc')->get()->toArray();
+        $sortedRooms = array();
+
+        foreach ($rooms as $room) {
+            $roomTypeId = $room['room_type_id'];
+            if (isset($sortedRooms[$roomTypeId])) {
+                $sortedRooms[$roomTypeId][] = $room;
+            } else {
+                $sortedRooms[$roomTypeId] = array($room);
+            }
+        }
+        return ['order' => $order, 'rooms'=>$rooms , 'sortedRooms'=>$sortedRooms , 'roomTypes'=>RoomType::all(), 'indexedRoomTypes'=>RoomType::lists('title', 'id')->all()];
     }
 
     public function rooms()

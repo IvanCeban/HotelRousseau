@@ -11,6 +11,10 @@
 @section('scripts')
     <script src="js/hotel.js"></script>
     <script src="libraries/slidesJS/jquery.slides.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="{{ asset('/admins/js/angular/ui-bootstrap-0.12.1.min.js') }}"></script>
+    <script src="{{ asset('/admins/js/angular/ui-bootstrap-tpls-0.12.1.js') }}"></script>
+    <script src="/js/angular/order.js"></script>
 @stop
 
 
@@ -61,7 +65,7 @@
 
 
     <!--main content START-->
-        <section class="main_section">
+        <section class="main_section" ng-app="orderApp" ng-controller="orderCtrl">
             <div class="main_container">
                 <div class="row">
                     <div class="col-md-9 hotel_main_content">
@@ -88,7 +92,7 @@
                                 <div class="hotel_main_content_block">
 
                                     @foreach($roomTypes as $roomType)
-                                        <div class="extra_border">
+                                        <div {{--ng-repeat="roomType in roomTypes"--}} class="extra_border">
                                             <div class="hotel_short_info">
                                                 <div class="row">
                                                     <div class="col-sm-3">
@@ -205,11 +209,11 @@
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <div class="selectbox_container">
-                                                            <select name="topic">
+                                                            <select name="topic" ng-model="order.nonAnnullable" ng-change="updateCart()">
                                                                 <?php $i=0; ?>
                                                                 @foreach($roomType->rooms as $room)
                                                                     <?php $i++; ?>
-                                                                    <option value="{{$i}}"><span class="select_box_text">{{$i}} (chf {{$i*185}}.-)</span></option>
+                                                                    <option value="{{$roomType->id}}-{{$i}}">{{$i}} (chf {{$i*185}}.-)</option>
                                                                 @endforeach
                                                                 {{--<option value="2"><span class="select_box_text">2 (chf 2 960.-)</span></option>
                                                                 <option value="3"><span class="select_box_text">3 (chf 3 960.-)</span></option>
@@ -749,15 +753,15 @@
                             <button type="submit">
                                 <span>Modifier</span>
                             </button>
-                            <div class="hotel_right_sidebar_ifoblock">
-                                <h4 class="single_room">Single classic</h4>
-                                <p>2 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
+                            <div class="hotel_right_sidebar_ifoblock" ng-repeat="(key,val) in cartNA track by $index" ng-if="val != null">
+                                <h4 class="single_room"><% indexedRoomTypes[key] %> <% $index %> | <% val %></h4>
+                                <p><% val %> chambres, <% order.nights %> nuits <span class="price"><span class="currency">chf</span> <% val * order.nights * 185 %>.-</span></p>
                                 <p>1 lit supplémentaire <span class="price"><span class="currency">chf</span> 80.-</span></p>
                             </div>
-                            <div class="hotel_right_sidebar_ifoblock">
+                            {{--<div class="hotel_right_sidebar_ifoblock">
                                 <h4 class="double_room">Single double</h4>
                                 <p>1 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
-                            </div>
+                            </div>--}}
                             <div class="hotel_right_sidebar_ifoblock">
                                 <h4>Offre 1</h4>
                                 <p>Quantité: 2 <span class="price"><span class="currency">chf</span> 199.-</span></p>
