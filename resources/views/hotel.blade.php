@@ -756,18 +756,18 @@
                             <div class="hotel_right_sidebar_ifoblock" ng-repeat="(key,val) in cartNA track by $index" ng-if="val != null">
                                 <h4 class="single_room"><% indexedRoomTypes[key] %> <% $index %> | <% val %></h4>
                                 <p><% val %> chambres, <% order.nights %> nuits <span class="price"><span class="currency">chf</span> <% val * order.nights * 185 %>.-</span></p>
-                                <p>1 lit supplémentaire <span class="price"><span class="currency">chf</span> 80.-</span></p>
+                                {{--<p>1 lit supplémentaire <span class="price"><span class="currency">chf</span> 80.-</span></p>--}}
                             </div>
                             {{--<div class="hotel_right_sidebar_ifoblock">
                                 <h4 class="double_room">Single double</h4>
                                 <p>1 chambres, 8 nuits <span class="price"><span class="currency">chf</span> 2 960.-</span></p>
                             </div>--}}
-                            <div class="hotel_right_sidebar_ifoblock">
+                            {{--<div class="hotel_right_sidebar_ifoblock">
                                 <h4>Offre 1</h4>
                                 <p>Quantité: 2 <span class="price"><span class="currency">chf</span> 199.-</span></p>
-                            </div>
+                            </div>--}}
                             <div class="hotel_right_sidebar_ifoblock total">
-                                <h4>Total <span class="price"><span class="currency">chf</span> 199.-</span></h4>
+                                <h4>Total <span class="price"><span class="currency">chf</span> <% cartSum %>.-</span></h4>
                                 <a href="#">Conditions générales de vente</a>
                             </div>
                             <p>Adultes 5/5</p>
