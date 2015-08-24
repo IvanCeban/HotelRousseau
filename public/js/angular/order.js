@@ -7,17 +7,22 @@ orderApp.controller('orderCtrl', function($scope, $http) {
     $scope.order = {};
     $scope.cartNA = [];
     $scope.cartA = [];
-    $scope.total=[];
+    $scope.cart=[];
     $scope.cartSum = 0;
 
     $scope.updateCart = function(){
         var nonAnnullableArray = $scope.order.nonAnnullable.split("-");
-        $scope.cartNA[nonAnnullableArray[0]] = nonAnnullableArray[1];
-        $scope.total[nonAnnullableArray[0]] = nonAnnullableArray[1] * $scope.order.nights * 185;
-        $scope.cartSum = $scope.total.reduce(function(pv, cv) { return pv + cv; }, 0);
-        /*var annullableArray = $scope.order.annullable.split("-");
-        $scope.cart['a'][annullableArray[0]] = annullableArray[1];*/
-        console.log($scope.cartSum);
+        if(nonAnnullableArray[1] == 0){
+            delete $scope.cartNA[nonAnnullableArray[0]];
+        }else{
+            $scope.cartNA[nonAnnullableArray[0]] = nonAnnullableArray[1];
+        }
+        $scope.cart[nonAnnullableArray[0]] = nonAnnullableArray[1] * $scope.order.nights * 185;
+        $scope.cartSum = $scope.cart.reduce(function(pv, cv) { return pv + cv; }, 0);
+        console.log($scope.cart);
+        $http.post('update-cart', {cart:$scope.cart}).success(function(data, status, headers, config) {
+            //console.log(data);
+        });
     };
 
 

@@ -210,6 +210,7 @@
                                                     <div class="col-sm-4">
                                                         <div class="selectbox_container">
                                                             <select name="topic" ng-model="order.nonAnnullable" ng-change="updateCart()">
+                                                                <option value="{{$roomType->id}}-0">Select amount</option>
                                                                 <?php $i=0; ?>
                                                                 @foreach($roomType->rooms as $room)
                                                                     <?php $i++; ?>
