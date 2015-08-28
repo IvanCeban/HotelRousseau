@@ -6,15 +6,78 @@
 
 @section('styles')
     <link rel="stylesheet" href="/css/hotel.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker-bs3.css" />
 @stop
 
 @section('scripts')
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
+
     <script src="js/hotel.js"></script>
     <script src="libraries/slidesJS/jquery.slides.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="{{ asset('/admins/js/angular/ui-bootstrap-0.12.1.min.js') }}"></script>
     <script src="{{ asset('/admins/js/angular/ui-bootstrap-tpls-0.12.1.js') }}"></script>
     <script src="/js/angular/order.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('#reportrange').daterangepicker({
+                format: 'MM/DD/YYYY',
+                startDate: moment(),
+                endDate: moment().add(29, 'days'),
+                minDate: '01/01/2012',
+                maxDate: '12/31/2016',
+                dateLimit: { days: 60 },
+                showDropdowns: true,
+                showWeekNumbers: true,
+                timePicker: false,
+                timePickerIncrement: 1,
+                timePicker12Hour: true,
+                /*ranges: {
+                 'Today': [moment(), moment()],
+                 'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                 'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                 'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                 'This Month': [moment().startOf('month'), moment().endOf('month')],
+                 'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                 },*/
+                opens: 'left',
+                drops: 'down',
+                buttonClasses: ['btn', 'btn-sm'],
+                applyClass: 'btn-primary',
+                cancelClass: 'btn-default',
+                separator: ' to ',
+                locale: {
+                    applyLabel: 'Submit',
+                    cancelLabel: 'Cancel',
+                    fromLabel: 'From',
+                    toLabel: 'To',
+                    customRangeLabel: 'Custom',
+                    daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
+                    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    firstDay: 1
+                }
+            });
+
+            // remove 1st th from .calendar-date
+            var removeFirstTh = function(){
+                $(".daterangepicker .calendar.first  thead tr:first th:first").each(function(){$(this).hide()});
+                $(".daterangepicker .calendar.second  thead tr:first th:first").each(function(){$(this).hide()});
+                $(".daterangepicker .calendar .calendar-date .month").attr("colspan", "6");
+                $(".daterangepicker .calendar .table-condensed  thead .prev i").removeClass("fa fa-arrow-left icon icon-arrow-left glyphicon-arrow-left").addClass("glyphicon-chevron-left");
+                $(".daterangepicker .calendar .table-condensed  thead .next i").removeClass("fa fa-arrow-right icon icon-arrow-right glyphicon-arrow-right").addClass("glyphicon-chevron-right");
+            };
+            $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
+            $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
+
+
+
+        });
+    </script>
 @stop
 
 
@@ -751,7 +814,7 @@
                             <p>{{$order->checkin_date}}{{--Du lundi 20 juillet 2015--}}</p>
                             <p>{{$order->checkout_date}}{{--au mardi 28 juillet 2015 (8 nuits)--}}</p>
                             <p>{{$order->adults}} adultes, {{$order->kids}} enfants, {{$order->infants}} bebes</p>
-                            <button type="submit">
+                            <button type="submit" id="reportrange">
                                 <span>Modifier</span>
                             </button>
                             <div class="hotel_right_sidebar_ifoblock" ng-repeat="(key,val) in cartNA track by $index" ng-if="val != null">

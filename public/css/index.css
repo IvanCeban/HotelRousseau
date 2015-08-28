@@ -228,6 +228,9 @@ body {
 /*left: -50px;*/
 /*}*/
 /*flexSlider customizations END*/
+
+
+/*REPLACE DATE MODAL STYLES*/
 .daterangepicker.dropdown-menu {
   border-top: 2px solid #8256a0;
   border-radius: 0;
@@ -252,13 +255,16 @@ body {
           border-radius: 0; }
           .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:first-child th select {
             background-color: #f4f4f4;
-            width: 49% !important;
             font-size: 15px; }
+            .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:first-child th select.monthselect {
+              width: 58%; }
+            .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:first-child th select.yearselect {
+              width: 40%; }
         .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:last-child {
-          border-bottom: 1px solid #8d776c; }
+          border-bottom: 1px solid #443633; }
           .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:last-child th {
             font-size: 13px;
-            color: #8d776c;
+            color: #443633;
             font-family: open_sans_regular; }
           .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:last-child th:first-child {
             color: #ccc;

@@ -75,14 +75,17 @@
             });
 
             // remove 1st th from .calendar-date
-            $('#reportrange').on("show.daterangepicker", function(){
+            var removeFirstTh = function(){
                 $(".daterangepicker .calendar.first  thead tr:first th:first").each(function(){$(this).hide()});
                 $(".daterangepicker .calendar.second  thead tr:first th:first").each(function(){$(this).hide()});
+                $(".daterangepicker .calendar .calendar-date .month").attr("colspan", "6");
                 $(".daterangepicker .calendar .table-condensed  thead .prev i").removeClass("fa fa-arrow-left icon icon-arrow-left glyphicon-arrow-left").addClass("glyphicon-chevron-left");
                 $(".daterangepicker .calendar .table-condensed  thead .next i").removeClass("fa fa-arrow-right icon icon-arrow-right glyphicon-arrow-right").addClass("glyphicon-chevron-right");
+            };
+            $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
+            $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
 
-                $(".daterangepicker  .calendar .calendar-date .month").attr("colspan", "6")
-            });
+
 
         });
     </script>
