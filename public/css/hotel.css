@@ -291,7 +291,13 @@ body {
         margin-top: 8px; }
       .main_section .main_container .hotel_right_sidebar button {
         margin: 28px 0 47px;
+        padding: 0;
         width: 50%; }
+        .main_section .main_container .hotel_right_sidebar button[type="submit"]:hover {
+          background: -webkit-linear-gradient(#8862a9, #765092);
+          background: -o-linear-gradient(#8862a9, #765092);
+          background: -moz-linear-gradient(#8862a9, #765092);
+          background: linear-gradient(#8862a9, #765092); }
       .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock {
         border-bottom: 1px solid #ebebeb;
         margin-bottom: 20px;
