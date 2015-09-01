@@ -19,4 +19,26 @@ jQuery(document).ready(function($){
         $('#hotel_reservation').css({"display": "none"});
         $('#'+attr_name+'').css({"display": "block"})
     });
+
+
+
+    var offset = $('.sidebar-scroll').offset().top;
+    if($(window).scrollTop() > offset){
+        $('.sidebar-scroll').addClass('fixed');
+    }
+
+
+    $(window).on('scroll', function() {
+
+        if($(this).scrollTop() > offset){
+            if(!$('.sidebar-scroll').hasClass('fixed')){
+                $('.sidebar-scroll').addClass('fixed');
+            }
+        } else {
+            if ($('.sidebar-scroll').hasClass('fixed')) {
+                $('.sidebar-scroll').removeClass('fixed');
+            }
+        }
+
+    })
 });

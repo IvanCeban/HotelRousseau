@@ -276,7 +276,7 @@ body {
             .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .selectbox_container {
               padding: 15px 0; }
     .main_section .main_container .hotel_right_sidebar {
-      padding: 74px 65px 0 45px;
+      padding: 45px 45px 0 45px;
       background: #fbfbfb;
       border-left: 1px solid #f3f3f3;
       height: 100%;
@@ -314,8 +314,11 @@ body {
           margin-bottom: 15px; }
       .main_section .main_container .hotel_right_sidebar .my_btn {
         background: #8256a0 url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
-        margin: 25px -32px 10px 0;
-        padding: 10px 70px; }
+        font-size: 19px;
+        padding: 10px 40px 10px 10px;
+        margin: 25px 0 15px 0;
+        width: 100%;
+        float: none; }
         .main_section .main_container .hotel_right_sidebar .my_btn p {
           margin: 0;
           color: #ffffff;
@@ -417,5 +420,14 @@ input, select, textarea {
     text-align: center;
     color: #ffffff;
     font: 19px open_sans_regular; }
+
+.sidebar-scroll.fixed {
+  position: fixed;
+  top: 0;
+  width: 27%;
+  margin-left: -45px;
+  margin-right: -15px;
+  padding: 45px;
+  padding-right: 60px; }
 
 /*# sourceMappingURL=hotel.css.map */

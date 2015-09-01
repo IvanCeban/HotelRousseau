@@ -74,8 +74,6 @@
             $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
             $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
 
-
-
         });
     </script>
 @stop
@@ -810,6 +808,8 @@
                     </div>
                     <div class="col-md-3 hotel_right_sidebar">
                         {{--<div class="hotel_right_sidebar">--}}
+                        <div class="sidebar-scroll">
+
                             <h3>Votre choix</h3>
                             <p>{{$order->checkin_date}}{{--Du lundi 20 juillet 2015--}}</p>
                             <p>{{$order->checkout_date}}{{--au mardi 28 juillet 2015 (8 nuits)--}}</p>
@@ -840,7 +840,10 @@
                             <div class="my_btn">
                                 <p>Passer aux offres (etapes 2/3)</p>
                             </div>
+
                             <p>Transaction sécurisée</p>
+
+                        </div>
                         {{--</div>--}}
                     </div>
                 </div>

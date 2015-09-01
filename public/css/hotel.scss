@@ -393,7 +393,7 @@ $main_darkgray_color: #1d1d1d;
       }
     }
     .hotel_right_sidebar {
-      padding: 74px 65px 0 45px;
+      padding: 45px 45px 0 45px;
       background: #fbfbfb;
       border-left: 1px solid $main_lightgray_color;
       height: 100%;
@@ -441,8 +441,13 @@ $main_darkgray_color: #1d1d1d;
       }
       .my_btn {
         background: $main_purple_color url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
-        margin: 25px -32px 10px 0;
-        padding: 10px 70px;
+        font-size: 19px;
+        padding: 10px 40px 10px 10px;
+        margin: 25px 0 15px 0;
+        width: 100%;
+        float: none;
+
+
         p {
           margin: 0;
           color: #ffffff;
@@ -554,6 +559,7 @@ input, select, textarea {
   height: 46px;
   display: table;
   padding: 10px 80px;
+
   margin-top: 15px;
   cursor: pointer;
   p {
@@ -561,6 +567,16 @@ input, select, textarea {
     color: #ffffff;
     font: 19px open_sans_regular;
   }
+}
+
+.sidebar-scroll.fixed{
+  position: fixed;
+  top: 0;
+  width: 27%;
+  margin-left: -45px;
+  margin-right: -15px;
+  padding: 45px;
+  padding-right: 60px;
 }
 
 
