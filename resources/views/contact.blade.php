@@ -153,12 +153,12 @@
                                             <div class="contact_form_input">
                                                 <select name="topic">
                                                     <option value="info@hotelrousseau.ch">Informations divers</option>
-                                                    <option value="resa@hotelrousseau.ch">Reservation</option>
-                                                    <option value="resa@hotelrousseau.ch">Demande de prix</option>
-                                                    <option value="gm@hotelrousseau.ch">Demande de contrat</option>
-                                                    <option value="gm@hotelrousseau.ch">Suggestion ou recommandation</option>
-                                                    <option value="gm@hotelrousseau.ch">Facturation</option>
-                                                    <option value="gm@hotelrousseau.ch">Reclamation</option>
+                                                    <option value="info@hotelrousseau.ch">Reservation</option>
+                                                    <option value="info@hotelrousseau.ch">Demande de prix</option>
+                                                    <option value="info@hotelrousseau.ch">Demande de contrat</option>
+                                                    <option value="info@hotelrousseau.ch">Suggestion ou recommandation</option>
+                                                    <option value="info@hotelrousseau.ch">Facturation</option>
+                                                    <option value="info@hotelrousseau.ch">Reclamation</option>
                                                 </select>
                                             </div>
                                         </div>
