@@ -149,8 +149,11 @@
                                         <p class="form_placeholder">Sujet</p>
                                         <div class="contact_form_input_container" ng-class="contactForm.topic.$error.required ? 'error' : 'success'">
                                             <div class="contact_form_input">
-                                                <input type="text" name="topic" required>
+                                                <input type="text" name="topic" ng-model="topic" required>
                                             </div>
+                                            <span ng-show="contactForm.topic.$dirty && contactForm.topic.$invalid">
+                                                <span class="error_message" ng-show="contactForm.topic.$error.required">Ce champ est obligatoire</span>
+                                            </span>
                                             {{--<div class="contact_form_input">--}}
                                                 {{--<select name="topic">--}}
                                                     {{--<option value="info@hotelrousseau.ch">Informations divers</option>--}}
