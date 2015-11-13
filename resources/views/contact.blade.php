@@ -147,7 +147,7 @@
                                         </div>
 
                                         <p class="form_placeholder">Sujet</p>
-                                        <div class="contact_form_input_container ">
+                                        <div class="contact_form_input_container" ng-class="contactForm.topic.$error.required ? 'error' : 'success'">
                                             <div class="contact_form_input">
                                                 <input type="text" name="topic" required>
                                             </div>
