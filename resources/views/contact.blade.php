@@ -121,14 +121,12 @@
                                             </span>
                                         </div>
 
-
                                         <p class="form_placeholder">Nom de la société (sociétés & institutions)</p>
                                         <div class="contact_form_input_container">
                                             <div class="contact_form_input">
                                                 <input type="text" name="societe">
                                             </div>
                                         </div>
-
 
                                         <p class="form_placeholder">E-mail</p>
                                         <div class="contact_form_input_container" ng-class="contactForm.email.$error.required || contactForm.email.$error.email ? 'error' : 'success'">
@@ -151,7 +149,7 @@
                                         <p class="form_placeholder">Sujet</p>
                                         <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
-                                                <input type="text" name="subject">
+                                                <input type="text" name="topic">
                                             </div>
                                             {{--<div class="contact_form_input">--}}
                                                 {{--<select name="topic">--}}
