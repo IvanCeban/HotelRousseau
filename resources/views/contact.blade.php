@@ -151,16 +151,19 @@
                                         <p class="form_placeholder">Sujet</p>
                                         <div class="contact_form_input_container ">
                                             <div class="contact_form_input">
-                                                <select name="topic">
-                                                    <option value="info@hotelrousseau.ch">Informations divers</option>
-                                                    <option value="info@hotelrousseau.ch">Reservation</option>
-                                                    <option value="info@hotelrousseau.ch">Demande de prix</option>
-                                                    <option value="info@hotelrousseau.ch">Demande de contrat</option>
-                                                    <option value="info@hotelrousseau.ch">Suggestion ou recommandation</option>
-                                                    <option value="info@hotelrousseau.ch">Facturation</option>
-                                                    <option value="info@hotelrousseau.ch">Reclamation</option>
-                                                </select>
+                                                <input type="text" name="subject">
                                             </div>
+                                            {{--<div class="contact_form_input">--}}
+                                                {{--<select name="topic">--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Informations divers</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Reservation</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Demande de prix</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Demande de contrat</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Suggestion ou recommandation</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Facturation</option>--}}
+                                                    {{--<option value="info@hotelrousseau.ch">Reclamation</option>--}}
+                                                {{--</select>--}}
+                                            {{--</div>--}}
                                         </div>
 
                                         <p class="form_placeholder">Message</p>
