@@ -127,7 +127,7 @@ class PagesController extends Controller {
 
             Mail::send('emails.contact', ['input' => $input], function($message  )
             {
-                $message->to('i.ceban@voodoo-studio.ch ')->subject('New Contact Form');
+                $message->to('info@hotelrousseau.ch')->subject('New Contact Form');
             });
             return view('contact')->with('status', 'success');
         }
