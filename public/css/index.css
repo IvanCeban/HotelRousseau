@@ -112,7 +112,9 @@ body {
   color: #939393;
   position: absolute;
   bottom: 0px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  min-width: 1000px
+}
 
 .offers_and_news p {
   font-family: lato_regular;

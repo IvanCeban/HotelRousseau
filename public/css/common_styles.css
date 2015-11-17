@@ -104,8 +104,9 @@ sup {
 .header .header_menu {
   position: absolute !important;
   bottom: 0;
-    padding-right: 100px;
-  background: #ffffff; }
+  padding-right: 100px;
+  background: #ffffff;
+  min-width: 1000px}
 
 .header .header_menu ul {
   margin: 0 auto;

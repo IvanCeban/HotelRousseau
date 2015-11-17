@@ -280,7 +280,7 @@
     <section class="offers_and_news">
         <div class="main_container">
             <div class="row">
-                <div class="col-md-6 offers">
+                <div class="col-xs-6 offers">
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
@@ -331,7 +331,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 offers">
+                <div class="col-xs-6 offers">
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
