@@ -30,6 +30,10 @@ class PagesController extends Controller {
     {
         return view('index');
     }
+    public function hotel_onconstruction()
+    {
+        return view('hotel_onconstruction');
+    }
 
     public function hotel()
     {

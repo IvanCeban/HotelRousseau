@@ -129,7 +129,6 @@
     <!--header END-->
 
 
-
     <!--main content START-->
         <section class="main_section" ng-app="orderApp" ng-controller="orderCtrl">
             <div class="main_container">
