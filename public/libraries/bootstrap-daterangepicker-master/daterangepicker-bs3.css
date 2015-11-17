@@ -374,7 +374,7 @@
 .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:last-child th {
     font-size: 13px;
     color: #443633;
-    font-family: open_sans_regular;
+    font-family: lato_regular;
     text-decoration: underline; }
 .daterangepicker.dropdown-menu .calendar .calendar-date .table-condensed thead tr:last-child th:first-child {
     color: #ccc;

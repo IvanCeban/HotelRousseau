@@ -1,5 +1,5 @@
 body {
-  background: #ffffff;
+  background: url(../img/page_in_construction_bg.jpg) no-repeat center center fixed;
 }
 
 $main_brown_color: #453634;
@@ -48,15 +48,15 @@ $main_darkgray_color: #1d1d1d;
     position: relative;
     width: 100%;
     h3 {
-      font: 27px pt_serif_regular;
+      font: 27px lato_regular;
       color: $main_brown_color;
     }
     h4 {
-      font: 24px pt_serif_regular;
+      font: 24px lato_regular;
       color: $main_lightbrown_color;
     }
     a {
-      font: 13px open_sans_regular;
+      font: 13px lato_regular;
       color: $main_lightblue_color;
     }
     a:hover {
@@ -85,7 +85,7 @@ $main_darkgray_color: #1d1d1d;
           margin-right: 9px;
         }
         p {
-          font: 14px open_sans_regular;
+          font: 14px lato_regular;
           color: $main_lightbrown_color;
         }
       }
@@ -100,7 +100,7 @@ $main_darkgray_color: #1d1d1d;
         height: 50px;
         ul {
           li {
-            font: 16px open_sans_regular;
+            font: 16px lato_regular;
             color: $main_purple_color;
             float: left;
             height: 50px;
@@ -170,7 +170,7 @@ $main_darkgray_color: #1d1d1d;
                   text-align: center;
                   padding: 12px 0;
                   span {
-                    font: 13px open_sans_regular;
+                    font: 13px lato_regular;
                     text-transform: uppercase;
                     color: #ffffff;
                   }
@@ -184,7 +184,7 @@ $main_darkgray_color: #1d1d1d;
                   }
                 }
                 p {
-                  font: 14px open_sans_regular;
+                  font: 14px lato_regular;
                   color: #585858;
                 }
                 .room_option {
@@ -222,23 +222,23 @@ $main_darkgray_color: #1d1d1d;
             margin-top: 15px;
           }
           .offer_date {
-            font: 12px open_sans_regular;
+            font: 12px lato_regular;
             color: $main_orange_color;
             margin: 3px 0 35px;
           }
           .offer_description {
-            font: 14px open_sans_regular;
+            font: 14px lato_regular;
             color: $main_brown_color;
             line-height: 25px;
             margin-bottom: 10px;
           }
           .offer_price {
             border-bottom: 3px solid $main_lightgray_color;
-            font: 30px pt_serif_regular;
+            font: 30px lato_regular;
             color: $main_purple_color;
             margin-top: 40px;
             p {
-              font: 14px open_sans_regular;
+              font: 14px lato_regular;
               color: $main_brown_color;
               float: left;
               width: 50%;
@@ -270,7 +270,7 @@ $main_darkgray_color: #1d1d1d;
               border-left: 1px solid $main_lightgray_color;
               border-top: 1px solid #aeaeae;
               p {
-                font: 12px open_sans_regular;
+                font: 12px lato_regular;
                 color: $main_midgray_color;
                 margin: 15px 0 5px;
               }
@@ -293,7 +293,7 @@ $main_darkgray_color: #1d1d1d;
                   margin-right: 7px;
                 }
                 span {
-                  font: 12px open_sans_regular;
+                  font: 12px lato_regular;
                   color: $main_midgray_color;
                 }
               }
@@ -312,7 +312,7 @@ $main_darkgray_color: #1d1d1d;
         .general_conditions {
           margin: 8px 0 0;
           p {
-            font: 13px open_sans_regular;
+            font: 13px lato_regular;
             color: $main_brown_color;
           }
           label {
@@ -342,7 +342,7 @@ $main_darkgray_color: #1d1d1d;
           padding: 4px 0;
           border-bottom: 2px solid $main_lightgray_color;
           h5 {
-            font: 14px open_sans_bold;
+            font: 14px lato_black;
             color: $main_darkgray_color;
           }
           .condition_description {
@@ -376,12 +376,12 @@ $main_darkgray_color: #1d1d1d;
             }
             .condition_item_text {
               h5 {
-                font: 14px open_sans_bold;
+                font: 14px lato_black;
                 color: $main_darkgray_color;
                 margin-bottom: 10px;
               }
               p {
-                font: 13px open_sans_regular;
+                font: 13px lato_regular;
                 color: #453634;
               }
             }
@@ -404,7 +404,7 @@ $main_darkgray_color: #1d1d1d;
         margin-bottom: 40px;
       }
       p {
-        font: 14px open_sans_regular;
+        font: 14px lato_regular;
         color: $main_brown_color;
         margin-top: 8px;
       }
@@ -451,7 +451,7 @@ $main_darkgray_color: #1d1d1d;
         p {
           margin: 0;
           color: #ffffff;
-          font: 19px open_sans_regular;
+          font: 19px lato_regular;
         }
       }
     }
@@ -475,7 +475,7 @@ $main_darkgray_color: #1d1d1d;
     span {
       padding: 0;
       color: #453634!important;
-      font: 12px open_sans_regular!important;
+      font: 12px lato_regular!important;
     }
   }
   .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
@@ -505,7 +505,7 @@ $main_darkgray_color: #1d1d1d;
         height: 31px!important;
         padding-left: 11px!important;
         color: #453634!important;
-        font: 12px open_sans_regular!important;
+        font: 12px lato_regular!important;
       }
       a:hover {
         text-decoration: none!important;
@@ -520,19 +520,19 @@ input, select, textarea {
   font-size: 12px;
 }
 ::-webkit-input-placeholder {
-  font: 12px open_sans_regular;
+  font: 12px lato_regular;
   color: $main_brown_color;
 }
 :-moz-placeholder { /* Firefox 18- */
-  font: 12px open_sans_regular;
+  font: 12px lato_regular;
   color: $main_brown_color;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-  font: 12px open_sans_regular;
+  font: 12px lato_regular;
   color: $main_brown_color;
 }
 :-ms-input-placeholder {
-  font: 12px open_sans_regular;
+  font: 12px lato_regular;
   color: $main_brown_color;
 }
 
@@ -565,7 +565,7 @@ input, select, textarea {
   p {
     text-align: center;
     color: #ffffff;
-    font: 19px open_sans_regular;
+    font: 19px lato_regular;
   }
 }
 

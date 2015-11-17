@@ -76,7 +76,7 @@ body {
   margin-top: 18px;
   width: 100%;
   color: #ffffff;
-  font-family: pt_serif_regular;
+  font-family: lato_regular;
   font-size: 16px; }
 
 .book_the_room_button:hover {
@@ -134,7 +134,7 @@ body {
   position: absolute;
   top: 45%;
   left: 23%;
-  font: 14px open_sans_bold;
+  font: 14px lato_black;
   color: #ffffff;
   padding: 11px 19px 8px; }
 
@@ -144,7 +144,7 @@ body {
 
 .room_type_name h5 {
   padding: 12px;
-  font: 13px open_sans_regular;
+  font: 13px lato_regular;
   color: #ffffff;
   text-transform: uppercase; }
 

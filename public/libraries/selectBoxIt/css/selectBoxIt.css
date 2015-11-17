@@ -19,7 +19,7 @@
 
 /* Styles that apply to all SelectBoxIt elements */
 .selectboxit-container * {
-    font-family: open_sans_bold;
+    font-family: lato_black;
     font-size: 12px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;

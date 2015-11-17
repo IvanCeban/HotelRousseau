@@ -15,8 +15,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline;
-  font-family: pt_serif_regular; }
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -46,7 +45,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  line-height: 1; }
+  line-height: 1;
+  font: 13px lato_regular;
+}
 
 html,
 body {
@@ -70,7 +71,7 @@ sup {
   margin-left: auto; }
 
 .header {
-  height: 150px;
+  height: 80px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -92,7 +93,6 @@ sup {
   text-align: center; }
 
 .header .languages ul li a {
-  font-family: open_sans_regular;
   text-transform: uppercase;
   color: #8d8d8d;
   font-size: 11px;
@@ -104,13 +104,12 @@ sup {
 .header .header_menu {
   position: absolute !important;
   bottom: 0;
-  background: #ffffff;
-  padding-left: 310px; }
+    padding-right: 100px;
+  background: #ffffff; }
 
 .header .header_menu ul {
-  margin-right: -15px;
-  margin-bottom: 0;
-  float: right;
+  margin: 0 auto;
+  /*float: right;*/
   display: table; }
 
 .header .header_menu ul li {
@@ -118,11 +117,8 @@ sup {
   list-style: none;
   text-transform: uppercase;
   margin: 0 10px;
-  padding: 24px 0 20px; }
-
-.header .header_menu li:last-child {
-  padding: 0;
-  width: 267px; }
+  padding: 24px 0 20px;
+}
 
 .header .header_menu ul .news_block_icon {
   padding: 19px 10px 8px;
@@ -142,14 +138,13 @@ sup {
   margin: 0; }
 
 .header .header_menu ul .news_block span {
-  font-family: open_sans_regular;
   font-size: 12px;
   color: #a68858;
   text-transform: none; }
 
 .header .header_menu li a {
   color: #3e312a;
-  padding: 20px 0 16px;
+  padding: 20px 0 18px;
   text-decoration: none; }
 
 .header .header_menu li a:hover {
@@ -175,11 +170,27 @@ sup {
   bottom: 2px; }
 
 .header .logo {
-  display: table;
-  position: absolute;
-  top: 43px;
-  left: 74px;
-  z-index: 1; }
+  float: left;
+    margin: 6px;
+   }
+.header .header_rightside_btns {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 60px;
+    padding: 23px 10px 19px;
+    border-left: 2px solid #a68858;
+}
+.header .header_login_btn {
+    color: #3e312a;
+    padding: 19px 10px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header .header_login_btn:hover {
+    color: #38bad4;
+    border-bottom: 2px solid #38bad4;
+}
 
 .right_sidebar_container {
   padding: 0;
@@ -218,7 +229,7 @@ sup {
 
 .show_hide_sidebar_btn {
   position: absolute;
-  top: 0px;
+  top: 85px;
   left: -43px;
   height: 43px;
   width: 43px;
@@ -265,10 +276,10 @@ sup {
 .right_sidebar ul li,
 .right_sidebar span {
   color: #E7D0AA;
-  font: 16px open_sans_regular; }
+  font-size: 16px; }
 
 .right_sidebar p {
-  font: 16px open_sans_regular;
+  font-size: 16px;;
   color: #cbc4be; }
 
 .footer {
@@ -283,11 +294,9 @@ sup {
 
 .footer ul li {
   float: left;
-  font-family: open_sans_regular;
   font-size: 13px; }
 
 .footer ul li a {
-  font-family: open_sans_regular;
   font-size: 13px;
   float: left;
   color: #8d8d8d;

@@ -12,7 +12,9 @@ body {
   outline: 4px solid #f8ddb3;
   padding: 18px 0;
   float: right;
-  margin: 34px 19px 34px 0; }
+  margin: 34px 19px 34px 0;
+  display: none;
+}
 
 .middle .search_block.closed {
   height: 60px;
@@ -50,14 +52,14 @@ body {
   cursor: pointer; }
 
 .middle .search_block form {
-  font-family: open_sans_bold;
+  font-family: lato_black;
   font-size: 12px;
   padding: 0 59px; }
 
 .middle .search_block p {
   margin: 0 0 4px 0;
   color: #b6b6b6;
-  font-family: open_sans_regular; }
+  font-family: lato_regular; }
 
 .middle .search_block_line {
   border: 1px solid #3f322b;
@@ -113,7 +115,7 @@ body {
   padding-bottom: 40px; }
 
 .offers_and_news p {
-  font-family: open_sans_regular;
+  font-family: lato_regular;
   font-size: 13px;
   margin: 20px 0 7px;
   line-height: 1.5; }
@@ -138,7 +140,7 @@ body {
 
 .offers_and_news .offers_and_news_date {
   color: #38bad4;
-  font-family: open_sans_regular;
+  font-family: lato_regular;
   font-size: 12px;
   padding-left: 2px; }
 
@@ -158,7 +160,7 @@ body {
   width: 156px;
   height: 24px;
   background: #ffffff url("../img/more_info_button_arrrow.png") no-repeat right;
-  font-family: open_sans_regular !important;
+  font-family: lato_regular !important;
   font-size: 12px;
   text-align: left;
   padding-left: 12px;

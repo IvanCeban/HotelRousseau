@@ -5,9 +5,7 @@
     .header_menu ul li a{
         font-size: 13px;
     }
-    .header .header_menu li a {
-        padding: 20px 0 17px;
-    }
+
 }
 @media(min-width:1200px) and (max-width: 1350px) {
     .header .header_menu ul li {
