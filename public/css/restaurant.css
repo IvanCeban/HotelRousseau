@@ -1,7 +1,9 @@
 body {
   /*background: url(/img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;*/
   background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed; }
-
+.main_section {
+    min-width: 1150px;
+}
 .right_sidebar p {
   line-height: 1.5; }
 

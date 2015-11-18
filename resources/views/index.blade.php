@@ -97,11 +97,6 @@
     <section class="header">
         <div class="main_container">
             <div class="row">
-                {{--<div class="col-xs-6">--}}
-                    {{--<div class="logo">--}}
-                        {{--<a href="/"><img src="img/logo.jpg"></a>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
                 <div class="col-xs-6 languages">
                     <!--<ul>-->
                         <!--<li class="active"><a href="#">FR</a></li>-->
@@ -111,10 +106,8 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 header_menu">
-                    <div class="logo">
-                        <a href="/"><img src="img/logo.png"></a>
-                    </div>
                     <ul>
+                        <li class="logo"><a href="/"><img src="img/logo.png"></a></li>
                         <li class="active"><a href="/">Accueil</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hôtel</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>

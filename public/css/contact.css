@@ -1,6 +1,7 @@
 #googlemaps {
   height: 100%;
   width: 100%;
+  min-width: 1150px;
   position: absolute;
   top: 0;
   left: 0;
@@ -8,7 +9,9 @@
   /* Set z-index to 0 as it will be on a layer below the contact form */ }
 
 .main_section {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  min-width: 1150px;
+}
 
 .right_sidebar p {
   color: #E7D0AA; }

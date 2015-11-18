@@ -106,7 +106,7 @@ sup {
   bottom: 0;
   padding-right: 100px;
   background: #ffffff;
-  min-width: 1000px}
+  min-width: 1150px}
 
 .header .header_menu ul {
   margin: 0 auto;
@@ -170,10 +170,16 @@ sup {
   position: relative;
   bottom: 2px; }
 
-.header .logo {
-  float: left;
-    margin: 6px;
-   }
+.header .header_menu .logo {
+    padding: 0;
+    margin: 10px 125px 0 0;
+}
+.header .header_menu .logo a {
+    padding: 0;
+}
+.header .header_menu .logo a:hover {
+    border: none;
+}
 .header .header_rightside_btns {
     position: absolute;
     right: 15px;
@@ -285,7 +291,8 @@ sup {
 
 .footer {
   width: 100%;
-  height: 40px;
+    min-width: 1150px;
+  /*height: 40px;*/
   position: absolute;
   bottom: 0;
   left: 0;
@@ -328,7 +335,9 @@ sup {
 .flex-direction-nav a {
   height: 68px;
   width: 50px;
-  margin: -34px 0 0; }
+  margin: -34px 0 0;
+  outline: none;
+}
 
 .flex-direction-nav a.flex-prev {
   background: url("/img/homepage/offers/offer_arrow_prev.png") no-repeat left; }

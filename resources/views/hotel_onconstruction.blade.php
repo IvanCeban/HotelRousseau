@@ -14,14 +14,9 @@
 
 @section('content')
     <!--header START-->
-         <section class="header">
+        <section class="header">
             <div class="main_container">
                 <div class="row">
-                    {{--<div class="col-xs-6">--}}
-                        {{--<div class="logo">--}}
-                            {{--<a href="/"><img src="img/logo.jpg"></a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
                     <div class="col-xs-6 languages">
                         <!--<ul>-->
                             <!--<li class="active"><a href="#">FR</a></li>-->
@@ -31,16 +26,14 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 header_menu">
-                        <div class="logo">
-                            <a href="/"><img src="img/logo.png"></a>
-                        </div>
                         <ul>
+                            <li class="logo"><a href="/"><img src="img/logo.png"></a></li>
                             <li><a href="/">Accueil</a></li>
                             <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hôtel</a></li>
                             <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
                             <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                             <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
-                            {{--<li ><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
+                            {{--<li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
                             <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
                             {{--<li>--}}
                                 {{--<!--<div class="news_block_icon">-->--}}
