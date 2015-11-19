@@ -6,6 +6,11 @@
         /*font-size: 13px;*/
     /*}*/
 /*}*/
+@media(max-width:1250px) {
+    .header .header_menu .logo {
+        margin-right: 55px;
+    }
+}
 /*@media(min-width:1200px) and (max-width: 1350px) {*/
     /*.header .header_menu ul li {*/
         /*margin: 0 5px;*/
