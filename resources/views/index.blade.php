@@ -126,7 +126,7 @@
                         {{--</li>--}}
                     </ul>
                     <div class="header_rightside_btns">
-                        <a href="#" class="header_login_btn">Log in</a>
+                        <a href="#" class="header_login_btn">Connexion</a>
                     </div>
                 </div>
             </div>
@@ -270,111 +270,111 @@
     <!--middle section END-->
 
     <!--offers and news START-->
-    <section class="offers_and_news">
-        <div class="main_container">
-            <div class="row">
-                <div class="col-xs-6 offers">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Graida atcur ecuus istique</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Aucune offre pour l’instant</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Graida atcur ecuus istique</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-6 offers">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Graida atcur ecuus istique</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Aucune offre pour l’instant</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-xs-5 offer_img">
-                                        <img src="/img/homepage/offers/1.jpg">
-                                    </div>
-                                    <div class="col-xs-6 offer_short_info">
-                                        <h3>Graida atcur ecuus istique</h3>
-                                        <div class="offer_blue_line"></div>
-                                        <span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>
-                                        <p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>
-                                        <span class="offer_price">135.-CHF</span>
-                                        <button type="button" class="offer_more_info_button">Plus d'information</button>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    {{--<section class="offers_and_news">--}}
+        {{--<div class="main_container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-xs-6 offers">--}}
+                    {{--<div class="flexslider">--}}
+                        {{--<ul class="slides">--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Graida atcur ecuus istique</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Aucune offre pour l’instant</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Graida atcur ecuus istique</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-xs-6 offers">--}}
+                    {{--<div class="flexslider">--}}
+                        {{--<ul class="slides">--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Graida atcur ecuus istique</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Aucune offre pour l’instant</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-xs-5 offer_img">--}}
+                                        {{--<img src="/img/homepage/offers/1.jpg">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="col-xs-6 offer_short_info">--}}
+                                        {{--<h3>Graida atcur ecuus istique</h3>--}}
+                                        {{--<div class="offer_blue_line"></div>--}}
+                                        {{--<span class="offers_and_news_date">Jusqu'au 15 juillet 2015</span>--}}
+                                        {{--<p>Donec alsuadrcnc sit amet eros. Lorem ipsum dolor sit at consc tetuer aiing elituris fermentum tuma.</p>--}}
+                                        {{--<span class="offer_price">135.-CHF</span>--}}
+                                        {{--<button type="button" class="offer_more_info_button">Plus d'information</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 {{--<div class="col-md-6 news">--}}
                     {{--<div class="flexslider">--}}
                         {{--<ul class="slides">--}}
@@ -414,9 +414,9 @@
                         {{--</ul>--}}
                     {{--</div>--}}
                 {{--</div>--}}
-            </div>
-        </div>
-    </section>
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
     <!--offers and news START-->
 
     <!--footer START-->

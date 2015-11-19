@@ -190,7 +190,8 @@ sup {
 }
 .header .header_login_btn {
     color: #3e312a;
-    padding: 19px 10px 19px;
+    margin: 0 10px;
+    padding: 19px 0 19px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -294,7 +295,7 @@ sup {
     min-width: 1150px;
   /*height: 40px;*/
   position: absolute;
-  bottom: 0;
+  bottom: 0 ;
   left: 0;
   background: #fafafa;
   color: #8d8d8d;
