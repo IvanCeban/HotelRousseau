@@ -133,9 +133,9 @@
                                         <li><span> - tartare</span></li>
                                     </ul>
                                     <ul class="hotel_services additional">
-                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette de 3 verres (3x1dl) pour la dégustation de bières artisanales les Brasseurs Genève. </span></li>
-                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> Palette de 3 verres (3x1dl) pour la dégustation de vins (blancs, rosés ou rouges).</span></li>
-                                        <li><img src="/img/offers/offers_icons/common_checked.png"><span> 20 mets à Frs 20.- servis sur palettes : 5 Flammekueches (tartes flambées) moitié-moitié. </span></li>
+                                        <li><span> Palette de 3 verres (3x1dl) pour la dégustation de bières artisanales les Brasseurs Genève. </span></li>
+                                        <li><span> Palette de 3 verres (3x1dl) pour la dégustation de vins (blancs, rosés ou rouges).</span></li>
+                                        <li><span> 20 mets à Frs 20.- servis sur palettes : 5 Flammekueches (tartes flambées) moitié-moitié. </span></li>
                                     </ul>
                                     <p>
                                         « Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.

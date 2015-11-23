@@ -95,5 +95,7 @@ body {
 
 .hotel_services.additional li span {
   line-height: 1.5; }
-
+.hotel_services.additional li {
+    background: url("../img/restaurant/food_icons/food_icons.svg") no-repeat -6px -160px;
+}
 /*# sourceMappingURL=restaurant.css.map */
