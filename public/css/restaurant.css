@@ -14,7 +14,19 @@ body {
   margin: 42px 0; }
 
 .our_specials li {
-  margin: 0 0 12px; }
+  margin: 0 0 12px;
+    padding: 3px 0 3px 53px;
+    background: url("../img/restaurant/food_icons/food_icons.svg") no-repeat 0 0;
+}
+
+.our_specials li:nth-child(2){
+  background-position: 0 -34px }
+
+.our_specials li:nth-child(3){
+  background-position: 0 -78px }
+
+.our_specials li:nth-child(4){
+  background-position: 0 -114px }
 
 .our_specials li:last-child {
   margin: 0; }

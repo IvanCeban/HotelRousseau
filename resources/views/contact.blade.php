@@ -35,7 +35,7 @@
                         <li class="logo"><a href="/"><img src="img/logo.png"></a></li>
                         <li><a href="/">Accueil</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hôtel</a></li>
-                        <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
+                        <li id="nav_rooms"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
                         {{--<li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
@@ -58,6 +58,39 @@
         </div>
     </section>
     <!--header END-->
+
+    {{--rooms type select START--}}
+     <section class="rooms_types_section">
+         <div class="main_container">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <ul class="rooms_types_buttons">
+                         <li class="room_type" id="single_classic">
+                             <h5>Single classic</h5>
+                             <a href="#">CHF 235.-</a>
+                         </li>
+                         <li class="room_type" id="double_classic">
+                             <h5>Double classic</h5>
+                             <a href="#">CHF 265.-</a>
+                         </li>
+                         <li class="room_type" id="double_superior">
+                             <h5>Double Supérieur</h5>
+                             <a href="#">CHF 295.-</a>
+                         </li>
+                         <li class="room_type" id="triple">
+                             <h5>Triple</h5>
+                             <a href="#">CHF 325.-</a>
+                         </li>
+                         <li class="room_type" id="apartment">
+                             <h5>Appartement</h5>
+                             <a href="#">CHF 590.-</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </section>
+     {{--rooms type select END--}}
 
     <div id="googlemaps"></div>
 

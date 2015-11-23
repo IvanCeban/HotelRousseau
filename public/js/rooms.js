@@ -32,8 +32,16 @@ jQuery(document).ready(function($){
         else if (active_element_id == 'apartment'){
             $('body').css({'background': 'url(/img/rooms/gallery/006.jpg) no-repeat center center fixed'});
         }
-    })
+    });
 //izvrashenie bleati! END
+
+    $("#nav_rooms").on("mouseover", function(){
+        $(".rooms_types_section").fadeIn(100);
+    });
+    $(".rooms_types_section").on("mouseleave", function(){
+        $(".rooms_types_section").fadeOut(100);
+    });
+
 });
 
 $(window).load(function() {

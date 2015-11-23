@@ -145,7 +145,7 @@ sup {
 
 .header .header_menu li a {
   color: #3e312a;
-  padding: 20px 0 18px;
+  padding: 23px 0 18px;
   text-decoration: none; }
 
 .header .header_menu li a:hover {
@@ -362,5 +362,45 @@ sup {
   left: -50px; }
 
 /*flexSlider customizations END*/
+
+/*room select block START*/
+.rooms_types_section {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(48, 41, 37, 0.9);
+}
+.rooms_types_buttons {
+    display: table;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.room_type {
+    text-align: center;
+    width: 188px;
+    float: left;
+    font: 14px lato_regular;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.room_type a {
+    font-family: lato_black;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    width: 100px;
+    margin: 15px auto 0;
+    background-color: #453f3b;
+}
+.room_type.active a,
+.room_type a:hover {
+    background-color: #3abbd5;
+    text-decoration: none;
+}
+/*room select block END*/
 
 /*# sourceMappingURL=common_styles.css.map */

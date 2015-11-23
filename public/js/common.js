@@ -36,4 +36,6 @@ jQuery(document).ready(function($){
 
         $('.sidebar_parent').toggleClass('sidebar_hidden');
     });
+
+
 });
