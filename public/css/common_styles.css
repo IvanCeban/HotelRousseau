@@ -370,7 +370,7 @@ sup {
     top: 80px;
     width: 100%;
     z-index: 3;
-    background-color: rgba(48, 41, 37, 0.9);
+    background-color: rgba(48, 41, 37, 1);
 }
 .rooms_types_buttons {
     display: table;

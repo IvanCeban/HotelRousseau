@@ -1,6 +1,7 @@
 body {
-  /*background: url(/img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;*/
-  background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed; }
+    background: url(../img/restaurant/restaurant_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 .main_section {
     min-width: 1150px;
 }

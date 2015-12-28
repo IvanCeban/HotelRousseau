@@ -153,7 +153,7 @@
                 {{--</div>--}}
                 <div class="col-xs-4">
                     <div class="sidebar_parent">
-                        <div class="show_hide_sidebar_btn"></div>
+                        {{--<div class="show_hide_sidebar_btn"></div>--}}
                         <div class="right_sidebar_container">
                            <div class="right_sidebar" id="rooms_introduction_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">

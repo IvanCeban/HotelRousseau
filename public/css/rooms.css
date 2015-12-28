@@ -1,5 +1,7 @@
 body {
-  background: url(../img/rooms/gallery/rooms_introduction_bg.jpg) no-repeat center center fixed; }
+  background: url(../img/rooms/gallery/rooms_introduction_bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 
 .rooms_main_section {
   padding-bottom: 40px;
