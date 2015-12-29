@@ -63,23 +63,28 @@
                      <ul class="rooms_types_buttons">
                          <li class="room_type" id="single_classic">
                              <h5>Single classic</h5>
-                             <a href="#">CHF 235.-</a>
+                             {{--<a href="#">CHF 235.-</a>--}}
+                             <a href="#"><img src="/img/rooms/gallery/single_classic_img1_thmb.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_classic">
                              <h5>Double classic</h5>
-                             <a href="#">CHF 265.-</a>
+                             {{--<a href="#">CHF 265.-</a>--}}
+                             <a href="#"><img src="/img/rooms/gallery/double_classic_img1_thmb.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_superior">
                              <h5>Double Supérieur</h5>
-                             <a href="#">CHF 295.-</a>
+                             {{--<a href="#">CHF 295.-</a>--}}
+                             <a href="#"><img src="/img/rooms/gallery/double_superior_img1_thmb.jpg" /></a>
                          </li>
                          <li class="room_type" id="triple">
                              <h5>Triple</h5>
-                             <a href="#">CHF 325.-</a>
+                             {{--<a href="#">CHF 325.-</a>--}}
+                             <a href="#"><img src="/img/rooms/gallery/triple_img2_thmb.jpg" /></a>
                          </li>
                          <li class="room_type" id="apartment">
                              <h5>Appartement</h5>
-                             <a href="#">CHF 590.-</a>
+                             {{--<a href="#">CHF 590.-</a>--}}
+                             <a href="#"><img src="/img/rooms/gallery/appartement_img5_thmb.jpg" /></a>
                          </li>
                      </ul>
                  </div>
@@ -155,170 +160,179 @@
                     <div class="sidebar_parent">
                         {{--<div class="show_hide_sidebar_btn"></div>--}}
                         <div class="right_sidebar_container">
-                           <div class="right_sidebar" id="rooms_introduction_right_sidebar">
+                            <div class="right_sidebar" id="rooms_introduction_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
                                 <h3>Chambres / Appartement</h3>
-                                <p>Chambres entièrement rénovées, meubles robustes et sobres, plate-forme lumineuse en guise de plafonnier, tête de lit avec led,
-                                veilleuses, liseuses, un jeux de lumière qui vous procure une grande luminosité mais aussi qui vous permet de tamiser à désir afin
-                                d’apporter la touche qui conviendra à l’ambiance que vous souhaité, enfin les couleurs douces et  reposantes  du plancher,
-                                des meubles rideaux et jetée de lit font de nos chambres un espace chaleureux et cosy ou il fait bon allier le travail et la détente.<br>
-                                   <br>Installez-vous et sentez-vous chez vous.<br>
+                                <p>L’hôtel se compose de 24 chambres et d’un appartement, entièrement rénovés en 2015, parfaitement insonorisés,
+                                    équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables.
+                                    Les chambres sont spacieuses pouvant allier travail et détente.<br>
                                 </p>
                             </div>
 
                             <div class="right_sidebar" id="single_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambre Classic Single</h3>
-                                <p>Chambre équipée de :</p>
+                                <h3>SINGLE CLASSIC</h3>
+                                <p>Idéale pour un séjour de courte durée, pour une personne.</p>
                                 <ul class="rooms_options_list">
-                                    <li>- Télévision à écran plat</li>
-                                    <li>- Wi-Fi accès gratuit,</li>
-                                    <li>- Machine à café Nespresso</li>
-                                    <li>- Bureau</li>
-                                    <li>- Minibar</li>
-                                    <li>- Coffre-fort</li>
-                                    <li>- Salle de douche</li>
-                                    <li>- Sèche cheveux</li>
-                                    <li>- De 17 à 20 m<sup>2</sup></li>
+                                    <li class="room_icon_surface">- Chambre de 13m<sup>2</sup></li>
+                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed">- Un lit de 160 cm x 200cm</li>
+                                    <li class="room_icon_ac">- Climatisé</li>
+                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
+                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space">- Espace de travail</li>
+                                    <li class="room_icon_wifi">- Wifi gratuit</li>
+                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
-                                <p>Confort et espace pour allier travail et détente.</p>
 
-                                {{--<h4>Single</h4>--}}
-                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="011" src="/img/rooms/gallery/011.jpg">
+                                            <img photo_number="single_classic_img1" src="/img/rooms/gallery/single_classic_img1.jpg" >
+                                            <img photo_number="single_classic_img2" src="/img/rooms/gallery/single_classic_img2.jpg" >
+                                            <img photo_number="single_classic_img3" src="/img/rooms/gallery/single_classic_img3.jpg" >
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<div class="sidebar_purple_line"></div>--}}
-                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
 
                             <div class="right_sidebar" id="double_classic_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambre Classic Double</h3>
-                                <p>Chambre équipée de :</p>
+                                <h3>DOUBLE CLASSIC</h3>
+                                <p>Idéale pour une ou deux personnes.</p>
                                 <ul class="rooms_options_list">
-                                    <li>- Télévision à écran plat</li>
-                                    <li>- Wi-Fi accès gratuit,</li>
-                                    <li>- Machine à café Nespresso</li>
-                                    <li>- Bureau</li>
-                                    <li>- Minibar</li>
-                                    <li>- Coffre-fort</li>
-                                    <li>- Salle de douche</li>
-                                    <li>- Sèche cheveux</li>
-                                    <li>- De 17 à 20 m<sup>2</sup></li>
+                                    <li class="room_icon_surface">- Chambre de 15m<sup>2</sup> à 18m<sup>2</sup></li>
+                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed">- A choix, deux lits jumeaux de 90 cm x 200 cm ou un grand lit 160 cm x 200cm</li>
+                                    <li class="room_icon_ac">- Climatisé</li>
+                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
+                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space">- Espace de travail</li>
+                                    <li class="room_icon_wifi">- Wifi gratuit</li>
+                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
-                                <p>Confort et espace pour allier travail et détente.</p>
 
-                                {{--<h4>Single</h4>--}}
-                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="011" src="/img/rooms/gallery/011.jpg">
+                                            <img photo_number="double_classic_img1" src="/img/rooms/gallery/double_classic_img1.jpg" >
+                                            <img photo_number="double_classic_img2" src="/img/rooms/gallery/double_classic_img2.jpg" >
+                                            <img photo_number="double_classic_img3" src="/img/rooms/gallery/double_classic_img3.jpg" >
+                                        </li>
+                                        <li>
+                                            <img photo_number="double_classic_img5" src="/img/rooms/gallery/double_classic_img5.jpg" >
+                                            <img photo_number="double_classic_img6" src="/img/rooms/gallery/double_classic_img6.jpg" >
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<div class="sidebar_purple_line"></div>--}}
-                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambre Classic Supérieure</h3>
-                                <p>Chambre équipée de :</p>
+                                <h3>DOUBLE SUPERIEUR</h3>
+                                <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
-                                    <li>- Télévision à écran plat</li>
-                                    <li>- Wi-Fi accès gratuit,</li>
-                                    <li>- Machine à café Nespresso</li>
-                                    <li>- Bureau</li>
-                                    <li>- Minibar</li>
-                                    <li>- Coffre-fort</li>
-                                    <li>- Salle de douche</li>
-                                    <li>- Sèche cheveux</li>
-                                    <li>- 25 m<sup>2</sup> avec son coin salon</li>
+                                    <li class="room_icon_surface">- Chambre de 20m<sup>2</sup></li>
+                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed">- Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_ac">- Climatisé</li>
+                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
+                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space">- Espace de travail</li>
+                                    <li class="room_icon_wifi">- Wifi gratuit</li>
+                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
-                                <p>Confort et espace pour allier travail et détente.</p>
 
-                                {{--<h4>Single</h4>--}}
-                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="002" src="/img/rooms/gallery/002.jpg">
-                                            <img photo_number="008" src="/img/rooms/gallery/008.jpg">
-                                            <img photo_number="023" src="/img/rooms/gallery/023.jpg">
+                                            <img photo_number="double_superior_img1" src="/img/rooms/gallery/double_superior_img1.jpg" >
+                                            <img photo_number="double_superior_img2" src="/img/rooms/gallery/double_superior_img2.jpg" >
+                                            <img photo_number="double_superior_img3" src="/img/rooms/gallery/double_superior_img3.jpg" >
+                                        </li>
+                                        <li>
+                                            <img photo_number="double_superior_img4" src="/img/rooms/gallery/double_superior_img4.jpg" >
+                                            <img photo_number="double_superior_img5" src="/img/rooms/gallery/double_superior_img5.jpg" >
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<div class="sidebar_purple_line"></div>--}}
-                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
 
                             <div class="right_sidebar" id="triple_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Chambre Triple</h3>
-                                <p>Chambre équipée de :</p>
+                                <h3>TRIPLE</h3>
+                                <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
                                 <ul class="rooms_options_list">
-                                    <li>- Télévision à écran plat</li>
-                                    <li>- Wi-Fi accès gratuit,</li>
-                                    <li>- Machine à café Nespresso</li>
-                                    <li>- Bureau</li>
-                                    <li>- Minibar</li>
-                                    <li>- Coffre-fort</li>
-                                    <li>- Salle de douche</li>
-                                    <li>- Sèche cheveux</li>
-                                    <li>- 25 à 30 m<sup>2</sup>, vrai couchage</li>
+                                    <li class="room_icon_surface">- Chambre de 23m<sup>2</sup></li>
+                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed">- Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_ac">- Climatisé</li>
+                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
+                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space">- Espace de travail</li>
+                                    <li class="room_icon_wifi">- Wifi gratuit</li>
+                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
-                                <p>Confort et espace pour allier travail et détente.</p>
 
-                                {{--<h4>Single</h4>--}}
-                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="024" src="/img/rooms/gallery/024.jpg">
+                                            <img photo_number="triple_img1" src="/img/rooms/gallery/triple_img1.jpg" >
+                                            <img photo_number="triple_img2" src="/img/rooms/gallery/triple_img2.jpg" >
+                                            <img photo_number="triple_img3" src="/img/rooms/gallery/triple_img3.jpg" >
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<div class="sidebar_purple_line"></div>--}}
-                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
 
                             <div class="right_sidebar" id="apartment_right_sidebar">
                                 <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
-                                <h3>Appartement</h3>
-                                <p>Appartement composé de 2 chambres pouvant accueillir  1 à 5 personnes. 1 entrée principale de 8m<sup>2</sup> deservant les chambres et une cuisine entièrement équipée de 8m<sup>2</sup></p>
-                                <p>Chambre équipée de :</p>
+                                <h3>APPARTMENT</h3>
+                                <p>Il est composé de deux chambres avec chacune leur salle de bain et d'un hall avec cuisine équipée.</p>
                                 <ul class="rooms_options_list">
-                                    <li>- Télévision à écran plat</li>
-                                    <li>- Wi-Fi accès gratuit,</li>
-                                    <li>- Machine à café Nespresso</li>
-                                    <li>- Bureau</li>
-                                    <li>- Minibar</li>
-                                    <li>- Coffre-fort</li>
-                                    <li>- Salle de douche</li>
-                                    <li>- Sèche cheveux</li>
-                                    <li>- Entrée de 8m<sup>2</sup></li>
-                                    <li>- Cuisine équipée de 8m<sup>2</sup></li>
+                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed1">- Chambre 1 : Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_bed">- Chambre 2 : Un lit de 160 cm x 200cm</li>
+                                    <li class="room_icon_ac">- Climatisé</li>
+                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
+                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space">- Espace de travail</li>
+                                    <li class="room_icon_wifi">- Wifi gratuit</li>
+                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
-                                <p>Confort et espace pour allier travail et détente.</p>
 
-                                {{--<h4>Single</h4>--}}
-                                {{--<span>1 lit simple - 1 personne </span>--}}
                                 <div class="flexslider">
                                     <ul class="slides room_photos_list">
                                         <li>
-                                            <img photo_number="006" src="/img/rooms/gallery/006.jpg">
-                                            <img photo_number="015" src="/img/rooms/gallery/015.jpg">
+                                            <img photo_number="appartement_img1" src="/img/rooms/gallery/appartement_img1.jpg" >
+                                            <img photo_number="appartement_img2" src="/img/rooms/gallery/appartement_img2.jpg" >
+                                            <img photo_number="appartement_img3" src="/img/rooms/gallery/appartement_img3.jpg" >
+                                        </li>
+                                        <li>
+                                            <img photo_number="appartement_img4" src="/img/rooms/gallery/appartement_img4.jpg" >
+                                            <img photo_number="appartement_img5" src="/img/rooms/gallery/appartement_img5.jpg" >
                                         </li>
                                     </ul>
                                 </div>
-                                {{--<div class="sidebar_purple_line"></div>--}}
-                                {{--<button type="button" class="book_the_room_button">Réserves dès maintenant</button>--}}
                             </div>
                         </div>
                         {{--<div class="clearfix"></div>--}}

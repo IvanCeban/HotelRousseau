@@ -120,26 +120,29 @@
                                 {{--<div class="show_hide_sidebar_btn"></div>--}}
                                 <div class="right_sidebar">
                                     <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
-                                    <h3>Restaurant / Bar</h3>
-                                    <p>
-                                        Découvrez notre nouveau concept "Les 3 palettes 20/20".<br><br>
-                                        Dans une ambiance feutrée, conviviale et une atmosphère détendue savourez, dans notre restaurant Wine-bar au
-                                        design contemporain, des compositions idéalement conçues pour faire vite et très bien.
-                                    </p>
-                                    <ul class="our_specials">
-                                        <li><span> - hamburger</span></li>
-                                        <li><span> - flammekueche</span></li>
-                                        <li><span> - salade chaud-froid</span></li>
-                                        <li><span> - tartare</span></li>
-                                    </ul>
-                                    <ul class="hotel_services additional">
-                                        <li><span> Palette de 3 verres (3x1dl) pour la dégustation de bières artisanales les Brasseurs Genève. </span></li>
-                                        <li><span> Palette de 3 verres (3x1dl) pour la dégustation de vins (blancs, rosés ou rouges).</span></li>
-                                        <li><span> 20 mets à Frs 20.- servis sur palettes : 5 Flammekueches (tartes flambées) moitié-moitié. </span></li>
-                                    </ul>
-                                    <p>
-                                        « Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.
-                                    </p>
+                                    <h3>Restaurant</h3>
+                                    <p>Dans un cadre feutré et contemporain, l’équipe du restaurant les 3 Palettes 20/20 Wine Bar,
+                                        vous accueillera en toute convivialité. A travers la fraîcheur de ses mets, le Chef de cuisine vous fera
+                                        voyager et ainsi vous amènera  à découvrir ses spécialités telles que l’hamburger de bison, l’incontournable salade
+                                        Caesar ou encore le croustillant de crevettes Bangkok pour ne citer qu’eux. Nous vous invitons à découvrir notre concept
+                                        de boissons servies sur palette : comme les 3 bières artisanales des Brasseurs, la Blanche de froment,
+                                        la Blonde pure malt et l’ambrée double malt ou les vins internationaux de la carte, en dégustation.</p>
+                                    <br>
+                                    <p>Tous nos plats sont à chf 20.- y compris notre plat du jours.</p>
+                                    <br>
+                                    <p>Vous saurez apprécier le parcours dégustatif aussi bien pour le service du déjeuner que pour le serviced du dîner.</p>
+                                    {{--<ul class="our_specials">--}}
+                                        {{--<li><span> - hamburger</span></li>--}}
+                                        {{--<li><span> - flammekueche</span></li>--}}
+                                        {{--<li><span> - salade chaud-froid</span></li>--}}
+                                        {{--<li><span> - tartare</span></li>--}}
+                                    {{--</ul>--}}
+                                    {{--<ul class="hotel_services additional">--}}
+                                        {{--<li><span> Palette de 3 verres (3x1dl) pour la dégustation de bières artisanales les Brasseurs Genève. </span></li>--}}
+                                        {{--<li><span> Palette de 3 verres (3x1dl) pour la dégustation de vins (blancs, rosés ou rouges).</span></li>--}}
+                                        {{--<li><span> 20 mets à Frs 20.- servis sur palettes : 5 Flammekueches (tartes flambées) moitié-moitié. </span></li>--}}
+                                    {{--</ul>--}}
+                                    {{--<p>« Choisissez votre formule en toute simplicité » dans le plaisir et pour un moment d’évasion assuré.</p>--}}
                                 </div>
                             </div>
                         </div>

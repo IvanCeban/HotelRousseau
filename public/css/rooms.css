@@ -4,7 +4,7 @@ body {
 }
 
 .rooms_main_section {
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   /* Height of the footer element */
   min-height: 100%;
   /*position: absolute;*/
@@ -40,37 +40,56 @@ body {
   margin-top: 40px; }
 
 .rooms_options_list li {
-  padding: 10px 53px;
-  background: url("../img/rooms/rooms_options_icons_brown/rooms_options_icons.svg") no-repeat 0 10px;
+  padding: 10px 0 10px 53px;
+  background: url("../img/rooms/rooms_options_icons_brown/rooms_options_icons.svg") no-repeat;
   margin: 3px 0; }
 
-.rooms_options_list li:nth-child(2) {
-  background-position: 0 -27px; }
+.rooms_options_list li.room_icon_surface {
+  background-position: 0 5px; }
 
-.rooms_options_list li:nth-child(3) {
-  background-position: 0 -68px; }
+.rooms_options_list li.room_icon_mattress {
+  background-position: 0 -51px; }
 
-.rooms_options_list li:nth-child(4) {
-  background-position: 0 -109px; }
+.rooms_options_list li.room_icon_bed {
+  background-position: 0 -105px; }
 
-.rooms_options_list li:nth-child(5) {
-  background-position: 0 -146px; }
+.rooms_options_list li.room_icon_ac {
+  background-position: 0 -157px; }
 
-.rooms_options_list li:nth-child(6) {
-  background-position: 0 -185px; }
+.rooms_options_list li.room_icon_non_smoking {
+  background-position: 0 -212px; }
 
-.rooms_options_list li:nth-child(7) {
-  background-position: 0 -227px; }
+.rooms_options_list li.room_icon_tv {
+  background-position: 0 -266px; }
 
-.rooms_options_list li:nth-child(8) {
-  background-position: 0 -267px; }
+.rooms_options_list li.room_icon_working_space {
+  background-position: 0 -321px; }
 
-.rooms_options_list li:nth-child(9) {
-  background-position: 0 -311px; }
+.rooms_options_list li.room_icon_wifi {
+  background-position: 0 -373px; }
 
-.rooms_options_list li:nth-child(10) {
-  background-position: 0 -354px; }
+.rooms_options_list li.room_icon_nespresso {
+  background-position: 0 -419px; }
 
+.rooms_options_list li.room_icon_minibar {
+  background-position: 0 -484px; }
+
+.rooms_options_list li.room_icon_safe {
+  background-position: 0 -536px; }
+
+.rooms_options_list li.room_icon_bath {
+  background-position: 0 -589px; }
+
+.rooms_options_list li.room_icon_hair_dryer {
+  background-position: 0 -642px; }
+
+#double_classic_right_sidebar .rooms_options_list li.room_icon_bed {
+  background-position: 0 -94px;
+}
+
+#apartment_right_sidebar .rooms_options_list li.room_icon_bed1 {
+  background-position: 0 -94px;
+}
 .sidebar_purple_line {
   border: 1px solid #8256a1; }
 
@@ -104,7 +123,7 @@ body {
   margin-left: 0; }
 
 .flexslider {
-  margin: 21px 0 110px;
+  margin: 21px 0 40px;
   height: auto;
   width: 492px; }
 
@@ -132,13 +151,14 @@ body {
 
 #rooms_introduction_right_sidebar p {
   line-height: 1.5;
-  padding-bottom: 600px; }
+  /*padding-bottom: 600px;*/
+}
 
 .right_sidebar {
   display: none; }
 
 .right_sidebar {
-  padding: 190px 60px 100px 60px; }
+  padding: 190px 60px 43px 60px; }
 
 /*switch room tipes information on right sidebar END*/
 

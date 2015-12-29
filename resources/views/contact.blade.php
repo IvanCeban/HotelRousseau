@@ -115,7 +115,7 @@
                                 <ul class="contact_info">
                                     <li>
                                         <span>Tél. +41 22 732 50 60</span>
-                                        <br><span>Fax. +41 22 732 50 32</span>
+                                        {{--<br><span>Fax. +41 22 732 50 32</span>--}}
                                     </li>
                                     <li>
                                         <span>info@hotelrousseau.ch</span><br>
@@ -160,7 +160,7 @@
                                             </div>
                                         </div>
 
-                                        <p class="form_placeholder">E-mail</p>
+                                        <p class="form_placeholder">Courriel</p>
                                         <div class="contact_form_input_container" ng-class="contactForm.email.$error.required || contactForm.email.$error.email ? 'error' : 'success'">
                                             <div class="contact_form_input">
                                                 <input type="email" name="email" ng-model="email" required>

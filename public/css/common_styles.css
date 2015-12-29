@@ -57,7 +57,9 @@ body {
 
 sup {
   position: relative;
-  top: -4px; }
+  top: -4px;
+  font-size: 12px;
+}
 
 .main_wrapper {
   min-height: 100%;
@@ -227,7 +229,9 @@ sup {
   display: table;
   float: right;
   position: relative;
-  width: 610px; }
+  width: 610px;
+    min-height: 100vh;
+}
 
 .sidebar_parent {
   display: table;
@@ -363,6 +367,7 @@ sup {
 
 /*flexSlider customizations END*/
 
+
 /*room select block START*/
 .rooms_types_section {
     display: none;
@@ -375,7 +380,7 @@ sup {
 .rooms_types_buttons {
     display: table;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 25px 0;
 }
 
 .room_type {
@@ -386,15 +391,25 @@ sup {
     color: #ffffff;
     text-transform: uppercase;
 }
-
+.room_type h5 {
+    cursor: pointer;
+}
 .room_type a {
-    font-family: lato_black;
-    color: #ffffff;
+    /*font-family: lato_black;*/
+    /*color: #ffffff;*/
     display: block;
-    padding: 10px;
+    /*padding: 10px;*/
     width: 100px;
     margin: 15px auto 0;
-    background-color: #453f3b;
+    /*background-color: #453f3b;*/
+}
+.room_type a img {
+    width: 100px;
+    height: 67px;
+}
+.room_type.active h5,
+.room_type h5:hover {
+    color: #3abbd5;
 }
 .room_type.active a,
 .room_type a:hover {

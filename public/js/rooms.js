@@ -37,15 +37,18 @@ jQuery(document).ready(function($){
 
     $("#nav_rooms").on("mouseover", function(){
         $(".rooms_types_section").fadeIn(100);
-        $(".rooms_main_section .right_sidebar").css({"padding-top":"240px"});
+        $(".rooms_main_section .right_sidebar").css({"padding-top":"260px"});
     });
     $(".rooms_types_section").on("mouseleave", function(){
         $(".rooms_types_section").fadeOut(100);
         $(".rooms_main_section .right_sidebar").css({"padding-top":"190px"});
     });
 
+
+    $('.flexslider').flexslider();
+
 });
 
-$(window).load(function() {
-    $('.flexslider').flexslider();
-});
+//$(window).load(function() {
+//    $('.flexslider').flexslider();
+//});
