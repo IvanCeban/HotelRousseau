@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-    $('.room_photos_list li img').on('click', function () {
+    $('.right_sidebar .carousel .item img').on('click', function () {
         var number = $(this).attr('photo_number');
         $('body').css({'background': 'url(/img/rooms/gallery/'+number+'.jpg) no-repeat center center fixed'});
     });
@@ -45,7 +45,23 @@ jQuery(document).ready(function($){
     });
 
 
-    $('.flexslider').flexslider();
+    //$('.flexslider').flexslider();
+
+    //$('.right_sidebar .carousel').on('slid.bs.carousel', checkitem);
+
+    //function checkitem()
+    //{
+    //    var $this = $('.right_sidebar .carousel');
+    //    if ($('.carousel-inner .item:first').hasClass('active')) {
+    //        $this.children('.left.carousel-control').hide();
+    //        $this.children('.right.carousel-control').show();
+    //    } else if ($('.carousel-inner .item').last().hasClass('active')) {
+    //        $this.children('.right.carousel-control').hide();
+    //        $this.children('.left.carousel-control').show();
+    //    } else {
+    //        $this.children('.carousel-control').show();
+    //    }
+    //}
 
 });
 

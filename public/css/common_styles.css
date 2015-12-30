@@ -72,6 +72,9 @@ sup {
   margin-right: auto;
   margin-left: auto; }
 
+.main_section {
+    min-width: 1150px;
+}
 .header {
   height: 80px;
   position: absolute;
@@ -225,12 +228,13 @@ sup {
 .right_sidebar {
   background-color: rgba(48, 41, 37, 0.8);
   /*margin-right: -15px;*/
-  padding: 190px 60px 0px 60px;
+  padding: 190px 60px 90px 60px;
   display: table;
   float: right;
   position: relative;
   width: 610px;
-    min-height: 100vh;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
 .sidebar_parent {
@@ -273,7 +277,12 @@ sup {
   /*transition: all .2s ease-in-out;*/ }
 
 .page_icon {
-  float: left; }
+  float: left;
+    width: 50px;
+    height: 30px;
+    background: url("/img/ornament.svg") no-repeat;
+    background-size: 42px;
+}
 
 .right_sidebar h3 {
   color: #ffffff;
@@ -374,6 +383,7 @@ sup {
     position: absolute;
     top: 80px;
     width: 100%;
+    min-width: 1150px;
     z-index: 3;
     background-color: rgba(48, 41, 37, 1);
 }

@@ -106,7 +106,7 @@
                         {{--<div class="show_hide_sidebar_btn"></div>--}}
                         <div class="right_sidebar_container">
                             <div class="right_sidebar">
-                                <img class="page_icon" src="/img/contact/contact_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>Contact</h3>
                                 <p class="address">Hôtel Rousseau Genève <br>
                                     Rue Rousseau, 13 <br>

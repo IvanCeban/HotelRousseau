@@ -10,6 +10,7 @@
 
 @section('scripts')
 
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
     <script src="js/rooms.js"></script>
 @stop
 
@@ -94,7 +95,7 @@
      {{--rooms type select END--}}
 
     <!--main content START-->
-    <section class="rooms_main_section">
+    <section class="main_section rooms_main_section">
         <div class="main_container">
             <div class="row">
                 <div class="col-xs-8">
@@ -161,7 +162,7 @@
                         {{--<div class="show_hide_sidebar_btn"></div>--}}
                         <div class="right_sidebar_container">
                             <div class="right_sidebar" id="rooms_introduction_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>Chambres / Appartement</h3>
                                 <p>L’hôtel se compose de 24 chambres et d’un appartement, entièrement rénovés en 2015, parfaitement insonorisés,
                                     équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables.
@@ -170,7 +171,7 @@
                             </div>
 
                             <div class="right_sidebar" id="single_classic_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>SINGLE CLASSIC</h3>
                                 <p>Idéale pour un séjour de courte durée, pour une personne.</p>
                                 <ul class="rooms_options_list">
@@ -189,19 +190,25 @@
                                     <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
 
-                                <div class="flexslider">
-                                    <ul class="slides room_photos_list">
-                                        <li>
+                                <div id="img_carousel_triple" class="carousel slide" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
                                             <img photo_number="single_classic_img1" src="/img/rooms/gallery/single_classic_img1.jpg" >
                                             <img photo_number="single_classic_img2" src="/img/rooms/gallery/single_classic_img2.jpg" >
                                             <img photo_number="single_classic_img3" src="/img/rooms/gallery/single_classic_img3.jpg" >
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    {{--<a class="left carousel-control" href="#img_carousel_triple" role="button" data-slide="prev">--}}
+                                        {{--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}}
+                                    {{--</a>--}}
+                                    {{--<a class="right carousel-control" href="#img_carousel_triple" role="button" data-slide="next">--}}
+                                        {{--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}}
+                                    {{--</a>--}}
                                 </div>
                             </div>
 
                             <div class="right_sidebar" id="double_classic_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>DOUBLE CLASSIC</h3>
                                 <p>Idéale pour une ou deux personnes.</p>
                                 <ul class="rooms_options_list">
@@ -220,23 +227,42 @@
                                     <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
 
-                                <div class="flexslider">
-                                    <ul class="slides room_photos_list">
-                                        <li>
+                                {{--<div class="flexslider">--}}
+                                    {{--<ul class="slides room_photos_list">--}}
+                                        {{--<li>--}}
+                                            {{--<img photo_number="double_classic_img1" src="/img/rooms/gallery/double_classic_img1.jpg" >--}}
+                                            {{--<img photo_number="double_classic_img2" src="/img/rooms/gallery/double_classic_img2.jpg" >--}}
+                                            {{--<img photo_number="double_classic_img3" src="/img/rooms/gallery/double_classic_img3.jpg" >--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<img photo_number="double_classic_img5" src="/img/rooms/gallery/double_classic_img5.jpg" >--}}
+                                            {{--<img photo_number="double_classic_img6" src="/img/rooms/gallery/double_classic_img6.jpg" >--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
+                                {{--</div>--}}
+                                <div id="img_carousel_double_classic" class="carousel slide" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
                                             <img photo_number="double_classic_img1" src="/img/rooms/gallery/double_classic_img1.jpg" >
                                             <img photo_number="double_classic_img2" src="/img/rooms/gallery/double_classic_img2.jpg" >
                                             <img photo_number="double_classic_img3" src="/img/rooms/gallery/double_classic_img3.jpg" >
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <img photo_number="double_classic_img5" src="/img/rooms/gallery/double_classic_img5.jpg" >
                                             <img photo_number="double_classic_img6" src="/img/rooms/gallery/double_classic_img6.jpg" >
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#img_carousel_double_classic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#img_carousel_double_classic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>DOUBLE SUPERIEUR</h3>
                                 <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
@@ -255,23 +281,29 @@
                                     <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
 
-                                <div class="flexslider">
-                                    <ul class="slides room_photos_list">
-                                        <li>
+                                <div id="img_carousel_double_superior" class="carousel slide" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
                                             <img photo_number="double_superior_img1" src="/img/rooms/gallery/double_superior_img1.jpg" >
                                             <img photo_number="double_superior_img2" src="/img/rooms/gallery/double_superior_img2.jpg" >
                                             <img photo_number="double_superior_img3" src="/img/rooms/gallery/double_superior_img3.jpg" >
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <img photo_number="double_superior_img4" src="/img/rooms/gallery/double_superior_img4.jpg" >
                                             <img photo_number="double_superior_img5" src="/img/rooms/gallery/double_superior_img5.jpg" >
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#img_carousel_double_superior" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#img_carousel_double_superior" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="right_sidebar" id="triple_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>TRIPLE</h3>
                                 <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
                                 <ul class="rooms_options_list">
@@ -290,19 +322,26 @@
                                     <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
 
-                                <div class="flexslider">
-                                    <ul class="slides room_photos_list">
-                                        <li>
+
+                                <div id="img_carousel_triple" class="carousel slide" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
                                             <img photo_number="triple_img1" src="/img/rooms/gallery/triple_img1.jpg" >
                                             <img photo_number="triple_img2" src="/img/rooms/gallery/triple_img2.jpg" >
                                             <img photo_number="triple_img3" src="/img/rooms/gallery/triple_img3.jpg" >
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    {{--<a class="left carousel-control" href="#img_carousel_triple" role="button" data-slide="prev">--}}
+                                        {{--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}}
+                                    {{--</a>--}}
+                                    {{--<a class="right carousel-control" href="#img_carousel_triple" role="button" data-slide="next">--}}
+                                        {{--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}}
+                                    {{--</a>--}}
                                 </div>
                             </div>
 
                             <div class="right_sidebar" id="apartment_right_sidebar">
-                                <img class="page_icon" src="/img/rooms/rooms_right_sidebar_icon.png">
+                                <div class="page_icon"></div>
                                 <h3>APPARTMENT</h3>
                                 <p>Il est composé de deux chambres avec chacune leur salle de bain et d'un hall avec cuisine équipée.</p>
                                 <ul class="rooms_options_list">
@@ -320,18 +359,24 @@
                                     <li class="room_icon_hair_dryer">- Sèche cheveux</li>
                                 </ul>
 
-                                <div class="flexslider">
-                                    <ul class="slides room_photos_list">
-                                        <li>
+                                <div id="img_carousel_appartement" class="carousel slide" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
                                             <img photo_number="appartement_img1" src="/img/rooms/gallery/appartement_img1.jpg" >
                                             <img photo_number="appartement_img2" src="/img/rooms/gallery/appartement_img2.jpg" >
                                             <img photo_number="appartement_img3" src="/img/rooms/gallery/appartement_img3.jpg" >
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="item">
                                             <img photo_number="appartement_img4" src="/img/rooms/gallery/appartement_img4.jpg" >
                                             <img photo_number="appartement_img5" src="/img/rooms/gallery/appartement_img5.jpg" >
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#img_carousel_appartement" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#img_carousel_appartement" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

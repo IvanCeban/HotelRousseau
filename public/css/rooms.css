@@ -3,38 +3,14 @@ body {
   background-size: cover;
 }
 
-.rooms_main_section {
-  /*padding-bottom: 40px;*/
-  /* Height of the footer element */
-  min-height: 100%;
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*right: 0;*/
-  width: 100%;
-  min-width: 1150px;
-  /*flex: 1;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/ }
-
-.rooms_main_section > div {
-  /*flex: 1;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/ }
-
-/*.main_container {*/
-/*height: 100%;*/
-/*}*/
-/*.rooms_main_section .main_container div{*/
-/*height: 100%;*/
-/*}*/
 .right_sidebar span {
   font-size: 15px; }
 
-.right_sidebar p {
-  margin-top: 35px; }
-
-.right_sidebar button {
-  margin-bottom: 110px; }
+.right_sidebar .page_icon {
+    background-position: 0 -27px;
+}
+/*.right_sidebar button {*/
+  /*margin-bottom: 110px; }*/
 
 .rooms_options_list {
   margin-top: 40px; }
@@ -105,61 +81,97 @@ body {
   background: #38bad4; }
 
 /*flex slider adjustment START*/
-.right_sidebar p {
-  color: #E7D0AA; }
+    /*.right_sidebar .slides {*/
+      /*margin: 0;*/
+      /*padding: 0; }*/
 
-.right_sidebar .slides {
-  margin: 0;
-  padding: 0; }
+    /*.slides li img {*/
+      /*width: 32% !important;*/
+      /*float: left;*/
+      /*border: 3px solid #ffe7c0;*/
+      /*margin-left: 9px;*/
+      /*cursor: pointer; }*/
 
-.slides li img {
-  width: 32% !important;
-  float: left;
-  border: 3px solid #ffe7c0;
-  margin-left: 9px;
-  cursor: pointer; }
+    /*.slides li img:first-child {*/
+      /*margin-left: 0; }*/
 
-.slides li img:first-child {
-  margin-left: 0; }
+    /*.flexslider {*/
+      /*margin: 21px 0 40px;*/
+      /*height: auto;*/
+      /*width: 492px; }*/
 
-.flexslider {
-  margin: 21px 0 40px;
-  height: auto;
-  width: 492px; }
+    /*.flex-direction-nav a {*/
+      /*height: 68px;*/
+      /*width: 30px;*/
+      /*margin: -34px 0 0; }*/
 
-.flex-direction-nav a {
-  height: 68px;
-  width: 30px;
-  margin: -34px 0 0; }
+    /*.flex-direction-nav a.flex-prev {*/
+      /*background: url("/img/rooms/rooms_gallery_arrow_prev.png") no-repeat left; }*/
 
-.flex-direction-nav a.flex-prev {
-  background: url("/img/rooms/rooms_gallery_arrow_prev.png") no-repeat left; }
+    /*.flex-direction-nav a.flex-next {*/
+      /*background: url("/img/rooms/rooms_gallery_arrow_next.png") no-repeat right; }*/
 
-.flex-direction-nav a.flex-next {
-  background: url("/img/rooms/rooms_gallery_arrow_next.png") no-repeat right; }
+    /*.flexslider:hover .flex-direction-nav .flex-next {*/
+      /*right: -29px; }*/
 
-.flexslider:hover .flex-direction-nav .flex-next {
-  right: -29px; }
-
-.flexslider:hover .flex-direction-nav .flex-prev {
-  left: -30px; }
-
+    /*.flexslider:hover .flex-direction-nav .flex-prev {*/
+      /*left: -30px; }*/
 /*flexslider adjustment END*/
+
+/*carousel START*/
+    .right_sidebar .carousel.slide {
+        margin-top: 40px;
+    }
+    .right_sidebar .carousel-inner .item img {
+        width: 32% !important;
+        float: left;
+        border: 3px solid #ffe7c0;
+        margin-left: 9px;
+        cursor: pointer;
+    }
+    .right_sidebar .carousel-inner .item img:first-child {
+        margin-left: 0;
+    }
+    .right_sidebar .carousel-control {
+        background-image: none;
+        width: 30px;
+    }
+    .right_sidebar .carousel-control.right {
+        right: -28px;
+    }
+    .right_sidebar .carousel-control.left {
+        left: -30px;
+        /*display: none;*/
+    }
+    .right_sidebar .carousel-control.right .glyphicon-chevron-right:before,
+    .right_sidebar .carousel-control.left .glyphicon-chevron-left:before {
+        content: "";
+        display: block;
+        background: url("/img/rooms/rooms_gallery_arrow_next.png") no-repeat right;
+        width: 30px;
+        height: 50px;
+    }
+
+    .right_sidebar .carousel-control.left .glyphicon-chevron-left:before {
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        transform: rotate(180deg);
+    }
+    .right_sidebar .carousel-control .glyphicon-chevron-right,
+    .right_sidebar .carousel-control .glyphicon-chevron-left {
+        margin-top: -23px;
+    }
+
+/*carousel END*/
+
 /*switch room tipes information on right sidebar START*/
-#rooms_introduction_right_sidebar {
-  display: block; }
+    .right_sidebar {
+        display: none;
+    }
 
-#rooms_introduction_right_sidebar p {
-  line-height: 1.5;
-  /*padding-bottom: 600px;*/
-}
-
-.right_sidebar {
-  display: none; }
-
-.right_sidebar {
-  padding: 190px 60px 43px 60px; }
-
+    #rooms_introduction_right_sidebar {
+      display: block;
+    }
 /*switch room tipes information on right sidebar END*/
 
 /*# sourceMappingURL=rooms.css.map */

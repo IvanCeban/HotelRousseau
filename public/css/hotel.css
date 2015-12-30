@@ -1,35 +1,8 @@
 body {
-    background-image: url(../img/page_in_construction_bg.jpg);
+    background-image: url(../img/hotel/hotel_bg.jpg);
 }
 
-.header {
-  height: 53px; }
-  .header .main_container .header_menu {
-    padding-left: 15px; }
-    .header .main_container .header_menu ul {
-      display: table;
-      padding: 0;
-      border: 1px solid #f3f3f3;
-      border-top: none;
-      margin-right: 15px; }
-      .header .main_container .header_menu ul li a {
-        font-size: 14.5px;
-        padding-bottom: 17px; }
-      .header .main_container .header_menu ul li:last-child {
-        display: none; }
-  .header .main_container .logo {
-    top: 36px;
-    left: 30px; }
 
-.main_section {
-  padding: 130px 30px 75px; }
-  .main_section .main_container {
-    border: 1px solid #f3f3f3;
-    position: relative;
-    width: 100%; }
-    .main_section .main_container h3 {
-      font: 27px lato_regular;
-      color: #453634; }
     .main_section .main_container h4 {
       font: 24px lato_regular;
       color: #a68858; }

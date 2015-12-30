@@ -89,27 +89,6 @@
          {{--rooms type select END--}}
 
     <!--main content START-->
-        {{--<section class="main_section">--}}
-            {{--<div class="main_container">--}}
-                {{--<div class="row">--}}
-                    {{--<div class="col-xs-12">--}}
-                        {{--<div class="page-wrap">--}}
-                          {{--<header>--}}
-                            {{--<a href="#main-navigation">Menu</a>--}}
-                            {{--<h1>Title</h1>--}}
-                          {{--</header>--}}
-
-                          {{--<!-- content -->--}}
-                        {{--</div>--}}
-                        {{--<nav id="main-navigation" class="navigation">--}}
-                           {{--<a href="#">Nav Links</a>--}}
-                           {{--<!-- more -->--}}
-                        {{--</nav>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</section>--}}
-
         <section class="main_section">
             <div class="main_container">
                 <div class="row">
@@ -119,7 +98,7 @@
                             <div class="right_sidebar_container">
                                 {{--<div class="show_hide_sidebar_btn"></div>--}}
                                 <div class="right_sidebar">
-                                    <img class="page_icon" src="/img/restaurant/restaurant_right_sidebar_icon.png">
+                                    <div class="page_icon"></div>
                                     <h3>Restaurant</h3>
                                     <p>Dans un cadre feutré et contemporain, l’équipe du restaurant les 3 Palettes 20/20 Wine Bar,
                                         vous accueillera en toute convivialité. A travers la fraîcheur de ses mets, le Chef de cuisine vous fera
