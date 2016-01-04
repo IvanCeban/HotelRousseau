@@ -27,14 +27,14 @@
              <div class="row">
                  <div class="col-xs-12 header_menu">
                      <ul>
-                         <li class="logo"><a href="/"><img src="img/logo.png"></a></li>
+                         <li class="logo"><a href="/"><img src="img/logo.svg"></a></li>
                          <li><a href="/">Accueil</a></li>
-                         <li class="active"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('hotel')}}">Hôtel</a></li>
-                         <li id="nav_rooms"><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('room')}}">Chambres / Appartement</a></li>
-                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
-                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('offers')}}">Offres / Packages</a></li>
+                         <li class="active"><div class="header_separator"></div> <a href="{{url('hotel')}}">Hôtel</a></li>
+                         <li id="nav_rooms"><div class="header_separator"></div> <a href="{{url('room')}}">Chambres / Appartement</a></li>
+                         <li><div class="header_separator"></div> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
+                         <li><div class="header_separator"></div> <a href="{{url('offers')}}">Offres / Packages</a></li>
                          {{--<li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
-                         <li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('contact')}}">Contact</a></li>
+                         <li><div class="header_separator"></div> <a href="{{url('contact')}}">Contact</a></li>
                          {{--<li>--}}
                              {{--<!--<div class="news_block_icon">-->--}}
                                  {{--<!--<img src="/img/news_block_icon.png">-->--}}

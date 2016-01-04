@@ -1,16 +1,16 @@
 body {
-    /*background-image: url(../img/hotel/hotel_bg.jpg);*/
+    background-image: url(../img/hotel/hotel_bg.jpg);
 }
 
-.main_section {
-    padding: 130px 30px 75px; }
-.main_section .main_container {
-    border: 1px solid #f3f3f3;
-    position: relative;
-    width: 100%; }
-.main_section .main_container h3 {
-    font: 27px pt_serif_regular;
-    color: #453634; }
+/*.main_section {*/
+    /*padding: 130px 30px 75px; }*/
+/*.main_section .main_container {*/
+    /*border: 1px solid #f3f3f3;*/
+    /*position: relative;*/
+    /*width: 100%; }*/
+/*.main_section .main_container h3 {*/
+    /*font: 27px pt_serif_regular;*/
+    /*color: #453634; }*/
 .main_section .main_container h4 {
     font: 24px pt_serif_regular;
     color: #a68858; }
