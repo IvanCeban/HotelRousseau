@@ -18,19 +18,19 @@ jQuery(document).ready(function($){
         $('.room_photos_list li').width('50%');
 
         if(active_element_id == 'single_classic'){
-            $('body').css({'background': 'url(/img/rooms/gallery/011.jpg) no-repeat center center fixed'});
+            $('body').css({'background': 'url(/img/rooms/gallery/single_classic_img1.jpg) no-repeat center center fixed'});
         }
         else if (active_element_id == 'double_classic'){
-            $('body').css({'background': 'url(/img/rooms/gallery/011.jpg) no-repeat center center fixed'});
+            $('body').css({'background': 'url(/img/rooms/gallery/double_classic_img1.jpg) no-repeat center center fixed'});
         }
         else if (active_element_id == 'double_superior'){
-            $('body').css({'background': 'url(/img/rooms/gallery/002.jpg) no-repeat center center fixed'});
+            $('body').css({'background': 'url(/img/rooms/gallery/double_superior_img1.jpg) no-repeat center center fixed'});
         }
         else if (active_element_id == 'triple'){
-            $('body').css({'background': 'url(/img/rooms/gallery/024.jpg) no-repeat center center fixed'});
+            $('body').css({'background': 'url(/img/rooms/gallery/triple_img2.jpg) no-repeat center center fixed'});
         }
         else if (active_element_id == 'apartment'){
-            $('body').css({'background': 'url(/img/rooms/gallery/006.jpg) no-repeat center center fixed'});
+            $('body').css({'background': 'url(/img/rooms/gallery/appartement_img5.jpg) no-repeat center center fixed'});
         }
     });
 //izvrashenie bleati! END

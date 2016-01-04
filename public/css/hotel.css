@@ -2,7 +2,9 @@ body {
     background-image: url(../img/hotel/hotel_bg.jpg);
 }
 
-
+.right_sidebar .page_icon {
+    background-position: 0 -27px;
+}
     .main_section .main_container h4 {
       font: 24px lato_regular;
       color: #a68858; }
@@ -306,41 +308,41 @@ body {
   max-width: 192px;
   width: 100%;
   float: right; }
-  .selectbox_container .selectboxit {
+.selectbox_container .selectboxit {
     background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;
     border: 1px solid #f3f3f3;
     height: 31px !important;
     max-width: 192px; }
-    .selectbox_container .selectboxit span {
-      padding: 0;
-      color: #453634 !important;
-      font: 12px lato_regular !important; }
-  .selectbox_container .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+.selectbox_container .selectboxit span {
+    padding: 0;
+    color: #453634 !important;
+    font: 12px lato_regular !important; }
+.selectbox_container .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
     background: #eeeeee !important;
     color: #453634 !important; }
-  .selectbox_container .selectboxit-selected {
+.selectbox_container .selectboxit-selected {
     background: #eeeeee; }
-  .selectbox_container .selectboxit-container {
+.selectbox_container .selectboxit-container {
     display: block; }
-    .selectbox_container .selectboxit-container span {
-      line-height: 31px !important;
-      height: 31px !important; }
-  .selectbox_container .selectboxit-options {
+.selectbox_container .selectboxit-container span {
+    line-height: 31px !important;
+    height: 31px !important; }
+.selectbox_container .selectboxit-options {
     border: 1px solid #eeeeee;
     background: #ffffff; }
-    .selectbox_container .selectboxit-options li {
-      height: 30px;
-      background: #ffffff; }
-      .selectbox_container .selectboxit-options li a {
-        position: relative;
-        padding-top: 5px !important;
-        line-height: 31px !important;
-        height: 31px !important;
-        padding-left: 11px !important;
-        color: #453634 !important;
-        font: 12px lato_regular !important; }
-      .selectbox_container .selectboxit-options li a:hover {
-        text-decoration: none !important; }
+.selectbox_container .selectboxit-options li {
+    height: 30px;
+    background: #ffffff; }
+.selectbox_container .selectboxit-options li a {
+    position: relative;
+    padding-top: 5px !important;
+    line-height: 31px !important;
+    height: 31px !important;
+    padding-left: 11px !important;
+    color: #453634 !important;
+    font: 12px lato_regular !important; }
+.selectbox_container .selectboxit-options li a:hover {
+    text-decoration: none !important; }
 
 input, select, textarea {
   border: 1px solid #f3f3f3;
