@@ -13,9 +13,9 @@ jQuery(document).ready(function($){
         $('.right_sidebar').css('display','none');
         $('#'+active_element_id+'_right_sidebar').css('display','block');
 
-        $('.flex-viewport').height('107px');
-        $('.room_photos_list').height('107px');
-        $('.room_photos_list li').width('50%');
+        //$('.flex-viewport').height('107px');
+        //$('.room_photos_list').height('107px');
+        //$('.room_photos_list li').width('50%');
 
         if(active_element_id == 'single_classic'){
             $('body').css({'background': 'url(/img/rooms/gallery/single_classic_img1.jpg) no-repeat center center fixed'});

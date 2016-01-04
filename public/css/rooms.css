@@ -1,14 +1,11 @@
 body {
   background: url(../img/rooms/gallery/rooms_introduction_bg.jpg) no-repeat center center fixed;
-  background-size: cover;
 }
 
 .right_sidebar span {
   font-size: 15px; }
 
-.right_sidebar .page_icon {
-    background-position: 0 -27px;
-}
+
 /*.right_sidebar button {*/
   /*margin-bottom: 110px; }*/
 

@@ -15,11 +15,8 @@
 .right_sidebar p {
   color: #E7D0AA; }
 
-.right_sidebar .page_icon {
-    background-position: 0 -65px;
-}
 .address {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   text-transform: uppercase;
   line-height: 2;
   font-size: 14px; }

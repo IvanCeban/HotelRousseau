@@ -99,8 +99,8 @@
                             <div class="right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>Hôtel</h3>
-                                <p>L’hôtel Rousseau 3* à Genève a été entièrement rénové en 2015. Ses 25 chambres au style moderne et élégant, alliant sécurité,
-                                    confort, et haute technologie, sauront ainsi ravir une clientèle d’affaires, et de tourisme.
+                                <p>L’hôtel Rousseau 3* à Genève a été entièrement rénové en 2015. Ses 25 chambres dont un appartement au style moderne et élégant,
+                                    alliant sécurité, confort, et haute technologie, sauront ainsi ravir une clientèle d’affaires, et de tourisme.
                                     Cet hôtel écrin a une gestion familiale délivrant un service personnalisé, discret et chalheureux à ses hôtes.
                                     Une équipe de professionnels, multilingue, est à votre écoute, présente 24/24, en vous assurerant un séjour en toute sérénité.</p>
                                 <br>

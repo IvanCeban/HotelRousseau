@@ -164,9 +164,8 @@
                             <div class="right_sidebar" id="rooms_introduction_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>Chambres / Appartement</h3>
-                                <p>L’hôtel se compose de 24 chambres et d’un appartement, entièrement rénovés en 2015, parfaitement insonorisés,
-                                    équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables.
-                                    Les chambres sont spacieuses pouvant allier travail et détente.<br>
+                                <p>L’hôtel se compose de 25 chambres dont un appartement, entièrement rénovés en 2015, parfaitement insonorisés,
+                                    équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables. Les chambres sont spacieuses pouvant allier travail et détente.<br>
                                 </p>
                             </div>
 
@@ -175,19 +174,19 @@
                                 <h3>SINGLE CLASSIC</h3>
                                 <p>Idéale pour un séjour de courte durée, pour une personne.</p>
                                 <ul class="rooms_options_list">
-                                    <li class="room_icon_surface">- Chambre de 13m<sup>2</sup></li>
-                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
-                                    <li class="room_icon_bed">- Un lit de 160 cm x 200cm</li>
-                                    <li class="room_icon_ac">- Climatisé</li>
-                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
-                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
-                                    <li class="room_icon_working_space">- Espace de travail</li>
-                                    <li class="room_icon_wifi">- Wifi gratuit</li>
-                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
-                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
-                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
-                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
-                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
+                                    <li class="room_icon_surface"> Chambre de 13m<sup>2</sup></li>
+                                    <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed"> Un lit de 160 cm x 200cm</li>
+                                    <li class="room_icon_ac"> Climatisé</li>
+                                    <li class="room_icon_non_smoking"> Chambres non fumeur</li>
+                                    <li class="room_icon_tv"> TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space"> Espace de travail</li>
+                                    <li class="room_icon_wifi"> Wifi gratuit</li>
+                                    <li class="room_icon_nespresso"> Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar"> Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe"> Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath"> Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
                                 <div id="img_carousel_triple" class="carousel slide" data-interval="false">
@@ -212,19 +211,19 @@
                                 <h3>DOUBLE CLASSIC</h3>
                                 <p>Idéale pour une ou deux personnes.</p>
                                 <ul class="rooms_options_list">
-                                    <li class="room_icon_surface">- Chambre de 15m<sup>2</sup> à 18m<sup>2</sup></li>
-                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
-                                    <li class="room_icon_bed">- A choix, deux lits jumeaux de 90 cm x 200 cm ou un grand lit 160 cm x 200cm</li>
-                                    <li class="room_icon_ac">- Climatisé</li>
-                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
-                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
-                                    <li class="room_icon_working_space">- Espace de travail</li>
-                                    <li class="room_icon_wifi">- Wifi gratuit</li>
-                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
-                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
-                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
-                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
-                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
+                                    <li class="room_icon_surface"> Chambre de 15m<sup>2</sup> à 18m<sup>2</sup></li>
+                                    <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed"> A choix, deux lits jumeaux de 90 cm x 200 cm ou un grand lit 160 cm x 200cm</li>
+                                    <li class="room_icon_ac"> Climatisé</li>
+                                    <li class="room_icon_non_smoking"> Chambres non fumeur</li>
+                                    <li class="room_icon_tv"> TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space"> Espace de travail</li>
+                                    <li class="room_icon_wifi"> Wifi gratuit</li>
+                                    <li class="room_icon_nespresso"> Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar"> Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe"> Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath"> Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
                                 {{--<div class="flexslider">--}}
@@ -263,22 +262,22 @@
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>DOUBLE SUPERIEUR</h3>
+                                <h3>DOUBLE SUPERIOR</h3>
                                 <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
-                                    <li class="room_icon_surface">- Chambre de 20m<sup>2</sup></li>
-                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
-                                    <li class="room_icon_bed">- Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
-                                    <li class="room_icon_ac">- Climatisé</li>
-                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
-                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
-                                    <li class="room_icon_working_space">- Espace de travail</li>
-                                    <li class="room_icon_wifi">- Wifi gratuit</li>
-                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
-                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
-                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
-                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
-                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
+                                    <li class="room_icon_surface"> Chambre de 20m<sup>2</sup></li>
+                                    <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed"> Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_ac"> Climatisé</li>
+                                    <li class="room_icon_non_smoking"> Chambres non fumeur</li>
+                                    <li class="room_icon_tv"> TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space"> Espace de travail</li>
+                                    <li class="room_icon_wifi"> Wifi gratuit</li>
+                                    <li class="room_icon_nespresso"> Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar"> Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe"> Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath"> Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
                                 <div id="img_carousel_double_superior" class="carousel slide" data-interval="false">
@@ -307,19 +306,19 @@
                                 <h3>TRIPLE</h3>
                                 <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
                                 <ul class="rooms_options_list">
-                                    <li class="room_icon_surface">- Chambre de 23m<sup>2</sup></li>
-                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
-                                    <li class="room_icon_bed">- Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
-                                    <li class="room_icon_ac">- Climatisé</li>
-                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
-                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
-                                    <li class="room_icon_working_space">- Espace de travail</li>
-                                    <li class="room_icon_wifi">- Wifi gratuit</li>
-                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
-                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
-                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
-                                    <li class="room_icon_bath">- Salle de bain avec douche</li>
-                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
+                                    <li class="room_icon_surface"> Chambre de 23m<sup>2</sup></li>
+                                    <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed"> Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_ac"> Climatisé</li>
+                                    <li class="room_icon_non_smoking"> Chambres non fumeur</li>
+                                    <li class="room_icon_tv"> TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space"> Espace de travail</li>
+                                    <li class="room_icon_wifi"> Wifi gratuit</li>
+                                    <li class="room_icon_nespresso"> Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar"> Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe"> Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_bath"> Salle de bain avec douche</li>
+                                    <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
 
@@ -345,18 +344,18 @@
                                 <h3>APPARTMENT</h3>
                                 <p>Il est composé de deux chambres avec chacune leur salle de bain et d'un hall avec cuisine équipée.</p>
                                 <ul class="rooms_options_list">
-                                    <li class="room_icon_mattress">- Matelas confortable de 28 cm d’épaisseur</li>
-                                    <li class="room_icon_bed1">- Chambre 1 : Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
-                                    <li class="room_icon_bed">- Chambre 2 : Un lit de 160 cm x 200cm</li>
-                                    <li class="room_icon_ac">- Climatisé</li>
-                                    <li class="room_icon_non_smoking">- Chambres non fumeur</li>
-                                    <li class="room_icon_tv">- TV écran LCD 82 cm avec chaînes câblées</li>
-                                    <li class="room_icon_working_space">- Espace de travail</li>
-                                    <li class="room_icon_wifi">- Wifi gratuit</li>
-                                    <li class="room_icon_nespresso">- Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
-                                    <li class="room_icon_minibar">- Minibar avec soda et snacks</li>
-                                    <li class="room_icon_safe">- Coffre-fort avec emplacement pour laptop</li>
-                                    <li class="room_icon_hair_dryer">- Sèche cheveux</li>
+                                    <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
+                                    <li class="room_icon_bed1"> Chambre 1 : Deux lits jumeaux de 90 cm x 200 cm et un canapé-lit</li>
+                                    <li class="room_icon_bed"> Chambre 2 : Un lit de 160 cm x 200cm</li>
+                                    <li class="room_icon_ac"> Climatisé</li>
+                                    <li class="room_icon_non_smoking"> Chambres non fumeur</li>
+                                    <li class="room_icon_tv"> TV écran LCD 82 cm avec chaînes câblées</li>
+                                    <li class="room_icon_working_space"> Espace de travail</li>
+                                    <li class="room_icon_wifi"> Wifi gratuit</li>
+                                    <li class="room_icon_nespresso"> Machine à café Nespresso avec 1 capsule et un sachet d’infusion offerts</li>
+                                    <li class="room_icon_minibar"> Minibar avec soda et snacks</li>
+                                    <li class="room_icon_safe"> Coffre-fort avec emplacement pour laptop</li>
+                                    <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
                                 <div id="img_carousel_appartement" class="carousel slide" data-interval="false">
