@@ -1,313 +1,319 @@
 body {
-    background-image: url(../img/hotel/hotel_bg.jpg);
+    /*background-image: url(../img/hotel/hotel_bg.jpg);*/
 }
 
-.right_sidebar .page_icon {
-    background-position: 0 -27px;
-}
-    .main_section .main_container h4 {
-      font: 24px lato_regular;
-      color: #a68858; }
-    .main_section .main_container a {
-      font: 13px lato_regular;
-      color: #38bad4; }
-    .main_section .main_container a:hover {
-      text-decoration: underline; }
-    .main_section .main_container select {
-      height: 31px; }
-    .main_section .main_container .hotel_main_content {
-      padding: 75px 67px 58px 50px; }
-      .main_section .main_container .hotel_main_content .title {
-        border-bottom: 2px solid #f3f3f3;
-        height: 42px;
-        margin-bottom: 11px; }
-        .main_section .main_container .hotel_main_content .title h3 {
-          float: left; }
-        .main_section .main_container .hotel_main_content .title img {
-          margin-left: 7px; }
-      .main_section .main_container .hotel_main_content .address {
-        margin-bottom: 6px; }
-        .main_section .main_container .hotel_main_content .address img {
-          float: left;
-          margin-right: 9px; }
-        .main_section .main_container .hotel_main_content .address p {
-          font: 14px lato_regular;
-          color: #a68858; }
-      .main_section .main_container .hotel_main_content .add_info_link {
-        padding-left: 22px; }
-      .main_section .main_container .hotel_main_content a {
-        font-size: 12px; }
-      .main_section .main_container .hotel_main_content .hotel_main_content_nav {
-        margin: 37px 0 12px;
-        height: 50px; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_nav ul li {
-          font: 16px lato_regular;
-          color: #8256a0;
-          float: left;
-          height: 50px;
-          width: 33.24%;
-          text-align: center;
-          background: #f8f8f8;
-          padding: 15px 0;
-          text-transform: uppercase;
-          cursor: pointer; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_nav ul li:nth-child(2) {
-          margin: 0 1px; }
-        .main_section .main_container .hotel_main_content .hotel_main_content_nav ul li.active {
-          background: #8256a0;
-          color: #ffffff; }
-      .main_section .main_container .hotel_main_content p.sub_nav_title {
-        font-size: 24px;
-        color: #453634; }
-      .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border {
-        border: 1px solid #f3f3f3;
-        padding: 2px;
-        margin-top: 60px; }
-        .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border a {
-          position: absolute;
-          top: 15px;
-          right: 24px;
-          font-size: 13px; }
-        .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info {
-          border: 1px solid #f3f3f3;
-          padding: 28px 24px;
-          position: relative; }
-          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery {
-            position: relative; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides {
-              display: none; }
-              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-navigation {
-                bottom: 0;
-                top: auto;
-                z-index: 11;
-                height: 41px;
-                width: 41px; }
-              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-previous {
-                left: 30px;
-                background: url("/img/hotel/arrow_left.png") center no-repeat; }
-              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-next {
-                right: 30px;
-                background: url("/img/hotel/arrow_right.png") center no-repeat; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount {
-              height: 41px;
-              position: absolute;
-              bottom: 0;
-              background: #9369b4;
-              z-index: 10;
-              width: 100%;
-              text-align: center;
-              padding: 12px 0; }
-              .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount span {
-                font: 13px lato_regular;
-                text-transform: uppercase;
-                color: #ffffff; }
-          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header {
-            margin-bottom: 25px; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header img {
-              margin: 3px 0 0 9px; }
-          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
-            font: 14px lato_regular;
-            color: #585858; }
-          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option {
-            height: 31px;
-            margin-bottom: 8px; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option img {
-              float: left; }
-            .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option p {
-              padding: 8px 0 0 55px; }
-          .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .description {
-            margin-top: 33px; }
-      .main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border:first-child {
-        margin-top: 6px; }
-      .main_section .main_container .hotel_main_content #hotel_offers {
-        display: none; }
-        .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block {
-          margin-top: 18px; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block img {
-            width: 100%; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date_separator {
-            height: 2px;
-            background-color: #efc581;
-            width: 48px;
-            margin-top: 15px; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date {
-            font: 12px lato_regular;
-            color: #efc581;
-            margin: 3px 0 35px; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_description {
-            font: 14px lato_regular;
-            color: #453634;
-            line-height: 25px;
-            margin-bottom: 10px; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price {
-            border-bottom: 3px solid #f3f3f3;
-            font: 30px lato_regular;
-            color: #8256a0;
-            margin-top: 40px; }
-            .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price p {
-              font: 14px lato_regular;
-              color: #453634;
-              float: left;
-              width: 50%;
-              text-align: right;
-              padding: 6px 12px 0 0; }
-          .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .selectbox_container {
-            width: 50%;
-            float: right; }
-      .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row {
-        margin: 0 -21px; }
-      .main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
-        padding: 0 21px; }
-      .main_section .main_container .hotel_main_content #hotel_reservation {
-        display: none; }
-        .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block {
-          margin: 6px 0 17px; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border {
-            border-top: 1px solid #aeaeae;
-            padding-top: 1px; }
-            .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block {
-              padding: 30px;
-              border-left: 1px solid #f3f3f3;
-              border-top: 1px solid #aeaeae; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block p {
-                font: 12px lato_regular;
-                color: #585858;
-                margin: 15px 0 5px; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container {
-                max-width: 100%; }
-                .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container .selectboxit {
-                  max-width: 100%; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn {
-                margin: 13px 0 45px;
-                display: table;
-                color: #585858;
-                width: auto;
-                border: 0;
-                padding: 0 0 5px 31px;
-                background: url("/img/hotel/add_client_icon.png") left center no-repeat; }
-                .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn img {
-                  float: left;
-                  margin-right: 7px; }
-                .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn span {
-                  font: 12px lato_regular;
-                  color: #585858; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:hover span {
-                text-decoration: underline; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:last-child {
-                margin-bottom: 0; }
-              .main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block textarea {
-                min-height: 150px; }
-        .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions {
-          margin: 8px 0 0; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions p {
-            font: 13px lato_regular;
-            color: #453634; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label {
-            margin-top: 20px; }
-            .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label span {
-              margin-right: 9px; }
-            .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label a {
-              font-size: 14px;
-              color: #8256a0; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions button {
-            margin: 23px 0 6px; }
-          .main_section .main_container .hotel_main_content #hotel_reservation .general_conditions .security_info img {
-            float: left;
-            margin-right: 8px; }
-      .main_section .main_container .hotel_main_content .hotel_item_conditions {
-        margin-top: 51px; }
-        .main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
-          padding: 4px 0;
-          border-bottom: 2px solid #f3f3f3; }
-          .main_section .main_container .hotel_main_content .hotel_item_conditions .condition h5 {
-            font: 14px lato_black;
-            color: #1d1d1d; }
-          .main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description {
-            padding: 7px 0; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description img {
-              float: left;
-              margin-right: 18px; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description p {
-              padding: 0; }
-          .main_section .main_container .hotel_main_content .hotel_item_conditions .condition p {
-            padding: 7px 0; }
-        .main_section .main_container .hotel_main_content .hotel_item_conditions .condition .col-sm-4:last-child h5 {
-          float: right; }
-        .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items {
-          margin-top: 28px; }
-          .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item {
-            background: #fafafa;
-            margin-bottom: 4px;
-            padding: 20px 30px; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item img {
-              float: left;
-              margin-right: 32px; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .condition_item_text h5 {
-              font: 14px lato_black;
-              color: #1d1d1d;
-              margin-bottom: 10px; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .condition_item_text p {
-              font: 13px lato_regular;
-              color: #453634; }
-            .main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .selectbox_container {
-              padding: 15px 0; }
-    .main_section .main_container .hotel_right_sidebar {
-      padding: 45px 45px 0 45px;
-      background: #fbfbfb;
-      border-left: 1px solid #f3f3f3;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0; }
-      .main_section .main_container .hotel_right_sidebar h3 {
-        margin-bottom: 40px; }
-      .main_section .main_container .hotel_right_sidebar p {
-        font: 14px lato_regular;
-        color: #453634;
-        margin-top: 8px; }
-      .main_section .main_container .hotel_right_sidebar button {
-        margin: 28px 0 47px;
-        padding: 0;
-        width: 50%; }
-        .main_section .main_container .hotel_right_sidebar button[type="submit"]:hover {
-          background: -webkit-linear-gradient(#8862a9, #765092);
-          background: -o-linear-gradient(#8862a9, #765092);
-          background: -moz-linear-gradient(#8862a9, #765092);
-          background: linear-gradient(#8862a9, #765092); }
-      .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock {
-        border-bottom: 1px solid #ebebeb;
-        margin-bottom: 20px;
-        padding-bottom: 6px; }
-        .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock h4 {
-          margin-bottom: 25px; }
-        .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock .price {
-          float: right;
-          width: 147px; }
-      .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock.total {
-        border-bottom: 2px solid #c4a0f0;
-        padding-bottom: 38px; }
-        .main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock.total h4 {
-          margin-bottom: 15px; }
-      .main_section .main_container .hotel_right_sidebar .my_btn {
-        background: #8256a0 url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
-        font-size: 19px;
-        padding: 10px 40px 10px 10px;
-        margin: 25px 0 15px 0;
-        width: 100%;
-        float: none; }
-        .main_section .main_container .hotel_right_sidebar .my_btn p {
-          margin: 0;
-          color: #ffffff;
-          font: 19px lato_regular; }
-  .main_section .main_container > .row > .col-md-9 {
+.main_section {
+    padding: 130px 30px 75px; }
+.main_section .main_container {
+    border: 1px solid #f3f3f3;
+    position: relative;
+    width: 100%; }
+.main_section .main_container h3 {
+    font: 27px pt_serif_regular;
+    color: #453634; }
+.main_section .main_container h4 {
+    font: 24px pt_serif_regular;
+    color: #a68858; }
+.main_section .main_container a {
+    font: 13px open_sans_regular;
+    color: #38bad4; }
+.main_section .main_container a:hover {
+    text-decoration: underline; }
+.main_section .main_container select {
+    height: 31px; }
+.main_section .main_container .hotel_main_content {
+    padding: 75px 67px 58px 50px; }
+.main_section .main_container .hotel_main_content .title {
+    border-bottom: 2px solid #f3f3f3;
+    height: 42px;
+    margin-bottom: 11px; }
+.main_section .main_container .hotel_main_content .title h3 {
+    float: left; }
+.main_section .main_container .hotel_main_content .title img {
+    margin-left: 7px; }
+.main_section .main_container .hotel_main_content .address {
+    margin-bottom: 6px; }
+.main_section .main_container .hotel_main_content .address img {
+    float: left;
+    margin-right: 9px; }
+.main_section .main_container .hotel_main_content .address p {
+    font: 14px open_sans_regular;
+    color: #a68858; }
+.main_section .main_container .hotel_main_content .add_info_link {
+    padding-left: 22px; }
+.main_section .main_container .hotel_main_content a {
+    font-size: 12px; }
+.main_section .main_container .hotel_main_content .hotel_main_content_nav {
+    margin: 37px 0 12px;
+    height: 50px; }
+.main_section .main_container .hotel_main_content .hotel_main_content_nav ul li {
+    font: 16px open_sans_regular;
+    color: #8256a0;
+    float: left;
+    height: 50px;
+    width: 33.24%;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 15px 0;
+    text-transform: uppercase;
+    cursor: pointer; }
+.main_section .main_container .hotel_main_content .hotel_main_content_nav ul li:nth-child(2) {
+    margin: 0 1px; }
+.main_section .main_container .hotel_main_content .hotel_main_content_nav ul li.active {
+    background: #8256a0;
+    color: #ffffff; }
+.main_section .main_container .hotel_main_content p.sub_nav_title {
+    font-size: 24px;
+    color: #453634; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border {
+    border: 1px solid #f3f3f3;
+    padding: 2px;
+    margin-top: 60px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border a {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    font-size: 13px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info {
+    border: 1px solid #f3f3f3;
+    padding: 28px 24px;
+    position: relative; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery {
+    position: relative; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides {
+    display: none; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-navigation {
+    bottom: 0;
+    top: auto;
+    z-index: 11;
+    height: 41px;
+    width: 41px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-previous {
+    left: 30px;
+    background: url("/img/hotel/arrow_left.png") center no-repeat; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .slides .slidesjs-next {
+    right: 30px;
+    background: url("/img/hotel/arrow_right.png") center no-repeat; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount {
+    height: 41px;
+    position: absolute;
+    bottom: 0;
+    background: #9369b4;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_gallery .gallery_pics_amount span {
+    font: 13px open_sans_regular;
+    text-transform: uppercase;
+    color: #ffffff; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header {
+    margin-bottom: 25px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .hotel_item_header img {
+    margin: 3px 0 0 9px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right p {
+    font: 14px open_sans_regular;
+    color: #585858; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option {
+    height: 31px;
+    margin-bottom: 8px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option img {
+    float: left; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .room_option p {
+    padding: 8px 0 0 55px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border .hotel_short_info .hotel_item_short_info_right .description {
+    margin-top: 33px; }
+.main_section .main_container .hotel_main_content #hotel_rooms .hotel_main_content_block .extra_border:first-child {
+    margin-top: 6px; }
+.main_section .main_container .hotel_main_content #hotel_offers {
+    display: none; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block {
+    margin-top: 18px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block img {
+    width: 100%; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date_separator {
+    height: 2px;
+    background-color: #efc581;
+    width: 48px;
+    margin-top: 15px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_date {
+    font: 12px open_sans_regular;
+    color: #efc581;
+    margin: 3px 0 35px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_description {
+    font: 14px open_sans_regular;
+    color: #453634;
+    line-height: 25px;
+    margin-bottom: 10px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price {
+    border-bottom: 3px solid #f3f3f3;
+    font: 30px pt_serif_regular;
+    color: #8256a0;
+    margin-top: 40px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .offer_price p {
+    font: 14px open_sans_regular;
+    color: #453634;
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 6px 12px 0 0; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block .selectbox_container {
+    width: 50%;
+    float: right; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row {
+    margin: 0 -21px; }
+.main_section .main_container .hotel_main_content #hotel_offers .hotel_main_content_block > .row > div {
+    padding: 0 21px; }
+.main_section .main_container .hotel_main_content #hotel_reservation {
+    display: none; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block {
+    margin: 6px 0 17px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border {
+    border-top: 1px solid #aeaeae;
+    padding-top: 1px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block {
+    padding: 30px;
+    border-left: 1px solid #f3f3f3;
+    border-top: 1px solid #aeaeae; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block p {
+    font: 12px open_sans_regular;
+    color: #585858;
+    margin: 15px 0 5px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container {
+    max-width: 100%; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .selectbox_container .selectboxit {
+    max-width: 100%; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn {
+    margin: 13px 0 45px;
+    display: table;
+    color: #585858;
+    width: auto;
+    border: 0;
+    padding: 0 0 5px 31px;
+    background: url("/img/hotel/add_client_icon.png") left center no-repeat; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn img {
+    float: left;
+    margin-right: 7px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn span {
+    font: 12px open_sans_regular;
+    color: #585858; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:hover span {
+    text-decoration: underline; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block .add_visitor_btn:last-child {
+    margin-bottom: 0; }
+.main_section .main_container .hotel_main_content #hotel_reservation .hotel_main_content_block .extra_border .reservatioon_form_block textarea {
+    min-height: 150px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions {
+    margin: 8px 0 0; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions p {
+    font: 13px open_sans_regular;
+    color: #453634; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label {
+    margin-top: 20px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label span {
+    margin-right: 9px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions label a {
+    font-size: 14px;
+    color: #8256a0; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions button {
+    margin: 23px 0 6px; }
+.main_section .main_container .hotel_main_content #hotel_reservation .general_conditions .security_info img {
+    float: left;
+    margin-right: 8px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions {
+    margin-top: 51px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition {
+    padding: 4px 0;
+    border-bottom: 2px solid #f3f3f3; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition h5 {
+    font: 14px open_sans_bold;
+    color: #1d1d1d; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description {
+    padding: 7px 0; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description img {
+    float: left;
+    margin-right: 18px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition .condition_description p {
+    padding: 0; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition p {
+    padding: 7px 0; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition .col-sm-4:last-child h5 {
+    float: right; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items {
+    margin-top: 28px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item {
+    background: #fafafa;
+    margin-bottom: 4px;
+    padding: 20px 30px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item img {
+    float: left;
+    margin-right: 32px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .condition_item_text h5 {
+    font: 14px open_sans_bold;
+    color: #1d1d1d;
+    margin-bottom: 10px; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .condition_item_text p {
+    font: 13px open_sans_regular;
+    color: #453634; }
+.main_section .main_container .hotel_main_content .hotel_item_conditions .condition_items .condition_item .selectbox_container {
+    padding: 15px 0; }
+.main_section .main_container .hotel_right_sidebar {
+    padding: 45px 45px 0 45px;
+    background: #fbfbfb;
+    border-left: 1px solid #f3f3f3;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0; }
+.main_section .main_container .hotel_right_sidebar h3 {
+    margin-bottom: 40px; }
+.main_section .main_container .hotel_right_sidebar p {
+    font: 14px open_sans_regular;
+    color: #453634;
+    margin-top: 8px; }
+.main_section .main_container .hotel_right_sidebar button {
+    margin: 28px 0 47px;
+    padding: 0;
+    width: 50%; }
+.main_section .main_container .hotel_right_sidebar button[type="submit"]:hover {
+    background: -webkit-linear-gradient(#8862a9, #765092);
+    background: -o-linear-gradient(#8862a9, #765092);
+    background: -moz-linear-gradient(#8862a9, #765092);
+    background: linear-gradient(#8862a9, #765092); }
+.main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 6px; }
+.main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock h4 {
+    margin-bottom: 25px; }
+.main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock .price {
+    float: right;
+    width: 147px; }
+.main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock.total {
+    border-bottom: 2px solid #c4a0f0;
+    padding-bottom: 38px; }
+.main_section .main_container .hotel_right_sidebar .hotel_right_sidebar_ifoblock.total h4 {
+    margin-bottom: 15px; }
+.main_section .main_container .hotel_right_sidebar .my_btn {
+    background: #8256a0 url("/img/hotel/arrow_right_double.png") right 14px center no-repeat;
+    font-size: 19px;
+    padding: 10px 40px 10px 10px;
+    margin: 25px 0 15px 0;
+    width: 100%;
+    float: none; }
+.main_section .main_container .hotel_right_sidebar .my_btn p {
+    margin: 0;
+    color: #ffffff;
+    font: 19px open_sans_regular; }
+.main_section .main_container > .row > .col-md-9 {
     width: 73%; }
-  .main_section .main_container > .row > .col-md-3 {
+.main_section .main_container > .row > .col-md-3 {
     width: 27%; }
 
 .selectbox_container {
-  max-width: 192px;
-  width: 100%;
-  float: right; }
+    max-width: 192px;
+    width: 100%;
+    float: right; }
 .selectbox_container .selectboxit {
     background: #ffffff url("/img/hotel/selectbox_bg.png") right no-repeat;
     border: 1px solid #f3f3f3;
@@ -316,7 +322,7 @@ body {
 .selectbox_container .selectboxit span {
     padding: 0;
     color: #453634 !important;
-    font: 12px lato_regular !important; }
+    font: 12px open_sans_regular !important; }
 .selectbox_container .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
     background: #eeeeee !important;
     color: #453634 !important; }
@@ -340,70 +346,70 @@ body {
     height: 31px !important;
     padding-left: 11px !important;
     color: #453634 !important;
-    font: 12px lato_regular !important; }
+    font: 12px open_sans_regular !important; }
 .selectbox_container .selectboxit-options li a:hover {
     text-decoration: none !important; }
 
 input, select, textarea {
-  border: 1px solid #f3f3f3;
-  height: 31px;
-  background: none;
-  font-size: 12px; }
+    border: 1px solid #f3f3f3;
+    height: 31px;
+    background: none;
+    font-size: 12px; }
 
 ::-webkit-input-placeholder {
-  font: 12px lato_regular;
-  color: #453634; }
+    font: 12px open_sans_regular;
+    color: #453634; }
 
 :-moz-placeholder {
-  /* Firefox 18- */
-  font: 12px lato_regular;
-  color: #453634; }
+    /* Firefox 18- */
+    font: 12px open_sans_regular;
+    color: #453634; }
 
 ::-moz-placeholder {
-  /* Firefox 19+ */
-  font: 12px lato_regular;
-  color: #453634; }
+    /* Firefox 19+ */
+    font: 12px open_sans_regular;
+    color: #453634; }
 
 :-ms-input-placeholder {
-  font: 12px lato_regular;
-  color: #453634; }
+    font: 12px open_sans_regular;
+    color: #453634; }
 
 .currency {
-  text-transform: uppercase; }
+    text-transform: uppercase; }
 
 .clear_both {
-  clear: both; }
+    clear: both; }
 
 .single_room {
-  display: table;
-  padding-right: 33px;
-  background: url("/img/hotel/single_icon.png") right center no-repeat; }
+    display: table;
+    padding-right: 33px;
+    background: url("/img/hotel/single_icon.png") right center no-repeat; }
 
 .double_room {
-  display: table;
-  padding-right: 57px;
-  background: url("/img/hotel/double_icon.png") right center no-repeat; }
+    display: table;
+    padding-right: 57px;
+    background: url("/img/hotel/double_icon.png") right center no-repeat; }
 
 .my_btn {
-  background: #8256a0 url("/img/hotel/arrow_left_double.png") left 14px center no-repeat;
-  float: right;
-  height: 46px;
-  display: table;
-  padding: 10px 80px;
-  margin-top: 15px;
-  cursor: pointer; }
-  .my_btn p {
+    background: #8256a0 url("/img/hotel/arrow_left_double.png") left 14px center no-repeat;
+    float: right;
+    height: 46px;
+    display: table;
+    padding: 10px 80px;
+    margin-top: 15px;
+    cursor: pointer; }
+.my_btn p {
     text-align: center;
     color: #ffffff;
-    font: 19px lato_regular; }
+    font: 19px open_sans_regular; }
 
 .sidebar-scroll.fixed {
-  position: fixed;
-  top: 0;
-  width: 27%;
-  margin-left: -45px;
-  margin-right: -15px;
-  padding: 45px;
-  padding-right: 60px; }
+    position: fixed;
+    top: 0;
+    width: 27%;
+    margin-left: -45px;
+    margin-right: -15px;
+    padding: 45px;
+    padding-right: 60px; }
 
 /*# sourceMappingURL=hotel.css.map */
