@@ -184,7 +184,9 @@ sup {
   border-bottom: 2px solid #38bad4; }
 
 .header .header_menu li.logo img {
-  width: 63px }
+  width: 63px;
+  height: 45px;
+}
 
 .header .header_menu li img {
   margin: 0 13px 0 0;
