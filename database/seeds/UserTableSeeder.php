@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder {
 	{
 		//User::truncate();
 
-		// add 1st row
+		// add 1st row now
 		User::create( [
 			'name' => 'Vadim' ,
 			'email' => 'cojocaru.vadim@gmail.com' ,
