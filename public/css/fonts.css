@@ -1,21 +1,53 @@
 ﻿
 @font-face {
     font-family: 'lato_regular';
-    src: url('../fonts/lato/Lato-Regular.eot');
-    src: url('../fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/lato/Lato-Regular.woff') format('woff'),
-    url('../fonts/lato/Lato-Regular.ttf') format('truetype'),
-    url('../fonts/lato/Lato-Regular.svg') format('svg');
+    src: url('../fonts/lato/regular/Lato-Regular.eot');
+    src: url('../fonts/lato/regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/regular/Lato-Regular.woff') format('woff'),
+    url('../fonts/lato/regular/Lato-Regular.ttf') format('truetype'),
+    url('../fonts/lato/regular/Lato-Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'lato_black';
-    src: url('../fonts/lato/Lato-Black.eot');
-    src: url('../fonts/lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/lato/Lato-Black.woff') format('woff'),
-    url('../fonts/lato/Lato-Black.ttf') format('truetype'),
-    url('../fonts/lato/Lato-Black.svg') format('svg');
+    src: url('../fonts/lato/black/Lato-Black.eot');
+    src: url('../fonts/lato/black/Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/black/Lato-Black.woff') format('woff'),
+    url('../fonts/lato/black/Lato-Black.ttf') format('truetype'),
+    url('../fonts/lato/black/Lato-Black.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'lato_bold';
+    src: url('../fonts/lato/bold/Lato-Bold.eot');
+    src: url('../fonts/lato/bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/bold/Lato-Bold.woff') format('woff'),
+    url('../fonts/lato/bold/Lato-Bold.ttf') format('truetype'),
+    url('../fonts/lato/bold/Lato-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans_regular';
+    src: url('../fonts/open_sans/regular/OpenSans-Regular.eot');
+    src: url('../fonts/open_sans/regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open_sans/regular/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/open_sans/regular/OpenSans-Regular.ttf') format('truetype'),
+    url('../fonts/open_sans/regular/OpenSans-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sans_bold';
+    src: url('../fonts/open_sans/bold/OpenSans-Bold.eot');
+    src: url('../fonts/open_sans/bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open_sans/bold/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/open_sans/bold/OpenSans-Bold.ttf') format('truetype'),
+    url('../fonts/open_sans/bold/OpenSans-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

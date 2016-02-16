@@ -2,236 +2,289 @@ body {
   background: url(../img/homepage/homepage_bg.jpg) no-repeat center center fixed;
 }
 
-.middle {
-  padding-top: 150px; }
-
-.middle .search_block {
-  width: 420px;
-  background: #ffffff;
-  /*display: table;*/
-  border: 1px solid #efc581;
-  outline: 4px solid #f8ddb3;
-  padding: 18px 0;
-  float: right;
-  margin: 34px 19px 34px 0;
-  display: none;
+.page_content {
+    padding-top: 80px;
+}
+.page_content .search_block {
+    width: 480px;
+    float: right;
+    background: #ffffff;
+    margin: 80px 25px 0 0;
+    padding: 17px;
+}
+.page_content .search_block .ornament{
+    float: left;
+    width: 60px;
+    height: 16px;
+    margin: 5px 10px;
+}
+.page_content .search_block h1{
+    float: left;
+    margin: 0 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    color: #3e312a;
 }
 
-.middle .search_block.closed {
-  height: 60px;
-  overflow: hidden; }
+.page_content .search_block .search_block_inner {
+    display: none;
+    background: #ffffff;
+    clear: both;
+    padding: 20px 30px;
+    margin: 43px -42px 0;
+}
+.page_content .search_block .search_block_inner .form_placeholder {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font: 12px open_sans_bold;
+    color: #3e312a;
+    opacity: 0.5;
+}
+.page_content .search_block .search_block_inner .search_item_value {
+    margin: 0 0 15px;
+    padding: 0 0 5px;
+    border-bottom: 1px solid #ebeae9;
+    font: 20px open_sans_regular;
+}
+.page_content .search_block .search_block_inner .search_item_value .quests_icn {
+    float: left;
+    width: 30px;
+    height: 26px;
+    background: url("../img/guests_icons_sprite.svg") no-repeat 9px 2px;
+}
+.page_content .search_block .search_block_inner .search_item_value#kids_amount .quests_icn {
+    background-position: 3px -38px;
+}
+.search_block .search_block_inner #adults_amount,
+.search_block .search_block_inner #kids_amount {
+    margin-right: 30px;
+}
+.page_content .search_block .search_block_inner .search_item_value .custom_selectbox {
+    text-align: right;
+}
+.page_content .search_block .search_block_inner .search_item_value .custom_selectbox span {
+    margin-right: 5px;
+}
+.page_content .search_block .search_block_inner .search_item_value .custom_selectbox .fa {
+    font-size: 14px;
+    position: relative;
+    bottom: 2px;
+}
+.page_content .search_block .search_block_inner .search_item_value input{
+    background: none;
+    height: auto;
+    font-size: 20px;
+    padding: 0;
+}
+.page_content .search_block.opened {
+    background: #3e312a;
+}
+.page_content .search_block.opened h1 {
+    color: #ffffff;
+}
+.page_content .search_block.opened .ornament path {
+    fill: #ffffff;
+}
+.page_content .search_block.opened .search_block_inner {
+    display: block;
+}
 
-.middle .search_block.closed .search_block_header img {
-  -moz-transform: rotate(180deg);
+/*.middle {*/
+  /*padding-top: 150px; }*/
+
+/*.middle .search_block {*/
+  /*width: 420px;*/
+  /*background: #ffffff;*/
+  /*display: table;*/
+  /*border: 1px solid #efc581;*/
+  /*outline: 4px solid #f8ddb3;*/
+  /*padding: 18px 0;*/
+  /*float: right;*/
+  /*margin: 34px 19px 34px 0;*/
+/*}*/
+
+/*.middle .search_block.closed {*/
+  /*height: 60px;*/
+  /*overflow: hidden; }*/
+
+/*.middle .search_block.closed .search_block_header img {*/
+  /*-moz-transform: rotate(180deg);*/
   /* Mozilla */
-  -ms-transform: rotate(180deg);
+  /*-ms-transform: rotate(180deg);*/
   /* IE 9 */
-  -webkit-transform: rotate(180deg);
+  /*-webkit-transform: rotate(180deg);*/
   /* Chrome, Safari */
-  -o-transform: rotate(180deg);
+  /*-o-transform: rotate(180deg);*/
   /* Opera */
-  transform: rotate(180deg);
+  /*transform: rotate(180deg);*/
   /*-moz-transition: all .2s ease-in-out;*/
   /*-ms-transition: all .2s ease-in-out;*/
   /*-webkit-transition: all .2s ease-in-out;*/
   /*-o-transition: all .2s ease-in-out;*/
-  /*transition: all .2s ease-in-out;*/ }
+  /*transition: all .2s ease-in-out;*//* }*/
 
-.middle .search_block_header {
-  display: table;
-  margin: 0 auto; }
+/*.middle .search_block_header {*/
+  /*display: table;*/
+  /*margin: 0 auto; }*/
 
-.middle .search_block_header h1 {
-  color: #544036;
-  text-transform: uppercase;
-  font-size: 24px;
-  float: left;
-  margin: 0; }
+/*.middle .search_block_header h1 {*/
+  /*color: #544036;*/
+  /*text-transform: uppercase;*/
+  /*font-size: 24px;*/
+  /*float: left;*/
+  /*margin: 0; }*/
 
-.middle .search_block_header img {
-  margin: 7px 0 0 34px;
-  cursor: pointer; }
+/*.middle .search_block_header img {*/
+  /*margin: 7px 0 0 34px;*/
+  /*cursor: pointer; }*/
 
-.middle .search_block form {
-  font-family: lato_black;
-  font-size: 12px;
-  padding: 0 59px; }
+/*.middle .search_block form {*/
+  /*font-family: lato_black;*/
+  /*font-size: 12px;*/
+  /*padding: 0 59px; }*/
 
-.middle .search_block p {
-  margin: 0 0 4px 0;
-  color: #b6b6b6;
-  font-family: lato_regular; }
+/*.middle .search_block p {*/
+  /*margin: 0 0 4px 0;*/
+  /*color: #b6b6b6;*/
+  /*font-family: lato_regular; }*/
 
-.middle .search_block_line {
-  border: 1px solid #3f322b;
-  width: 50%;
-  margin: 25px auto 50px; }
+/*.middle .search_block_line {*/
+  /*border: 1px solid #3f322b;*/
+  /*width: 50%;*/
+  /*margin: 25px auto 50px; }*/
 
-.middle .date_of_coming,
-.middle .date_of_leaving,
-.middle .num_of_adults,
-.middle .num_of_kids,
-.middle .age_of_kids,
-.middle .search_block_promo_code {
-  margin-bottom: 32px; }
+/*.middle .date_of_coming,*/
+/*.middle .date_of_leaving,*/
+/*.middle .num_of_adults,*/
+/*.middle .num_of_kids,*/
+/*.middle .age_of_kids,*/
+/*.middle .search_block_promo_code {*/
+  /*margin-bottom: 32px; }*/
 
-.middle .date_of_coming input,
-.middle .date_of_leaving input {
-  max-width: 126px; }
+/*.middle .date_of_coming input,*/
+/*.middle .date_of_leaving input {*/
+  /*max-width: 126px; }*/
 
-.middle .search_block .selectboxit-container {
-  max-width: 126px; }
+/*.middle .search_block .selectboxit-container {*/
+  /*max-width: 126px; }*/
 
-.middle .date_of_leaving input {
-  float: right; }
+/*.middle .date_of_leaving input {*/
+  /*float: right; }*/
 
-.middle .num_of_kids .selectboxit-container {
-  float: right; }
+/*.middle .num_of_kids .selectboxit-container {*/
+  /*float: right; }*/
 
-.middle .age_of_kids .selectboxit-container {
-  max-width: 72px; }
+/*.middle .age_of_kids .selectboxit-container {*/
+  /*max-width: 72px; }*/
 
-.middle .search_block_separator_line {
-  border-bottom: 1px solid #f9f9f9;
-  margin: 0 -31px 30px; }
+/*.middle .search_block_separator_line {*/
+  /*border-bottom: 1px solid #f9f9f9;*/
+  /*margin: 0 -31px 30px; }*/
 
-.middle .search_block_results_button {
-  background: #8256a0;
-  color: #ffffff;
-  margin-bottom: 52px; }
+/*.middle .search_block_results_button {*/
+  /*background: #8256a0;*/
+  /*color: #ffffff;*/
+  /*margin-bottom: 52px; }*/
 
-.middle .search_block_results_button:hover {
-  background: #38bad4; }
+/*.middle .search_block_results_button:hover {*/
+  /*background: #38bad4; }*/
 
-.middle .search_block_promo_code {
-  font-size: 12px;
-  padding-left: 14px; }
+/*.middle .search_block_promo_code {*/
+  /*font-size: 12px;*/
+  /*padding-left: 14px; }*/
 
-.offers_and_news {
-  background: #ffffff;
-  width: 100%;
-  color: #939393;
-  position: absolute;
-  bottom: 0px;
-  padding-bottom: 40px;
-  min-width: 1150px
-}
-
-.offers_and_news p {
-  font-family: lato_regular;
-  font-size: 13px;
-  margin: 20px 0 7px;
-  line-height: 1.5; }
-
-.offers_and_news h3 {
-  color: #3f322b;
-  font-size: 30px;
-  margin: 0; }
-
-.offers_and_news .offers {
-  padding: 35px 74px;
-  border-right: 1px solid #f3efef; }
-
-.offers_and_news .offer_img {
-  width: 38%; }
-
-.offers_and_news .offer_img img {
-  width: 100%; }
-
-.offers_and_news .offer_short_info {
-  width: 53%; }
-
-.offers_and_news .offers_and_news_date {
-  color: #38bad4;
-  font-family: lato_regular;
-  font-size: 12px;
-  padding-left: 2px; }
-
-.offers_and_news .offer_blue_line {
-  border: 1px solid #38bad4;
-  width: 48px;
-  margin: 17px 0 3px; }
-
-.offers_and_news .offer_short_info .offer_price {
-  color: #a68858;
-  font-size: 34px;
-  display: block; }
-
-.offers_and_news .offer_short_info button {
-  color: #a68858;
-  border: 1px solid #a68858;
-  width: 156px;
-  height: 24px;
-  background: #ffffff url("../img/more_info_button_arrrow.png") no-repeat right;
-  font-family: lato_regular !important;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 12px;
-  padding-top: 3px;
-  margin-top: 6px; }
-
-.offers_and_news .offer_arrow img {
-  margin-right: 35px; }
-
-.offers_and_news .offers > .row {
-  position: relative; }
-
-.offers_and_news .offer_arrow {
-  position: absolute !important;
-  top: 0;
-  right: 0;
-  height: 100%;
-  padding-left: 0; }
-
-.offers_and_news .offer_arrow img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
-.offers_and_news > .main_container > .row {
-  position: relative; }
-
-.offers_and_news .news {
-  padding: 35px 74px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-/*flexSlider customizations START*/
-/*.flexslider {*/
-/*border-radius: 0;*/
-/*border: none;*/
-/*margin: 0;*/
-/*height: 100%;*/
+/*.offers_and_news {*/
+  /*background: #ffffff;*/
+  /*width: 100%;*/
+  /*color: #939393;*/
+  /*position: absolute;*/
+  /*bottom: 0px;*/
+  /*padding-bottom: 40px;*/
+  /*min-width: 1150px*/
 /*}*/
-/*.flex-direction-nav a {*/
-/*height: 68px;*/
-/*width: 50px;*/
-/*margin: -34px 0 0;*/
-/*}*/
-/*.flex-direction-nav a.flex-prev {*/
-/*background: url("/img/homepage/offers/offer_arrow_prev.png") no-repeat left;*/
-/*}*/
-/*.flex-direction-nav a.flex-next {*/
-/*background: url("/img/homepage/offers/offer_arrow_next.png") no-repeat right;*/
-/*}*/
-/*.flex-direction-nav a:before {*/
-/*display: none;*/
-/*}*/
-/*.flex-direction-nav .flex-next {*/
-/*right: 0;*/
-/*}*/
-/*.flexslider:hover .flex-direction-nav .flex-next {*/
-/*right: -50px;*/
-/*}*/
-/*.flex-direction-nav .flex-prev {*/
-/*left: 0;*/
-/*}*/
-/*.flexslider:hover .flex-direction-nav .flex-prev {*/
-/*left: -50px;*/
-/*}*/
-/*flexSlider customizations END*/
+
+/*.offers_and_news p {*/
+  /*font-family: lato_regular;*/
+  /*font-size: 13px;*/
+  /*margin: 20px 0 7px;*/
+  /*line-height: 1.5; }*/
+
+/*.offers_and_news h3 {*/
+  /*color: #3f322b;*/
+  /*font-size: 30px;*/
+  /*margin: 0; }*/
+
+/*.offers_and_news .offers {*/
+  /*padding: 35px 74px;*/
+  /*border-right: 1px solid #f3efef; }*/
+
+/*.offers_and_news .offer_img {*/
+  /*width: 38%; }*/
+
+/*.offers_and_news .offer_img img {*/
+  /*width: 100%; }*/
+
+/*.offers_and_news .offer_short_info {*/
+  /*width: 53%; }*/
+
+/*.offers_and_news .offers_and_news_date {*/
+  /*color: #38bad4;*/
+  /*font-family: lato_regular;*/
+  /*font-size: 12px;*/
+  /*padding-left: 2px; }*/
+
+/*.offers_and_news .offer_blue_line {*/
+  /*border: 1px solid #38bad4;*/
+  /*width: 48px;*/
+  /*margin: 17px 0 3px; }*/
+
+/*.offers_and_news .offer_short_info .offer_price {*/
+  /*color: #a68858;*/
+  /*font-size: 34px;*/
+  /*display: block; }*/
+
+/*.offers_and_news .offer_short_info button {*/
+  /*color: #a68858;*/
+  /*border: 1px solid #a68858;*/
+  /*width: 156px;*/
+  /*height: 24px;*/
+  /*background: #ffffff url("../img/more_info_button_arrrow.png") no-repeat right;*/
+  /*font-family: lato_regular !important;*/
+  /*font-size: 12px;*/
+  /*text-align: left;*/
+  /*padding-left: 12px;*/
+  /*padding-top: 3px;*/
+  /*margin-top: 6px; }*/
+
+/*.offers_and_news .offer_arrow img {*/
+  /*margin-right: 35px; }*/
+
+/*.offers_and_news .offers > .row {*/
+  /*position: relative; }*/
+
+/*.offers_and_news .offer_arrow {*/
+  /*position: absolute !important;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*height: 100%;*/
+  /*padding-left: 0; }*/
+
+/*.offers_and_news .offer_arrow img {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+  /*margin: auto; }*/
+
+/*.offers_and_news > .main_container > .row {*/
+  /*position: relative; }*/
+
+/*.offers_and_news .news {*/
+  /*padding: 35px 74px;*/
+  /*height: 100%;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0; }*/
 
 /*# sourceMappingURL=index.css.map */

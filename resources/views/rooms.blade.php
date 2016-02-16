@@ -64,27 +64,22 @@
                      <ul class="rooms_types_buttons">
                          <li class="room_type" id="single_classic">
                              <h5>Single classic</h5>
-                             {{--<a href="#">CHF 235.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/single_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_classic">
                              <h5>Double classic</h5>
-                             {{--<a href="#">CHF 265.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_superior">
                              <h5>Double Supérieur</h5>
-                             {{--<a href="#">CHF 295.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_superior_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="triple">
                              <h5>Triple</h5>
-                             {{--<a href="#">CHF 325.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/triple_img2.jpg" /></a>
                          </li>
                          <li class="room_type" id="apartment">
                              <h5>Appartement</h5>
-                             {{--<a href="#">CHF 590.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/appartement_img5.jpg" /></a>
                          </li>
                      </ul>

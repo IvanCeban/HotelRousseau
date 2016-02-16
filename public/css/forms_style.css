@@ -9,6 +9,7 @@ input, select, textarea {
     padding-left: 20px;
     font-size: 15px;
 }
+
 textarea {
     padding-top: 10px;
     height: 70px;
@@ -72,4 +73,46 @@ input[type=checkbox]:not(old) + label > span {
 }
 input[type=checkbox]:not(old):checked + label > span{
     background-position: 0 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #3e312a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #3e312a;
+    opacity:  0.1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #3e312a;
+    opacity:  0.1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #3e312a;
+    opacity:  0.1;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color:    #3e312a;
+    opacity:  0.1;
+}
+
+.btn {
+    border: 2px solid #3e312a;
+    border-radius: 4px;
+    padding: 0;
+    background: transparent;
+    color: #3e312a;
+    height: 36px;
+    font: 18px open_sans_regular;
+}
+.btn:hover {
+    background: #3e312a;
+    color: #ffffff;
 }

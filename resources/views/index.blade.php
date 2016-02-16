@@ -94,212 +94,260 @@
 
 @section('content')
      <!--header START-->
-         <section class="header">
-             <div class="main_container">
-                 <div class="row">
-                     <div class="col-xs-6 languages">
-                         <!--<ul>-->
-                             <!--<li class="active"><a href="#">FR</a></li>-->
-                             <!--<li><a href="#">EN</a></li>-->
-                         <!--</ul>-->
-                     </div>
+     <header class="header">
+         <div class="main_container">
+             <div class="row">
+                 <div class="col-xs-6 languages">
+                     <!--<ul>-->
+                         <!--<li class="active"><a href="#">FR</a></li>-->
+                         <!--<li><a href="#">EN</a></li>-->
+                     <!--</ul>-->
                  </div>
-                 <div class="row">
-                     <div class="col-xs-12 header_menu">
-                         <ul>
-                             <li class="logo"><a href="/"><img src="img/logo.svg"></a></li>
-                             <li class="active"><a href="/">Accueil</a></li>
-                             <li><div class="header_separator"></div><a href="{{url('hotel')}}">Hôtel</a></li>
-                             <li id="nav_rooms"><div class="header_separator"></div> <a href="{{url('room')}}">Chambres / Appartement</a></li>
-                             <li><div class="header_separator"></div> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
-                             <li><div class="header_separator"></div> <a href="{{url('offers')}}">Offres / Packages</a></li>
-                             {{--<li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
-                             <li><div class="header_separator"></div> <a href="{{url('contact')}}">Contact</a></li>
-                             {{--<li>--}}
-                                 {{--<!--<div class="news_block_icon">-->--}}
-                                     {{--<!--<img src="/img/news_block_icon.png">-->--}}
-                                 {{--<!--</div>-->--}}
-                                 {{--<!--<div class="news_block">-->--}}
-                                     {{--<!--<p>depeches-vous</p>-->--}}
-                                     {{--<!--<span>Il nous reste plus que 5 chambres</span>-->--}}
-                                 {{--<!--</div>-->--}}
-                             {{--</li>--}}
-                         </ul>
-                         <div class="header_rightside_btns">
-                             <a href="#" class="header_login_btn">Connexion</a>
-                         </div>
+             </div>
+             <div class="row">
+                 <div class="col-xs-12 header_menu">
+                     <ul>
+                         <li class="logo"><a href="/"><img src="img/logo.svg"></a></li>
+                         <li class="active"><a href="/">Accueil</a></li>
+                         <li><div class="header_separator"></div><a href="{{url('hotel')}}">Hôtel</a></li>
+                         <li id="nav_rooms"><div class="header_separator"></div> <a href="{{url('room')}}">Chambres / Appartement</a></li>
+                         <li><div class="header_separator"></div> <a href="{{url('restaurant')}}">Restaurant / Bar</a></li>
+                         <li><div class="header_separator"></div> <a href="{{url('offers')}}">Offres / Packages</a></li>
+                         {{--<li><img src="/img/header_and_footer_links_seperator.png"> <a href="{{url('wellness_center')}}">Centre bien-etre / Loisirs</a></li>--}}
+                         <li><div class="header_separator"></div> <a href="{{url('contact')}}">Contact</a></li>
+                         {{--<li>--}}
+                             {{--<!--<div class="news_block_icon">-->--}}
+                                 {{--<!--<img src="/img/news_block_icon.png">-->--}}
+                             {{--<!--</div>-->--}}
+                             {{--<!--<div class="news_block">-->--}}
+                                 {{--<!--<p>depeches-vous</p>-->--}}
+                                 {{--<!--<span>Il nous reste plus que 5 chambres</span>-->--}}
+                             {{--<!--</div>-->--}}
+                         {{--</li>--}}
+                     </ul>
+                     <div class="header_rightside_btns">
+                         <a href="#" class="header_login_btn">Connexion</a>
                      </div>
                  </div>
              </div>
-         </section>
-        <!--header END-->
-
-        {{--rooms type select START--}}
-         <section class="rooms_types_section">
-             <div class="main_container">
-                 <div class="row">
-                     <div class="col-xs-12">
-                         <ul class="rooms_types_buttons">
-                             <li class="room_type" id="single_classic">
-                                 <h5>Single classic</h5>
-                                 <a href="#">CHF 235.-</a>
-                             </li>
-                             <li class="room_type" id="double_classic">
-                                 <h5>Double classic</h5>
-                                 <a href="#">CHF 265.-</a>
-                             </li>
-                             <li class="room_type" id="double_superior">
-                                 <h5>Double Supérieur</h5>
-                                 <a href="#">CHF 295.-</a>
-                             </li>
-                             <li class="room_type" id="triple">
-                                 <h5>Triple</h5>
-                                 <a href="#">CHF 325.-</a>
-                             </li>
-                             <li class="room_type" id="apartment">
-                                 <h5>Appartement</h5>
-                                 <a href="#">CHF 590.-</a>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-         </section>
-         {{--rooms type select END--}}
+         </div>
+     </header>
+    <!--header END-->
 
     <!--middle section START-->
-    <section class="middle">
+    <section class="page_content">
         <div class="main_container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="search_block closed">
-                        <div class="search_block_header">
-                            <h1>Reservation en ligne</h1>
-                            <img src="/img/homepage/search_block_arrow.png">
+            <div class="search_block opened">
+                <img id="" class="svg ornament" src="../img/homepage/ornament_reservation.svg"/>
+                <h1>réservation en ligne</h1>
+                <img id="" class="svg ornament" src="../img/homepage/ornament_reservation.svg"/>
+                <form class="search_block_inner">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">du</p>
+                            <div class="search_item_value">
+                                <p>20 Juil 2016</p>
+                            </div>
+
+                            {{--<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">--}}
+                                {{--<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>--}}
+                                {{--<span></span> <b class="caret"></b>--}}
+                            {{--</div>--}}
                         </div>
-                        <div class="search_block_line"></div>
-                        <form name="registrationForm" novalidate method="post" action="{{url('hotel')}}">
-                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                            <div class="row">
-                                <input type="hidden" name="checkin_date" id="checkin_date" value="">
-                                <input type="hidden" name="checkout_date" id="checkout_date" value="">
-                                <input type="hidden" name="nights" id="nights" value="">
-                                <div class="col-md-12">
-                                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                        <span></span> <b class="caret"></b>
-                                    </div>
-                                </div>
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">au</p>
+                            <div class="search_item_value">
+                                <p>20 Juil 2016</p>
                             </div>
-                            <br><br>
-                            <!--<div class="row">
-                                <div class="col-xs-6 date_of_coming">
-                                    <p>Date de debut</p>
-                                    <input type="date" name="in">
-                                </div>
-                                <div class="col-xs-6 date_of_leaving">
-                                    <p>Date de fin</p>
-                                    <input type="date" name="out">
-                                </div>
-                            </div>-->
-                            <div class="row">
-                                <div class="col-xs-6 num_of_adults">
-                                    <p>Adultes</p>
-                                    <select name="adults">
-                                        <option>1</option>
-                                        <option selected>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 num_of_kids">
-                                    <p>Enfants</p>
-                                    <select name="kids" id="kids">
-                                        <option value="0">0</option>
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">durée</p>
+                            <div class="search_item_value">
+                                <p>8 nuites</p>
                             </div>
-                            <div class="search_block_separator_line"></div>
-                            <div class="row">
-                                <div class="col-xs-12 age_of_kids">
-                                    <p>Age des enfants a la fin du sejur</p>
-                                    <select class="ages" name="age[0]">
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                        <option label="5">6</option>
-                                        <option label="5">7</option>
-                                        <option label="5">8</option>
-                                        <option label="5">9</option>
-                                        <option label="5">10</option>
-                                        <option label="5">11</option>
-                                        <option label="5">12</option>
-                                        <option label="5">13</option>
-                                        <option label="5">14</option>
-                                        <option label="5">15</option>
-                                        <option label="5">16</option>
-                                        <option label="5">17</option>
-                                    </select>
-                                    <!--<select name="age2">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>-->
-                                    <!--<select name="age3">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>
-                                    <select name="age4">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>-->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <input type="text" name="promo_code" placeholder="Code promotionel" class="search_block_promo_code">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <button type="submit" class="search_block_results_button">Verifier les disponibilies</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">adultes</p>
+                            <div class="search_item_value" id="adults_amount">
+                                <div class="quests_icn"></div>
+                                <div class="custom_selectbox">
+                                    <span>0</span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">enfants</p>
+                            <div class="search_item_value" id="kids_amount">
+                                <div class="quests_icn"></div>
+                                <div class="custom_selectbox">
+                                    <span>0</span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="form_placeholder">code promotionnel</p>
+                            <div class="search_item_value">
+                                <input type="number" placeholder="Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="form_placeholder">age des enfants a la fin du séjour</p>
+                            <div class="search_item_value">
+                                <p>5 adults</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-push-2">
+                            <input type="submit" class="btn" value="Sauver votre choix">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+
+
+
+
+    {{--<section class="middle">--}}
+        {{--<div class="main_container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-xs-12">--}}
+                    {{--<div class="search_block closed">--}}
+                        {{--<div class="search_block_header">--}}
+                            {{--<h1>Reservation en ligne</h1>--}}
+                            {{--<img src="/img/homepage/search_block_arrow.png">--}}
+                        {{--</div>--}}
+                        {{--<div class="search_block_line"></div>--}}
+                        {{--<form name="registrationForm" novalidate method="post" action="{{url('hotel')}}">--}}
+                            {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
+                            {{--<div class="row">--}}
+                                {{--<input type="hidden" name="checkin_date" id="checkin_date" value="">--}}
+                                {{--<input type="hidden" name="checkout_date" id="checkout_date" value="">--}}
+                                {{--<input type="hidden" name="nights" id="nights" value="">--}}
+                                {{--<div class="col-md-12">--}}
+                                    {{--<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">--}}
+                                        {{--<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>--}}
+                                        {{--<span></span> <b class="caret"></b>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<br><br>--}}
+                            {{--<!--<div class="row">--}}
+                                {{--<div class="col-xs-6 date_of_coming">--}}
+                                    {{--<p>Date de debut</p>--}}
+                                    {{--<input type="date" name="in">--}}
+                                {{--</div>--}}
+                                {{--<div class="col-xs-6 date_of_leaving">--}}
+                                    {{--<p>Date de fin</p>--}}
+                                    {{--<input type="date" name="out">--}}
+                                {{--</div>--}}
+                            {{--</div>-->--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-xs-6 num_of_adults">--}}
+                                    {{--<p>Adultes</p>--}}
+                                    {{--<select name="adults">--}}
+                                        {{--<option>1</option>--}}
+                                        {{--<option selected>2</option>--}}
+                                        {{--<option>3</option>--}}
+                                        {{--<option>4</option>--}}
+                                        {{--<option>5</option>--}}
+                                        {{--<option>6</option>--}}
+                                        {{--<option>7</option>--}}
+                                        {{--<option>8</option>--}}
+                                        {{--<option>9</option>--}}
+                                        {{--<option>10</option>--}}
+                                    {{--</select>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-xs-6 num_of_kids">--}}
+                                    {{--<p>Enfants</p>--}}
+                                    {{--<select name="kids" id="kids">--}}
+                                        {{--<option value="0">0</option>--}}
+                                        {{--<option value="1" selected>1</option>--}}
+                                        {{--<option value="2">2</option>--}}
+                                        {{--<option value="3">3</option>--}}
+                                        {{--<option value="4">4</option>--}}
+                                        {{--<option value="5">5</option>--}}
+                                        {{--<option value="6">6</option>--}}
+                                        {{--<option value="7">7</option>--}}
+                                        {{--<option value="8">8</option>--}}
+                                        {{--<option value="9">9</option>--}}
+                                        {{--<option value="10">10</option>--}}
+                                    {{--</select>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="search_block_separator_line"></div>--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-xs-12 age_of_kids">--}}
+                                    {{--<p>Age des enfants a la fin du sejur</p>--}}
+                                    {{--<select class="ages" name="age[0]">--}}
+                                        {{--<option label="1">1</option>--}}
+                                        {{--<option label="2">2</option>--}}
+                                        {{--<option label="3">3</option>--}}
+                                        {{--<option label="4">4</option>--}}
+                                        {{--<option label="5">5</option>--}}
+                                        {{--<option label="5">6</option>--}}
+                                        {{--<option label="5">7</option>--}}
+                                        {{--<option label="5">8</option>--}}
+                                        {{--<option label="5">9</option>--}}
+                                        {{--<option label="5">10</option>--}}
+                                        {{--<option label="5">11</option>--}}
+                                        {{--<option label="5">12</option>--}}
+                                        {{--<option label="5">13</option>--}}
+                                        {{--<option label="5">14</option>--}}
+                                        {{--<option label="5">15</option>--}}
+                                        {{--<option label="5">16</option>--}}
+                                        {{--<option label="5">17</option>--}}
+                                    {{--</select>--}}
+                                    {{--<!--<select name="age2">--}}
+                                        {{--<option label="0">0</option>--}}
+                                        {{--<option label="1">1</option>--}}
+                                        {{--<option label="2">2</option>--}}
+                                        {{--<option label="3">3</option>--}}
+                                        {{--<option label="4">4</option>--}}
+                                        {{--<option label="5">5</option>--}}
+                                    {{--</select>-->--}}
+                                    {{--<!--<select name="age3">--}}
+                                        {{--<option label="0">0</option>--}}
+                                        {{--<option label="1">1</option>--}}
+                                        {{--<option label="2">2</option>--}}
+                                        {{--<option label="3">3</option>--}}
+                                        {{--<option label="4">4</option>--}}
+                                        {{--<option label="5">5</option>--}}
+                                    {{--</select>--}}
+                                    {{--<select name="age4">--}}
+                                        {{--<option label="0">0</option>--}}
+                                        {{--<option label="1">1</option>--}}
+                                        {{--<option label="2">2</option>--}}
+                                        {{--<option label="3">3</option>--}}
+                                        {{--<option label="4">4</option>--}}
+                                        {{--<option label="5">5</option>--}}
+                                    {{--</select>-->--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-xs-12">--}}
+                                    {{--<input type="text" name="promo_code" placeholder="Code promotionel" class="search_block_promo_code">--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-xs-12">--}}
+                                    {{--<button type="submit" class="search_block_results_button">Verifier les disponibilies</button>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
     <!--middle section END-->
 
     <!--offers and news START-->
@@ -453,7 +501,7 @@
     <!--offers and news START-->
 
     <!--footer START-->
-    <section class="footer">
+    <footer class="footer">
         <div class="main_container">
             <div class="row">
                 <div class="col-xs-12">
@@ -465,6 +513,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
     <!--footer END-->
 @stop

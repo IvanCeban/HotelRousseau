@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="libraries/selectBoxIt/css/selectBoxIt.css">
     <link rel="stylesheet" href="libraries/flexSlider/css/flexslider.css">
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/forms_style.css">
     <link rel="stylesheet" href="css/common_styles.css">
