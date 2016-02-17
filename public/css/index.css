@@ -63,20 +63,56 @@ body {
 }
 .page_content .search_block .search_block_inner .search_item_value .custom_selectbox {
     text-align: right;
+    cursor: pointer;
+}
+.page_content .search_block .search_block_inner .custom_selectbox_content {
+    border-top: 1px solid #3e312a;
+    margin-top: -16px;
+}
+.page_content .search_block .search_block_inner .custom_selectbox_content h2 {
+    font: 16px lato_bold;
+    color: #3e312a;
+    text-align: center;
+    margin: 20px 0 15px;
+    text-transform: uppercase;
+}
+.page_content .search_block .search_block_inner .custom_selectbox_content ul {
+    max-width: 324px;
+    margin: 0 auto;
+    display: table;
+}
+.page_content .search_block .search_block_inner .custom_selectbox_content ul li {
+    float: left;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin: 0 8px 8px 0;
+    background: #38bad4;
+    color: #ffffff;
+    cursor: pointer;
+}
+.page_content .search_block .search_block_inner .custom_selectbox_content ul li:last-child {
+    margin-right: 0;
+}
+.page_content .search_block .search_block_inner .search_item_value .custom_selectbox.calendar {
+    min-height: 27px;
 }
 .page_content .search_block .search_block_inner .search_item_value .custom_selectbox span {
     margin-right: 5px;
 }
-.page_content .search_block .search_block_inner .search_item_value .custom_selectbox .fa {
-    font-size: 14px;
-    position: relative;
-    bottom: 2px;
+.page_content .search_block .search_block_inner #kids_age_block .search_item_value {
+    width: 57px;
+    float: left;
+    margin-right: 10px;
 }
-.page_content .search_block .search_block_inner .search_item_value input{
+.page_content .search_block .search_block_inner .search_item_value input {
     background: none;
     height: auto;
     font-size: 20px;
     padding: 0;
+}
+.page_content .search_block .search_block_inner .btn {
+    margin-top: 20px;
 }
 .page_content .search_block.opened {
     background: #3e312a;

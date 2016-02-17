@@ -21,21 +21,21 @@
     <script type="text/javascript">
         $(function() {
 
-            $('#reportrange span').html(moment().format('MMMM D, YYYY') + ' - ' + moment().add(29, 'days').format('MMMM D, YYYY'));
+            $('#reportrange span').html(moment().format('D MMM YYYY') + '  &nbsp&nbsp&nbsp&nbsp&nbsp  ' + moment().add(1, 'days').format('D MMM YYYY'));
             $('#checkin_date').val(moment().format('YYYY-MM-DD'));
-            $('#checkout_date').val(moment().add(29, 'days').format('YYYY-MM-DD'));
-            $('#nights').val(29);
-
+            $('#checkout_date').val(moment().add(1, 'days').format('YYYY-MM-DD'));
+            $('.search_block_inner #nights .search_item_value p span').html('1');
 
             $('#reportrange').daterangepicker({
-                format: 'MM/DD/YYYY',
+                format: 'DD/MM/YYYY',
                 startDate: moment(),
-                endDate: moment().add(29, 'days'),
+                endDate: moment().add(1, 'days'),
                 minDate: '01/01/2012',
                 maxDate: '12/31/2016',
                 dateLimit: { days: 60 },
-                showDropdowns: true,
-                showWeekNumbers: true,
+                showDropdowns: false,
+                showWeekNumbers: false,
+                stickyMonths: true,
                 timePicker: false,
                 timePickerIncrement: 1,
                 timePicker12Hour: true,
@@ -47,7 +47,7 @@
                     'This Month': [moment().startOf('month'), moment().endOf('month')],
                     'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 },*/
-                opens: 'left',
+                opens: 'right',
                 drops: 'down',
                 buttonClasses: ['btn', 'btn-sm'],
                 applyClass: 'btn-primary',
@@ -59,33 +59,36 @@
                     fromLabel: 'From',
                     toLabel: 'To',
                     customRangeLabel: 'Custom',
-                    daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
-                    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    daysOfWeek: ['DI', 'LU', 'MA', 'ME', 'JA', 'VE', 'SA'],
+                    monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
                     firstDay: 1
                 }
             }, function(start, end, label) {
                 console.log(start.toISOString(), end.toISOString(), label);
-                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                $('#reportrange span').html(start.format('D MMM YYYY') + ' &nbsp&nbsp&nbsp&nbsp&nbsp ' + end.format('D MMM YYYY'));
                 $('#checkin_date').val(start.format('YYYY-MM-DD'));
                 $('#checkout_date').val(end.format('YYYY-MM-DD'));
                 var duration = moment.duration(end.diff(start));
                 var nights = Math.floor(duration.asDays());
-                $('#nights').val(nights);
+                $('.search_block_inner #nights .search_item_value p span').html(nights);
 
+            })
+
+            .bind('datepicker-open',function()
+            {
+                /* This event will be triggered before date range picker open animation */
+                console.log('before open');
             });
-
             // remove 1st th from .calendar-date
             var removeFirstTh = function(){
-                $(".daterangepicker .calendar.first  thead tr:first th:first").each(function(){$(this).hide()});
-                $(".daterangepicker .calendar.second  thead tr:first th:first").each(function(){$(this).hide()});
-                $(".daterangepicker .calendar .calendar-date .month").attr("colspan", "6");
-                $(".daterangepicker .calendar .table-condensed  thead .prev i").removeClass("fa fa-arrow-left icon icon-arrow-left glyphicon-arrow-left").addClass("glyphicon-chevron-left");
-                $(".daterangepicker .calendar .table-condensed  thead .next i").removeClass("fa fa-arrow-right icon icon-arrow-right glyphicon-arrow-right").addClass("glyphicon-chevron-right");
+//                $(".daterangepicker .calendar.first  thead tr:first th:first").each(function(){$(this).hide()});
+//                $(".daterangepicker .calendar.second  thead tr:first th:first").each(function(){$(this).hide()});
+//                $(".daterangepicker .calendar .calendar-date .month").attr("colspan", "6");
+                $(".daterangepicker .calendar .table-condensed  thead .prev i").removeClass("fa fa-arrow-left icon icon-arrow-left glyphicon-arrow-left").addClass("fa fa-angle-left");
+                $(".daterangepicker .calendar .table-condensed  thead .next i").removeClass("fa fa-arrow-right icon icon-arrow-right glyphicon-arrow-right").addClass("fa fa-angle-right");
             };
             $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
             $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
-
-
 
         });
     </script>
@@ -143,53 +146,48 @@
                 <img id="" class="svg ornament" src="../img/homepage/ornament_reservation.svg"/>
                 <form class="search_block_inner">
                     <div class="row">
-                        <div class="col-xs-4">
-                            <p class="form_placeholder">du</p>
+                        <div class="col-xs-8">
+                            <span class="form_placeholder">du</span>
                             <div class="search_item_value">
-                                <p>20 Juil 2016</p>
-                            </div>
-
-                            {{--<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">--}}
-                                {{--<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>--}}
-                                {{--<span></span> <b class="caret"></b>--}}
-                            {{--</div>--}}
-                        </div>
-                        <div class="col-xs-4">
-                            <p class="form_placeholder">au</p>
-                            <div class="search_item_value">
-                                <p>20 Juil 2016</p>
+                                <div class="custom_selectbox calendar">
+                                    <div id="reportrange" style="background: #fff; cursor: pointer; float: left; width: 100%">
+                                        {{--<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>--}}
+                                        <span style="float: left"></span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-4">
-                            <p class="form_placeholder">durée</p>
+                        <div class="col-xs-4" id="nights">
+                            <span class="form_placeholder">durée</span>
                             <div class="search_item_value">
-                                <p>8 nuites</p>
+                                <p><span>1</span> nuites</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-4">
-                            <p class="form_placeholder">adultes</p>
+                            <span class="form_placeholder">adultes</span>
                             <div class="search_item_value" id="adults_amount">
                                 <div class="quests_icn"></div>
                                 <div class="custom_selectbox">
                                     <span>0</span>
-                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-angle-down"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-4">
-                            <p class="form_placeholder">enfants</p>
+                            <span class="form_placeholder">enfants</span>
                             <div class="search_item_value" id="kids_amount">
                                 <div class="quests_icn"></div>
                                 <div class="custom_selectbox">
                                     <span>0</span>
-                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-angle-down"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-4">
-                            <p class="form_placeholder">code promotionnel</p>
+                            <span class="form_placeholder">code promotionnel</span>
                             <div class="search_item_value">
                                 <input type="number" placeholder="Code">
                             </div>
@@ -197,12 +195,99 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <p class="form_placeholder">age des enfants a la fin du séjour</p>
-                            <div class="search_item_value">
-                                <p>5 adults</p>
+                            <div class="custom_selectbox_content" id="kids_age_select">
+                                <h2>Indiquez l'âge</h2>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="row" id="kids_age_block">
+                        <div class="col-xs-12">
+                            <span class="form_placeholder">age des enfants a la fin du séjour</span>
+                            <ul>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                                <li class="search_item_value">
+                                    <div class="custom_selectbox">
+                                        <span>0</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="custom_selectbox_content" id="kids_age_select">
+                                <h2>Indiquez l'âge</h2>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                    <li>18</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-xs-8 col-xs-push-2">
                             <input type="submit" class="btn" value="Sauver votre choix">
@@ -240,16 +325,16 @@
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<br><br>--}}
-                            {{--<!--<div class="row">--}}
-                                {{--<div class="col-xs-6 date_of_coming">--}}
-                                    {{--<p>Date de debut</p>--}}
-                                    {{--<input type="date" name="in">--}}
-                                {{--</div>--}}
-                                {{--<div class="col-xs-6 date_of_leaving">--}}
-                                    {{--<p>Date de fin</p>--}}
-                                    {{--<input type="date" name="out">--}}
-                                {{--</div>--}}
-                            {{--</div>-->--}}
+                            <!--<div class="row">
+                                <div class="col-xs-6 date_of_coming">
+                                    <p>Date de debut</p>
+                                    <input type="date" name="in">
+                                </div>
+                                <div class="col-xs-6 date_of_leaving">
+                                    <p>Date de fin</p>
+                                    <input type="date" name="out">
+                                </div>
+                            </div>-->
                             {{--<div class="row">--}}
                                 {{--<div class="col-xs-6 num_of_adults">--}}
                                     {{--<p>Adultes</p>--}}
@@ -306,30 +391,30 @@
                                         {{--<option label="5">16</option>--}}
                                         {{--<option label="5">17</option>--}}
                                     {{--</select>--}}
-                                    {{--<!--<select name="age2">--}}
-                                        {{--<option label="0">0</option>--}}
-                                        {{--<option label="1">1</option>--}}
-                                        {{--<option label="2">2</option>--}}
-                                        {{--<option label="3">3</option>--}}
-                                        {{--<option label="4">4</option>--}}
-                                        {{--<option label="5">5</option>--}}
-                                    {{--</select>-->--}}
-                                    {{--<!--<select name="age3">--}}
-                                        {{--<option label="0">0</option>--}}
-                                        {{--<option label="1">1</option>--}}
-                                        {{--<option label="2">2</option>--}}
-                                        {{--<option label="3">3</option>--}}
-                                        {{--<option label="4">4</option>--}}
-                                        {{--<option label="5">5</option>--}}
-                                    {{--</select>--}}
-                                    {{--<select name="age4">--}}
-                                        {{--<option label="0">0</option>--}}
-                                        {{--<option label="1">1</option>--}}
-                                        {{--<option label="2">2</option>--}}
-                                        {{--<option label="3">3</option>--}}
-                                        {{--<option label="4">4</option>--}}
-                                        {{--<option label="5">5</option>--}}
-                                    {{--</select>-->--}}
+                                    <!--<select name="age2">
+                                        <option label="0">0</option>
+                                        <option label="1">1</option>
+                                        <option label="2">2</option>
+                                        <option label="3">3</option>
+                                        <option label="4">4</option>
+                                        <option label="5">5</option>
+                                    </select>-->
+                                    <!--<select name="age3">
+                                        <option label="0">0</option>
+                                        <option label="1">1</option>
+                                        <option label="2">2</option>
+                                        <option label="3">3</option>
+                                        <option label="4">4</option>
+                                        <option label="5">5</option>
+                                    </select>
+                                    <select name="age4">
+                                        <option label="0">0</option>
+                                        <option label="1">1</option>
+                                        <option label="2">2</option>
+                                        <option label="3">3</option>
+                                        <option label="4">4</option>
+                                        <option label="5">5</option>
+                                    </select>-->
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<div class="row">--}}
