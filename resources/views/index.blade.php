@@ -195,7 +195,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="custom_selectbox_content" id="kids_age_select">
+                            <div class="custom_selectbox_content" id="guests_amount_select">
                                 <h2>Indiquez l'âge</h2>
                                 <ul>
                                     <li>1</li>
