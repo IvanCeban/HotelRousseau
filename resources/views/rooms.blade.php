@@ -262,8 +262,8 @@
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>DOUBLE SUPÉRIEUR</h3>
-                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 adultes ou maximum 2 adultes et 2 enfants.</p>
+                                <h3>DOUBLE SUPERIOR</h3>
+                                <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 20m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
@@ -304,7 +304,7 @@
                             <div class="right_sidebar" id="triple_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>TRIPLE</h3>
-                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 personnes.</p>
+                                <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 23m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
