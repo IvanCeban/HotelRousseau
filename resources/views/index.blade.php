@@ -40,6 +40,7 @@
                 timePickerIncrement: 1,
                 timePicker12Hour: true,
                 /*ranges: {
+
                     'Today': [moment(), moment()],
                     'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
                     'Last 7 Days': [moment().subtract(6, 'days'), moment()],
@@ -137,6 +138,7 @@
          </div>
      </header>
     <!--header END-->
+
 
     <!--middle section START-->
     <section class="page_content">
