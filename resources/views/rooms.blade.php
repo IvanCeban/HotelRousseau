@@ -321,7 +321,6 @@
                                     <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
 
-
                                 <div id="img_carousel_triple" class="carousel slide" data-interval="false">
                                     <div class="carousel-inner">
                                         <div class="item active">
