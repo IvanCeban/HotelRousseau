@@ -167,6 +167,7 @@
          </section>
          {{--rooms type select END--}}
 
+
     <!--middle section START-->
     <section class="middle">
         <div class="main_container">
