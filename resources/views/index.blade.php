@@ -24,6 +24,10 @@
             $('#reportrange span').html(moment().format('D MMM YYYY') + '  &nbsp&nbsp&nbsp&nbsp&nbsp  ' + moment().add(1, 'days').format('D MMM YYYY'));
             $('#checkin_date').val(moment().format('YYYY-MM-DD'));
             $('#checkout_date').val(moment().add(1, 'days').format('YYYY-MM-DD'));
+
+            $('.search_block_inner .custom_selectbox.calendar input[name="checkin_date"]').val(moment().format('DD-MM-YYYY'));
+            $('.search_block_inner .custom_selectbox.calendar input[name="checkout_date"]').val(moment().add(1, 'days').format('DD-MM-YYYY'));
+
             $('.search_block_inner #nights .search_item_value p span').html('1');
 
             $('#reportrange').daterangepicker({
@@ -72,6 +76,8 @@
                 var duration = moment.duration(end.diff(start));
                 var nights = Math.floor(duration.asDays());
                 $('.search_block_inner #nights .search_item_value p span').html(nights);
+                $('.search_block_inner .custom_selectbox.calendar input[name="checkin_date"]').val(start.format('DD-MM-YYYY'));
+                $('.search_block_inner .custom_selectbox.calendar input[name="checkout_date"]').val(end.format('DD-MM-YYYY'));
 
             })
 
@@ -91,7 +97,7 @@
             };
             $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
             $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
-
+//            $('.search_block_inner .custom_selectbox.calendar input').val(start.format('D MMM YYYY'));
         });
     </script>
 @stop
@@ -159,6 +165,8 @@
                                         <span style="float: left"></span>
                                         <i class="fa fa-angle-down"></i>
                                     </div>
+                                    <input type="hidden" name="checkin_date" value="00.00.0000">
+                                    <input type="hidden" name="checkout_date" value="00.00.0000">
                                 </div>
                             </div>
                         </div>
@@ -176,6 +184,7 @@
                                 <div class="quests_icn"></div>
                                 <div class="custom_selectbox">
                                     <span>0</span>
+                                    <input type="hidden" name="adults_amount" value="0">
                                     <i class="fa fa-angle-down"></i>
                                 </div>
                             </div>
@@ -186,6 +195,7 @@
                                 <div class="quests_icn"></div>
                                 <div class="custom_selectbox">
                                     <span>0</span>
+                                    <input type="hidden" name="kids_amount" value="0">
                                     <i class="fa fa-angle-down"></i>
                                 </div>
                             </div>
@@ -221,42 +231,28 @@
                                 <li class="search_item_value">
                                     <div class="custom_selectbox">
                                         <span>0</span>
+                                        <input type="hidden" name="kids_age_1" value="0">
                                         <i class="fa fa-angle-down"></i>
                                     </div>
                                 </li>
                                 <li class="search_item_value">
                                     <div class="custom_selectbox">
                                         <span>0</span>
+                                        <input type="hidden" name="kids_age_2" value="0">
                                         <i class="fa fa-angle-down"></i>
                                     </div>
                                 </li>
                                 <li class="search_item_value">
                                     <div class="custom_selectbox">
                                         <span>0</span>
+                                        <input type="hidden" name="kids_age_3" value="0">
                                         <i class="fa fa-angle-down"></i>
                                     </div>
                                 </li>
                                 <li class="search_item_value">
                                     <div class="custom_selectbox">
                                         <span>0</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </div>
-                                </li>
-                                <li class="search_item_value">
-                                    <div class="custom_selectbox">
-                                        <span>0</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </div>
-                                </li>
-                                <li class="search_item_value">
-                                    <div class="custom_selectbox">
-                                        <span>0</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </div>
-                                </li>
-                                <li class="search_item_value">
-                                    <div class="custom_selectbox">
-                                        <span>0</span>
+                                        <input type="hidden" name="kids_age_4" value="0">
                                         <i class="fa fa-angle-down"></i>
                                     </div>
                                 </li>
