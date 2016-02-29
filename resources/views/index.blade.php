@@ -203,7 +203,7 @@
                         <div class="col-xs-4">
                             <span class="form_placeholder">code promotionnel</span>
                             <div class="search_item_value">
-                                <input type="number" placeholder="Code">
+                                <input type="number" name="promo_code" placeholder="Code" value="">
                             </div>
                         </div>
                     </div>
