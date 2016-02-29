@@ -64,22 +64,27 @@
                      <ul class="rooms_types_buttons">
                          <li class="room_type" id="single_classic">
                              <h5>Single classique</h5>
+                             {{--<a href="#">CHF 235.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/single_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_classic">
                              <h5>Double classique</h5>
+                             {{--<a href="#">CHF 265.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_superior">
                              <h5>Double Supérieure</h5>
+                             {{--<a href="#">CHF 295.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_superior_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="triple">
                              <h5>Triple</h5>
+                             {{--<a href="#">CHF 325.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/triple_img2.jpg" /></a>
                          </li>
                          <li class="room_type" id="apartment">
                              <h5>Appartement</h5>
+                             {{--<a href="#">CHF 590.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/appartement_img5.jpg" /></a>
                          </li>
                      </ul>
@@ -258,7 +263,7 @@
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>DOUBLE SUPÉRIEURE</h3>
-                                <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
+                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 adultes ou maximum 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 20m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
@@ -299,7 +304,7 @@
                             <div class="right_sidebar" id="triple_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>TRIPLE</h3>
-                                <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
+                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 personnes.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 23m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
