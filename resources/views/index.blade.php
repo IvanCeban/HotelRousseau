@@ -86,6 +86,7 @@
 //                $(".daterangepicker .calendar .calendar-date .month").attr("colspan", "6");
                 $(".daterangepicker .calendar .table-condensed  thead .prev i").removeClass("fa fa-arrow-left icon icon-arrow-left glyphicon-arrow-left").addClass("fa fa-angle-left");
                 $(".daterangepicker .calendar .table-condensed  thead .next i").removeClass("fa fa-arrow-right icon icon-arrow-right glyphicon-arrow-right").addClass("fa fa-angle-right");
+                $(".daterangepicker .ranges .range_inputs .applyBtn").html("Envoyer");
             };
             $('#reportrange').on("show.daterangepicker", function(){ removeFirstTh(); });
             $('.daterangepicker').bind("DOMSubtreeModified",function(){ removeFirstTh(); });
@@ -197,7 +198,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="custom_selectbox_content" id="guests_amount_select">
-                                <h2>Indiquez l'âge</h2>
+                                <h2>Nombre d'adultes</h2>
                                 <ul>
                                     <li>1</li>
                                     <li>2</li>
@@ -213,7 +214,7 @@
                     </div>
                     <div class="row" id="kids_age_block">
                         <div class="col-xs-12">
-                            <span class="form_placeholder">age des enfants a la fin du séjour</span>
+                            <span class="form_placeholder">âge des enfants a la fin du séjour</span>
                             <ul>
                                 <li class="search_item_value">
                                     <div class="custom_selectbox">
