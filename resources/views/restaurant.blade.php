@@ -109,7 +109,7 @@
                                     <br>
                                     <p>Tous nos plats sont à chf 20.- y compris notre plat du jours.</p>
                                     <br>
-                                    <p>Vous saurez apprécier le parcours dégustatif aussi bien pour le service du déjeuner que pour le serviced du dîner.</p>
+                                    <p>Vous saurez apprécier le parcours dégustatif aussi bien pour le service du déjeuner que pour le service du dîner.</p>
                                     {{--<ul class="our_specials">--}}
                                         {{--<li><span> - hamburger</span></li>--}}
                                         {{--<li><span> - flammekueche</span></li>--}}
