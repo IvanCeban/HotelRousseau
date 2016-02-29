@@ -46,6 +46,7 @@ class PagesController extends Controller {
 
         if (Request::isMethod('post'))
         {
+            dd(Request::all());
             $order->checkin_date = Request::input('checkin_date');
             $order->checkout_date = Request::input('checkout_date');
             $order->nights = Request::input('nights');

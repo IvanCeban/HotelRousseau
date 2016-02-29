@@ -144,7 +144,8 @@
                 <img id="" class="svg ornament" src="../img/homepage/ornament_reservation.svg"/>
                 <h1>réservation en ligne</h1>
                 <img id="" class="svg ornament" src="../img/homepage/ornament_reservation.svg"/>
-                <form class="search_block_inner">
+                <form class="search_block_inner" action="hotel" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="row">
                         <div class="col-xs-8">
                             <span class="form_placeholder">du</span>
