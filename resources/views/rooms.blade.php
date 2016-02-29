@@ -63,17 +63,17 @@
                  <div class="col-xs-12">
                      <ul class="rooms_types_buttons">
                          <li class="room_type" id="single_classic">
-                             <h5>Single classique</h5>
+                             <h5>Single classic</h5>
                              {{--<a href="#">CHF 235.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/single_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_classic">
-                             <h5>Double classique</h5>
+                             <h5>Double classic</h5>
                              {{--<a href="#">CHF 265.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_classic_img1.jpg" /></a>
                          </li>
                          <li class="room_type" id="double_superior">
-                             <h5>Double Supérieure</h5>
+                             <h5>Double Supérieur</h5>
                              {{--<a href="#">CHF 295.-</a>--}}
                              <a href="#"><img src="/img/rooms/gallery/double_superior_img1.jpg" /></a>
                          </li>
@@ -171,7 +171,7 @@
 
                             <div class="right_sidebar" id="single_classic_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>SINGLE CLASSIQUE</h3>
+                                <h3>SINGLE CLASSIC</h3>
                                 <p>Idéale pour un séjour de courte durée, pour une personne.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 13m<sup>2</sup></li>
@@ -208,7 +208,7 @@
 
                             <div class="right_sidebar" id="double_classic_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>DOUBLE CLASSIQUE</h3>
+                                <h3>DOUBLE CLASSIC</h3>
                                 <p>Idéale pour une ou deux personnes.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 15m<sup>2</sup> à 18m<sup>2</sup></li>
@@ -262,8 +262,8 @@
 
                             <div class="right_sidebar" id="double_superior_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>DOUBLE SUPÉRIEURE</h3>
-                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 adultes ou maximum 2 adultes et 2 enfants.</p>
+                                <h3>DOUBLE SUPERIOR</h3>
+                                <p>Chambre spacieuse pouvant accueillir 2 adultes et 2 enfants.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 20m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
@@ -304,7 +304,7 @@
                             <div class="right_sidebar" id="triple_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>TRIPLE</h3>
-                                <p>Chambre spacieuse pouvant accueillir de 1 à 3 personnes.</p>
+                                <p>Chambre spacieuse pouvant accueillir de 1 à 4 personnes.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_surface"> Chambre de 23m<sup>2</sup></li>
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
@@ -320,6 +320,7 @@
                                     <li class="room_icon_bath"> Salle de bain avec douche</li>
                                     <li class="room_icon_hair_dryer"> Sèche cheveux</li>
                                 </ul>
+
 
                                 <div id="img_carousel_triple" class="carousel slide" data-interval="false">
                                     <div class="carousel-inner">
@@ -340,7 +341,7 @@
 
                             <div class="right_sidebar" id="apartment_right_sidebar">
                                 <div class="page_icon"></div>
-                                <h3>APPARTEMENT</h3>
+                                <h3>APPARTMENT</h3>
                                 <p>Il est composé de deux chambres avec chacune leur salle de bain et d'un hall avec cuisine équipée.</p>
                                 <ul class="rooms_options_list">
                                     <li class="room_icon_mattress"> Matelas confortable de 28 cm d’épaisseur</li>
