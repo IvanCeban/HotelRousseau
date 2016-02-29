@@ -24,6 +24,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('wellness_center', 'PagesController@wellness_center');
     Route::get('contact', 'PagesController@contact');
     Route::post('contact', 'PagesController@contact');
+    Route::post('test', 'PagesController@test');
 
     Route::post('update-cart', 'CartController@updateCart');
 });
