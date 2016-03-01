@@ -136,6 +136,7 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Broadcasting\BroadcastServiceProvider',
+		'Collective\Html\HtmlServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -198,6 +199,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'LaravelLocalization'   => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
         'Cart'                  => 'Gloudemans\Shoppingcart\Facades\Cart',
+        'Form'                  => 'Collective\Html\FormFacade',
+        'Html'                  => 'Collective\Html\HtmlFacade',
 
 	],
 

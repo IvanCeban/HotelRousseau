@@ -19,6 +19,8 @@
     <link href="{{ asset('/admins/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('/admins/css/style-responsive.css') }}" rel="stylesheet" />
 
+    <link href="{{ asset('/admins/css/sweetalert.css') }}" rel="stylesheet" />
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
       <script src="{{ asset('/admins/js/html5shiv.js') }}"></script>
@@ -41,23 +43,12 @@
               <div class="horizontal-menu navbar-collapse collapse ">
                   <ul class="nav navbar-nav">
                       <li class="@if(Request::url() === url('admin')) active @endif"><a href="{{url('admin')}}">Dashboard</a></li>
-                      <li class="@if(Request::url() === url('admin/roomsapp')) active @endif"><a href="{{url('admin/roomsapp')}}">Rooms</a></li>
+                      <li class="@if(Request::url() === url('admin/room-types')) active @endif"><a href="{{route('admin.room-types.index')}}">Room types</a></li>
+                      <li class="@if(Request::url() === url('admin/rooms')) active @endif"><a href="{{route('admin.rooms.index')}}">Rooms</a></li>
+                      <li class="@if(Request::url() === url('admin/reservations')) active @endif"><a href="{{route('admin.reservations.index')}}">Reservations</a></li>
+                      {{--<li class="@if(Request::url() === url('admin/roomsapp')) active @endif"><a href="{{url('admin/roomsapp')}}">Rooms</a></li>
                       <li class="@if(Request::url() === url('admin/roomtypesapp')) active @endif"><a href="{{url('admin/roomtypesapp')}}">Room Types</a></li>
-                      <li class="@if(Request::url() === url('admin/reservationsapp')) active @endif"><a href="{{url('admin/reservationsapp')}}">Reservations</a></li>
-                      <li><a href="{{url('admin/rooms')}}">Vouchers</a></li>
-                      <li><a href="{{url('admin/rooms')}}">Special offers</a></li>
-                      <li class="dropdown">
-                          <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">Extra <b class=" fa fa-angle-down"></b></a>
-                          <ul class="dropdown-menu">
-                              <li><a href="blank.html">Blank Page</a></li>
-                              <li><a href="boxed_page.html">Boxed Page</a></li>
-                              <li><a href="profile.html">Profile</a></li>
-                              <li><a href="invoice.html">Invoice</a></li>
-                              <li><a href="search_result.html">Search Result</a></li>
-                              <li><a href="404.html">404 Error Page</a></li>
-                              <li><a href="500.html">500 Error Page</a></li>
-                          </ul>
-                      </li>
+                      <li class="@if(Request::url() === url('admin/reservationsapp')) active @endif"><a href="{{url('admin/reservationsapp')}}">Reservations</a></li>--}}
                   </ul>
 
               </div>
@@ -94,9 +85,10 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-
+          <section class="wrapper">
+              @include('backend.partials.alerts')
               @yield('content')
-
+          </section>
       </section>
       <!--main content end-->
       <!--footer start-->
@@ -126,12 +118,31 @@
 
     <!--common script for all pages-->
     <script src="{{ asset('/admins/js/common-scripts.js') }}"></script>
+    <script src="{{ asset('/admins/js/gritter.js') }}" type="text/javascript"></script>
+
+    <script src="{{ asset('/admins/js/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('/admins/js/helpers.js') }}"></script>
 
     <!--AngularJS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="{{ asset('/admins/js/angular/ui-bootstrap-0.12.1.min.js') }}"></script>
     <script src="{{ asset('/admins/js/angular/ui-bootstrap-tpls-0.12.1.js') }}"></script>
     @yield('scripts')
+
+    @if (session('success.message'))
+        <script>
+            $(function () {
+                showMessage("{!! addcslashes(session('success.message'), '"') !!}", 'success');
+            });
+        </script>
+    @endif
+    @if (session('error.message'))
+        <script>
+            $(function () {
+                showMessage("{!! addcslashes(session('error'), '"') !!}", 'error');
+            });
+        </script>
+    @endif
 
 </body>
 </html>

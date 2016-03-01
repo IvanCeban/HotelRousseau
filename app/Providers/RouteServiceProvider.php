@@ -22,6 +22,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	public function boot(Router $router)
 	{
+		$router->model('room_types', 'App\RoomType');
 		parent::boot($router);
 
 		//

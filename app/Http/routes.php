@@ -33,13 +33,10 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('admin', 'Admin\AdminController@index');
+//Route::get('admin', 'Admin\AdminController@index');
 
-Route::get('admin/profileapp', 'Admin\AdminController@profile');
-Route::post('admin/profile/photo', 'Admin\ProfileController@uploadPhoto');
-Route::resource('admin/profile', 'Admin\ProfileController');
 
-Route::get('admin/roomsapp','Admin\AdminController@rooms');
+/*Route::get('admin/roomsapp','Admin\AdminController@rooms');
 Route::get('admin/room/photos/{id}', 'Admin\RoomsController@getPhotos');
 Route::post('admin/room/photos', 'Admin\RoomsController@uploadPhotos');
 Route::resource('admin/rooms', 'Admin\RoomsController');
@@ -49,4 +46,19 @@ Route::resource('admin/roomtypes', 'Admin\RoomTypesController');
 
 
 Route::get('admin/reservationsapp','Admin\AdminController@reservations');
-Route::resource('admin/reservations', 'Admin\ReservationsController');
+Route::resource('admin/reservations', 'Admin\ReservationsController');*/
+
+
+
+Route::get('admin/profileapp', 'Admin\AdminController@profile');
+Route::post('admin/profile/photo', 'Admin\ProfileController@uploadPhoto');
+Route::resource('admin/profile', 'Admin\ProfileController');
+## Admin Backend
+Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Backend'], function(){
+
+    Route::get('/', 'BackendController@index');
+    Route::resource('room-types', 'RoomTypesController', ['except' => 'show']);
+    Route::resource('rooms', 'RoomsController', ['except' => 'show']);
+    Route::resource('reservations', 'ReservationsController');
+
+});
