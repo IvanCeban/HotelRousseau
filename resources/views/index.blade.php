@@ -132,6 +132,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!--header END-->
 
@@ -170,138 +171,7 @@
 
 
             <!--middle section START-->
-    <section class="middle">
-        <div class="main_container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="search_block closed">
-                        <div class="search_block_header">
-                            <h1>Reservation en ligne</h1>
-                            <img src="/img/homepage/search_block_arrow.png">
-                        </div>
-                        <div class="search_block_line"></div>
-                        <form name="registrationForm" novalidate method="post" action="{{url('hotel')}}">
-                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                            <div class="row">
-                                <input type="hidden" name="checkin_date" id="checkin_date" value="">
-                                <input type="hidden" name="checkout_date" id="checkout_date" value="">
-                                <input type="hidden" name="nights" id="nights" value="">
-                                <div class="col-md-12">
-                                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                        <span></span> <b class="caret"></b>
-                                    </div>
-                                </div>
-                            </div>
-                            <br><br>
-                            <!--<div class="row">
-                                <div class="col-xs-6 date_of_coming">
-                                    <p>Date de debut</p>
-                                    <input type="date" name="in">
-                                </div>
-                                <div class="col-xs-6 date_of_leaving">
-                                    <p>Date de fin</p>
-                                    <input type="date" name="out">
-                                </div>
-                            </div>-->
-                            <div class="row">
-                                <div class="col-xs-6 num_of_adults">
-                                    <p>Adultes</p>
-                                    <select name="adults">
-                                        <option>1</option>
-                                        <option selected>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 num_of_kids">
-                                    <p>Enfants</p>
-                                    <select name="kids" id="kids">
-                                        <option value="0">0</option>
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="search_block_separator_line"></div>
-                            <div class="row">
-                                <div class="col-xs-12 age_of_kids">
-                                    <p>Age des enfants a la fin du sejur</p>
-                                    <select class="ages" name="age[0]">
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                        <option label="5">6</option>
-                                        <option label="5">7</option>
-                                        <option label="5">8</option>
-                                        <option label="5">9</option>
-                                        <option label="5">10</option>
-                                        <option label="5">11</option>
-                                        <option label="5">12</option>
-                                        <option label="5">13</option>
-                                        <option label="5">14</option>
-                                        <option label="5">15</option>
-                                        <option label="5">16</option>
-                                        <option label="5">17</option>
-                                    </select>
-                                    <!--<select name="age2">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>-->
-                                    <!--<select name="age3">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>
-                                    <select name="age4">
-                                        <option label="0">0</option>
-                                        <option label="1">1</option>
-                                        <option label="2">2</option>
-                                        <option label="3">3</option>
-                                        <option label="4">4</option>
-                                        <option label="5">5</option>
-                                    </select>-->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <input type="text" name="promo_code" placeholder="Code promotionel" class="search_block_promo_code">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <button type="submit" class="search_block_results_button">Verifier les disponibilies</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--middle section END-->
 
     <!--offers and news START-->
@@ -459,6 +329,437 @@
         <div class="main_container">
             <div class="row">
                 <div class="col-xs-12">
+                    <form name="formPicker" id="formPicker" action="https://sb.ghix.net/default.aspx" method="get" target="_blank">
+                        <input type="hidden" name="WhatIsChanged" id="WhatIsChanged" value="1">
+                        <input type="hidden" name="View" value="Superbooking1">
+                        <input type="hidden" name="HotelID" id="HotelID" value="2986959">
+                        <input type="hidden" name="Language" value="1">
+                        <input type="hidden" name="Template" value="Template">
+
+
+                        <table border="0" cellpadding="3" cellspacing="3" align="center">
+                            <tbody><tr>
+                                <td nowrap="nowrap">Arrival:</td>
+                                <td nowrap="nowrap">
+                                    <input style="background-color:white;" onclick="displayDatePicker('tdate', false, 'dmy', '.');" type="text" readonly="" size="13" id="tdate" name="tdate" value="11.04.2016">
+                                    <script type="text/javascript">
+                                        var date = new Date();var d  = date.getDate(); var day = (d < 10) ? '0' + d : d; var m = date.getMonth() + 1; var month = (m < 10) ? '0' + m : m; var yy = date.getYear(); var year = (yy < 1000) ? yy + 1900 : yy; var currDate = day + "." + month + "." + year;
+                                        document.getElementById('tdate').value = currDate;
+                                    </script>
+                                </td>
+                                <td align="right" nowrap="nowrap">Nights:</td>
+                                <td>
+                                    <select name="tnights">
+                                        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
+                                    </select>
+                                </td>
+                                <td width="110" align="center"><input type="submit" value="Book Now"></td>
+                            </tr>
+                            </tbody></table>
+                    </form>
+                    <style>
+                        body {
+                            font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+                            font-size: .8em;
+                        }
+                        .dpDiv {
+                        }
+                        .dpTable {
+                            font-family: Tahoma, Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            text-align: center;
+                            color: #505050;
+                            background-color: #ece9d8;
+                            border: 1px solid #AAAAAA;
+                        }
+                        .dpTR {
+                        }
+                        .dpTitleTR {
+                        }
+                        .dpDayTR {
+                        }
+                        .dpTodayButtonTR {
+                        }
+                        .dpTD {
+                            border: 1px solid #ece9d8;
+                        }
+                        .dpDayHighlightTD {
+                            background-color: #CCCCCC;
+                            border: 1px solid #AAAAAA;
+                        }
+                        .dpTDHover {
+                            background-color: #aca998;
+                            border: 1px solid #888888;
+                            cursor: pointer;
+                            color: red;
+                        }
+                        .dpTitleTD {
+                        }
+                        .dpButtonTD {
+                        }
+                        .dpTodayButtonTD {
+                        }
+                        .dpDayTD {
+                            background-color: #CCCCCC;
+                            border: 1px solid #AAAAAA;
+                            color: white;
+                        }
+                        .dpTitleText {
+                            font-size: 12px;
+                            color: gray;
+                            font-weight: bold;
+                        }
+                        .dpDayHighlight {
+                            color: 4060ff;
+                            font-weight: bold;
+                        }
+                        .dpButton {
+                            font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+                            font-size: 10px;
+                            color: gray;
+                            background: #d8e8ff;
+                            font-weight: bold;
+                            padding: 0px;
+                        }
+                        .dpTodayButton {
+                            font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+                            font-size: 10px;
+                            color: gray;
+                            background: #d8e8ff;
+                            font-weight: bold;
+                        }
+                    </style>
+
+                    <script type="text/javascript">
+                        var datePickerDivID = "datepicker";
+                        var iFrameDivID = "datepickeriframe";
+
+                        var dayArrayShort = new Array('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa');
+                        var dayArrayMed = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+                        var dayArrayLong = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+                        var monthArrayShort = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+                        var monthArrayMed = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec');
+                        var monthArrayLong = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+
+                        var defaultDateSeparator = ".";
+                        var defaultDateFormat = "dmy";
+                        var dateSeparator = defaultDateSeparator;
+                        var dateFormat = defaultDateFormat;
+
+                        // for current date
+
+                        function displayDatePicker(dateFieldName, displayBelowThisObject, dtFormat, dtSep)
+                        {
+                            var targetDateField = document.getElementsByName (dateFieldName).item(0);
+
+                            if (!displayBelowThisObject)
+                                displayBelowThisObject = targetDateField;
+
+                            if (dtSep)
+                                dateSeparator = dtSep;
+                            else
+                                dateSeparator = defaultDateSeparator;
+
+                            if (dtFormat)
+                                dateFormat = dtFormat;
+                            else
+                                dateFormat = defaultDateFormat;
+
+                            var x = displayBelowThisObject.offsetLeft;
+                            var y = displayBelowThisObject.offsetTop + displayBelowThisObject.offsetHeight ;
+
+                            var parent = displayBelowThisObject;
+                            while (parent.offsetParent) {
+                                parent = parent.offsetParent;
+                                x += parent.offsetLeft;
+                                y += parent.offsetTop ;
+                            }
+
+                            drawDatePicker(targetDateField, x, y);
+                        }
+
+                        function drawDatePicker(targetDateField, x, y)
+                        {
+                            var dt = getFieldDate(targetDateField.value );
+
+                            if (!document.getElementById(datePickerDivID)) {
+                                var newNode = document.createElement("div");
+                                newNode.setAttribute("id", datePickerDivID);
+                                newNode.setAttribute("class", "dpDiv");
+                                newNode.setAttribute("style", "visibility: hidden;");
+                                document.body.appendChild(newNode);
+                            }
+
+                            var pickerDiv = document.getElementById(datePickerDivID);
+                            pickerDiv.style.position = "absolute";
+                            pickerDiv.style.left = x + "px";
+                            pickerDiv.style.top = y + "px";
+                            pickerDiv.style.visibility = (pickerDiv.style.visibility == "visible" ? "hidden" : "visible");
+                            pickerDiv.style.display = (pickerDiv.style.display == "block" ? "none" : "block");
+                            pickerDiv.style.zIndex = 10000;
+
+                            refreshDatePicker(targetDateField.name, dt.getFullYear(), dt.getMonth(), dt.getDate());
+                        }
+
+                        function refreshDatePicker(dateFieldName, year, month, day)
+                        {
+                            var thisDay = new Date();
+
+                            if ((month >= 0) && (year > 0)) {
+                                thisDay = new Date(year, month, 1);
+                            } else {
+                                day = thisDay.getDate();
+                                thisDay.setDate(1);
+                            }
+
+                            var crlf = "\r\n";
+                            var TABLE = "<table cols=7 class='dpTable'>" + crlf;
+                            var xTABLE = "</table>" + crlf;
+                            var TR = "<tr class='dpTR'>";
+                            var TR_title = "<tr class='dpTitleTR'>";
+                            var TR_days = "<tr class='dpDayTR'>";
+                            var TR_todaybutton = "<tr class='dpTodayButtonTR'>";
+                            var xTR = "</tr>" + crlf;
+                            var TD = "<td class='dpTD' onMouseOut='this.className=\"dpTD\";' onMouseOver=' this.className=\"dpTDHover\";' ";
+                            var TD_title = "<td colspan=5 class='dpTitleTD'>";
+                            var TD_buttons = "<td class='dpButtonTD'>";
+                            var TD_todaybutton = "<td colspan=7 class='dpTodayButtonTD'>";
+                            var TD_days = "<td class='dpDayTD'>";
+                            var TD_selected = "<td class='dpDayHighlightTD' onMouseOut='this.className=\"dpDayHighlightTD\";' onMouseOver='this.className=\"dpTDHover\";' ";
+                            var xTD = "</td>" + crlf;
+                            var DIV_title = "<div class='dpTitleText'>";
+                            var DIV_selected = "<div class='dpDayHighlight'>";
+                            var xDIV = "</div>";
+
+                            var html = TABLE;
+
+                            html += TR_title;
+                            html += TD_buttons + getButtonCode(dateFieldName, thisDay, -1, "&lt;") + xTD;
+                            html += TD_title + DIV_title + monthArrayLong[ thisDay.getMonth()] + " " + thisDay.getFullYear() + xDIV + xTD;
+                            html += TD_buttons + getButtonCode(dateFieldName, thisDay, 1, "&gt;") + xTD;
+                            html += xTR;
+
+                            html += TR_days;
+                            for(i = 0; i < dayArrayShort.length; i++)
+                                html += TD_days + dayArrayShort[i] + xTD;
+                            html += xTR;
+
+                            html += TR;
+
+                            for (i = 0; i < thisDay.getDay(); i++)
+                                html += TD + "&nbsp;" + xTD;
+
+                            do {
+                                dayNum = thisDay.getDate();
+                                TD_onclick = " onclick=\"updateDateField('" + dateFieldName + "', '" + getDateString(thisDay) + "');\">";
+
+                                if (dayNum == day)
+                                    html += TD_selected + TD_onclick + DIV_selected + dayNum + xDIV + xTD;
+                                else
+                                    html += TD + TD_onclick + dayNum + xTD;
+
+                                if (thisDay.getDay() == 6)
+                                    html += xTR + TR;
+
+                                thisDay.setDate(thisDay.getDate() + 1);
+                            } while (thisDay.getDate() > 1)
+
+                            if (thisDay.getDay() > 0) {
+                                for (i = 6; i > thisDay.getDay(); i--)
+                                    html += TD + "&nbsp;" + xTD;
+                            }
+                            html += xTR;
+
+                            var today = new Date();
+                            var todayString = "Today is " + dayArrayMed[today.getDay()] + ", " + monthArrayMed[ today.getMonth()] + " " + today.getDate();
+                            html += TR_todaybutton + TD_todaybutton;
+                            html += "<button class='dpTodayButton' onClick='refreshDatePicker(\"" + dateFieldName + "\");'>this month</button> ";
+                            html += "<button class='dpTodayButton' onClick='updateDateField(\"" + dateFieldName + "\");'>close</button>";
+                            html += xTD + xTR;
+
+                            html += xTABLE;
+
+                            document.getElementById(datePickerDivID).innerHTML = html;
+                            adjustiFrame();
+                        }
+
+                        function getButtonCode(dateFieldName, dateVal, adjust, label)
+                        {
+                            var newMonth = (dateVal.getMonth () + adjust) % 12;
+                            var newYear = dateVal.getFullYear() + parseInt((dateVal.getMonth() + adjust) / 12);
+                            if (newMonth < 0) {
+                                newMonth += 12;
+                                newYear += -1;
+                            }
+
+                            return "<button class='dpButton' onClick='refreshDatePicker(\"" + dateFieldName + "\", " + newYear + ", " + newMonth + ");'>" + label + "</button>";
+                        }
+
+                        function getDateString(dateVal)
+                        {
+                            var dayString = "00" + dateVal.getDate();
+                            var monthString = "00" + (dateVal.getMonth()+1);
+                            dayString = dayString.substring(dayString.length - 2);
+                            monthString = monthString.substring(monthString.length - 2);
+
+                            switch (dateFormat) {
+                                case "dmy" :
+                                    return dayString + dateSeparator + monthString + dateSeparator + dateVal.getFullYear();
+                                case "ymd" :
+                                    return dateVal.getFullYear() + dateSeparator + monthString + dateSeparator + dayString;
+                                case "mdy" :
+                                default :
+                                    return monthString + dateSeparator + dayString + dateSeparator + dateVal.getFullYear();
+                            }
+                        }
+
+                        function getFieldDate(dateString)
+                        {
+                            var dateVal;
+                            var dArray;
+                            var d, m, y;
+
+                            try {
+                                dArray = splitDateString(dateString);
+                                if (dArray) {
+                                    switch (dateFormat) {
+                                        case "dmy" :
+                                            d = parseInt(dArray[0], 10);
+                                            m = parseInt(dArray[1], 10) - 1;
+                                            y = parseInt(dArray[2], 10);
+                                            break;
+                                        case "ymd" :
+                                            d = parseInt(dArray[2], 10);
+                                            m = parseInt(dArray[1], 10) - 1;
+                                            y = parseInt(dArray[0], 10);
+                                            break;
+                                        case "mdy" :
+                                        default :
+                                            d = parseInt(dArray[1], 10);
+                                            m = parseInt(dArray[0], 10) - 1;
+                                            y = parseInt(dArray[2], 10);
+                                            break;
+                                    }
+                                    dateVal = new Date(y, m, d);
+                                } else if (dateString) {
+                                    dateVal = new Date(dateString);
+                                } else {
+                                    dateVal = new Date();
+                                }
+                            } catch(e) {
+                                dateVal = new Date();
+                            }
+
+                            return dateVal;
+                        }
+
+
+                        function splitDateString(dateString)
+                        {
+                            var dArray;
+                            if (dateString.indexOf("/") >= 0)
+                                dArray = dateString.split("/");
+                            else if (dateString.indexOf(".") >= 0)
+                                dArray = dateString.split(".");
+                            else if (dateString.indexOf("-") >= 0)
+                                dArray = dateString.split("-");
+                            else if (dateString.indexOf("\\") >= 0)
+                                dArray = dateString.split("\\");
+                            else
+                                dArray = false;
+
+                            return dArray;
+                        }
+
+                        /**
+                         Update the field with the given dateFieldName with the dateString that has been passed,
+                         and hide the datepicker. If no dateString is passed, just close the datepicker without
+                         changing the field value.
+
+                         Also, if the page developer has defined a function called datePickerClosed anywhere on
+                         the page or in an imported library, we will attempt to run that function with the updated
+                         field as a parameter. This can be used for such things as date validation, setting default
+                         values for related fields, etc. For example, you might have a function like this to validate
+                         a start date field:
+
+                         function datePickerClosed(dateField)
+                         {
+                           var dateObj = getFieldDate(dateField.value);
+                           var today = new Date();
+                           today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+                           if (dateField.name == "StartDate") {
+                             if (dateObj < today) {
+                               // if the date is before today, alert the user and display the datepicker again
+                               alert("Please enter a date that is today or later");
+                               dateField.value = "";
+                               document.getElementById(datePickerDivID).style.visibility = "visible";
+                               adjustiFrame();
+                             } else {
+                               // if the date is okay, set the EndDate field to 7 days after the StartDate
+                               dateObj.setTime(dateObj.getTime() + (7 * 24 * 60 * 60 * 1000));
+                               var endDateField = document.getElementsByName ("EndDate").item(0);
+                               endDateField.value = getDateString(dateObj);
+                             }
+                           }
+                         }
+
+                         */
+                        function updateDateField(dateFieldName, dateString)
+                        {
+                            var targetDateField = document.getElementsByName (dateFieldName).item(0);
+                            if (dateString)
+                                targetDateField.value = dateString;
+
+                            var pickerDiv = document.getElementById(datePickerDivID);
+                            pickerDiv.style.visibility = "hidden";
+                            pickerDiv.style.display = "none";
+
+                            adjustiFrame();
+                            targetDateField.focus();
+
+                            if ((dateString) && (typeof(datePickerClosed) == "function"))
+                                datePickerClosed(targetDateField);
+                        }
+
+                        function adjustiFrame(pickerDiv, iFrameDiv)
+                        {
+                            var is_opera = (navigator.userAgent.toLowerCase().indexOf("opera") != -1);
+                            if (is_opera)
+                                return;
+
+                            try {
+                                if (!document.getElementById(iFrameDivID)) {
+                                    var newNode = document.createElement("iFrame");
+                                    newNode.setAttribute("id", iFrameDivID);
+                                    newNode.setAttribute("src", "javascript:false;");
+                                    newNode.setAttribute("scrolling", "no");
+                                    newNode.setAttribute ("frameborder", "0");
+                                    document.body.appendChild(newNode);
+                                }
+
+                                if (!pickerDiv)
+                                    pickerDiv = document.getElementById(datePickerDivID);
+                                if (!iFrameDiv)
+                                    iFrameDiv = document.getElementById(iFrameDivID);
+
+                                try {
+                                    iFrameDiv.style.position = "absolute";
+                                    iFrameDiv.style.width = pickerDiv.offsetWidth;
+                                    iFrameDiv.style.height = pickerDiv.offsetHeight ;
+                                    iFrameDiv.style.top = pickerDiv.style.top;
+                                    iFrameDiv.style.left = pickerDiv.style.left;
+                                    iFrameDiv.style.zIndex = pickerDiv.style.zIndex - 1;
+                                    iFrameDiv.style.visibility = pickerDiv.style.visibility ;
+                                    iFrameDiv.style.display = pickerDiv.style.display;
+                                } catch(e) {
+                                }
+
+                            } catch (ee) {
+                            }
+
+                        }
+                    </script>
                     <ul>
                         <li class="copyright">&copy; 2015 Hotel Rousseau</li>
                         <!--<li><a href="#"><img src="/img/header_and_footer_links_seperator.png"> Plan du site</a></li>-->
