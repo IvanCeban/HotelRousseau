@@ -181,7 +181,7 @@
                     <input type="hidden" name="WhatIsChanged" id="WhatIsChanged" value="1">
                     <input type="hidden" name="View" value="Superbooking1">
                     <input type="hidden" name="HotelID" id="HotelID" value="2986959">
-                    <input type="hidden" name="Language" value="1">
+                    <input type="hidden" name="Language" value="4">
                     <input type="hidden" name="Template" value="Template">
 
 
