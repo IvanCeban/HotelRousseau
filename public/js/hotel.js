@@ -22,10 +22,10 @@ jQuery(document).ready(function($){
 
 
 
-    var offset = $('.sidebar-scroll').offset().top;
-    if($(window).scrollTop() > offset){
-        $('.sidebar-scroll').addClass('fixed');
-    }
+    // var offset = $('.sidebar-scroll').offset().top;
+    // if($(window).scrollTop() > offset){
+    //     $('.sidebar-scroll').addClass('fixed');
+    // }
 
 
     $(window).on('scroll', function() {

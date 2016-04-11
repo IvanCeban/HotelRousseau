@@ -14,16 +14,16 @@ body {
 }
 .page_content .search_block .ornament{
     float: left;
-    width: 60px;
+    width: 55px;
     height: 16px;
     margin: 5px 10px;
 }
 .page_content .search_block h1{
     float: left;
-    margin: 0 6px;
+    margin: 0 4px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 23px;
     cursor: pointer;
     color: #3e312a;
 }
@@ -32,7 +32,7 @@ body {
     display: none;
     background: #ffffff;
     clear: both;
-    padding: 20px 30px;
+    padding: 20px 30px 13px;
     margin: 43px -42px 0;
 }
 .page_content .search_block .search_block_inner .form_placeholder {
@@ -111,9 +111,115 @@ body {
     font-size: 20px;
     padding: 0;
 }
-.page_content .search_block .search_block_inner .btn {
-    margin-top: 20px;
+.page_content .search_block .search_block_inner table td {
+    text-align: left;
+    padding-right: 10px;
 }
+.page_content .search_block .search_block_inner table td:last-child {
+    padding-right: 0;
+}
+.page_content .search_block .search_block_inner .selectboxit-container {
+    top: -9px;
+}
+.page_content .search_block .search_block_inner .selectboxit-container .selectboxit-selected{
+    background-color: rgba(56, 186, 212, 0.50);
+}
+.page_content .search_block .search_block_inner .selectboxit-container .selectboxit-selected a{
+    color: #ffffff;
+}
+.page_content .search_block .search_block_inner .selectboxit-container .selectboxit-options a,
+.page_content .search_block .search_block_inner .selectboxit-container .selectboxit span{
+    font-size: 17px!important;
+    font-family: open_sans_regular;
+}
+
+.page_content .search_block .search_block_inner .search_block_calendar {
+    cursor: pointer;
+    font-size: 17px;
+    font-family: open_sans_regular;
+}
+.page_content .search_block .search_block_inner .search_block_label {
+    text-transform: uppercase;
+    font: 12px open_sans_bold;
+    color: #3e312a;
+    opacity: 0.5;
+}
+.page_content .search_block .search_block_inner input[type="submit"].btn {
+    position: relative;
+    top: -2px;
+}
+#datepicker .dpTable {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #3e312a;
+    -moz-box-shadow: 0 0 3px #3e312a;
+    box-shadow: 0 0 3px #3e312a;
+    border: none;
+}
+#datepicker .dpTable .dpTitleTD{
+    vertical-align: middle;
+}
+#datepicker .dpTable .dpTitleText{
+    text-transform: uppercase;
+    font: 14px open_sans_bold;
+    color: #3e312a;
+    opacity: 0.5;
+}
+#datepicker .dpTable .dpButton{
+    background: none;
+    width: 100%;
+}
+#datepicker .dpTable .dpDayTR td.dpDayTD {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background: rgba(62, 49, 42, 0.5);
+    border: none;
+    font-size: 14px;
+}
+#datepicker .dpTable .dpTR td.dpTD {
+    height: 25px;
+    vertical-align: middle;
+    border: none;
+    font-size: 14px;
+}
+/*#datepicker .dpTable .dpTR td:first-child {*/
+    /*padding-left: 10px;*/
+/*}*/
+/*#datepicker .dpTable .dpTR td:last-child {*/
+    /*padding-right: 10px;*/
+/*}*/
+#datepicker .dpTable .dpDayHighlightTD,
+#datepicker .dpTable .dpTDHover {
+    background-color: #38bad4;
+    color: #ffffff;
+    vertical-align: middle;
+    border: none;
+}
+#datepicker .dpTable .dpTDHover {
+    background-color: rgba(56, 186, 212, 0.50);
+}
+#datepicker .dpTable .dpTodayButton{
+    border: 2px solid #3e312a;
+    border-radius: 4px;
+    background: transparent;
+    color: #3e312a;
+    height: 36px;
+    font: 16px open_sans_regular;
+    float: left;
+    margin: 10px;
+    padding: 0 5px;
+}
+#datepicker .dpTable .dpTodayButton:last-child{
+    float: right;
+    padding: 0 15px;
+}
+#datepicker .dpTable .dpTodayButton:hover {
+    background: #3e312a;
+    color: #ffffff;
+}
+/*.page_content .search_block .search_block_inner .btn {*/
+    /*margin-top: 20px;*/
+/*}*/
 .page_content .search_block.opened {
     background: #3e312a;
 }
