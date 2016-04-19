@@ -201,7 +201,7 @@
                                     <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
                                 </select>
                             </td>
-                            <td align="center" width="25%"><input type="submit" class="btn" value="Reserve"></td>
+                            <td align="center" width="25%"><input type="submit" class="btn" value="Reserver"></td>
                         </tr>
                         </tbody></table>
                 </form>
@@ -282,13 +282,12 @@
                     var datePickerDivID = "datepicker";
                     var iFrameDivID = "datepickeriframe";
 
-                    var dayArrayShort = new Array('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa');
+                    var dayArrayShort = new Array('Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa');
                     var dayArrayMed = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
                     var dayArrayLong = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
                     var monthArrayShort = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
                     var monthArrayMed = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec');
-                    var monthArrayLong = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-
+                    var monthArrayLong = new Array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
                     var defaultDateSeparator = ".";
                     var defaultDateFormat = "dmy";
                     var dateSeparator = defaultDateSeparator;
@@ -421,8 +420,8 @@
                         var today = new Date();
                         var todayString = "Today is " + dayArrayMed[today.getDay()] + ", " + monthArrayMed[ today.getMonth()] + " " + today.getDate();
                         html += TR_todaybutton + TD_todaybutton;
-                        html += "<button class='dpTodayButton' onClick='refreshDatePicker(\"" + dateFieldName + "\");'>this month</button> ";
-                        html += "<button class='dpTodayButton' onClick='updateDateField(\"" + dateFieldName + "\");'>close</button>";
+                        html += "<button class='dpTodayButton' onClick='refreshDatePicker(\"" + dateFieldName + "\");'>Ce mois-ci</button> ";
+                        html += "<button class='dpTodayButton' onClick='updateDateField(\"" + dateFieldName + "\");'>Fermer</button>";
                         html += xTD + xTR;
 
                         html += xTABLE;
