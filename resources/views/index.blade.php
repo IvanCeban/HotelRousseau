@@ -154,6 +154,11 @@
                 <iframe style="opacity:1;filter:alpha(opacity=100)" frameborder="0" width="440" height="30" name="template" id="template" scrolling="no" src="https://sb.ghix.net/default.aspx?View=Template&Action=List&HotelID=2986959&Language=4&Template=1389&Type=17"></iframe>
 
             </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="homepage_title">Bienvenue à l’hôtel Rousseau</h1>
+                </div>
+            </div>
         </div>
     </section>
 

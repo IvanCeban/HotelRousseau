@@ -19,8 +19,8 @@
             {{--<!--</div>-->--}}
             {{--</li>--}}
         </ul>
-        <div class="header_rightside_btns">
-            <a href="#" class="header_login_btn">Connexion</a>
-        </div>
+        {{--<div class="header_rightside_btns">--}}
+            {{--<a href="#" class="header_login_btn">Connexion</a>--}}
+        {{--</div>--}}
     </div>
 </div>

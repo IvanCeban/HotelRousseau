@@ -164,7 +164,10 @@ sup {
   color: #3e312a;
   padding: 23px 0 18px;
   text-decoration: none;
-  margin-left: 13px}
+  margin-left: 13px;
+  outline: none;
+
+}
 
 .header .header_menu li a:hover {
   color: #38bad4;

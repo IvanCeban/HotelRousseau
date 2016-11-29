@@ -141,15 +141,13 @@
                             <div class="right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>Hôtel</h3>
-                                <p>L’hôtel Rousseau 3* à Genève a été entièrement rénové en 2015. Ses 25 chambres dont un appartement au style moderne et élégant,
-                                    alliant sécurité, confort, et haute technologie, sauront ainsi ravir une clientèle d’affaires, et de tourisme.
-                                    Cet hôtel écrin a une gestion familiale délivrant un service personnalisé, discret et chalheureux à ses hôtes.
-                                    Une équipe de professionnels, multilingue, est à votre écoute, présente 24/24, en vous assurerant un séjour en toute sérénité.</p>
+                                <p>Entièrement rénové en 2015, ce havre de paix au style moderne et élégant saura ravir une clientèle d’affaires et de tourisme.</p>
                                 <br>
-                                <p>Afin de bien débuter votre journée, de 07h00 à 10h00, le petit déjeuner buffet est servi dans la salle de notre restaurant « Les 3 palettes, 20/20 wine bar ».</p>
+                                <p>Il est idéalement situé au cœur de Genève, à 2 minutes à pied du Lac Léman, 5 minutes de la gare Cornavin et juste à côté  du célèbre centre commercial « Manor ». Il est proche du quartier des banques, des organisations internationales ainsi que des boutiques de luxe.</p>
                                 <br>
-                                <p>L’hôtel est idéalement situé au cœur de Genève, à 2 minutes à pied du Lac Léman et 5 minutes de la gare Cornavin et juste à coté de Manor,
-                                    le plus grand centre commercial de Genève. Il est proche du quartier des banques, des organisations internationales ONU ainsi que des boutiques de luxe.</p>
+                                <p>Cet hôtel écrin a une gestion familiale délivrant un service personnalisé, discret et chaleureux à ses hôtes. Une équipe de professionnels multilingues est à votre écoute et présente 24/24.</p>
+                                <br>
+                                <p>Afin de bien débuter votre journée, de 07h00 à 10h00, un copieux buffet de petit déjeuner est servi dans la salle de notre restaurant « Les 3 palettes, 20/20 wine bar ».</p>
                             </div>
                         </div>
                     </div>

@@ -139,9 +139,9 @@
                             <div class="right_sidebar" id="rooms_introduction_right_sidebar">
                                 <div class="page_icon"></div>
                                 <h3>Chambres / Appartement</h3>
-                                <p>L’hôtel se compose de 25 chambres dont un appartement, entièrement rénovés en 2015, parfaitement insonorisés,
-                                    équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables. Les chambres sont spacieuses pouvant allier travail et détente.<br>
-                                </p>
+                                <p>L’hôtel se compose de 25 chambres, dont un appartement, entièrement rénovés en 2015. </p>
+                                <br>
+                                <p>Nous vous assurons des espaces insonorisés, équipés d’un mobilier cossu et d’une décoration aux couleurs reposantes et agréables.</p>
                             </div>
 
                             <div class="right_sidebar" id="single_classic_right_sidebar">

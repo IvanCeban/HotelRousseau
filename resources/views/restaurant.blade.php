@@ -75,16 +75,9 @@
                                 <div class="right_sidebar">
                                     <div class="page_icon"></div>
                                     <h3>Restaurant</h3>
-                                    <p>Dans un cadre feutré et contemporain, l’équipe du restaurant les 3 Palettes 20/20 Wine Bar,
-                                        vous accueillera en toute convivialité. A travers la fraîcheur de ses mets, le Chef de cuisine vous fera
-                                        voyager et ainsi vous amènera  à découvrir ses spécialités telles que l’hamburger de bison, l’incontournable salade
-                                        Caesar ou encore le croustillant de crevettes Bangkok pour ne citer qu’eux. Nous vous invitons à découvrir notre concept
-                                        de boissons servies sur palette : comme les 3 bières artisanales des Brasseurs, la Blanche de froment,
-                                        la Blonde pure malt et l’ambrée double malt ou les vins internationaux de la carte, en dégustation.</p>
+                                    <p>Nous entreprenons des travaux, ainsi notre restaurant rouvrira ses portes à la fin du mois de janvier 2017 et sera ravi de vous accueillir.</p>
                                     <br>
-                                    <p>Tous nos plats sont à chf 20.- y compris notre plat du jours.</p>
-                                    <br>
-                                    <p>Vous saurez apprécier le parcours dégustatif aussi bien pour le service du déjeuner que pour le service du dîner.</p>
+                                    <p>Dans un cadre feutré et contemporain, l’équipe du restaurant les 3 Palettes 20/20 Wine Bar, vous séduira par sa convivialité. </p>
                                     {{--<ul class="our_specials">--}}
                                         {{--<li><span> - hamburger</span></li>--}}
                                         {{--<li><span> - flammekueche</span></li>--}}
