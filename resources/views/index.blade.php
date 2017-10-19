@@ -18,6 +18,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="/js/angular/registration.js"></script>
 
+    <script src="//widget.customer-alliance.com/reviews/js/standard/09ba7ab798d0e7e2.js" async></script>
+
     <script type="text/javascript">
         $(function() {
 
